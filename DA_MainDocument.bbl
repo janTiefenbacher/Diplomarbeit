@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\btxselectlanguage {ngerman}
+\bibitem {dbrankings}
+\btxnamefont {\btxlastnamefont {abc}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Db-engine ranking}{DB-Engine Ranking}},
+  \btxprintmonthyear{.}{3}{2016}{long}.
+\newblock Online in Internet: URL: \url{http://db-engines.com/de/ranking}.
+
+\end{thebibliography}
