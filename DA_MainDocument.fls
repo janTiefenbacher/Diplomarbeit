@@ -599,50 +599,6 @@ INPUT .\2_approach\solution1.tex
 INPUT .\2_approach\solution1.tex
 INPUT 2_approach\solution1.tex
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
-INPUT .\2_approach\solution2.tex
-INPUT .\2_approach\solution2.tex
-INPUT .\2_approach\solution2.tex
-INPUT .\2_approach\solution2.tex
-INPUT 2_approach\solution2.tex
-INPUT .\2_approach\example.tex
-INPUT .\2_approach\example.tex
-INPUT 2_approach\example.tex
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt12.tfm
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\content\img\3_prototype\Bild.png
-INPUT .\content\img\3_prototype\Bild.png
-INPUT .\content\img\3_prototype\Bild.png
-INPUT .\content\img\3_prototype\Bild.png
-INPUT .\content\img\3_prototype\Bild.png
-INPUT .\content\img\3_prototype\Bild.png
-INPUT .\content\img\3_prototype\Bild.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\content\img\3_prototype\Bild.png
-INPUT .\content\img\3_prototype\Bild.png
-INPUT .\content\img\3_prototype\Bild.png
-INPUT .\content\img\3_prototype\Bild.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT .\3_protoype\section.tex
 INPUT .\3_protoype\section.tex
 INPUT .\3_protoype\section.tex
@@ -652,40 +608,36 @@ INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT .\3_protoype\description.tex
 INPUT .\3_protoype\description.tex
 INPUT .\3_protoype\description.tex
 INPUT .\3_protoype\description.tex
 INPUT 3_protoype\description.tex
-INPUT .\content\src\3_prototype\test.php
-INPUT .\content\src\3_prototype\test.php
-INPUT content\src\3_prototype\test.php
-INPUT .\4_deployment\section.tex
-INPUT .\4_deployment\section.tex
-INPUT .\4_deployment\section.tex
-INPUT .\4_deployment\section.tex
-INPUT 4_deployment\section.tex
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\4_deployment\requirements.tex
-INPUT .\4_deployment\requirements.tex
-INPUT .\4_deployment\requirements.tex
-INPUT .\4_deployment\requirements.tex
-INPUT 4_deployment\requirements.tex
-INPUT .\4_deployment\configuration.tex
-INPUT .\4_deployment\configuration.tex
-INPUT .\4_deployment\configuration.tex
-INPUT .\4_deployment\configuration.tex
-INPUT 4_deployment\configuration.tex
-INPUT .\4_deployment\projectRun.tex
-INPUT .\4_deployment\projectRun.tex
-INPUT .\4_deployment\projectRun.tex
-INPUT .\4_deployment\projectRun.tex
-INPUT 4_deployment\projectRun.tex
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\4_Theorie\section.tex
+INPUT .\4_Theorie\section.tex
+INPUT .\4_Theorie\section.tex
+INPUT .\4_Theorie\section.tex
+INPUT 4_Theorie\section.tex
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\4_Theorie\jan.tex
+INPUT .\4_Theorie\jan.tex
+INPUT 4_Theorie\jan.tex
+INPUT .\4_Theorie\laurenz.tex
+INPUT .\4_Theorie\laurenz.tex
+INPUT .\4_Theorie\laurenz.tex
+INPUT .\4_Theorie\laurenz.tex
+INPUT 4_Theorie\laurenz.tex
 INPUT .\5_summary\section.tex
 INPUT .\5_summary\section.tex
 INPUT .\5_summary\section.tex
@@ -724,6 +676,11 @@ INPUT 6_appendix\listofeverything.tex
 INPUT .\DA_MainDocument.bbl
 INPUT .\DA_MainDocument.bbl
 INPUT DA_MainDocument.bbl
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt12.tfm
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\DA_MainDocument.lof
 INPUT .\DA_MainDocument.lof
@@ -739,13 +696,6 @@ INPUT .\DA_MainDocument.lol
 INPUT .\DA_MainDocument.lol
 INPUT DA_MainDocument.lol
 OUTPUT DA_MainDocument.lol
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmss.fd
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmss.fd
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmss.fd
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmss12.tfm
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmssbx10.tfm
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\6_appendix\section.tex
 INPUT .\6_appendix\section.tex
@@ -810,21 +760,11 @@ INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmcsc10.pfb
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmcsc10.pfb
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.pfb
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr17.pfb
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr17.pfb
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr6.pfb
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr6.pfb
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmssbx10.pfb
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmssbx10.pfb
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb
