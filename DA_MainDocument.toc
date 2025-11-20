@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {2.1}Ausgangslage und Motivation der Arbeit}{12}{section.9}%
 \contentsline {section}{\numberline {2.2}Spezifische Ausgangslage}{12}{section.10}%
 \contentsline {subsection}{\numberline {2.2.1}Spezifische Ausgangslage - Jan Tiefenbacher}{12}{subsection.11}%
-\contentsline {subsection}{\numberline {2.2.2}Spezifische Ausgangslage - Laurenz Pichler}{12}{subsection.12}%
+\contentsline {subsection}{\numberline {2.2.2}Spezifische Ausgangslage – Laurenz Pichler}{12}{subsection.12}%
 \contentsline {section}{\numberline {2.3}Spezifische Forschungsfrage}{12}{section.13}%
 \contentsline {subsection}{\numberline {2.3.1}Spezifische Forschungsfrage - Jan Tiefenbacher}{12}{subsection.14}%
 \contentsline {subsection}{\numberline {2.3.2}Spezifische Forschungsfrage - Laurenz Pichler}{12}{subsection.15}%
@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {3.2.5}Bestenliste}{14}{subsection.26}%
 \contentsline {subsection}{\numberline {3.2.6}Tägliches Spiel}{14}{subsection.27}%
 \contentsline {subsection}{\numberline {3.2.7}Österreichweite Spielmodi}{14}{subsection.28}%
-\contentsline {subsection}{\numberline {3.2.8}Chat mit Freunden}{14}{subsection.29}%
+\contentsline {subsection}{\numberline {3.2.8}Chat mit Freunden}{15}{subsection.29}%
 \contentsline {subsection}{\numberline {3.2.9}Freundesliste und Anfragen}{15}{subsection.30}%
 \contentsline {subsection}{\numberline {3.2.10}Profilbilder und Shop-System}{15}{subsection.31}%
 \contentsline {section}{\numberline {3.3}Datenhaltung}{15}{section.32}%
