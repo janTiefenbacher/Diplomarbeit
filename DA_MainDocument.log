@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.6)  25 NOV 2025 08:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.6)  26 NOV 2025 10:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1228,7 +1228,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 36.
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 47.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 57.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [8.8
 
@@ -1423,7 +1423,7 @@ Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on
 [23.23]
 
 pdfTeX warning: pdflatex (file ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf, id=254, 597.55246pt x 845.07718pt>
+<./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf, id=280, 597.55246pt x 845.07718pt>
 File: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf Graphic file (type pdf)
 <use ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf>
 Package pdftex.def Info: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf  used on input line 6.
@@ -1434,7 +1434,7 @@ pdfTeX warning: pdflatex (file ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_
 
 
 pdfTeX warning: pdflatex (file ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf, id=256, page=1, 597.55246pt x 845.07718pt>
+<./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf, id=282, page=1, 597.55246pt x 845.07718pt>
 File: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf Graphic file (type pdf)
 <use ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf , page1 used on input line 6.
@@ -1512,17 +1512,17 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 40957 strings out of 468085
- 830633 string characters out of 5424447
- 1597982 words of memory out of 5000000
- 68691 multiletter control sequences out of 15000+600000
+ 40994 strings out of 468085
+ 831412 string characters out of 5424447
+ 1598982 words of memory out of 5000000
+ 68709 multiletter control sequences out of 15000+600000
  686188 words of font info for 127 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,35n,127p,11269b,1292s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Laurenz/AppData/Local/Programs/MikTeXX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Laurenz/AppData/Local/Programs/MikTeXX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Laurenz/AppData/Local/Programs/MikTeXX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Laurenz/AppData/Local/Programs/MikTeXX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Laurenz/AppData/Local/Programs/MikTeXX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Laurenz/AppData/Local/Programs/MikTeXX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Laurenz/AppData/Local/Programs/MikTeXX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on DA_MainDocument.pdf (26 pages, 488813 bytes).
+Output written on DA_MainDocument.pdf (26 pages, 495718 bytes).
 PDF statistics:
- 500 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 35779 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
+ 35835 words of extra memory for PDF output out of 42996 (max. 10000000)
 
