@@ -2,12 +2,48 @@
 
 \subsection{Mobile App Entwicklung}
 \subsubsection{Native vs. Cross-Platform Entwicklung}
-\subsubsection{React Native vs. Flutter}
+Quellenangabe: "https://www.denovo.at/blog/native-vs-cross-plattform-app-welcher-weg-ist-der-richtige-fuer-ihre-idee"
+
+Es existieren verschiedene technische Herangehensweisen bei der Entwicklung mobiler Apps, um Anwendungen für mobile Endgeräte wie Smartphones und Tablets zu realisieren. Dabei gibt es einen wesentlichen Unterschied zwischen der Entwicklung nativer Apps und der Cross-Plattform-Entwicklung. Beide Optionen weisen Unterschiede hinsichtlich der Architektur, des Entwicklungsprozesses und der technischen Realisierung auf.
+
+Unter nativer App-Entwicklung versteht man die Entwicklung und Umsetzung von Anwendungen, die speziell für ein bestimmtes Betriebssystem programmiert worden sind. Beispielsweiße sind das für iOS-Anwendungen, die auf Swift basieren während Android-Applikationen typischerweise in Kotlin entwickelt werden. Die Anwendung wird direkt für dieses bestimmte System entwickelt und ist mit keinem anderen kompatibel.
+
+Ein wesentliches Merkmal nativer Anwendungen ist der direkte Zugriff auf systemnahe Funktionen und Hardware-Komponenten des Endgeräts, wie Kamera, GPS oder Sensoren. Darüber hinaus orientieren sich native Apps stark an den Design- und Interaktionsrichtlinien des jeweiligen Betriebssystems, wodurch sie sich nahtlos in dessen Benutzeroberfläche einfügen.
+
+Im Gegensatz dazu steht die Cross-Platform-App-Entwicklung, bei der Anwendungen mit einer gemeinsamen Codebasis für mehrere Betriebssysteme entwickelt werden. Ziel dieses Ansatzes ist es, den Entwicklungsaufwand zu reduzieren, indem große Teile des Codes plattformübergreifend wiederverwendet werden. Die Ausführung erfolgt anschließend auf verschiedenen Betriebssystemen, meist iOS und Android.
+
+Cross-Platform-Frameworks abstrahieren die zugrunde liegenden Betriebssysteme und stellen einheitliche Schnittstellen zur Verfügung. Dadurch können Entwicklerinnen und Entwickler eine Anwendung erstellen, die auf mehreren Plattformen lauffähig ist, ohne für jedes Betriebssystem eine vollständig eigene Implementierung zu benötigen. Dennoch erfolgt die Interaktion mit gerätespezifischen Funktionen häufig über zusätzliche Abstraktionsschichten oder spezielle Erweiterungen.
+\subsubsection{React Native Framework}
+Quellenangabe: "https://brainhub.eu/de/library/was-ist-react-native"
+
+React Native ist ein plattformübergreifendes Framework zur Entwicklung mobiler Anwendungen, das von Meta Platforms (ehemals Facebook) und der Open-Source-Community entwickelt wird. Es ermöglicht, Anwendungen für verschiedene mobile Betriebssysteme wie iOS und Android zu erstellen, indem es die Programmiersprache JavaScript in Kombination mit nativen UI-Elementen nutzt. 
+
+Im Gegensatz zu klassischen nativen Entwicklungsansätzen, bei denen separate Codebasen für unterschiedliche Betriebssysteme notwendig sind, verfolgt React Native den Ansatz einer gemeinsamen Codebasis. Dabei werden Benutzeroberflächen nicht als Webview-Elemente gerendert, sondern über native Komponenten dargestellt, sodass die resultierenden Anwendungen sich in Look and Feel deutlich näher an nativen Apps orientieren. 
+
+React Native basiert auf dem populären JavaScript-Framework React, das ursprünglich für die Entwicklung von Benutzeroberflächen im Web entwickelt wurde. Die Integration dieser Technologie ermöglicht es Entwicklern, UI-Komponenten modular zu strukturieren und wiederverwendbar zu machen, was die Wartung und Weiterentwicklung von Anwendungen erleichtert.
+
+Ein technisches Charakteristikum von React Native ist der Einsatz der JavaScriptCore-Laufzeit sowie von Babel-Transpilern, die moderne JavaScript-Funktionen (z. B. ES6-Features wie Arrow-Funktionen oder async/await) unterstützen und zugleich die Kompatibilität mit unterschiedlichen Zielplattformen sicherstellen. Dadurch können Entwickler aktuelle Sprachstandards verwenden, ohne auf traditionelle plattformspezifische Sprachen wie Swift (für iOS) oder Kotlin/Java (für Android) angewiesen zu sein.
 
 \subsection{Backend-Technologien}
-\subsubsection{Backend as a Service (BaaS)}
 \subsubsection{APIs}
+Quellenangabe: "https://www.talend.com/de/resources/was-ist-eine-api/"
+
+APIs (Application Programming Interfaces) sind Programmierschnittstellen, die es unterschiedlichen Softwaresystemen ermöglichen, miteinander zu kommunizieren. Sie definieren, wie Anfragen gestellt und wie Daten oder Funktionen zwischen Anwendungen ausgetauscht werden können, ohne dass die internen Abläufe der beteiligten Systeme bekannt sein müssen. 
+
+Eine API fungiert dabei als Vermittlungsschicht zwischen verschiedenen Softwarekomponenten. Sie legt fest, welche Funktionen oder Daten zur Verfügung stehen und in welcher Form diese genutzt werden dürfen. Durch diese klar definierten Schnittstellen wird eine strukturierte und kontrollierte Interaktion zwischen Frontend- und Backend-Systemen ermöglicht.
+
+In der Softwareentwicklung bilden APIs eine wesentliche Grundlage für den Aufbau modularer Systeme. Sie unterstützen die Trennung von Zuständigkeiten zwischen einzelnen Systemkomponenten und tragen zur Wartbarkeit sowie Erweiterbarkeit von Anwendungen bei.
 \subsubsection{Datenbanken}
+Quellenangabe: "https://www.ibm.com/think/topics/database"
+
+Datenbanken sind digitale Speichersysteme zur organisierten Verwaltung von Informationen. Sie dienen dazu, große Mengen strukturierter und unstrukturierter Daten so zu speichern, dass Anwendungen, Benutzer und Automatisierungsprozesse effizient darauf zugreifen, diese verwalten und aktualisieren können. Eine Datenbank besteht dabei aus einem Repository zur Speicherung der Daten sowie aus Software-Komponenten, die den Zugriff, die Strukturierung und die Sicherheit dieser Daten steuern.
+
+Die grundlegende Funktion einer Datenbank besteht darin, Daten nicht nur passiv zu speichern, sondern sie in einer Form bereitzustellen, die schnelle Abfragen, konsistente Verwaltung und kontrollierten Zugriff ermöglicht. Datenbanken bilden damit eine essentielle Grundlage moderner Anwendungen, da sie die zentrale Grundlage für die Verwaltung und Bereitstellung von Daten in Informationssystemen darstellen.
+
+Dabei umfasst der Begriff „Datenbank“ nicht nur die gespeicherten Daten selbst, sondern auch die zugehörige Infrastruktur, die physische Speicherung und die Software-Komponenten einschließt, die Datenbankoperationen steuern und ausführen. Durch diese Struktur ermöglichen Datenbanken eine systematische Organisation großer Datenbestände, wodurch diese für Anwendungen adressierbar und nutzbar werden.
+
+Datenbanken werden in vielfältigen Kontexten verwendet und sind integraler Bestandteil zahlreicher Softwarelösungen, da sie die grundlegende Datenverwaltung für Anwendungen unterstützen. Ohne Datenbanken wäre die zentrale Verwaltung großer Informationsmengen sowie deren strukturierter Zugriff, wie er für Web-Anwendungen, mobile Anwendungen und Backend-Systeme heute notwendig ist, nicht realisierbar.
+
 \subsubsection{Serverless vs. klassisches Backend}
 
 \subsection{Hosting- und Infrastrukturmodelle}
