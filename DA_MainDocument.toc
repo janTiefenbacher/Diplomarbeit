@@ -8,75 +8,75 @@
 \contentsline {section}{\numberline {1.5}Gendererklärung}{11}{section.7}%
 \contentsline {chapter}{\numberline {2}Einleitung}{12}{chapter.8}%
 \contentsline {section}{\numberline {2.1}Ausgangslage und Motivation der Arbeit}{12}{section.9}%
-\contentsline {section}{\numberline {2.2}Spezifische Ausgangslage (Muss noch erweitert werden)}{12}{section.10}%
+\contentsline {section}{\numberline {2.2}Spezifische Ausgangslage}{12}{section.10}%
 \contentsline {section}{\numberline {2.3}Spezifische Forschungsfrage}{12}{section.11}%
 \contentsline {subsection}{\numberline {2.3.1}Spezifische Forschungsfrage - Jan Tiefenbacher}{12}{subsection.12}%
-\contentsline {subsection}{\numberline {2.3.2}Spezifische Forschungsfrage - Laurenz Pichler}{12}{subsection.13}%
-\contentsline {chapter}{\numberline {3}Dokumentation der Implementierung}{13}{chapter.14}%
-\contentsline {section}{\numberline {3.1}Grundlagen der Implementierung}{13}{section.15}%
-\contentsline {subsection}{\numberline {3.1.1}Systemumgebung}{13}{subsection.16}%
-\contentsline {subsection}{\numberline {3.1.2}Verwendete Technologien}{13}{subsection.17}%
-\contentsline {subsection}{\numberline {3.1.3}Architekturüberblick}{13}{subsection.18}%
-\contentsline {section}{\numberline {3.2}Implementierung der Funktionen}{13}{section.19}%
-\contentsline {subsection}{\numberline {3.2.1}Login und Registrierung}{13}{subsection.20}%
-\contentsline {subsection}{\numberline {3.2.2}Benutzerverwaltung}{14}{subsection.21}%
-\contentsline {subsection}{\numberline {3.2.3}Einzelspieler-Modus}{14}{subsection.22}%
-\contentsline {subsection}{\numberline {3.2.4}Mehrspieler-Modus}{14}{subsection.23}%
-\contentsline {subsection}{\numberline {3.2.5}Bestenliste}{14}{subsection.24}%
-\contentsline {subsection}{\numberline {3.2.6}Tägliches Spiel}{14}{subsection.25}%
-\contentsline {subsection}{\numberline {3.2.7}Österreichweite Spielmodi}{14}{subsection.26}%
-\contentsline {subsection}{\numberline {3.2.8}Chat mit Freunden}{15}{subsection.27}%
-\contentsline {subsection}{\numberline {3.2.9}Freundesliste und Anfragen}{15}{subsection.28}%
-\contentsline {subsection}{\numberline {3.2.10}Profilbilder und Shop-System}{15}{subsection.29}%
-\contentsline {section}{\numberline {3.3}Datenhaltung}{15}{section.30}%
-\contentsline {section}{\numberline {3.4}Deployment}{15}{section.31}%
-\contentsline {chapter}{\numberline {4}Theoretische Grundlagen}{16}{chapter.32}%
-\contentsline {section}{\numberline {4.1}Jans Ausarbeitung}{16}{section.33}%
-\contentsline {subsection}{\numberline {4.1.1}Frontend-Technologien}{16}{subsection.34}%
-\contentsline {subsection}{\numberline {4.1.2}Trends \& Weiterentwicklungen}{16}{subsection.35}%
-\contentsline {subsection}{\numberline {4.1.3}UI/UX Design}{16}{subsection.36}%
-\contentsline {section}{\numberline {4.2}Laurenz Ausarbeitung}{16}{section.37}%
-\contentsline {subsection}{\numberline {4.2.1}Mobile App Entwicklung}{16}{subsection.38}%
-\contentsline {subsubsection}{\numberline {4.2.1.1}Native vs. Cross-Platform Entwicklung}{16}{subsubsection.39}%
-\contentsline {subsubsection}{\numberline {4.2.1.2}React Native Framework}{17}{subsubsection.40}%
-\contentsline {subsection}{\numberline {4.2.2}Backend-Technologien}{17}{subsection.41}%
-\contentsline {subsubsection}{\numberline {4.2.2.1}APIs}{17}{subsubsection.42}%
-\contentsline {subsubsection}{\numberline {4.2.2.2}Datenbanken}{18}{subsubsection.43}%
-\contentsline {subsubsection}{\numberline {4.2.2.3}Serverless vs. klassisches Backend}{19}{subsubsection.44}%
-\contentsline {subsection}{\numberline {4.2.3}Hosting- und Infrastrukturmodelle}{19}{subsection.45}%
-\contentsline {subsubsection}{\numberline {4.2.3.1}On-Premise, Cloud und Hybrid-Architekturen}{19}{subsubsection.46}%
-\contentsline {subsubsection}{\numberline {4.2.3.2}IaaS, PaaS, FaaS und Serverless}{19}{subsubsection.47}%
-\contentsline {subsubsection}{\numberline {4.2.3.3}Containerisierung und Orchestrierung (Docker, Kubernetes)}{19}{subsubsection.48}%
-\contentsline {subsection}{\numberline {4.2.4}Datenmanagement}{19}{subsection.49}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}Relationale Datenbanken vs. NoSQL}{19}{subsubsection.50}%
-\contentsline {subsubsection}{\numberline {4.2.4.2}Datenmodellierung und Normalisierung}{19}{subsubsection.51}%
-\contentsline {subsubsection}{\numberline {4.2.4.3}Echtzeit-Daten}{19}{subsubsection.52}%
-\contentsline {subsection}{\numberline {4.2.5}Skalierbarkeit und Performanceoptimierung}{19}{subsection.53}%
-\contentsline {subsubsection}{\numberline {4.2.5.1}Vertikale vs. horizontale Skalierung}{19}{subsubsection.54}%
-\contentsline {subsubsection}{\numberline {4.2.5.2}Autoscaling und Lastverteilung}{19}{subsubsection.55}%
-\contentsline {subsubsection}{\numberline {4.2.5.3}Latenzoptimierung und Durchsatzsteigerung}{19}{subsubsection.56}%
-\contentsline {subsection}{\numberline {4.2.6}Sicherheit und Authentifizierung}{19}{subsection.57}%
-\contentsline {subsubsection}{\numberline {4.2.6.1}Auth-Systeme}{19}{subsubsection.58}%
-\contentsline {subsubsection}{\numberline {4.2.6.2}Verschlüsselung}{19}{subsubsection.59}%
-\contentsline {subsubsection}{\numberline {4.2.6.3}Datenschutz}{19}{subsubsection.60}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{20}{chapter.61}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung}{20}{section.62}%
-\contentsline {section}{\numberline {5.2}Ausblick}{20}{section.63}%
-\contentsline {chapter}{\numberline {I}Literaturverzeichnis}{21}{chapter.64}%
+\contentsline {subsection}{\numberline {2.3.2}Spezifische Forschungsfrage - Laurenz Pichler}{13}{subsection.13}%
+\contentsline {chapter}{\numberline {3}Theoretische Grundlagen}{14}{chapter.14}%
+\contentsline {section}{\numberline {3.1}Jans Ausarbeitung}{14}{section.15}%
+\contentsline {subsection}{\numberline {3.1.1}Frontend-Technologien}{14}{subsection.16}%
+\contentsline {subsection}{\numberline {3.1.2}Trends \& Weiterentwicklungen}{14}{subsection.17}%
+\contentsline {subsection}{\numberline {3.1.3}UI/UX Design}{14}{subsection.18}%
+\contentsline {section}{\numberline {3.2}Laurenz Ausarbeitung}{14}{section.19}%
+\contentsline {subsection}{\numberline {3.2.1}Mobile App Entwicklung}{14}{subsection.20}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}Native vs. Cross-Platform Entwicklung}{14}{subsubsection.21}%
+\contentsline {subsubsection}{\numberline {3.2.1.2}React Native Framework}{15}{subsubsection.22}%
+\contentsline {subsection}{\numberline {3.2.2}Backend-Technologien}{15}{subsection.23}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}APIs}{15}{subsubsection.24}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}Datenbanken}{16}{subsubsection.25}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}Serverless vs. klassisches Backend}{17}{subsubsection.26}%
+\contentsline {subsection}{\numberline {3.2.3}Hosting- und Infrastrukturmodelle}{17}{subsection.27}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}On-Premise, Cloud und Hybrid-Architekturen}{17}{subsubsection.28}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}IaaS, PaaS, FaaS und Serverless}{17}{subsubsection.29}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}Containerisierung und Orchestrierung (Docker, Kubernetes)}{17}{subsubsection.30}%
+\contentsline {subsection}{\numberline {3.2.4}Datenmanagement}{17}{subsection.31}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}Relationale Datenbanken vs. NoSQL}{17}{subsubsection.32}%
+\contentsline {subsubsection}{\numberline {3.2.4.2}Datenmodellierung und Normalisierung}{17}{subsubsection.33}%
+\contentsline {subsubsection}{\numberline {3.2.4.3}Echtzeit-Daten}{17}{subsubsection.34}%
+\contentsline {subsection}{\numberline {3.2.5}Skalierbarkeit und Performanceoptimierung}{17}{subsection.35}%
+\contentsline {subsubsection}{\numberline {3.2.5.1}Vertikale vs. horizontale Skalierung}{17}{subsubsection.36}%
+\contentsline {subsubsection}{\numberline {3.2.5.2}Autoscaling und Lastverteilung}{17}{subsubsection.37}%
+\contentsline {subsubsection}{\numberline {3.2.5.3}Latenzoptimierung und Durchsatzsteigerung}{17}{subsubsection.38}%
+\contentsline {subsection}{\numberline {3.2.6}Sicherheit und Authentifizierung}{17}{subsection.39}%
+\contentsline {subsubsection}{\numberline {3.2.6.1}Auth-Systeme}{17}{subsubsection.40}%
+\contentsline {subsubsection}{\numberline {3.2.6.2}Verschlüsselung}{17}{subsubsection.41}%
+\contentsline {subsubsection}{\numberline {3.2.6.3}Datenschutz}{17}{subsubsection.42}%
+\contentsline {chapter}{\numberline {4}Dokumentation der Implementierung}{18}{chapter.43}%
+\contentsline {section}{\numberline {4.1}Grundlagen der Implementierung}{18}{section.44}%
+\contentsline {subsection}{\numberline {4.1.1}Systemumgebung}{18}{subsection.45}%
+\contentsline {subsection}{\numberline {4.1.2}Verwendete Technologien}{18}{subsection.46}%
+\contentsline {subsection}{\numberline {4.1.3}Architekturüberblick}{18}{subsection.47}%
+\contentsline {section}{\numberline {4.2}Implementierung der Funktionen}{18}{section.48}%
+\contentsline {subsection}{\numberline {4.2.1}Login und Registrierung}{18}{subsection.49}%
+\contentsline {subsection}{\numberline {4.2.2}Benutzerverwaltung}{19}{subsection.50}%
+\contentsline {subsection}{\numberline {4.2.3}Einzelspieler-Modus}{19}{subsection.51}%
+\contentsline {subsection}{\numberline {4.2.4}Mehrspieler-Modus}{19}{subsection.52}%
+\contentsline {subsection}{\numberline {4.2.5}Bestenliste}{19}{subsection.53}%
+\contentsline {subsection}{\numberline {4.2.6}Tägliches Spiel}{19}{subsection.54}%
+\contentsline {subsection}{\numberline {4.2.7}Österreichweite Spielmodi}{19}{subsection.55}%
+\contentsline {subsection}{\numberline {4.2.8}Chat mit Freunden}{20}{subsection.56}%
+\contentsline {subsection}{\numberline {4.2.9}Freundesliste und Anfragen}{20}{subsection.57}%
+\contentsline {subsection}{\numberline {4.2.10}Profilbilder und Shop-System}{20}{subsection.58}%
+\contentsline {section}{\numberline {4.3}Datenhaltung}{20}{section.59}%
+\contentsline {section}{\numberline {4.4}Deployment}{20}{section.60}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{21}{chapter.61}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung}{21}{section.62}%
+\contentsline {section}{\numberline {5.2}Ausblick}{21}{section.63}%
+\contentsline {chapter}{\numberline {I}Literaturverzeichnis}{22}{chapter.64}%
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{22}{chapter.65}%
-\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{23}{chapter.66}%
-\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{24}{chapter.67}%
-\contentsline {chapter}{\numberline {A}Anhang}{25}{chapter.68}%
-\contentsline {section}{\numberline {A.1}Arbeitsteilung}{25}{section.69}%
-\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{25}{section.70}%
-\contentsline {section}{\numberline {A.3}Projekttagebücher}{25}{section.71}%
-\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Max Mustermann}{25}{subsection.72}%
-\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Mex Musterjuan}{25}{subsection.73}%
-\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{26}{section.74}%
-\contentsline {section}{\numberline {A.5}Besprechungsprotokolle 1}{28}{section.75}%
-\contentsline {section}{\numberline {A.6}Datenträgerbeschreibung}{29}{section.76}%
+\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{23}{chapter.65}%
+\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{24}{chapter.66}%
+\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{25}{chapter.67}%
+\contentsline {chapter}{\numberline {A}Anhang}{26}{chapter.68}%
+\contentsline {section}{\numberline {A.1}Arbeitsteilung}{26}{section.69}%
+\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{26}{section.70}%
+\contentsline {section}{\numberline {A.3}Projekttagebücher}{26}{section.71}%
+\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Max Mustermann}{26}{subsection.72}%
+\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Mex Musterjuan}{26}{subsection.73}%
+\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{27}{section.74}%
+\contentsline {section}{\numberline {A.5}Besprechungsprotokolle 1}{29}{section.75}%
+\contentsline {section}{\numberline {A.6}Datenträgerbeschreibung}{30}{section.76}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
