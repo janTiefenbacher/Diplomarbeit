@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.6)  30 DEC 2025 23:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.6)  1 JAN 2026 15:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1278,25 +1278,8 @@ Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on
 [13.13]
 chapter 3.
 (3_Theorie/jan.tex
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 22.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 24.
  (C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(e pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used o
-n input line 1.
-(pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-
-LaTeX Warning: Reference `TotPages' on page 12 undefined on input line 1.
-
-[12.12]
-chapter 3.
-(3_Theorie/jan.tex
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-2.
-
-(C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1304,82 +1287,128 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (317.36597pt too wide) in paragraph at lines 22--24
-[]\T1/lmtt/m/n/12 https://www.it-schulungen.com/wir-ueber-uns/wissensblog/was-i
-st-ios.html  https://www.computerweekly.com/de/definition/Apple-iOS
+Overfull \hbox (317.36597pt too wide) in paragraph at lines 24--26
+[]\T1/lmtt/m/n/12 https://www.it-schulungen.com/wir-ueber-uns/wissensblog/was-ist-ios.html  https://www.computerweekly.com/de/definition/Apple-iOS
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--24
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
 
-Overfull \hbox (208.54485pt too wide) in paragraph at lines 32--33
-[][][]\T1/lmtt/m/n/12 https://www.vodafone.de/featured/smartphones-tablets/was-
-ist-android-das-betriebssystem-von-google-im-check/#/ 
+Overfull \hbox (208.54485pt too wide) in paragraph at lines 35--36
+[][][]\T1/lmtt/m/n/12 https://www.vodafone.de/featured/smartphones-tablets/was-ist-android-das-betriebssystem-von-google-im-check/#/ 
  []
 
 
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used o
-n input line 51.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 57.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-
-LaTeX Warning: Reference `TotPages' on page 13 undefined on input line 51.
-
-[13.13
+[14.14
 
 ]
-! Misplaced alignment tab character &.
-l.81 ...en und zugleich einen einheitlichen Look &
-                                                   Feel über beide Zielplat...
+Overfull \hbox (26.90582pt too wide) in paragraph at lines 72--74
+[][][]$\T1/lmtt/m/n/12 https : / / www . itportal24 . de / ratgeber / cross-[]platform-[]app$[][] [][]$https : / / www . knguru . de / blog /
+ []
 
-? setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 140.
+
+Overfull \hbox (9.50475pt too wide) in paragraph at lines 96--98
+[][][]$\T1/lmtt/m/n/12 https : / / www . knguru . de / blog / app-[]entwicklung-[]mit-[]react-[]native-[]vor-[]und-[]nachteile$[][]
+ []
+
+
+
+File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
+<use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 112.
+(pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
+[15.15]
+Overfull \hbox (71.93903pt too wide) in paragraph at lines 114--129
+\T1/lmtt/m/n/12 newsroom / dark-[]mode-[]vs-[]light-[]mode-[]aesthetik-[]funktionalitaet-[]und-[]energieeffizienz-[]2893524$[][]
+ []
+
+
+
+File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
+<use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 143.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [16.16]
+Overfull \hbox (49.49477pt too wide) in paragraph at lines 144--148
+[][][]$\T1/lmtt/m/n/12 https : / / www . ionos . at / digitalguide / websites / webdesign / was-[]bedeutet-[]responsive-[]design/$[][]
+ []
+
+
+Overfull \hbox (176.1059pt too wide) in paragraph at lines 144--148
+[][]$\T1/lmtt/m/n/12 https : / / de . ryte . com / wiki / Responsive _ Design/$[][] [][]$https : / / webstollen . de / responsive-[]design-[]oder-[]adaptive-[]design/$[][]
+ []
+
+
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 191.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 189.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [17.17]
+Overfull \hbox (44.93083pt too wide) in paragraph at lines 205--212
+\T1/lmtt/m/n/12 accessibility . html # implementing-[]accessibility$[][] [][]$https : / / www . uxmatters . com / mt / archives /
+ []
+
+
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 245.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 220.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[18.18]) (3_Theorie/laurenz.tex
+[18.18]
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 14.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 267.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [19.19]
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 32.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 311.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[20.20])) (4_protoype/section.tex
-Underfull \vbox (badness 3000) has occurred while \output is active []
-
-
+[20.20]
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 367.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[21.21]
+[21.21]) (3_Theorie/laurenz.tex
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 16.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [22.22]
+
+File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
+<use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 36.
+(pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
+[23.23])) (4_protoype/section.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
+<use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1.
+(pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
+[24.24]
+
+File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
+<use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1.
+(pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
+[25.25]
 chapter 4.
 (4_protoype/description.tex
 
@@ -1387,7 +1416,7 @@ File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 36.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[23.23
+[26.26
 
 ]
 
@@ -1395,13 +1424,13 @@ File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 69.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[24.24])) (5_summary/section.tex
+[27.27])) (5_summary/section.tex
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[25.25]
+[28.28]
 chapter 5.
 (5_summary/summary.tex) (5_summary/prospect.tex)) (setup/appendixSetup.tex
 
@@ -1409,7 +1438,7 @@ File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 6.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[26.26
+[29.29
 
 ]
 \openout2 = `6_appendix/listofeverything.aux'.
@@ -1433,7 +1462,7 @@ File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 13.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[27.27
+[30.30
 
 
 ]
@@ -1449,7 +1478,7 @@ File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 16.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[28.28
+[31.31
 
 ]
 chapter III.
@@ -1464,7 +1493,7 @@ File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 19.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[29.29
+[32.32
 
 ]
 chapter IV.
@@ -1486,16 +1515,16 @@ File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 6.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[30.30
+[33.33
 
 ]) (6_appendix/section.tex
 chapter A.
 (6_appendix/laborDivision.tex
 
-LaTeX Warning: Reference `chapter:loesung2' on page 31 undefined on input line 23.
+LaTeX Warning: Reference `chapter:loesung2' on page 34 undefined on input line 23.
 
 
-LaTeX Warning: Reference `chapter:loesung2' on page 31 undefined on input line 23.
+LaTeX Warning: Reference `chapter:loesung2' on page 34 undefined on input line 23.
 
 ) (6_appendix/projectDiary.tex
 
@@ -1503,7 +1532,7 @@ File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 20.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[31.31
+[34.34
 
 
 
@@ -1513,10 +1542,10 @@ File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 4.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[32.32]
+[35.35]
 
 pdfTeX warning: pdflatex (file ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf, id=346, 597.55246pt x 845.07718pt>
+<./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf, id=375, 597.55246pt x 845.07718pt>
 File: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf Graphic file (type pdf)
 <use ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf>
 Package pdftex.def Info: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf  used on input line 6.
@@ -1527,7 +1556,7 @@ pdfTeX warning: pdflatex (file ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_
 
 
 pdfTeX warning: pdflatex (file ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf, id=348, page=1, 597.55246pt x 845.07718pt>
+<./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf, id=377, page=1, 597.55246pt x 845.07718pt>
 File: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf Graphic file (type pdf)
 <use ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf , page1 used on input line 6.
@@ -1550,7 +1579,7 @@ File: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf Graphic file (ty
 <use ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf , page1 used on input line 6.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[33.33
+[36.36
 
  <./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf>]
 File: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf Graphic file (type pdf)
@@ -1586,7 +1615,7 @@ File: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf Graphic file (ty
 <use ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf , page1 used on input line 8.
 (pdftex.def)             Requested size: 495.96841pt x 701.4139pt.
-[34.34
+[37.37
 
 ]) (6_appendix/ressources.tex))
 
@@ -1594,7 +1623,7 @@ File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 44.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[35.35] (DA_MainDocument.aux (6_appendix/listofeverything.aux))
+[38.38] (DA_MainDocument.aux (6_appendix/listofeverything.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
@@ -1605,17 +1634,17 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 41045 strings out of 468084
- 836089 string characters out of 5420515
+ 41050 strings out of 468084
+ 836132 string characters out of 5420515
  1598982 words of memory out of 5000000
  68709 multiletter control sequences out of 15000+600000
- 687462 words of font info for 141 fonts, out of 8000000 for 9000
+ 687553 words of font info for 142 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,35n,127p,11272b,1292s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,36n,127p,11272b,1292s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on DA_MainDocument.pdf (35 pages, 533067 bytes).
+Output written on DA_MainDocument.pdf (38 pages, 552886 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
+ 650 PDF objects out of 1000 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
  35827 words of extra memory for PDF output out of 35830 (max. 10000000)
 
