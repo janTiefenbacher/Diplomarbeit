@@ -1,40 +1,44 @@
 \section{Laurenz Ausarbeitung}
 
 \subsection{Mobile App Entwicklung}
+
 \subsubsection{Native vs. Cross-Platform Entwicklung}
-Quellenangabe: "https://www.denovo.at/blog/native-vs-cross-plattform-app-welcher-weg-ist-der-richtige-fuer-ihre-idee"
+\textbf{Quellenangabe:} [https://www.denovo.at/blog/native-vs-cross-plattform-app-welcher-weg-ist-der-richtige-fuer-ihre-idee]
 
 Es existieren verschiedene technische Herangehensweisen bei der Entwicklung mobiler Apps, um Anwendungen für mobile Endgeräte wie Smartphones und Tablets zu realisieren. Dabei gibt es einen wesentlichen Unterschied zwischen der Entwicklung nativer Apps und der Cross-Plattform-Entwicklung. Beide Optionen weisen Unterschiede hinsichtlich der Architektur, des Entwicklungsprozesses und der technischen Realisierung auf.
 
-Unter nativer App-Entwicklung versteht man die Entwicklung und Umsetzung von Anwendungen, die speziell für ein bestimmtes Betriebssystem programmiert worden sind. Beispielsweiße sind das für iOS-Anwendungen, die auf Swift basieren während Android-Applikationen typischerweise in Kotlin entwickelt werden. Die Anwendung wird direkt für dieses bestimmte System entwickelt und ist mit keinem anderen kompatibel.
+Unter nativer App-Entwicklung versteht man die Entwicklung und Umsetzung von Anwendungen, die speziell für ein bestimmtes Betriebssystem programmiert worden sind. Beispielsweiße sind das für iOS-Anwendungen, die auf Swift basieren, während Android-Applikationen typischerweise in Kotlin entwickelt werden. Die Anwendung wird direkt für dieses bestimmte System entwickelt und ist mit keinem anderen kompatibel.
 
 Ein wesentliches Merkmal nativer Anwendungen ist der direkte Zugriff auf systemnahe Funktionen und Hardware-Komponenten des Endgeräts, wie Kamera, GPS oder Sensoren. Darüber hinaus orientieren sich native Apps stark an den Design- und Interaktionsrichtlinien des jeweiligen Betriebssystems, wodurch sie sich nahtlos in dessen Benutzeroberfläche einfügen.
 
 Im Gegensatz dazu steht die Cross-Platform-App-Entwicklung, bei der Anwendungen mit einer gemeinsamen Codebasis für mehrere Betriebssysteme entwickelt werden. Ziel dieses Ansatzes ist es, den Entwicklungsaufwand zu reduzieren, indem große Teile des Codes plattformübergreifend wiederverwendet werden. Die Ausführung erfolgt anschließend auf verschiedenen Betriebssystemen, meist iOS und Android.
 
 Cross-Platform-Frameworks abstrahieren die zugrunde liegenden Betriebssysteme und stellen einheitliche Schnittstellen zur Verfügung. Dadurch können Entwicklerinnen und Entwickler eine Anwendung erstellen, die auf mehreren Plattformen lauffähig ist, ohne für jedes Betriebssystem eine vollständig eigene Implementierung zu benötigen. Dennoch erfolgt die Interaktion mit gerätespezifischen Funktionen häufig über zusätzliche Abstraktionsschichten oder spezielle Erweiterungen.
+
 \subsubsection{React Native Framework}
-Quellenangabe: "https://brainhub.eu/de/library/was-ist-react-native"
+\textbf{Quellenangabe:} [https://brainhub.eu/de/library/was-ist-react-native]
 
-React Native ist ein plattformübergreifendes Framework zur Entwicklung mobiler Anwendungen, das von Meta Platforms (ehemals Facebook) und der Open-Source-Community entwickelt wird. Es ermöglicht, Anwendungen für verschiedene mobile Betriebssysteme wie iOS und Android zu erstellen, indem es die Programmiersprache JavaScript in Kombination mit nativen UI-Elementen nutzt. 
+React Native ist ein plattformübergreifendes Framework zur Entwicklung mobiler Anwendungen, das von Meta Platforms (ehemals Facebook) und der Open-Source-Community entwickelt wird. Es ermöglicht, Anwendungen für verschiedene mobile Betriebssysteme wie iOS und Android zu erstellen, indem es die Programmiersprache JavaScript in Kombination mit nativen UI-Elementen nutzt.
 
-Im Gegensatz zu klassischen nativen Entwicklungsansätzen, bei denen separate Codebasen für unterschiedliche Betriebssysteme notwendig sind, verfolgt React Native den Ansatz einer gemeinsamen Codebasis. Dabei werden Benutzeroberflächen nicht als Webview-Elemente gerendert, sondern über native Komponenten dargestellt, sodass die resultierenden Anwendungen sich in Look and Feel deutlich näher an nativen Apps orientieren. 
+Im Gegensatz zu klassischen nativen Entwicklungsansätzen, bei denen separate Codebasen für unterschiedliche Betriebssysteme notwendig sind, verfolgt React Native den Ansatz einer gemeinsamen Codebasis. Dabei werden Benutzeroberflächen nicht als Webview-Elemente gerendert, sondern über native Komponenten dargestellt, sodass die resultierenden Anwendungen sich in Look and Feel deutlich näher an nativen Apps orientieren.
 
 React Native basiert auf dem populären JavaScript-Framework React, das ursprünglich für die Entwicklung von Benutzeroberflächen im Web entwickelt wurde. Die Integration dieser Technologie ermöglicht es Entwicklern, UI-Komponenten modular zu strukturieren und wiederverwendbar zu machen, was die Wartung und Weiterentwicklung von Anwendungen erleichtert.
 
 Ein technisches Charakteristikum von React Native ist der Einsatz der JavaScriptCore-Laufzeit sowie von Babel-Transpilern, die moderne JavaScript-Funktionen (z. B. ES6-Features wie Arrow-Funktionen oder async/await) unterstützen und zugleich die Kompatibilität mit unterschiedlichen Zielplattformen sicherstellen. Dadurch können Entwickler aktuelle Sprachstandards verwenden, ohne auf traditionelle plattformspezifische Sprachen wie Swift (für iOS) oder Kotlin/Java (für Android) angewiesen zu sein.
 
 \subsection{Backend-Technologien}
-\subsubsection{APIs}
-Quellenangabe: "https://www.talend.com/de/resources/was-ist-eine-api/"
 
-APIs (Application Programming Interfaces) sind Programmierschnittstellen, die es unterschiedlichen Softwaresystemen ermöglichen, miteinander zu kommunizieren. Sie definieren, wie Anfragen gestellt und wie Daten oder Funktionen zwischen Anwendungen ausgetauscht werden können, ohne dass die internen Abläufe der beteiligten Systeme bekannt sein müssen. 
+\subsubsection{APIs}
+\textbf{Quellenangabe:} [https://www.talend.com/de/resources/was-ist-eine-api/]
+
+APIs (Application Programming Interfaces) sind Programmierschnittstellen, die es unterschiedlichen Softwaresystemen ermöglichen, miteinander zu kommunizieren. Sie definieren, wie Anfragen gestellt und wie Daten oder Funktionen zwischen Anwendungen ausgetauscht werden können, ohne dass die internen Abläufe der beteiligten Systeme bekannt sein müssen.
 
 Eine API fungiert dabei als Vermittlungsschicht zwischen verschiedenen Softwarekomponenten. Sie legt fest, welche Funktionen oder Daten zur Verfügung stehen und in welcher Form diese genutzt werden dürfen. Durch diese klar definierten Schnittstellen wird eine strukturierte und kontrollierte Interaktion zwischen Frontend- und Backend-Systemen ermöglicht.
 
 In der Softwareentwicklung bilden APIs eine wesentliche Grundlage für den Aufbau modularer Systeme. Sie unterstützen die Trennung von Zuständigkeiten zwischen einzelnen Systemkomponenten und tragen zur Wartbarkeit sowie Erweiterbarkeit von Anwendungen bei.
+
 \subsubsection{Datenbanken}
-Quellenangabe: "https://www.ibm.com/think/topics/database"
+\textbf{Quellenangabe:} [https://www.ibm.com/think/topics/database]
 
 Datenbanken sind digitale Speichersysteme zur organisierten Verwaltung von Informationen. Sie dienen dazu, große Mengen strukturierter und unstrukturierter Daten so zu speichern, dass Anwendungen, Benutzer und Automatisierungsprozesse effizient darauf zugreifen, diese verwalten und aktualisieren können. Eine Datenbank besteht dabei aus einem Repository zur Speicherung der Daten sowie aus Software-Komponenten, die den Zugriff, die Strukturierung und die Sicherheit dieser Daten steuern.
 
@@ -44,24 +48,173 @@ Dabei umfasst der Begriff „Datenbank“ nicht nur die gespeicherten Daten selb
 
 Datenbanken werden in vielfältigen Kontexten verwendet und sind integraler Bestandteil zahlreicher Softwarelösungen, da sie die grundlegende Datenverwaltung für Anwendungen unterstützen. Ohne Datenbanken wäre die zentrale Verwaltung großer Informationsmengen sowie deren strukturierter Zugriff, wie er für Web-Anwendungen, mobile Anwendungen und Backend-Systeme heute notwendig ist, nicht realisierbar.
 
-\subsubsection{Serverless vs. klassisches Backend}
+\subsubsection{Backend-as-a-Service (BaaS)}
+\textbf{Quellenangabe:} [https://medium.com/@anshuldevx/overview-of-supabase-backend-as-a-service-platform-e192da9a369c]
+
+Backend-as-a-Service (BaaS) bezeichnet ein cloudbasiertes Backend-Plattformmodell, das Entwicklungswerkzeuge und Dienste bereitstellt, um Backend-Funktionalitäten für Anwendungen schnell und ohne eigenen Serveraufwand bereitzustellen. Im Mittelpunkt dieses Modells steht die Bereitstellung einer Infrastruktur, die typische Backend-Aufgaben übernimmt, wie etwa Datenverwaltung, Authentifizierung, API-Generierung und weitere Dienste, ohne dass Entwickler diese Komponenten selbst implementieren müssen.
+
+Ein Beispiel für eine solche Plattform ist Supabase, eine Open-Source-BaaS-Lösung, die auf einer PostgreSQL-Datenbank basiert und Werkzeuge zur Backend-Entwicklung zusammenführt. Supabase stellt Entwicklern eine Reihe von integrierten Tools zur Verfügung, darunter:
+
+\begin{itemize}
+\item \textbf{PostgreSQL-Datenbank:} Als zentrales Speichersystem bildet die relationale PostgreSQL-Datenbank den Kern von Supabase und dient zur strukturierten Verwaltung von Anwendungsdaten.
+\item \textbf{Studio (Dashboard):} Ein offenes Dashboard, das die Verwaltung der Datenbankservices und Projekte ermöglicht.
+\item \textbf{Authentifizierungsdienst (GoTrue):} Eine API-basierte Komponente zur Benutzerverwaltung und zur Ausstellung von Zugangstoken.
+\item \textbf{Automatisch generierte APIs (PostgREST):} Supabase erzeugt aus der Datenbank heraus RESTful-APIs, die die Interaktion mit Daten über standardisierte Schnittstellen erlauben.
+\item \textbf{Realtime-Funktionalität:} Diensten zur Verwaltung von Echtzeit-Datenübertragungen und -Präsenz mittels skalierbarer WebSocket-Technologien.
+\item \textbf{Speicher-API:} Ein Service zur Verwaltung großer Dateien und Objekte.
+\item \textbf{Edge Functions (Deno):} Eine moderne Laufzeitumgebung für serverlose Funktionen in JavaScript/TypeScript.
+\item \textbf{Datenbankmanagement-Tools:} RESTful-APIs zum Verwalten der Datenbankstruktur, Tabellen, Rollen und Abfragen.
+\item \textbf{Supavisor und API-Gateway-Komponenten:} Unterstützung für Pooling und API-Steuerung innerhalb der Cloud-Architektur.
+\end{itemize}
+
+Supabase ermöglicht es Entwicklern, Backend-Funktionalität „out of the box“ zu nutzen und so Anwendungen schnell zu entwickeln und bereitzustellen. Die Plattform unterstützt dabei verschiedene Frameworks für Web- und mobile Anwendungen, wodurch eine breite Integration mit Frontend-Technologien möglich ist.
+
+Insgesamt bietet BaaS-Plattformen wie Supabase eine abstrahierte Backend-Schicht, die vielen klassischen Backend-Aufgaben übernimmt und Entwickler von der Notwendigkeit befreit, eigene Backend-Infrastruktur manuell aufzusetzen oder zu warten.
 
 \subsection{Hosting- und Infrastrukturmodelle}
+
 \subsubsection{On-Premise, Cloud und Hybrid-Architekturen}
+\textbf{Quellenangabe:}
+https://hws-gruppe.de/on-premises-in-die-cloud-oder-doch-hybrid/ \\
+https://www.ibm.com/de-de/think/topics/hybrid-cloud-architecture
+
+Hosting- und Infrastrukturmodelle im Kontext moderner IT-Systeme beschreiben, wo und wie Rechenressourcen, Speicher und Anwendungen betrieben werden. Grundsätzlich lassen sich dabei drei zentrale Architekturansätze unterscheiden: On-Premise-Infrastrukturen, Cloud-Architekturen und Hybrid-Architekturen.
+
+Bei einer On-Premise-Architektur werden sämtliche IT-Ressourcen innerhalb des Unternehmens betrieben. Die benötigte Hardware, wie Server, Speichersysteme und Netzwerkkomponenten, befindet sich in eigenen Räumlichkeiten oder Rechenzentren und wird vollständig vom Unternehmen selbst verwaltet. Dieses Modell bietet ein hohes Maß an Kontrolle über Daten, Systeme und Sicherheitsmechanismen, ist jedoch mit erhöhtem finanziellem Aufwand für Anschaffung, Wartung und Betrieb verbunden.
+
+Cloud-Architekturen hingegen basieren auf der Bereitstellung von IT-Ressourcen durch externe Cloud-Anbieter über das Internet. Rechenleistung, Speicher und Softwaredienste werden bedarfsgerecht zur Verfügung gestellt und vom Anbieter verwaltet. Dieses Modell ermöglicht eine hohe Skalierbarkeit und Flexibilität, da Ressourcen dynamisch angepasst werden können. Zudem entfällt für Unternehmen die Notwendigkeit, eigene physische Infrastruktur in vollem Umfang zu betreiben.
+
+Hybrid-Architekturen stellen eine Kombination aus On-Premise- und Cloud-Lösungen dar. In diesem Ansatz werden bestimmte Systeme oder Daten lokal betrieben, während andere Komponenten in einer Cloud-Umgebung angesiedelt sind. Dadurch können Unternehmen sowohl die Kontrolle und Sicherheit lokaler Infrastrukturen als auch die Skalierbarkeit und Effizienz von Cloud-Diensten nutzen. Anwendungen und Daten können dabei je nach Anforderungen zwischen den Umgebungen verteilt oder integriert werden.
+
+Hybrid-Cloud-Architekturen gewinnen insbesondere im Rahmen der digitalen Transformation an Bedeutung, da sie bestehende On-Premise-Systeme mit modernen Cloud-Technologien verbinden. Sie ermöglichen eine flexible und anpassungsfähige IT-Infrastruktur, die sowohl wirtschaftliche als auch technische Vorteile vereint.
+
 \subsubsection{IaaS, PaaS, FaaS und Serverless}
-\subsubsection{Containerisierung und Orchestrierung (Docker, Kubernetes)}
+\textbf{Quellenangabe:}
+https://azure.microsoft.com/de-de/resources/cloud-computing-dictionary/what-is-iaas \\
+https://azure.microsoft.com/de-de/resources/cloud-computing-dictionary/what-is-paas \\
+https://www.ibm.com/de-de/think/topics/faas \\
+https://www.redhat.com/de/topics/cloud-native-apps/what-is-serverless
 
-\subsection{Datenmanagement}
-\subsubsection{Relationale Datenbanken vs. NoSQL}
+Infrastructure as a Service (IaaS) ist ein Cloud-Computing-Modell, bei dem grundlegende IT-Ressourcen wie Rechenleistung, Speicher und Netzwerk über das Internet bereitgestellt werden. IaaS ermöglicht es Unternehmen, IT-Infrastruktur bedarfsgerecht zu nutzen und zu skalieren, ohne in physische Hardware investieren oder diese verwalten zu müssen. Verbraucher greifen dabei über eine Webschnittstelle oder APIs auf virtualisierte Ressourcen zu und können diese flexibel konfigurieren, wodurch sich sowohl Kosten als auch Verwaltungsaufwand reduzieren lassen.
+
+Platform as a Service (PaaS) geht über die reine Bereitstellung von Infrastruktur hinaus und stellt zusätzlich eine vollständig verwaltete Entwicklungsumgebung für Anwendungen zur Verfügung. In einem PaaS-Modell übernimmt der Cloud-Provider nicht nur die zugrunde liegende Hardware und Netzwerkinfrastruktur, sondern auch Softwarekomponenten wie Laufzeitumgebungen, Middleware und Entwicklungstools. Dadurch können Entwickler Anwendungen erstellen, testen und bereitstellen, ohne sich um die Komplexität der Infrastruktur und Laufzeitumgebungen kümmern zu müssen.
+
+Function as a Service (FaaS) ist ein spezielles Cloud-Modell, bei dem einzelne Funktionen oder Code-Snippets in Reaktion auf Ereignisse ausgeführt werden, ohne dass Entwickler Server verwalten müssen. Bei FaaS wird der Code durch Ereignisse ausgelöst und skaliert automatisch entsprechend der Nachfrage. Dieses Modell abstrahiert die zugrunde liegende Infrastruktur vollständig und erlaubt es Entwicklern, applikationsspezifische Logik bereitzustellen, ohne sich um Server-Bereitstellung oder -Betrieb kümmern zu müssen.
+
+Serverless bezeichnet ein umfassenderes Cloud-Paradigma, bei dem Serververwaltung, Skalierung und Ressourcenallokation vollständig vom Cloud-Provider übernommen werden. Trotz des Namens laufen Server weiterhin im Hintergrund, sind jedoch für Entwickler unsichtbar. Beim Serverless-Computing konzentrieren sich Entwickler ausschließlich auf die Implementierung von Funktionalität, während der Provider Betriebsaufgaben wie Provisionierung, Skalierung und Wartung übernimmt. Serverless umfasst dabei nicht nur FaaS, sondern auch weitere verwaltete Dienste wie Datenbanken, APIs und ereignisgesteuerte Architekturen, die gemeinsam eine vollständig abstrahierte Laufzeitumgebung bilden.
+
+\subsubsection{Relationale Datenbanken}
+\textbf{Quellenangabe:} https://www.oracle.com/de/database/what-is-a-relational-database/
+
+Relationale Datenbanken sind ein Datenbanktyp, bei dem Daten in Form von Tabellen mit Zeilen und Spalten strukturiert gespeichert werden. Dieses Modell basiert auf dem relationalen Datenbankmodell, bei dem jede Zeile einer Tabelle einen einzelnen Datensatz mit einer eindeutigen Kennung, dem sogenannten Primärschlüssel, darstellt, und jede Spalte ein Attribut des Datensatzes beschreibt. Durch gemeinsame Spalten zwischen verschiedenen Tabellen können Relationen zwischen Datensätzen hergestellt werden, was eine konsistente und strukturierte Verbindung von Daten über mehrere Tabellen hinweg ermöglicht.
+
+Im relationalen Modell sind die logischen Datenstrukturen wie Tabellen, Ansichten und Indizes von der physischen Speicherung getrennt, wodurch die Organisation und Verwaltung der Daten unabhängig von der physischen Lage erleichtert wird. Integritätsregeln sorgen dafür, dass die Daten konsistent und fehlerfrei bleiben, etwa indem doppelte Werte in Schlüsselfeldern verhindert werden.
+
+Relationale Datenbanken sind weit verbreitet und werden in vielen Bereichen eingesetzt, beispielsweise zur Verwaltung von Bestellungen, Kundendaten oder anderen geschäftskritischen Informationen. Sie erlauben strukturierte Abfragen und Manipulationen der Daten mithilfe standardisierter Sprachen wie SQL (Structured Query Language), die auf dem relationalen Modell aufbauen.
+
 \subsubsection{Datenmodellierung und Normalisierung}
+\textbf{Quellenangabe:} https://db-engines.com/de/article/Normalisierung
+
+Die Datenmodellierung in relationalen Datenbanksystemen umfasst neben der strukturellen Abbildung von Informationsbedarfen auch die Optimierung des Datenmodells zur Vermeidung unnötiger Redundanzen. Ein zentrales Konzept in diesem Zusammenhang ist die Normalisierung, bei der das Datenmodell so gestaltet wird, dass redundante Daten möglichst vermieden und damit verbundene semantische Probleme reduziert werden. Dabei wird ein ursprünglich grob entworfenes Relationenschema durch eine Folge von Normalisierungsregeln so umgestaltet, dass die Daten konsistent und effizient gespeichert werden.
+
+Das Ziel der Normalisierung besteht primär darin, Wiederholungen gleicher Informationen innerhalb einer Datenbankstruktur zu minimieren und dadurch sogenannte Anomalien zu vermeiden. Anomalien treten insbesondere beim Einfügen, Ändern oder Löschen von Daten auf und können durch redundante Speicherung auftreten. Durch die Aufteilung eines Datenmodells in mehrere, logisch getrennte Tabellenstrukturen werden Abhängigkeiten besser kontrolliert und Redundanzen reduziert, was die Konsistenz der Daten erhöht.
+
+Im Normalisierungsprozess werden Datenstrukturen (Tabellen) schrittweise so angepasst, dass sie bestimmten Normalformen entsprechen. Üblicherweise wird dieser Prozess bis zur dritten Normalform durchgeführt, da dadurch die meisten redundanzbedingten Probleme eliminiert werden, während die Komplexität des Datenmodells in einem praktikablen Rahmen bleibt. Die Anwendung von Normalisierungsregeln stellt somit einen wichtigen Schritt bei der Modellierung relationaler Datenbanken dar und bildet die Grundlage für eine konsistente und wartbare Datenstruktur.
+
 \subsubsection{Echtzeit-Daten}
+\textbf{Quellenangabe:} https://www.medienpalast.net/glossar/begriff/real-time-data/
 
-\subsection{Skalierbarkeit und Performanceoptimierung}
+Echtzeit‑Daten (engl. „Real Time Data“) sind Informationen, die unmittelbar nach ihrer Erfassung gesammelt, verarbeitet und zur Verfügung gestellt werden. Im Gegensatz zu klassischen periodisch aktualisierten Daten, die in festen Intervallen erfasst und verarbeitet werden, zeichnen sich Echtzeit‑Daten dadurch aus, dass sie nahezu ohne Verzögerung bereitgestellt werden und sofortige Reaktionen auf Ereignisse oder Veränderungen ermöglichen. Dadurch wird es möglich, Entscheidungen auf Basis aktueller Informationen zu treffen und dynamisch auf Veränderungssituationen zu reagieren.
+
+Die Entwicklung von Echtzeit‑Daten ist eng mit der technischen Weiterentwicklung leistungsfähiger Systeme und schneller Netzwerke verbunden, die es erlauben, große Datenmengen direkt zu erfassen und nahezu in Echtzeit zu verarbeiten. Anwendungen von Echtzeit‑Daten finden sich in diversen Bereichen wie beispielsweise der Finanzbranche, wo aktuelle Marktinformationen für Handelsentscheidungen essentiell sind, oder in der Logistik, wo kontinuierliche Standortdaten zur Optimierung von Lieferprozessen genutzt werden.
+
+Technologien zur Unterstützung von Echtzeit‑Daten bestehen aus Systemen, die Datenströme kontinuierlich analysieren und verarbeiten. Dazu zählen unter anderem Cloud‑Computing‑Plattformen und spezialisierte Streaming‑Technologien, welche Latenzzeiten minimieren und die Effizienz der Datenverarbeitung steigern. Durch diese technischen Ansätze wird die schnelle Verarbeitung großer Datenströme ermöglicht, wodurch Echtzeit‑Daten in vielfältigen praktischen Kontexten nutzbar werden.
+
+
 \subsubsection{Vertikale vs. horizontale Skalierung}
-\subsubsection{Autoscaling und Lastverteilung}
-\subsubsection{Latenzoptimierung und Durchsatzsteigerung}
+\textbf{Quellenangabe:} https://www.akamai.com/de/glossary/what-is-horizontal-scaling-vs-vertical-scaling
 
-\subsection{Sicherheit und Authentifizierung}
+\textbf{Vertikale Skalierung}
+
+Vertikale Skalierung, auch als „Scaling Up“ (Skalierung nach oben) bezeichnet, beschreibt den Prozess der Erhöhung der Leistungsfähigkeit einer einzelnen Maschine. Dabei werden die Ressourcen eines bestehenden Systems erweitert, indem beispielsweise die Anzahl der CPUs, der Arbeitsspeicher oder der Speicherplatz vergrößert wird. Dadurch kann die Maschine höhere Arbeitslasten und mehr Anfragen verarbeiten, ohne dass zusätzliche Knoten in ein System eingeführt werden müssen. Vertikale Skalierung wird häufig genutzt, um innerhalb der Grenzen eines einzelnen Servers die Leistungsfähigkeit zu steigern und ist insbesondere dann sinnvoll, wenn ein einzelner Knoten den größten Teil der Arbeitslast übernimmt oder die Architektur einer Anwendung nicht für verteilte Systeme ausgelegt ist.
+
+\textbf{Horizontale Skalierung}
+
+Horizontale Skalierung, auch als „Scaling Out“ (Skalierung nach außen) bezeichnet, bezeichnet den Ansatz, zusätzliche Maschinen oder Knoten zu einem System hinzuzufügen, um die Arbeitslast über mehrere Einheiten zu verteilen. Bei diesem Modell werden weitere virtuelle Maschinen oder physische Server in einen Cluster integriert, um die Gesamtkapazität zu erhöhen. Die Lastverteilung erfolgt dabei über spezialisierte Ressourcenverwaltungs‑Software, die sicherstellt, dass Anfragen effizient auf die vorhandenen Knoten verteilt werden. Horizontale Skalierung ermöglicht es, die Systemkapazität bei Bedarf dynamisch zu erweitern, indem zusätzliche Einheiten eingefügt werden, was insbesondere in verteilten Systemen und cloud‑basierten Architekturen Anwendung findet.
+
+\subsubsection{Autoscaling und Lastverteilung}
+\textbf{Quellenangabe:} https://teamtakt.de/devops-tool-teil-1-die-bedeutung-von-lastverteilung-cdns-und-automatischem-skalieren-in-iaas/
+
+Autoscaling bezeichnet einen Mechanismus in Cloud‑ und IT‑Infrastrukturen, der es ermöglicht, Rechenressourcen automatisch an die aktuelle Systemlast anzupassen. Dabei werden bei steigender Arbeitslast zusätzliche Ressourcen bereitgestellt und bei sinkender Last wieder freigegeben, ohne dass ein manuelles Eingreifen durch Administratoren erforderlich ist. Ziel des Autoscalings ist es, Leistungsfähigkeit und Effizienz der Infrastruktur dynamisch zu optimieren, indem Überlastungen vermieden und Ressourcenverschwendung reduziert werden.
+
+Lastverteilung (engl. Load Balancing) beschreibt den Prozess, eingehende Anfragen gleichmäßig auf mehrere Server oder Ressourcen zu verteilen. Durch die Verteilung der Arbeitslast auf verschiedene Knoten kann die Leistungsfähigkeit und Verfügbarkeit eines Systems gesteigert werden. Lastverteilende Komponenten analysieren den aktuellen Zustand der Server und leiten Anfragen so weiter, dass keine einzelne Ressource übermäßig belastet wird.
+
+In Kombination tragen Autoscaling und Lastverteilung dazu bei, Systeme flexibel und robust gegenüber Lastschwankungen zu machen. Während das Autoscaling die Anzahl oder Leistungsfähigkeit der Ressourcen anpasst, sorgt die Lastverteilung dafür, dass die vorhandenen Ressourcen effizient genutzt werden, indem sie die Anfragen gleichmäßig verteilt. Zusammen bilden diese Konzepte zentrale Bausteine moderner skalierbarer und hochverfügbarer IT‑Architekturen.
+
+\subsubsection{Latenzoptimierung und Durchsatzsteigerung}
+\textbf{Quellenangabe:} https://www.studysmarter.de/schule/informatik/technische-informatik/latenz-und-durchsatz/
+
+Latenz bezeichnet in der Informatik die Verzögerungszeit, die ein Datenpaket benötigt, um von einem Punkt zum anderen übertragen zu werden. Sie wird üblicherweise in Millisekunden gemessen und beeinflusst maßgeblich die Reaktionsfähigkeit von Netzwerken und Systemen, da sie die Zeitspanne zwischen Anforderung und Antwort beschreibt. Eine niedrige Latenz ist insbesondere bei interaktiven oder zeitkritischen Anwendungen wie Videokonferenzen, Online‑Spielen oder Echtzeitübertragungen entscheidend.
+
+Durchsatz definiert die Menge an Daten, die innerhalb eines bestimmten Zeitraums erfolgreich übertragen werden kann. Er wird meist in Bits pro Sekunde (bps) gemessen und gibt an, wie viel Datenvolumen ein Netzwerk oder System in einer definierten Zeitspanne verarbeiten kann. Ein hoher Durchsatz ist essenziell, um große Datenmengen effizient zu übertragen und die Leistungsfähigkeit von Netzwerken zu bewerten.
+
+Techniken zur Latenzoptimierung konzentrieren sich darauf, die Verzögerungszeiten bei der Datenübertragung zu reduzieren. Dazu gehören unter anderem der Einsatz schnellerer Übertragungswege, optimierte Routing‑Algorithmen oder die Verringerung von Verarbeitungszeiten in Netzwerkknoten. Solche Maßnahmen tragen dazu bei, die benötigte Zeit bis zur Zustellung von Datenpaketen zu verkürzen und somit die Geschwindigkeit und Reaktionsfähigkeit eines Systems zu erhöhen.
+
+Die Durchsatzsteigerung wird erreicht, indem die Effizienz der Datenübertragung erhöht wird. Faktoren wie die Netzwerkarchitektur, die verfügbare Bandbreite, die Paketgröße sowie die Leistungsfähigkeit der beteiligten Hardware beeinflussen den Durchsatz. Durch den Einsatz leistungsfähiger Hardware, effizienter Protokolle und geeigneter Übertragungsstrategien kann die Datenrate gesteigert werden, wodurch mehr Daten in kürzerer Zeit verarbeitet werden können.
+
+
 \subsubsection{Auth-Systeme}
+\textbf{Quellenangabe:} https://www.it-schulungen.com/wir-ueber-uns/wissensblog/welche-modernen-authentifizierungsmoeglichkeiten-gibt-es.html
+
+Authentifizierungssysteme sind Verfahren zur Überprüfung der Identität von Benutzern oder Systemen, bevor diesen Zugriff auf geschützte Ressourcen gewährt wird. Moderne Authentifizierungsmechanismen gehen über die klassische Passwortabfrage hinaus und beinhalten unterschiedliche Ansätze, um Sicherheit und Benutzerfreundlichkeit gleichzeitig zu erhöhen. Dabei wird oftmals eine Kombination verschiedener Techniken eingesetzt, um das Risiko unbefugter Zugriffe zu minimieren.
+
+\textbf{Multi-Faktor-Authentifizierung (MFA):}  
+Ein zentraler Ansatz moderner Authentifizierung ist die Multi-Faktor-Authentifizierung, bei der mindestens zwei unabhängige Faktoren zur Identitätsprüfung herangezogen werden. Diese Faktoren lassen sich üblicherweise in drei Kategorien einteilen:
+
+\begin{itemize}
+    \item Wissen (z.\,B. Passwort oder PIN)
+    \item Besitz (z.\,B. Smartphone oder Hardware-Token)
+    \item Sein (biometrische Merkmale wie Fingerabdruck oder Gesichtserkennung)
+\end{itemize}
+
+Durch die Kombination dieser Faktoren wird die Sicherheit gegenüber einem einzelnen Faktor wie einem Passwort deutlich erhöht, da ein Angreifer mehrere unabhängige Sicherheitsmerkmale überwinden müsste.
+
+\textbf{Biometrische Authentifizierung:}  
+Die biometrische Authentifizierung nutzt einzigartige körperliche Merkmale zur Identifikation eines Benutzers. Zu den gängigen Verfahren zählen Fingerabdruckscanner, Gesichtserkennung, Iris- oder Retina-Scans sowie Stimmerkennung. Diese Methoden gelten aufgrund ihrer individuellen Eigenschaften als schwer zu fälschen und bieten einen zusätzlichen Sicherheitsgrad, insbesondere in mobilen oder gerätebasierten Systemen.
+
+\textbf{Einmalpasswort (OTP):}  
+Weitere Methoden umfassen die Authentifizierung mittels Einmalpasswort, bei der zeitlich begrenzte Codes verwendet werden, die z.\,B. durch Software-Token, SMS oder spezielle Hardware-Token generiert werden. Diese Verfahren kommen häufig als zusätzliche Sicherheitsstufe in Kombination mit anderen Faktoren zum Einsatz.
+
+\textbf{Zertifikatsbasierte Authentifizierung:}  
+Digitale Zertifikate, die von vertrauenswürdigen Zertifizierungsstellen ausgestellt werden, bestätigen die Identität eines Benutzers oder Geräts. Dies findet insbesondere im Unternehmenskontext Anwendung, beispielsweise zur Absicherung von Netzwerkzugängen oder VPN-Verbindungen.
+
+\textbf{FIDO2 und WebAuthn:}  
+Moderne Standards wie FIDO2 und WebAuthn ermöglichen passwortlose Authentifizierungsprozesse auf Basis von Public-Key-Kryptographie. Benutzer können sich damit sicher anmelden, ohne traditionelle Passwörter zu verwenden, indem kryptografische Schlüsselpaare genutzt werden.
+
+\textbf{Social Login:}  
+Die Authentifizierung über soziale Netzwerke wie Google, Facebook oder LinkedIn erlaubt Benutzern, bestehende Identitäten zur Anmeldung zu nutzen. Dies vereinfacht den Anmeldeprozess, da keine neuen Zugangsdaten erstellt werden müssen.
+
+\textbf{Kontext- und risikobasierte Authentifizierung:}  
+Moderne Authentifizierungssysteme können zudem Informationen über Standort, Gerätetyp oder Benutzerverhalten berücksichtigen, um Zugriffsrisiken zu bewerten. Dadurch lassen sich adaptive Sicherheitsmaßnahmen implementieren, die je nach Kontext unterschiedliche Authentifizierungsanforderungen stellen.
+
 \subsubsection{Verschlüsselung}
+\textbf{Quellenangabe:} https://www.kaspersky.de/resource-center/definitions/encryption
+
+Verschlüsselung bezeichnet den Vorgang, bei dem Daten mithilfe eines Algorithmus in eine codierte Form umgewandelt werden, sodass sie für Unbefugte nicht mehr lesbar sind. Dieser Prozess hat zum Ziel, die Vertraulichkeit und Integrität von Informationen zu gewährleisten, indem nur autorisierte Parteien mit dem passenden Schlüssel die verschlüsselten Daten wieder in ihre ursprüngliche Form zurückverwandeln können. Verschlüsselung ist ein grundlegender Bestandteil moderner Datensicherheit und wird sowohl beim Speichern als auch bei der Übertragung sensibler Informationen angewendet.
+
+Bei der Verschlüsselung werden lesbare Daten (Klartext) in einen unlesbaren Chiffretext überführt. Diese Umwandlung erfolgt mithilfe eines kryptografischen Schlüssels, der in Verbindung mit dem gewählten Algorithmus bestimmt, wie die Umwandlung stattfindet. Je komplexer der Schlüssel und der Algorithmus gestaltet sind, desto schwieriger ist es für unbefugte Dritte, den Chiffretext zu entschlüsseln.
+
+Es existieren unterschiedliche Verschlüsselungsverfahren, die je nach Anwendungsfall eingesetzt werden können. Zu den grundlegenden Unterscheidungen gehören symmetrische Verfahren, bei denen derselbe Schlüssel sowohl für die Verschlüsselung als auch für die Entschlüsselung verwendet wird, und asymmetrische Verfahren, bei denen ein Schlüssel zur Verschlüsselung und ein anderer Schlüssel zur Entschlüsselung zum Einsatz kommt. Beide Verfahren spielen eine zentrale Rolle bei der Absicherung digitaler Kommunikation.
+
+Verschlüsselung wird in vielen Bereichen eingesetzt, um Daten vor unbefugtem Zugriff zu schützen, etwa bei der Sicherung von Nachrichtenübertragungen, dem Schutz gespeicherter personenbezogener Daten oder der Absicherung von Online‑Transaktionen. Durch die Anwendung geeigneter Verschlüsselungstechniken wird sichergestellt, dass selbst bei einem Abfangen der Daten durch Dritte die Informationen nicht ohne Wissen über den Schlüssel verständlich sind.
+
 \subsubsection{Datenschutz}
+\textbf{Quellenangabe:} https://www.onlinesicherheit.gv.at/Services/Technologie-Schwerpunkte/Mobile-Apps/Mobile-Apps-und-Informationspflichten.html
+
+Datenschutz bezeichnet den Schutz personenbezogener Daten vor unbefugtem Zugriff, Missbrauch oder Verlust. Ziel ist es, die Privatsphäre von Personen zu wahren und sicherzustellen, dass Informationen nur in zulässiger Weise verarbeitet werden. Im digitalen Kontext betrifft Datenschutz insbesondere die Erhebung, Speicherung, Verarbeitung und Übertragung von Daten durch Anwendungen, Dienste oder Organisationen.
+
+Für mobile Apps bedeutet Datenschutz, dass Nutzer über Art, Umfang und Zweck der Datenverarbeitung informiert werden müssen. Dazu gehören unter anderem Hinweise darauf, welche Daten gesammelt werden, wie lange sie gespeichert werden und wer Zugriff darauf hat. Transparenz und rechtliche Vorgaben, wie sie in der Datenschutz-Grundverordnung (DSGVO) festgelegt sind, bilden die Grundlage für vertrauenswürdige Anwendungen.
+
+Mobile Anwendungen müssen geeignete technische und organisatorische Maßnahmen implementieren, um die Sicherheit der Daten zu gewährleisten. Dazu zählen Verschlüsselung, Zugriffsbeschränkungen, Anonymisierung oder Pseudonymisierung, um sicherzustellen, dass personenbezogene Informationen vor Missbrauch geschützt sind. Datenschutz umfasst somit sowohl die rechtlichen Rahmenbedingungen als auch die praktischen Maßnahmen zur Sicherung sensibler Daten.
+
+
