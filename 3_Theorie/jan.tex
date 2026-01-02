@@ -9,8 +9,7 @@
 Wenn man sich dazu entscheidet eine mobile Applikation zu entwickeln, muss man sich zuerst die Frage stellen,
 auf welchen Plattformen die App laufen soll. Die beiden dominierenden Betriebssysteme im mobilen App Bereich sind 
 iOS von Apple und Android von Google. Diese entscheidung hat nicht nur Auswirkungen auf die technische Umsetzung,
-sondern auch auf das Design, die Verfügbarkeit und die Monetarisierungsmöglichkeiten der App.
-
+sondern auch auf das Design, die Verfügbarkeit und die Monetarisierungsmöglichkeiten der App. 
 \vspace{0.5em}
 
 \textbf{iOS}\\
@@ -19,8 +18,11 @@ Es ist speziell für Touch-Bedienung und intuitive Nutzung konzipiert und bekann
 Benutzeroberfläche und die nahtlose Integration ins Apple-Ökosystem. Technisch basiert iOS auf einem Unix-ähnlichen System-Kernel 
 namens Darwin, was eine solide, stabile Basis für moderne mobile Anwendungen schafft. Da Apple Hard- und Software eng verzahnt und 
 die Plattform stark kontrolliert, können Updates, Sicherheitsmechanismen und Apple-Dienste über alle unterstützten Geräte sehr einheitlich 
-bereitgestellt werden.
+bereitgestellt werden. Um eine Applikation für iOS geräte verfügbar zu machen, muss diese über den Apple App Store vertrieben werden,
+wobei strenge Richtlinien und Prüfprozesse sicherstellen, dass nur qualitativ hochwertige und sichere Apps zugelassen werden. Außerdem braucht man 
+eine Apple Developer Lizenz, um Apps im App Store veröffentlichen zu können.
 
+\url{https://www.ionos.at/digitalguide/websites/web-entwicklung/die-eigene-app-entwickeln-eine-ios-app-veroeffentlichen/}
 \texttt{https://www.it-schulungen.com/wir-ueber-uns/wissensblog/was-ist-ios.html }
 \texttt{https://www.computerweekly.com/de/definition/Apple-iOS }
 
@@ -30,8 +32,12 @@ Android ist ein Linux-basiertes, mobiles Betriebssystem von Google, das hauptsä
 alle System- und Benutzerkomponenten umfasst, also das Linux-Kernel-Betriebssystem, die grafische Oberfläche und die nutzbaren Apps. Android 
 wurde unter der Apache-Open-Source-Lizenz veröffentlicht, was Herstellern und Entwicklern erlaubt, die Software anzupassen oder eigene Varianten 
 zu bauen. Obwohl die Basis offen ist, enthalten die meisten Geräte zusätzliche proprietäre Programme wie Google-Apps, die vorinstalliert sind. 
-Dadurch ist Android heute das am weitesten verbreitete mobile Betriebssystem weltweit.
+Dadurch ist Android heute das am weitesten verbreitete mobile Betriebssystem weltweit. Um eine Applikation für Android-Geräte verfügbar zu machen, 
+wird diese in der Regel über den Google Play Store vertrieben. Auch hier gibt es Richtlinien und Prüfverfahren, die sicherstellen sollen, dass nur 
+funktionierende und sichere Apps veröffentlicht werden. Zusätzlich benötigt man ein Google Developer-Konto, um Anwendungen im Play Store 
+bereitstellen zu können.
 
+\url{https://www.ionos.at/digitalguide/websites/web-entwicklung/die-eigene-app-entwickeln-android-app-veroeffentlichen/}
 \verb|https://www.vodafone.de/featured/smartphones-tablets/was-ist-android-das-betriebssystem-von-google-im-check/#/|
 
 \vspace{0.5em}
@@ -226,13 +232,127 @@ Fähigkeiten und Einschränkungen direkt in den Designprozess und stellen damit 
 
 
 % --------------------------------------------------
+\vspace{0.5em}
+
 \subsubsection{UI/UX-Design \& Nutzererlebnis}
 
-\textbf{Zielgruppenanalyse \& User Personas}\\
-Zur Entwicklung einer nutzerzentrierten App wurden Zielgruppen analysiert und typische User Personas definiert.
+\textbf{Zielgruppenanalyse \& Personas}\\
+Eine zielgerichtete Kommunikation und ein passgenaues Angebot setzen voraus, dass klar ist, wer überhaupt angesprochen werden soll und warum 
+diese Personen ein Produkt oder eine Dienstleistung nutzen würden. Genau hier setzt die Zielgruppenanalyse an. Sie ist ein strukturierter Prozess,
+um potenzielle und bestehende Nutzer besser zu verstehen und daraus konkrete Entscheidungen für Content, Design, Funktionen,
+Marketing und Produktstrategie abzuleiten. In digitalen Projekten bildet sie damit eine zentrale 
+Grundlage für nutzerorientierte Entwicklung und eine konsistente Markenkommunikation. \\
 
-\textbf{User Journey \& Use-Cases}\\
-Die User Journey beschreibt die Interaktionen der Nutzer mit der App und dient als Grundlage für eine intuitive Bedienung.
+Eine Zielgruppe beschreibt eine Gruppe von Menschen, die hinsichtlich bestimmter Merkmale wie Alter, Bedürfnisse, Verhalten und
+Budget ausreichend ähnlich sind, um mit gezielten Maßnahmen angesprochen werden zu können. Die Zielgruppe umfasst dabei nicht nur bereits bestehende 
+Kunden, sondern auch potenzielle Nutzer, die prinzipiell Interesse am Angebot haben könnten. \\
+
+Die Zielgruppenanalyse umfasst alle Aktivitäten, die dazu dienen, diese Gruppe genauer zu beschreiben. Dabei geht es nicht nur um „harte Fakten“ 
+wie demografische Daten, sondern vor allem um die Frage: Welche Bedürfnisse, Motive, Barrieren und Erwartungen bestimmen Entscheidungen und 
+Verhalten? Ziel ist es, ein belastbares Verständnis zu gewinnen, um Maßnahmen nicht nach Bauchgefühl zu planen, sondern zielgerichtet auszurichten.\\
+
+Ein wichtiges Ergebnis dieses Prozesses ist häufig die Erstellung von Personas. Eine Persona ist eine fiktive, aber datenbasierte Modellperson, die
+typische Merkmale, Ziele und Herausforderungen einer Teilgruppe repräsentiert. Dabei wird unterschieden:
+\begin{itemize}
+    \item Buyer Persona: Fokus auf Kauf- und Entscheidungsprozesse (z. B. Budget, Entscheidungskriterien, Einflussfaktoren).
+    \item User Persona: Fokus auf Nutzung und Interaktion (z. B. Ziele bei der Nutzung, Bedienkontext, digitale Kompetenz, typische Aufgaben).
+\end{itemize}
+In der Praxis ergänzen sich beide. Während die Buyer Persona stärker Marketing und Vertrieb unterstützt, liefert die User Persona wertvolle Grundlagen für UX, 
+Informationsarchitektur und Feature-Entscheidungen. \\
+
+Ohne Zielgruppenanalyse besteht das Risiko, dass Produkte, Inhalte oder Kommunikationsmaßnahmen an den Bedürfnissen der Nutzer vorbeigehen. Das führt 
+häufig zu ineffizientem Ressourceneinsatz, geringer Reichweite, schwacher Conversion und langfristig zu sinkender Kundenzufriedenheit. Umgekehrt 
+ermöglicht eine fundierte Analyse, Angebote und Inhalte zielgenau zu gestalten. \\
+
+
+Gerade im digitalen Kontext ist außerdem wichtig, dass Zielgruppen sich verändern. Deshalb ist Zielgruppenanalyse kein einmaliger Schritt, sondern ein iterativer Prozess, der 
+regelmäßig überprüft und aktualisiert werden sollte. \\
+
+Um eine Zielgruppe greifbar zu machen, wird sie anhand verschiedener Kriterien segmentiert. 
+Je mehr Perspektiven kombiniert werden, desto realistischer wird das Bild der Zielgruppe.
+
+Ein zentrales Unterscheidungsmerkmal ist dabei, ob sich das Angebot an Unternehmen oder an Endkunden richtet.
+Im B2B-Bereich sind Entscheidungsprozesse häufig komplexer, da mehrere Entscheidungsträger, formalisierte Prozesse und größere Budgets involviert sind.
+B2C-Zielgruppen hingegen werden stärker durch individuelle Präferenzen, emotionale Faktoren und Markenbindung beeinflusst.
+
+Ergänzend dazu spielen geografische Kriterien eine wichtige Rolle, insbesondere bei lokalen oder sprach- und kulturabhängigen Angeboten.
+Demografische Merkmale sowie sozioökonomische Faktoren wie Bildung, Beruf oder Einkommen tragen dazu bei, die Zielgruppe weiter zu konkretisieren.
+
+Besonders tiefgehende Einblicke liefern psychografische und verhaltensorientierte Kriterien.
+Dazu zählen unter anderem Werte, Motive, Mediennutzung, Markenpräferenzen sowie das tatsächliche Nutzungs- und Kaufverhalten.
+
+Zur Datenerhebung kommen unterschiedliche Methoden zum Einsatz, darunter Kundenbefragungen, Social-Media-Monitoring, Webanalysen und die Auswertung von Keyword-Daten.
+Während quantitative Methoden vor allem aufzeigen, was passiert, liefern qualitative Methoden Erklärungen dafür, warum bestimmtes Verhalten auftritt.
+
+
+Während Zielgruppen häufig eher abstrakt bleiben, machen Personas diese Informationen handlungsorientiert. Eine Persona bündelt 
+typische Merkmale und ergänzt sie um:
+\begin{itemize}
+    \item Ziele (Was will die Person erreichen?)
+    \item Herausforderungen/Schmerzpunkte (Was hindert sie?)
+    \item Entscheidungskriterien (Warum kauft/nutzt sie etwas, oder nicht?)
+    \item Kontext der Nutzung (Wann, wo, mit welchem Gerät?)
+    \item Informations- und Medienverhalten (Wie recherchiert sie?)
+    \item Erwartung an Tonalität, Design, Vertrauen und Service
+\end{itemize}
+
+Wichtig ist: Personas sind keine Fantasiefiguren, sondern sollen auf Daten beruhen. Sie helfen Teams dabei, Entscheidungen zu treffen über themen wie
+welche Funktionen Priorität haben, welche Inhalte fehlen oder welcher Kommunikationsstil sich am besten eignet.
+\url{https://www.appinio.com/de/blog/marktforschung/zielgruppenanalyse}
+\url{https://www.webdesign-journal.de/zielgruppenanalyse/}   
+
+\vspace{0.5em}
+\textbf{User Journey}\\
+Eine User Journey beschreibt den gesamten Weg, den Nutzende durchlaufen, um mit einem Produkt oder Service ein bestimmtes Ziel zu erreichen. Dabei werden 
+alle relevanten Touchpoints, Interaktionen sowie die Emotionen und Entscheidungen der Nutzenden berücksichtigt. Ziel einer User Journey ist es, das 
+Nutzungserlebnis ganzheitlich zu verstehen und Optimierungspotenziale sichtbar zu machen, um Produkte langfristig nutzerfreundlicher und besser zu gestalten. 
+Ein optimiertes Nutzererlebnis stärkt nicht nur die Zufriedenheit, sondern auch die emotionale Bindung zur Marke. Das Ergebnis sind loyale Nutzende, 
+die das Produkt weiterempfehlen und langfristig nutzen. \vspace{0.5em}
+
+Eine User Journey Map beantwortet unter anderem folgende zentrale Fragen:
+\begin{itemize}
+    \item Welche Schritte durchlaufen Nutzende vom ersten Kontakt bis zur Zielerreichung?
+
+    \item Wie interagieren sie aktuell mit dem Produkt oder Service und wie könnte diese Interaktion idealerweise aussehen?
+
+    \item Welche Faktoren wie Emotionen, Budget, Werte, Zeitdruck oder Informationslage beeinflussen ihre Entscheidungen?
+
+    \item Wo treten Schwierigkeiten oder Frustrationen auf?
+     
+    \item Wie kann das Produkt Nutzende besser unterstützen und effizienter zum Ziel führen?
+
+    \item An welchen Stellen lässt sich das Nutzererlebnis optimieren, um eine langfristige Kundenbindung aufzubauen?
+
+    \item Wie unterscheidet sich die Nutzung zwischen verschiedenen Zielgruppen?
+\end{itemize} \vspace{0.5em}
+
+Unabhängig vom Produkt lassen sich User Journeys typischerweise in mehrere Phasen gliedern:
+\begin{itemize}
+    \item Aufmerksamkeit – Nutzende erkennen ein Bedürfnis oder Problem
+
+    \item Bewertung – verschiedene Optionen werden verglichen
+
+    \item Überlegung – eine konkrete Entscheidung wird vorbereitet
+
+    \item Einkauf/Nutzung – Kauf oder aktive Nutzung des Produkts
+     
+    \item Bindung – Nachkaufphase, Feedback, Wiederkehr und Loyalität
+\end{itemize}
+Diese Phasen sind nicht strikt linear, sondern können sich wiederholen oder überschneiden. 
+Eine positive Erfahrung in der Bindungsphase kann Nutzende erneut in die Aufmerksamkeits-Phase bringen, ein stabiler Kreislauf, 
+der für Unternehmen langfristig Gewinn bringt.
+
+Während der User Journey werden Nutzende von zahlreichen Faktoren beeinflusst, darunter persönliche Werte, Budget, Zeit, Benutzerfreundlichkeit der Platform und Servicequalität.
+Sogennante Pain Points, beschreiben stellen, an denen ein User nicht mehr eindeutig weiß was zu tun ist, sie entstehen vor allem dann, wenn Informationen fehlen, Prozesse unübersichtlich sind oder Erwartungen nicht erfüllt werden. Genau hier setzt User Journey 
+Mapping an. Diese Problemstellen werden sichtbar gemacht und gezielt adressiert. \\
+
+Als Ergebnis entsteht eine grafisch aufbereitete User Journey Map, die alle Phasen, Schritte, Touchpoints und Emotionen der Nutzenden darstellt. 
+Ergänzt wird diese durch zusätzliche Informationen wie Nutzerzitate, genutzte Kanäle oder Endgeräte. 
+Interaktive User Journey Maps ermöglichen es zudem, Inhalte flexibel ein- und auszublenden und die Analyse gezielt zu vertiefen.
+\url{https://www.usability.de/leistungen/methoden/user-journey-mapping.html}
+\url{https://mailchimp.com/de/resources/user-journey/}
+\url{https://piwikpro.de/glossar/user-journey/}
+
 
 \textbf{Informationsarchitektur \& Navigation}\\
 Eine klare Struktur und einfache Navigation sind entscheidend für eine positive User Experience.
