@@ -14,75 +14,74 @@
 \contentsline {subsection}{\numberline {2.3.2}Spezifische Forschungsfrage - Laurenz Pichler}{13}{subsection.13}%
 \contentsline {chapter}{\numberline {3}Theoretische Grundlagen}{14}{chapter.14}%
 \contentsline {section}{\numberline {3.1}App-Design \& Monetarisierungskonzepte}{14}{section.15}%
-\contentsline {subsection}{\numberline {3.1.1}Design \& technische Umsetzung der App}{14}{subsection.16}%
-\contentsline {subsubsection}{\numberline {3.1.1.1}Plattformwahl \& technische Grundlagen}{14}{subsubsection.17}%
-\contentsline {subsubsection}{\numberline {3.1.1.2}Trends \& Weiterentwicklungen im App-Design}{16}{subsubsection.18}%
-\contentsline {subsubsection}{\numberline {3.1.1.3}UI/UX-Design \& Nutzererlebnis}{19}{subsubsection.19}%
-\contentsline {subsubsection}{\numberline {3.1.1.4}Designentscheidungen im Hinblick auf Monetarisierung}{26}{subsubsection.20}%
-\contentsline {subsection}{\numberline {3.1.2}Monetarisierung von mobilen Apps}{26}{subsection.21}%
-\contentsline {subsubsection}{\numberline {3.1.2.1}Grundlagen \& Marktüberblick}{26}{subsubsection.22}%
-\contentsline {subsubsection}{\numberline {3.1.2.2}Werbung als Einnahmequelle}{26}{subsubsection.23}%
-\contentsline {subsubsection}{\numberline {3.1.2.3}Sponsoring \& Partnerschaften}{27}{subsubsection.24}%
-\contentsline {subsubsection}{\numberline {3.1.2.4}Kostenpflichtige App-Modelle}{27}{subsubsection.25}%
-\contentsline {subsubsection}{\numberline {3.1.2.5}In-App-Käufe}{27}{subsubsection.26}%
-\contentsline {subsubsection}{\numberline {3.1.2.6}Spenden \& freiwillige Unterstützung}{28}{subsubsection.27}%
-\contentsline {subsubsection}{\numberline {3.1.2.7}Vergleich \& Bewertung der Monetarisierungsstrategien}{28}{subsubsection.28}%
-\contentsline {section}{\numberline {3.2}Laurenz Ausarbeitung}{28}{section.29}%
-\contentsline {subsection}{\numberline {3.2.1}Mobile App Entwicklung}{28}{subsection.30}%
-\contentsline {subsubsection}{\numberline {3.2.1.1}Native vs. Cross-Platform Entwicklung}{28}{subsubsection.31}%
-\contentsline {subsubsection}{\numberline {3.2.1.2}React Native Framework}{29}{subsubsection.32}%
-\contentsline {subsection}{\numberline {3.2.2}Backend-Technologien}{30}{subsection.33}%
-\contentsline {subsubsection}{\numberline {3.2.2.1}APIs}{30}{subsubsection.34}%
-\contentsline {subsubsection}{\numberline {3.2.2.2}Datenbanken}{30}{subsubsection.35}%
-\contentsline {subsubsection}{\numberline {3.2.2.3}Backend-as-a-Service (BaaS)}{31}{subsubsection.36}%
-\contentsline {subsection}{\numberline {3.2.3}Hosting- und Infrastrukturmodelle}{32}{subsection.37}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}On-Premise, Cloud und Hybrid-Architekturen}{32}{subsubsection.38}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}IaaS, PaaS, FaaS und Serverless}{32}{subsubsection.39}%
-\contentsline {subsubsection}{\numberline {3.2.3.3}Relationale Datenbanken}{33}{subsubsection.40}%
-\contentsline {subsubsection}{\numberline {3.2.3.4}Datenmodellierung und Normalisierung}{34}{subsubsection.41}%
-\contentsline {subsubsection}{\numberline {3.2.3.5}Echtzeit-Daten}{34}{subsubsection.42}%
-\contentsline {subsubsection}{\numberline {3.2.3.6}Vertikale vs. horizontale Skalierung}{35}{subsubsection.43}%
-\contentsline {subsubsection}{\numberline {3.2.3.7}Autoscaling und Lastverteilung}{35}{subsubsection.44}%
-\contentsline {subsubsection}{\numberline {3.2.3.8}Latenzoptimierung und Durchsatzsteigerung}{36}{subsubsection.45}%
-\contentsline {subsubsection}{\numberline {3.2.3.9}Auth-Systeme}{37}{subsubsection.46}%
-\contentsline {subsubsection}{\numberline {3.2.3.10}Verschlüsselung}{38}{subsubsection.47}%
-\contentsline {subsubsection}{\numberline {3.2.3.11}Datenschutz}{38}{subsubsection.48}%
-\contentsline {chapter}{\numberline {4}Dokumentation der Implementierung}{40}{chapter.49}%
-\contentsline {section}{\numberline {4.1}Grundlagen der Implementierung}{40}{section.50}%
-\contentsline {subsection}{\numberline {4.1.1}Systemumgebung}{40}{subsection.51}%
-\contentsline {subsection}{\numberline {4.1.2}Verwendete Technologien}{40}{subsection.52}%
-\contentsline {subsection}{\numberline {4.1.3}Architekturüberblick}{40}{subsection.53}%
-\contentsline {section}{\numberline {4.2}Implementierung der Funktionen}{40}{section.54}%
-\contentsline {subsection}{\numberline {4.2.1}Login und Registrierung}{40}{subsection.55}%
-\contentsline {subsection}{\numberline {4.2.2}Benutzerverwaltung}{41}{subsection.56}%
-\contentsline {subsection}{\numberline {4.2.3}Einzelspieler-Modus}{41}{subsection.57}%
-\contentsline {subsection}{\numberline {4.2.4}Mehrspieler-Modus}{41}{subsection.58}%
-\contentsline {subsection}{\numberline {4.2.5}Bestenliste}{41}{subsection.59}%
-\contentsline {subsection}{\numberline {4.2.6}Tägliches Spiel}{41}{subsection.60}%
-\contentsline {subsection}{\numberline {4.2.7}Österreichweite Spielmodi}{41}{subsection.61}%
-\contentsline {subsection}{\numberline {4.2.8}Chat mit Freunden}{42}{subsection.62}%
-\contentsline {subsection}{\numberline {4.2.9}Freundesliste und Anfragen}{42}{subsection.63}%
-\contentsline {subsection}{\numberline {4.2.10}Profilbilder und Shop-System}{42}{subsection.64}%
-\contentsline {section}{\numberline {4.3}Datenhaltung}{42}{section.65}%
-\contentsline {section}{\numberline {4.4}Deployment}{42}{section.66}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{43}{chapter.67}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung}{43}{section.68}%
-\contentsline {section}{\numberline {5.2}Ausblick}{43}{section.69}%
-\contentsline {chapter}{\numberline {I}Literaturverzeichnis}{44}{chapter.70}%
+\contentsline {subsection}{\numberline {3.1.1}Plattformwahl \& technische Grundlagen}{14}{subsection.16}%
+\contentsline {subsection}{\numberline {3.1.2}Trends \& Weiterentwicklungen im App-Design}{16}{subsection.17}%
+\contentsline {subsection}{\numberline {3.1.3}UI/UX-Design \& Nutzererlebnis}{19}{subsection.18}%
+\contentsline {subsection}{\numberline {3.1.4}Designentscheidungen im Hinblick auf Monetarisierung}{26}{subsection.19}%
+\contentsline {section}{\numberline {3.2}Monetarisierung von mobilen Apps}{26}{section.20}%
+\contentsline {subsection}{\numberline {3.2.1}Grundlagen \& Marktüberblick}{26}{subsection.21}%
+\contentsline {subsection}{\numberline {3.2.2}Werbung als Einnahmequelle}{26}{subsection.22}%
+\contentsline {subsection}{\numberline {3.2.3}Sponsoring \& Partnerschaften}{27}{subsection.23}%
+\contentsline {subsection}{\numberline {3.2.4}Kostenpflichtige App-Modelle}{27}{subsection.24}%
+\contentsline {subsection}{\numberline {3.2.5}In-App-Käufe}{27}{subsection.25}%
+\contentsline {subsection}{\numberline {3.2.6}Spenden \& freiwillige Unterstützung}{28}{subsection.26}%
+\contentsline {subsection}{\numberline {3.2.7}Vergleich \& Bewertung der Monetarisierungsstrategien}{28}{subsection.27}%
+\contentsline {section}{\numberline {3.3}Laurenz Ausarbeitung}{28}{section.28}%
+\contentsline {subsection}{\numberline {3.3.1}Mobile App Entwicklung}{28}{subsection.29}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}Native vs. Cross-Platform Entwicklung}{28}{subsubsection.30}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}React Native Framework}{29}{subsubsection.31}%
+\contentsline {subsection}{\numberline {3.3.2}Backend-Technologien}{30}{subsection.32}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}APIs}{30}{subsubsection.33}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Datenbanken}{30}{subsubsection.34}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}Backend-as-a-Service (BaaS)}{31}{subsubsection.35}%
+\contentsline {subsection}{\numberline {3.3.3}Hosting- und Infrastrukturmodelle}{32}{subsection.36}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}On-Premise, Cloud und Hybrid-Architekturen}{32}{subsubsection.37}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}IaaS, PaaS, FaaS und Serverless}{32}{subsubsection.38}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}Relationale Datenbanken}{33}{subsubsection.39}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}Datenmodellierung und Normalisierung}{34}{subsubsection.40}%
+\contentsline {subsubsection}{\numberline {3.3.3.5}Echtzeit-Daten}{34}{subsubsection.41}%
+\contentsline {subsubsection}{\numberline {3.3.3.6}Vertikale vs. horizontale Skalierung}{35}{subsubsection.42}%
+\contentsline {subsubsection}{\numberline {3.3.3.7}Autoscaling und Lastverteilung}{35}{subsubsection.43}%
+\contentsline {subsubsection}{\numberline {3.3.3.8}Latenzoptimierung und Durchsatzsteigerung}{36}{subsubsection.44}%
+\contentsline {subsubsection}{\numberline {3.3.3.9}Auth-Systeme}{37}{subsubsection.45}%
+\contentsline {subsubsection}{\numberline {3.3.3.10}Verschlüsselung}{38}{subsubsection.46}%
+\contentsline {subsubsection}{\numberline {3.3.3.11}Datenschutz}{38}{subsubsection.47}%
+\contentsline {chapter}{\numberline {4}Dokumentation der Implementierung}{40}{chapter.48}%
+\contentsline {section}{\numberline {4.1}Grundlagen der Implementierung}{40}{section.49}%
+\contentsline {subsection}{\numberline {4.1.1}Systemumgebung}{40}{subsection.50}%
+\contentsline {subsection}{\numberline {4.1.2}Verwendete Technologien}{40}{subsection.51}%
+\contentsline {subsection}{\numberline {4.1.3}Architekturüberblick}{40}{subsection.52}%
+\contentsline {section}{\numberline {4.2}Implementierung der Funktionen}{40}{section.53}%
+\contentsline {subsection}{\numberline {4.2.1}Login und Registrierung}{40}{subsection.54}%
+\contentsline {subsection}{\numberline {4.2.2}Benutzerverwaltung}{41}{subsection.55}%
+\contentsline {subsection}{\numberline {4.2.3}Einzelspieler-Modus}{41}{subsection.56}%
+\contentsline {subsection}{\numberline {4.2.4}Mehrspieler-Modus}{41}{subsection.57}%
+\contentsline {subsection}{\numberline {4.2.5}Bestenliste}{41}{subsection.58}%
+\contentsline {subsection}{\numberline {4.2.6}Tägliches Spiel}{41}{subsection.59}%
+\contentsline {subsection}{\numberline {4.2.7}Österreichweite Spielmodi}{41}{subsection.60}%
+\contentsline {subsection}{\numberline {4.2.8}Chat mit Freunden}{42}{subsection.61}%
+\contentsline {subsection}{\numberline {4.2.9}Freundesliste und Anfragen}{42}{subsection.62}%
+\contentsline {subsection}{\numberline {4.2.10}Profilbilder und Shop-System}{42}{subsection.63}%
+\contentsline {section}{\numberline {4.3}Datenhaltung}{42}{section.64}%
+\contentsline {section}{\numberline {4.4}Deployment}{42}{section.65}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{43}{chapter.66}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung}{43}{section.67}%
+\contentsline {section}{\numberline {5.2}Ausblick}{43}{section.68}%
+\contentsline {chapter}{\numberline {I}Literaturverzeichnis}{44}{chapter.69}%
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{45}{chapter.71}%
-\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{46}{chapter.72}%
-\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{47}{chapter.73}%
-\contentsline {chapter}{\numberline {A}Anhang}{48}{chapter.74}%
-\contentsline {section}{\numberline {A.1}Arbeitsteilung}{48}{section.75}%
-\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{48}{section.76}%
-\contentsline {section}{\numberline {A.3}Projekttagebücher}{48}{section.77}%
-\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Max Mustermann}{48}{subsection.78}%
-\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Mex Musterjuan}{48}{subsection.79}%
-\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{49}{section.80}%
-\contentsline {section}{\numberline {A.5}Besprechungsprotokolle 1}{51}{section.81}%
-\contentsline {section}{\numberline {A.6}Datenträgerbeschreibung}{52}{section.82}%
+\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{45}{chapter.70}%
+\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{46}{chapter.71}%
+\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{47}{chapter.72}%
+\contentsline {chapter}{\numberline {A}Anhang}{48}{chapter.73}%
+\contentsline {section}{\numberline {A.1}Arbeitsteilung}{48}{section.74}%
+\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{48}{section.75}%
+\contentsline {section}{\numberline {A.3}Projekttagebücher}{48}{section.76}%
+\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Max Mustermann}{48}{subsection.77}%
+\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Mex Musterjuan}{48}{subsection.78}%
+\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{49}{section.79}%
+\contentsline {section}{\numberline {A.5}Besprechungsprotokolle 1}{51}{section.80}%
+\contentsline {section}{\numberline {A.6}Datenträgerbeschreibung}{52}{section.81}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
