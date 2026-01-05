@@ -169,8 +169,8 @@ auszulassen.
 
 \vspace{0.5em}
 \textbf{Assistive Technologien als Grundlage}\\
-Viele Nutzer:innen greifen auf assistive Technologien zurück, die fehlende oder eingeschränkte Fähigkeiten kompensieren. Dazu zählen Screenreader
-, Vergrößerungstools, externe Eingabegeräte oder Schaltersteuerungen. Besonders Screenreader sind entscheidend, weil 
+Viele Nutzer:innen greifen auf assistive Technologien zurück, die fehlende oder eingeschränkte Fähigkeiten kompensieren. Dazu zählen Screenreader, Vergrößerungstools,externe Eingabegeräte 
+oder Schaltersteuerungen. Besonders Screenreader sind entscheidend, weil 
 sie Inhalte nicht „sehen“, sondern sie anhand von Struktur, Beschriftungen und semantischen Rollen interpretieren. Für die Praxis heißt das, eine 
 Oberfläche kann optisch ansprechend wirken, aber wenn Überschriften fehlen, Buttons nicht sinnvoll beschriftet sind oder die Reihenfolge im Code nicht zur 
 visuellen Logik passt, wird die Bedienung für Screenreader-Nutzer unmöglich.
@@ -180,9 +180,8 @@ visuellen Logik passt, wird die Bedienung für Screenreader-Nutzer unmöglich.
 Ein Kernpunkt barrierefreier Gestaltung ist eine klare Informationshierarchie. Nutzer müssen schnell erkennen können, wo sie sind und was die wichtigsten 
 Aktionen sind. Dabei ist nicht nur das visuelle Layout relevant, sondern auch die Reihenfolge, in der Inhalte technisch angeordnet sind. Screenreader lesen 
 Inhalte typischerweise in einer top-down Reihenfolge aus dem Markup. Deshalb ist die Zusammenarbeit zwischen Design und Development wichtig, damit visuelle 
-Hierarchie, DOM-Reihenfolge und Fokuslogik zusammenpassen. Zusätzlich braucht es eine nachvollziehbare Fokusführung für Tastatur- oder Controller-Navigation: 
-Elemente sollen in einer logischen Reihenfolge erreichbar sein, Gruppierungen sollen verständlich sein, und Zustandswechsel sollten den Fokus nicht „verlieren“.
-
+Hierarchie, DOM-Reihenfolge und Fokuslogik zusammenpassen. Elemente sollen
+in einer logischen Reihenfolge erreichbar sein und Gruppierungen sollen verständlich sein, damit Nutzer sich schnell orientieren können. 
 \vspace{0.5em}
 \textbf{Wahrnehmbarkeit: Kontrast, Farbe und Typografie}\\
 Damit Inhalte für möglichst viele Menschen wahrnehmbar sind, spielen Kontrast und Lesbarkeit eine zentrale Rolle. Ausreichende Kontraste zwischen Text 
@@ -214,20 +213,6 @@ betroffenen Nutzer:innen extrem wertvoll, weil sie reale Nutzungsmuster sichtbar
 \url{https://m2.material.io/design/usability/accessibility.html#implementing-accessibility}
 \url{https://www.uxmatters.com/mt/archives/2024/05/designing-mobile-apps-with-accessibility-in-mind.php}
 
-\vspace{0.5em}
-\textbf{Personalisierung \& Nutzerzentrierung}\\
-Personalisierung und Nutzerzentrierung zählen zu den zentralen Prinzipien modernen App- und Webdesigns. In einem stark gesättigten digitalen Markt erwarten Nutzer 
-nicht nur funktionierende Anwendungen, sondern Lösungen, die sich an ihre individuellen Bedürfnisse, Präferenzen und Nutzungskontexte anpassen. Nutzerzentriertes 
-Design stellt den Menschen in den Mittelpunkt des Gestaltungsprozesses und berücksichtigt dessen Ziele, Fähigkeiten, Einschränkungen und Erwartungen. 
-Personalisierung baut darauf auf, indem Inhalte, Darstellungsformen oder Interaktionsweisen dynamisch angepasst werden, um eine möglichst angenehme und 
-effiziente User Experience zu ermöglichen.
-
-Funktionen wie Dark und Light Mode ermöglichen es Nutzern, das visuelle Erscheinungsbild an persönliche Vorlieben, Lichtverhältnisse oder ergonomische Bedürfnisse anzupassen. 
-Gleichzeitig sorgen Responsive und Adaptive Design dafür, dass Inhalte unabhängig von Endgerät, Bildschirmgröße oder Eingabemethode konsistent, verständlich und effizient nutzbar 
-bleiben. Ergänzend erweitert Accessibility das Konzept der Nutzerzentrierung, indem auch Menschen mit unterschiedlichen körperlichen, sensorischen oder kognitiven Voraussetzungen 
-gleichwertig berücksichtigt werden. Maßnahmen wie Screenreader-Unterstützung, ausreichende Kontraste, skalierbare Schriftgrößen und angemessen große Touch Targets integrieren individuelle 
-Fähigkeiten und Einschränkungen direkt in den Designprozess und stellen damit eine konsequente Form nutzerzentrierter Gestaltung dar.
-
 
 % --------------------------------------------------
 \vspace{0.5em}
@@ -235,53 +220,61 @@ Fähigkeiten und Einschränkungen direkt in den Designprozess und stellen damit 
 \subsection{UI/UX-Design \& Nutzererlebnis}
 
 \textbf{Zielgruppenanalyse \& Personas}\\
-Eine zielgerichtete Kommunikation und ein passgenaues Angebot setzen voraus, dass klar ist, wer überhaupt angesprochen werden soll und warum 
+Eine zielgerichtete Kommunikation und ein passgenaues Angebot setzen voraus, dass klar ist, wer überhaupt angesprochen werden soll und warum
 diese Personen ein Produkt oder eine Dienstleistung nutzen würden. Genau hier setzt die Zielgruppenanalyse an. Sie ist ein strukturierter Prozess,
 um potenzielle und bestehende Nutzer besser zu verstehen und daraus konkrete Entscheidungen für Content, Design, Funktionen,
-Marketing und Produktstrategie abzuleiten. In digitalen Projekten bildet sie damit eine zentrale 
+Marketing und Produktstrategie abzuleiten. In digitalen Projekten bildet sie damit eine zentrale
 Grundlage für nutzerorientierte Entwicklung und eine konsistente Markenkommunikation. \\
 
+\textbf{Begriff und Bedeutung der Zielgruppe}\\
 Eine Zielgruppe beschreibt eine Gruppe von Menschen, die hinsichtlich bestimmter Merkmale wie Alter, Bedürfnisse, Verhalten und
-Budget ausreichend ähnlich sind, um mit gezielten Maßnahmen angesprochen werden zu können. Die Zielgruppe umfasst dabei nicht nur bereits bestehende 
+Budget ausreichend ähnlich sind, um mit gezielten Maßnahmen angesprochen werden zu können. Die Zielgruppe umfasst dabei nicht nur bereits bestehende
 Kunden, sondern auch potenzielle Nutzer, die prinzipiell Interesse am Angebot haben könnten. \\
 
-Die Zielgruppenanalyse umfasst alle Aktivitäten, die dazu dienen, diese Gruppe genauer zu beschreiben. Dabei geht es nicht nur um „harte Fakten“ 
-wie demografische Daten, sondern vor allem um die Frage: Welche Bedürfnisse, Motive, Barrieren und Erwartungen bestimmen Entscheidungen und 
+\textbf{Ziel und Inhalt der Zielgruppenanalyse}\\
+Die Zielgruppenanalyse umfasst alle Aktivitäten, die dazu dienen, diese Gruppe genauer zu beschreiben. Dabei geht es nicht nur um „harte Fakten“
+wie demografische Daten, sondern vor allem um die Frage: Welche Bedürfnisse, Motive, Barrieren und Erwartungen bestimmen Entscheidungen und
 Verhalten? Ziel ist es, ein belastbares Verständnis zu gewinnen, um Maßnahmen nicht nach Bauchgefühl zu planen, sondern zielgerichtet auszurichten.\\
 
+\textbf{Personas als Ergebnis der Zielgruppenanalyse}\\
 Ein wichtiges Ergebnis dieses Prozesses ist häufig die Erstellung von Personas. Eine Persona ist eine fiktive, aber datenbasierte Modellperson, die
 typische Merkmale, Ziele und Herausforderungen einer Teilgruppe repräsentiert. Dabei wird unterschieden:
 \begin{itemize}
-    \item Buyer Persona: Fokus auf Kauf- und Entscheidungsprozesse (z. B. Budget, Entscheidungskriterien, Einflussfaktoren).
-    \item User Persona: Fokus auf Nutzung und Interaktion (z. B. Ziele bei der Nutzung, Bedienkontext, digitale Kompetenz, typische Aufgaben).
+\item Buyer Persona: Fokus auf Kauf- und Entscheidungsprozesse (z. B. Budget, Entscheidungskriterien, Einflussfaktoren).
+\item User Persona: Fokus auf Nutzung und Interaktion (z. B. Ziele bei der Nutzung, Bedienkontext, digitale Kompetenz, typische Aufgaben).
 \end{itemize}
-In der Praxis ergänzen sich beide. Während die Buyer Persona stärker Marketing und Vertrieb unterstützt, liefert die User Persona wertvolle Grundlagen für UX, 
+In der Praxis ergänzen sich beide. Während die Buyer Persona stärker Marketing und Vertrieb unterstützt, liefert die User Persona wertvolle Grundlagen für UX,
 Informationsarchitektur und Feature-Entscheidungen. \\
 
-Ohne Zielgruppenanalyse besteht das Risiko, dass Produkte, Inhalte oder Kommunikationsmaßnahmen an den Bedürfnissen der Nutzer vorbeigehen. Das führt 
-häufig zu ineffizientem Ressourceneinsatz, geringer Reichweite, schwacher Conversion und langfristig zu sinkender Kundenzufriedenheit. Umgekehrt 
+\textbf{Risiken fehlender Zielgruppenanalyse}\\
+Ohne Zielgruppenanalyse besteht das Risiko, dass Produkte, Inhalte oder Kommunikationsmaßnahmen an den Bedürfnissen der Nutzer vorbeigehen. Das führt
+häufig zu ineffizientem Ressourceneinsatz, geringer Reichweite, schwacher Conversion und langfristig zu sinkender Kundenzufriedenheit. Umgekehrt
 ermöglicht eine fundierte Analyse, Angebote und Inhalte zielgenau zu gestalten. \\
 
-
-Gerade im digitalen Kontext ist außerdem wichtig, dass Zielgruppen sich verändern. Deshalb ist Zielgruppenanalyse kein einmaliger Schritt, sondern ein iterativer Prozess, der 
+\textbf{Zielgruppenanalyse als iterativer Prozess}\\
+Gerade im digitalen Kontext ist außerdem wichtig, dass Zielgruppen sich verändern. Deshalb ist Zielgruppenanalyse kein einmaliger Schritt, sondern ein iterativer Prozess, der
 regelmäßig überprüft und aktualisiert werden sollte. \\
 
-Um eine Zielgruppe greifbar zu machen, wird sie anhand verschiedener Kriterien segmentiert. 
+\textbf{Segmentierung von Zielgruppen}\\
+Um eine Zielgruppe greifbar zu machen, wird sie anhand verschiedener Kriterien segmentiert.
 Je mehr Perspektiven kombiniert werden, desto realistischer wird das Bild der Zielgruppe.
 
+\textbf{B2B- und B2C-Zielgruppen}\\
 Ein zentrales Unterscheidungsmerkmal ist dabei, ob sich das Angebot an Unternehmen oder an Endkunden richtet.
 Im B2B-Bereich sind Entscheidungsprozesse häufig komplexer, da mehrere Entscheidungsträger, formalisierte Prozesse und größere Budgets involviert sind.
 B2C-Zielgruppen hingegen werden stärker durch individuelle Präferenzen, emotionale Faktoren und Markenbindung beeinflusst.
 
+\textbf{Geografische, demografische und sozioökonomische Kriterien}\\
 Ergänzend dazu spielen geografische Kriterien eine wichtige Rolle, insbesondere bei lokalen oder sprach- und kulturabhängigen Angeboten.
 Demografische Merkmale sowie sozioökonomische Faktoren wie Bildung, Beruf oder Einkommen tragen dazu bei, die Zielgruppe weiter zu konkretisieren.
 
+\textbf{Psychografische und verhaltensorientierte Kriterien}\\
 Besonders tiefgehende Einblicke liefern psychografische und verhaltensorientierte Kriterien.
-Dazu zählen unter anderem Werte, Motive, Mediennutzung, Markenpräferenzen sowie das tatsächliche Nutzungs- und Kaufverhalten.
+Dazu zählen unter anderem Werte, Motive, Mediennutzung, Markenpräferenzen sowie das tatsächliche Nutzungs- und Kaufverhalten. \\
 
+\textbf{Methoden der Datenerhebung}\\
 Zur Datenerhebung kommen unterschiedliche Methoden zum Einsatz, darunter Kundenbefragungen, Social-Media-Monitoring, Webanalysen und die Auswertung von Keyword-Daten.
 Während quantitative Methoden vor allem aufzeigen, was passiert, liefern qualitative Methoden Erklärungen dafür, warum bestimmtes Verhalten auftritt.
-
 
 Während Zielgruppen häufig eher abstrakt bleiben, machen Personas diese Informationen handlungsorientiert. Eine Persona bündelt 
 typische Merkmale und ergänzt sie um:
@@ -464,13 +457,6 @@ zählen Bilder, grafische Elemente, Farben, Typografie, Layoutstrukturen sowie d
 Weißraum. Diese Elemente wirken nicht isoliert, sondern entfalten ihre Wirkung im Zusammenspiel. Ein
 konsistentes und durchdachtes visuelles Design trägt zur Stärkung der Markenidentität bei, erhöht die 
 Wiedererkennbarkeit und unterstützt eine klare Kommunikation von Inhalten.\\
-
-\textbf{Bestandteile des visuellen Designs}\\
-Ein zentraler Aspekt des visuellen Designs ist die Verbindung von Ästhetik und Benutzerfreundlichkeit. 
-Studien zeigen, dass visuell ansprechende Oberflächen als intuitiver, vertrauenswürdiger und qualitativ 
-hochwertiger wahrgenommen werden. Ästhetik beeinflusst dabei den ersten Eindruck, während Benutzerfreundlichkeit 
-sicherstellt, dass Nutzer effizient und ohne Irritation mit dem Produkt interagieren können. Visuelles Design 
-steuert somit Erwartungen, Emotionen und das Engagement der Nutzer.\\
 
 \textbf{Zentrale Gestaltungselemente}\\
 Besondere Bedeutung kommt den einzelnen Gestaltungselementen zu. Bilder und grafische Elemente dienen nicht 
