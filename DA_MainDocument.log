@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.6)  5 JAN 2026 16:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.6)  6 JAN 2026 20:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1360,10 +1360,10 @@ Overfull \hbox (176.1059pt too wide) in paragraph at lines 148--152
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 192.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 185.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [17.17]
-Overfull \hbox (44.93083pt too wide) in paragraph at lines 208--215
+Overfull \hbox (44.93083pt too wide) in paragraph at lines 210--217
 \T1/lmtt/m/n/12 accessibility . html # implementing-[]accessibility$[][] [][]$https : / / www . uxmatters . com / mt / archives /
  []
 
@@ -1371,30 +1371,30 @@ Overfull \hbox (44.93083pt too wide) in paragraph at lines 208--215
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 219.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 221.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [18.18]
-Underfull \hbox (badness 10000) in paragraph at lines 222--228
+Underfull \hbox (badness 10000) in paragraph at lines 224--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--233
+Underfull \hbox (badness 10000) in paragraph at lines 231--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--238
+Underfull \hbox (badness 10000) in paragraph at lines 236--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
+Underfull \hbox (badness 10000) in paragraph at lines 248--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--253
+Underfull \hbox (badness 10000) in paragraph at lines 251--255
 
  []
 
@@ -1402,31 +1402,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--253
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 253.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 255.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [19.19]
-Underfull \hbox (badness 10000) in paragraph at lines 254--257
+Underfull \hbox (badness 10000) in paragraph at lines 256--259
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--274
+Underfull \hbox (badness 10000) in paragraph at lines 260--263
 
  []
 
 
-Overfull \hbox (41.84332pt too wide) in paragraph at lines 290--294
+Underfull \hbox (badness 10000) in paragraph at lines 264--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--272
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--276
+
+ []
+
+
+
+File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
+<use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 289.
+(pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
+[20.20]
+Overfull \hbox (41.84332pt too wide) in paragraph at lines 292--296
 \T1/lmtt/m/n/12 appinio . com / de / blog / marktforschung / zielgruppenanalyse$[][] [][]$https : / / www . webdesign-[]journal .
  []
 
 
-
-File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
-<use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 294.
-(pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[20.20]
-Underfull \hbox (badness 10000) in paragraph at lines 336--339
+Underfull \hbox (badness 10000) in paragraph at lines 338--341
 
  []
 
@@ -1434,30 +1449,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 336--339
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 339.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 341.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [21.21]
-Overfull \hbox (1.70581pt too wide) in paragraph at lines 340--346
+Overfull \hbox (1.70581pt too wide) in paragraph at lines 342--348
 [][]$\T1/lmtt/m/n/12 https : / / mailchimp . com / de / resources / user-[]journey/$[][] [][]$https : / / piwikpro . de / glossar /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--357
+Underfull \hbox (badness 10000) in paragraph at lines 351--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--364
+Underfull \hbox (badness 10000) in paragraph at lines 360--366
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--369
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 379--382
+Underfull \hbox (badness 10000) in paragraph at lines 367--371
 
  []
 
@@ -1465,25 +1475,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 379--382
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 382.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 378.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [22.22]
-Overfull \hbox (0.8533pt too wide) in paragraph at lines 391--394
+Underfull \hbox (badness 10000) in paragraph at lines 381--384
+
+ []
+
+
+Overfull \hbox (0.8533pt too wide) in paragraph at lines 393--396
 [][][]$\T1/lmtt/m/n/12 https : / / www . eresult . de / blog / ux-[]design / blog-[]informationsarchitektur-[]ux/$[][] [][]$https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--400
+Underfull \hbox (badness 10000) in paragraph at lines 397--402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--408
+Underfull \hbox (badness 10000) in paragraph at lines 405--410
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--422
+Underfull \hbox (badness 10000) in paragraph at lines 419--424
 
  []
 
@@ -1491,35 +1506,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 417--422
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 422.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 424.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [23.23]
-Underfull \hbox (badness 10000) in paragraph at lines 423--427
+Underfull \hbox (badness 10000) in paragraph at lines 425--429
 
  []
 
 
-Overfull \hbox (8.21956pt too wide) in paragraph at lines 436--445
+Overfull \hbox (8.21956pt too wide) in paragraph at lines 438--447
 \T1/lmtt/m/n/12 wireframing / wireframe-[]vs-[]prototyp / #high-[]fidelity-[]wireframe-[]vs . -[]prototyp$[][] [][]$https :
  []
 
 
-Overfull \hbox (7.88724pt too wide) in paragraph at lines 436--445
+Overfull \hbox (7.88724pt too wide) in paragraph at lines 438--447
 \T1/lmtt/m/n/12 / / www . justinmind . com / de / wireframe / unterschied-[]wireframe-[]vs-[]prototyp-[]vs-[]mockup$[][]
  []
 
 
-Overfull \hbox (137.4378pt too wide) in paragraph at lines 436--445
+Overfull \hbox (137.4378pt too wide) in paragraph at lines 438--447
 [][]$\T1/lmtt/m/n/12 https : / / www . popwebdesign . de / popart _ blog / de / 2017 / 06 / wireframe-[]vs-[]prototype-[]was-[]ist-[]der-[]unterschied/$[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--453
+Underfull \hbox (badness 10000) in paragraph at lines 448--455
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 454--460
+Underfull \hbox (badness 10000) in paragraph at lines 456--462
 
  []
 
@@ -1527,52 +1542,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 454--460
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 461.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 462.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [24.24]
-Underfull \hbox (badness 10000) in paragraph at lines 461--468
+Underfull \hbox (badness 10000) in paragraph at lines 463--470
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--474
+Underfull \hbox (badness 10000) in paragraph at lines 471--476
 
  []
 
 
-Overfull \hbox (25.05331pt too wide) in paragraph at lines 475--483
+Overfull \hbox (25.05331pt too wide) in paragraph at lines 477--485
 [][]$\T1/lmtt/m/n/12 https : / / www . studysmarter . de / schule / kunst / grafikdesign-[]kunst / visual-[]design/$[][] [][]$https :
  []
 
 
+Underfull \vbox (badness 1448) has occurred while \output is active []
+
+
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 507.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 505.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [25.25]
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 553.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 548.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [26.26]
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 607.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 605.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [27.27]) (3_Theorie/laurenz.tex
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 21.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 17.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [28.28]
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 43.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 39.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [29.29]
 Overfull \hbox (12.89047pt too wide) in paragraph at lines 59--60
@@ -1583,13 +1601,13 @@ Overfull \hbox (12.89047pt too wide) in paragraph at lines 59--60
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 61.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 60.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [30.30]
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 86.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 84.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [31.31]
 Overfull \hbox (23.10092pt too wide) in paragraph at lines 92--97
@@ -1600,13 +1618,13 @@ Overfull \hbox (23.10092pt too wide) in paragraph at lines 92--97
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 104.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 103.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [32.32]
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 121.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 120.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [33.33]
 Overfull \hbox (36.84189pt too wide) in paragraph at lines 131--132
@@ -1622,7 +1640,7 @@ Overfull \hbox (4.66411pt too wide) in paragraph at lines 135--136
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 140.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 139.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [34.34]
 Overfull \hbox (16.42195pt too wide) in paragraph at lines 155--156
@@ -1897,7 +1915,7 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  108i,36n,127p,11272b,1292s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on DA_MainDocument.pdf (51 pages, 621790 bytes).
+Output written on DA_MainDocument.pdf (51 pages, 621756 bytes).
 PDF statistics:
  768 PDF objects out of 1000 (max. 8388607)
  137 named destinations out of 1000 (max. 500000)
