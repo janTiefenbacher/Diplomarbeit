@@ -47,35 +47,42 @@ Hardwarekonfigurationen. Diese Unterschiede erhöhen den Entwicklungs- und Wartu
 bei nativen Anwendungen.
 
 \vspace{0.5em}
-\textbf{Native Apps}\\
-Bei einer nativen App handelt es sich um eine Anwendung, die speziell für das Betriebssystem eines 
-mobilen Endgeräts wie iOS oder Android konzipiert und entwickelt wurde. Native Apps werden über die 
-an das jeweilige System gekoppelten App Stores bereitgestellt und können direkt auf die Hardware und 
-Systemfunktionen des Geräts zugreifen, um Ressourcen wie Arbeitsspeicher, Kamera, GPS oder andere 
-Sensoren optimal zu nutzen. Durch diese enge Integration mit dem Betriebssystem bieten native Apps eine 
-gute Performance und hohe Usability. Zudem können sie, abhängig von den Funktionen des Geräts, auch 
-systeminterne Möglichkeiten wie Push-Benachrichtigungen ansteuern. Allerdings erfordert die plattformspezifische 
-Entwicklung separate Versionen für unterschiedliche Betriebssysteme, was den Entwicklungsaufwand 
-erhöht.
-\verb|https://de.ryte.com/wiki/Native_App/|
+\textbf{Native Apps – Technische Grundlagen}\\
+Bei der nativen App-Entwicklung handelt es sich um die Entwicklung von Anwendungen, die speziell für ein bestimmtes Betriebssystem programmiert werden. Für iOS-Anwendungen wird beispielsweise die Programmiersprache Swift verwendet, während Android-Applikationen typischerweise in Kotlin entwickelt werden. Die Anwendung wird direkt für das jeweilige Betriebssystem entwickelt und ist nicht mit anderen Systemen kompatibel.
 
+Ein wesentliches Merkmal nativer Anwendungen ist der direkte Zugriff auf systemnahe Funktionen und Hardware-Komponenten des Endgeräts, wie Kamera, GPS oder Sensoren. Native Apps können zudem systeminterne Funktionen wie Push-Benachrichtigungen nutzen. Durch die enge Integration mit dem Betriebssystem ist eine optimale Nutzung von Ressourcen wie Arbeitsspeicher und Hardware möglich, was zu einer guten Performance und hoher Usability führt.
 
+Allerdings erfordert dieser Ansatz für jedes Betriebssystem eine eigene Implementierung, wodurch separate Versionen für iOS und Android entwickelt werden müssen. Dies erhöht den Entwicklungsaufwand deutlich.
 
 \vspace{0.5em}
-\textbf{Cross-Platform}\\
-Bei der Cross-Platform-App-Entwicklung wird eine einzige Codebasis genutzt, die mittels spezieller 
-Frameworks wie Flutter, React Native oder Xamarin in die jeweilige native Sprache für verschiedene 
-Betriebssysteme wie iOS und Android übersetzt wird. Dadurch lässt sich dieselbe Anwendung auf mehreren
-Plattformen bereitstellen, ohne den Code für jede Zielumgebung separat schreiben zu müssen. Die gemeinsame
-Codebasis führt zu einem geringeren Entwicklungsaufwand und ermöglicht eine schnellere Markteinführung 
-sowie eine einfachere Wartung, da Änderungen am Code nur einmal vorgenommen werden müssen, um sie auf 
-allen unterstützten Systemen verfügbar zu machen. Zudem kann eine Cross-Platform-App durch diesen Ansatz 
-viele native Funktionen nutzen und sich in vielerlei Hinsicht wie eine native App anfühlen, auch wenn sie 
-nicht für jede Plattform vollständig eigenständig entwickelt wurde. 
+\textbf{Native Apps – Design und Monetarisierung}\\
+Native Apps orientieren sich stark an den Design- und Interaktionsrichtlinien des jeweiligen Betriebssystems. Dadurch fügen sie sich nahtlos in die Benutzeroberfläche von iOS oder Android ein und bieten eine konsistente User Experience. Die hohe Usability entsteht durch die Verwendung systemeigener UI-Elemente und Interaktionsmuster, die den Nutzerinnen und Nutzern bereits vertraut sind.
+
+Die Bereitstellung nativer Apps erfolgt über die jeweiligen App Stores der Betriebssysteme. Dadurch sind sie direkt an das Ökosystem der Plattform gebunden und können die dort vorgesehenen Mechanismen zur Verteilung und Nutzung verwenden.
+
+\vspace{0.5em}
+\textbf{Cross-Platform Apps – Technische Grundlagen}\\
+Bei der Cross-Platform-App-Entwicklung wird eine gemeinsame Codebasis verwendet, um Anwendungen für mehrere Betriebssysteme wie iOS und Android zu realisieren. Mithilfe spezieller Frameworks wie Flutter, React Native oder Xamarin wird dieser Code für die jeweiligen Plattformen umgesetzt. Ziel dieses Ansatzes ist es, große Teile des Codes plattformübergreifend wiederzuverwenden.
+
+Cross-Platform-Frameworks abstrahieren die zugrunde liegenden Betriebssysteme und stellen einheitliche Schnittstellen zur Verfügung. Dadurch ist es möglich, eine Anwendung zu entwickeln, ohne für jedes Betriebssystem eine vollständig eigene Implementierung zu erstellen. Die Interaktion mit gerätespezifischen Funktionen erfolgt dabei häufig über zusätzliche Abstraktionsschichten oder spezielle Erweiterungen.
+
+Durch die gemeinsame Codebasis verringert sich der Entwicklungsaufwand, und Änderungen müssen nur einmal durchgeführt werden, um sie auf allen unterstützten Plattformen verfügbar zu machen. Dies erleichtert zudem die Wartung der Anwendung.
+
+\vspace{0.5em}
+\textbf{Cross-Platform Apps – Design und Monetarisierung}\\
+Cross-Platform-Apps können viele native Funktionen nutzen und sich in vielerlei Hinsicht wie native Anwendungen anfühlen, auch wenn sie nicht vollständig plattformspezifisch entwickelt wurden. Das Design ist dabei weniger strikt an die Richtlinien eines einzelnen Betriebssystems gebunden, da eine einheitliche Umsetzung für mehrere Plattformen angestrebt wird.
+
+Durch die schnellere Markteinführung und den geringeren Entwicklungsaufwand eignet sich dieser Ansatz besonders für Anwendungen, die gleichzeitig auf mehreren Plattformen verfügbar sein sollen.
+
+\vspace{0.5em}
+
+\url{https://www.denovo.at/blog/native-vs-cross-plattform-app-welcher-weg-ist-der-richtige-fuer-ihre-idee}
+
+\url{https://de.ryte.com/wiki/Native_App/}
 
 \url{https://www.itportal24.de/ratgeber/cross-platform-app}
-\url{https://www.knguru.de/blog/was-ist-eine-cross-platform-app}
 
+\url{https://www.knguru.de/blog/was-ist-eine-cross-platform-app}
 
 
 \vspace{0.5em}
@@ -280,6 +287,7 @@ Während quantitative Methoden vor allem aufzeigen, was passiert, liefern qualit
 
 Während Zielgruppen häufig eher abstrakt bleiben, machen Personas diese Informationen handlungsorientiert. Eine Persona bündelt 
 typische Merkmale und ergänzt sie um:
+
 \begin{itemize}
     \item Ziele (Was will die Person erreichen?)
     \item Herausforderungen/Schmerzpunkte (Was hindert sie?)
