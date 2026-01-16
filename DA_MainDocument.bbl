@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -13,10 +13,154 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \btxselectlanguage {ngerman}
-\bibitem {dbrankings}
-\btxnamefont {\btxlastnamefont {abc}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Db-engine ranking}{DB-Engine Ranking}},
-  \btxprintmonthyear{.}{3}{2016}{long}.
-\newblock Online in Internet: URL: \url{http://db-engines.com/de/ranking}.
+\bibitem {brainhub_react_native}
+\btxnamefont {\btxlastnamefont {Warcholinski}, Matt}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Was ist react native? alles was sie für
+  2025 wissen m\"ussen}{Was ist React Native? Alles was Sie für 2025 wissen
+  m\"ussen}}, \btxprintmonthyear{.}{5}{2025}{long}.
+\newblock Online im Internet: URL:
+  \url{https://brainhub.eu/de/library/was-ist-react-native}.
+
+\bibitem {talend_api_definition}
+\btxnamefont {\btxlastnamefont {Talend}, Inc.}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Was ist eine api? -- api (application programming
+  interface) einfach erkl\"art}{Was ist eine API? -- API (Application
+  Programming Interface) einfach erkl\"art}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://www.talend.com/de/resources/was-ist-eine-api/}.
+
+\btxselectlanguage {english}
+\bibitem {ibm_database}
+\btxnamefont {\btxlastnamefont {Kosinski}, Matthew} \btxandlong {}\
+  \btxnamefont {IBM \btxlastnamefont {Think}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {What is a database?}{What is a database?}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://www.ibm.com/think/topics/database}.
+
+\bibitem {supabase_overview_chauhan}
+\btxnamefont {\btxlastnamefont {Chauhan}, Anshul}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Overview of supabase backend as a service
+  platform}{Overview of Supabase Backend as a Service Platform}},
+  \btxprintmonthyear{.}{7}{2024}{long}.
+\newblock Online im Internet: URL:
+  \url{https://medium.com/@anshuldevx/overview-of-supabase-backend-as-a-service-platform-e192da9a369c}.
+
+\btxselectlanguage {ngerman}
+\bibitem {hws_onprem_cloud_hybrid}
+\btxnamefont {\btxlastnamefont {Gruppe}, HWS}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {On premise, in die cloud oder doch hybrid?}{On Premise, in
+  die Cloud oder doch hybrid?}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://hws-gruppe.de/on-premises-in-die-cloud-oder-doch-hybrid/}.
+
+\btxselectlanguage {english}
+\bibitem {ibm_hybrid_cloud_architecture}
+\btxnamefont {\btxlastnamefont {Susnjara}, Stephanie} \btxandlong {}\
+  \btxnamefont {Ian \btxlastnamefont {Smalley}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {What is hybrid cloud architecture?}{What is hybrid cloud
+  architecture?}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://www.ibm.com/think/topics/hybrid-cloud-architecture}.
+
+\btxselectlanguage {ngerman}
+\bibitem {azure_iaas}
+\btxnamefont {\btxlastnamefont {Corporation}, Microsoft}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Was ist infrastructure as a service
+  (iaas)?}{Was ist Infrastructure as a Service (IaaS)?}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://azure.microsoft.com/de-de/resources/cloud-computing-dictionary/what-is-iaas}.
+
+\bibitem {azure_paas}
+\btxnamefont {\btxlastnamefont {Corporation}, Microsoft}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Was ist platform-as-a-service (paas)?}{Was
+  ist Platform-as-a-Service (PaaS)?}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://azure.microsoft.com/de-de/resources/cloud-computing-dictionary/what-is-paas}.
+
+\bibitem {ibm_faas}
+\btxnamefont {\btxlastnamefont {Corporation}, IBM}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Was ist function as a service (faas)?}{Was
+  ist Function as a Service (FaaS)?}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://www.ibm.com/de-de/think/topics/faas}.
+
+\btxselectlanguage {english}
+\bibitem {redhat_serverless}
+\btxnamefont {\btxlastnamefont {Red~Hat}, Inc.}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {What is serverless computing?}{What is serverless
+  computing?}}, 2020.
+\newblock Online im Internet: URL:
+  \url{https://www.redhat.com/de/topics/cloud-native-apps/what-is-serverless}.
+
+\btxselectlanguage {ngerman}
+\bibitem {oracle_relational_database}
+\btxnamefont {\btxlastnamefont {Corporation}, Oracle}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Was ist eine relationale datenbank?
+  (rdbms)?}{Was ist eine relationale Datenbank? (RDBMS)?}},
+  \btxprintmonthyear{.}{6}{2021}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.oracle.com/de/database/what-is-a-relational-database/}.
+
+\bibitem {dbengines_normalisierung}
+\btxnamefont {\btxlastnamefont {Software}, DB\btxfnamespacelong
+  Engines\btxfnamespacelong /\btxfnamespacelong Redgate}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Normalisierung}{Normalisierung}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://db-engines.com/de/article/Normalisierung}.
+
+\bibitem {medienpalast_realtime_data}
+\btxnamefont {\btxlastnamefont {Medienpalast}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Real time data -- echtzeitdaten}{Real Time Data --
+  Echtzeitdaten}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://www.medienpalast.net/glossar/begriff/real-time-data/}.
+
+\bibitem {akamai_scaling}
+\btxnamefont {\btxlastnamefont {Technologies}, Akamai}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Horizontale und vertikale skalierung im
+  vergleich}{Horizontale und vertikale Skalierung im Vergleich}}, 2026.
+\newblock Online im Internet: URL:
+  \url{https://www.akamai.com/de/glossary/what-is-horizontal-scaling-vs-vertical-scaling}.
+
+\bibitem {teamtakt_devops_lastverteilung}
+\btxnamefont {\btxlastnamefont {Ugurcu}, Mario}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Devops-tool teil 1: Die bedeutung von lastverteilung, cdns
+  und automatischem skalieren in iaas}{DevOps-Tool Teil 1: Die Bedeutung von
+  Lastverteilung, CDNs und automatischem Skalieren in IaaS}},
+  \btxprintmonthyear{.}{3}{2024}{long}.
+\newblock Online im Internet: URL:
+  \url{https://teamtakt.de/devops-tool-teil-1-die-bedeutung-von-lastverteilung-cdns-und-automatischem-skalieren-in-iaas/}.
+
+\bibitem {studysmarter_latenz_durchsatz}
+\btxnamefont {\btxlastnamefont {Redaktion}, StudySmarter}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Latenz und durchsatz -- definition \&
+  beispiele}{Latenz und Durchsatz -- Definition \& Beispiele}},
+  \btxprintmonthyear{.}{9}{2024}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.studysmarter.de/schule/informatik/technische-informatik/latenz-und-durchsatz/}.
+
+\bibitem {it_schulungen_modern_auth}
+\btxnamefont {\btxlastnamefont {Deinhard}, Florian}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Welche modernen
+  authentifizierungsm\"oglichkeiten gibt es?}{Welche modernen
+  Authentifizierungsm\"oglichkeiten gibt es?}},
+  \btxprintmonthyear{.}{6}{2025}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.it-schulungen.com/wir-ueber-uns/wissensblog/welche-modernen-authentifizierungsmoeglichkeiten-gibt-es.html}.
+
+\bibitem {kaspersky_encryption}
+\btxnamefont {\btxlastnamefont {Kaspersky}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Was ist datenverschl\"usselung?}{Was ist
+  Datenverschl\"usselung?}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://www.kaspersky.de/resource-center/definitions/encryption}.
+
+\bibitem {onlinesicherheit_mobile_apps_info}
+\btxnamefont {\btxlastnamefont {Pro{\ss}negg}, Sabine}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Mobile apps und
+  informationspflichten}{Mobile Apps und Informationspflichten}},
+  \btxprintmonthyear{.}{10}{2017}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.onlinesicherheit.gv.at/Services/Technologie-Schwerpunkte/Mobile-Apps/Mobile-Apps-und-Informationspflichten.html}.
 
 \end{thebibliography}

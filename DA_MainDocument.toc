@@ -28,10 +28,10 @@
 \contentsline {subsection}{\numberline {3.2.7}Vergleich \& Bewertung der Monetarisierungsstrategien}{28}{subsection.27}%
 \contentsline {section}{\numberline {3.3}Laurenz Ausarbeitung}{28}{section.28}%
 \contentsline {subsection}{\numberline {3.3.1}Mobile App Entwicklung}{28}{subsection.29}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}React Native Framework}{28}{subsubsection.30}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}React Native Framework}{29}{subsubsection.30}%
 \contentsline {subsection}{\numberline {3.3.2}Backend-Technologien}{29}{subsection.31}%
 \contentsline {subsubsection}{\numberline {3.3.2.1}APIs}{29}{subsubsection.32}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Datenbanken}{29}{subsubsection.33}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Datenbanken}{30}{subsubsection.33}%
 \contentsline {subsubsection}{\numberline {3.3.2.3}Backend-as-a-Service (BaaS)}{30}{subsubsection.34}%
 \contentsline {subsection}{\numberline {3.3.3}Hosting- und Infrastrukturmodelle}{31}{subsection.35}%
 \contentsline {subsubsection}{\numberline {3.3.3.1}On-Premise, Cloud und Hybrid-Architekturen}{31}{subsubsection.36}%
@@ -69,18 +69,30 @@
 \contentsline {chapter}{\numberline {I}Literaturverzeichnis}{43}{chapter.68}%
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{44}{chapter.69}%
-\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{45}{chapter.70}%
-\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{46}{chapter.71}%
-\contentsline {chapter}{\numberline {A}Anhang}{47}{chapter.72}%
-\contentsline {section}{\numberline {A.1}Arbeitsteilung}{47}{section.73}%
-\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{47}{section.74}%
-\contentsline {section}{\numberline {A.3}Projekttagebücher}{47}{section.75}%
-\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Max Mustermann}{47}{subsection.76}%
-\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Mex Musterjuan}{47}{subsection.77}%
-\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{48}{section.78}%
-\contentsline {section}{\numberline {A.5}Besprechungsprotokolle 1}{50}{section.79}%
-\contentsline {section}{\numberline {A.6}Datenträgerbeschreibung}{51}{section.80}%
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{45}{chapter.69}%
+\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{46}{chapter.70}%
+\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{47}{chapter.71}%
+\contentsline {chapter}{\numberline {A}Anhang}{48}{chapter.72}%
+\contentsline {section}{\numberline {A.1}Arbeitsteilung}{48}{section.73}%
+\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{48}{section.74}%
+\contentsline {section}{\numberline {A.3}Projekttagebücher}{48}{section.75}%
+\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Max Mustermann}{48}{subsection.76}%
+\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Mex Musterjuan}{48}{subsection.77}%
+\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{49}{section.78}%
+\contentsline {section}{\numberline {A.5}Besprechungsprotokolle 1}{51}{section.79}%
+\contentsline {section}{\numberline {A.6}Datenträgerbeschreibung}{52}{section.80}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
