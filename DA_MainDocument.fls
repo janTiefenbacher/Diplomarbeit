@@ -734,6 +734,11 @@ INPUT .\4_protoype\description.tex
 INPUT .\4_protoype\description.tex
 INPUT .\4_protoype\description.tex
 INPUT 4_protoype\description.tex
+INPUT C:\Users\Laurenz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
@@ -780,7 +785,6 @@ INPUT 6_appendix\listofeverything.tex
 INPUT .\DA_MainDocument.bbl
 INPUT .\DA_MainDocument.bbl
 INPUT DA_MainDocument.bbl
-INPUT C:\Users\Laurenz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\DA_MainDocument.lof

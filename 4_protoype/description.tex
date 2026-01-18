@@ -1,96 +1,116 @@
-\section{Grundlagen der Implementierung}
+In diesem Kapitel wird die technische Umsetzung des Spiels \textit{WoSamma} dokumentiert.
+Dabei werden die verwendete Systemumgebung, eingesetzte Technologien sowie die grundlegenden
+Konzepte der Implementierung beschrieben, um einen strukturierten Überblick über die Realisierung
+der Anwendung zu geben.
 
-\subsection{Systemumgebung}
-Die entwickelte Anwendung ist ein mobiles Spiel für iOS, umgesetzt mit React Native und TypeScript. 
-Für die Entwicklung wurde Visual Studio Code unter macOS verwendet. 
-Die Anwendung kann über ein Apple-Developer-Konto direkt auf ein iPhone installiert werden und ist für eine zukünftige Veröffentlichung im Apple App Store vorgesehen.
+\section{Systemumgebung}
+Das Spiel WoSamma ist eine mobile Anwendung für iOS und Android und wurde mit React Native und TypeScript entwickelt.
+Die Entwicklung erfolgte unter Windows mithilfe von Visual Studio Code.
+Für das Veröffentlichen der Anwendung auf iOS-Geräten sowie für abschließende Tests und Fehlerbehebungen wurde Xcode unter macOS in Verbindung mit einem Apple-Developer-Konto verwendet.
+Die Tests für Android wurden mit Android Studio auf Emulatoren durchgeführt.
+Die Anwendung ist für eine zukünftige Veröffentlichung im Apple App Store sowie im Google Play Store vorgesehen.
 
 \subsection{Verwendete Technologien}
 \begin{itemize}
-    \item \textbf{React Native} – Framework zur Entwicklung plattformübergreifender mobiler Anwendungen.
-    \item \textbf{TypeScript} – Typsichere Erweiterung von JavaScript zur Erhöhung der Codequalität.
-    \item \textbf{Supabase (PostgreSQL)} – Backend-as-a-Service zur Bereitstellung einer REST-API, Authentifizierung und Datenbank.
-    \item \textbf{Google Street View API} – Externe API zur Integration von Street-View-Bildern in das Spiel.
-    \item \textbf{GitHub} – Versionsverwaltung und Projektmanagement.
+    \item \textbf{React Native} – Framework zur Entwicklung plattformübergreifender mobiler Anwendungen für iOS und Android.
+    \item \textbf{TypeScript} – Typsichere Erweiterung von JavaScript, die bewusst anstelle von JavaScript gewählt wurde, um die Wartbarkeit, Lesbarkeit und Codequalität der Anwendung zu erhöhen.
+    \item \textbf{Supabase (PostgreSQL)} – Backend-as-a-Service, das zentrale Funktionen wie Authentifizierung, Echtzeitdaten, Datenbankverwaltung sowie eine REST-API bereitstellt und damit den Entwicklungsaufwand deutlich reduziert.
+    \item \textbf{Google Maps API} – API zur Verarbeitung und Darstellung geografischer Daten sowie zur Positionsbestimmung innerhalb des Spiels.
+    \item \textbf{Google Street View API} – API zur Integration von 360-Grad-Street-View-Bildern aus ganz Österreich, welche die Grundlage für das GeoGuessr-ähnliche Spielkonzept bildet.
+    \item \textbf{GitHub} – Plattform zur Versionsverwaltung, die eine strukturierte Zusammenarbeit im Team sowie die kontinuierliche Aktualität des Quellcodes sicherstellt.
+    \item \textbf{Jira} – Tool zur Projektplanung und Aufgabenverwaltung, das im Rahmen einer agilen Vorgehensweise für die Diplomarbeit eingesetzt wurde.
+    \item \textbf{Figma} – Design- und Prototyping-Tool zur Erstellung von Mockups und interaktiven Prototypen, welche als visuelle Grundlage für die Benutzeroberfläche dienten.
 \end{itemize}
 
-\subsection{Architekturüberblick}
-Die Anwendung nutzt eine klassische Client–Server-Struktur.  
-Der Client (React Native App) kommuniziert über die Supabase-REST-API mit einer PostgreSQL-Datenbank.  
-Zusätzlich werden externe Anfragen an die Google Street View API gesendet.
+\section{Implementierung}
+Dieses Kapitel beschreibt die technische Umsetzung des Spiels \textit{WoSamma}. 
+Dabei wird auf den Aufbau der Anwendungsarchitektur, die Implementierung des Frontends, 
+die Anbindung des Backends sowie auf die zentrale Spiellogik eingegangen. 
+Der Fokus liegt auf den verwendeten Konzepten, der Struktur des Quellcodes 
+und den getroffenen technischen Entscheidungen.
 
-Administrator- und Benutzerrollen sind implementiert, wobei Administratoren erweiterte Berechtigungen besitzen (Freigeben von globalen Nachrichten, Einsehen von Meldungen).
+\subsection{Architektur der Anwendung}
+Die Anwendung \textit{WoSamma} folgt einer klaren Trennung zwischen Frontend, Backend 
+und externen Diensten. 
+Das Frontend wurde mit React Native umgesetzt und ist für die Benutzeroberfläche, 
+die Spiellogik sowie die Interaktion mit dem Benutzer verantwortlich.
+Das Backend basiert auf Supabase und übernimmt Aufgaben wie Authentifizierung, 
+Datenpersistenz und Echtzeitkommunikation.
+Externe APIs, wie die Google Maps und Google Street View API, werden zur Bereitstellung 
+von geografischen Daten und 360-Grad-Bildern verwendet.
 
-\section{Implementierung der Funktionen}
 
-\subsection{Login und Registrierung}
-Die Authentifizierung erfolgt über Supabase Auth.  
-Es werden Funktionen zur Registrierung, Anmeldung und Passwortverwaltung bereitgestellt.  
-Alle Benutzerdaten werden sicher in der PostgreSQL-Datenbank gespeichert.
+GRAFIKK!!!!!!!!!
 
-\subsection{Benutzerverwaltung}
-Das System unterstützt zwei Rollen:
-\begin{itemize}
-    \item \textbf{Benutzer} – reguläre Spieler.
-    \item \textbf{Premium} – reguläre Spieler ohne Werbung.
-    \item \textbf{Developer} – erweiterte Rechte, z.\,B. Verwaltung von Meldungen und Veröffentlichung globaler Nachrichten zur Testung der App.
-    \item \textbf{Administrator} – erweiterte Rechte, z.\,B. Verwaltung von Meldungen und Veröffentlichung globaler Nachrichten.
-\end{itemize}
-Spieler können andere melden; Meldungen werden in Supabase gespeichert und durch Administratoren einsehbar.
+\subsection{Frontend-Implementierung - JAN NOCH UMSCHREIBEN}
+In diesem Abschnitt wird die Umsetzung der Benutzeroberfläche von \textit{WoSamma} beschrieben.
+Der Fokus liegt auf der Struktur der Anwendung, der Navigation zwischen verschiedenen Bildschirmen
+sowie der Interaktion des Benutzers mit der Spielansicht.
+Besonderes Augenmerk liegt dabei auf der Darstellung von Spielinformationen und
+der Visualisierung von Spielfortschritten sowohl im Einzelspieler- als auch im Mehrspielermodus.
 
-\subsection{Einzelspieler-Modus}
-Der Einzelspielermodus nutzt die Google Street View API zur Anzeige zufälliger Standorte.  
-Der Spieler gibt eine Vermutung ab und erhält Punkte basierend auf der Distanz zum tatsächlichen Ort.
+\subsubsection{Projektstruktur und Navigation}
+Die Projektstruktur orientiert sich an bewährten Konzepten von React Native und
+TypeScript, um eine modulare, wiederverwendbare und wartbare Codebasis zu gewährleisten.
+Die Navigation zwischen den verschiedenen Bildschirmen, wie Startbildschirm, Spielansicht,
+Freundeslobby und Profilen, erfolgt über ein Stack- und Tab-basiertes Navigationssystem.
+Dieses erlaubt einen intuitiven Zugriff auf alle relevanten Funktionen und stellt sicher,
+dass der Benutzer jederzeit den Überblick über den Spielstatus behält.
 
-\subsection{Mehrspieler-Modus}
-Spieler können eine Lobby erstellen, beitreten oder suchen.   
-Die Kommunikation erfolgt in Echtzeit über Supabase Channels.  
-Jeder Spieler sieht dasselbe Street-View-Bild; das System wertet anschließend die Ergebnisse aus und führt eine Rangliste.
+\subsubsection{Spielansicht und Benutzerinteraktion}
+Die Spielansicht bildet das zentrale Interface für den Spieler und ist in Einzelspieler-
+und Mehrspielermodus unterteilt.
 
-\subsection{Bestenliste}
-Die globalen Highscores werden in der Datenbank gespeichert.  
-Ein Ranking wird dynamisch aus den Spielergebnissen generiert.
+\paragraph{Einzelspieler-Modus:}
+Im Einzelspieler-Modus wird dem Benutzer die korrekte Location sowie die vom Spieler
+geratene Position angezeigt.
+Die Distanz zwischen der tatsächlichen Location und der gewählten Position wird berechnet
+und visualisiert, wodurch der Spieler unmittelbar Feedback zu seiner Genauigkeit erhält.
+Zusätzlich werden die Punkte basierend auf dieser Distanz angezeigt, um den Fortschritt
+und die Leistung nachvollziehbar zu machen.
 
-\subsection{Tägliches Spiel}
-Jeden Tag steht allen Nutzern dasselbe Bild zur Verfügung.  
-Die Ergebnisse werden global verglichen und in einer separaten Tabelle gespeichert.
+\paragraph{Mehrspieler-Modus:}
+Im Mehrspieler-Modus werden alle Spieler in einer Lobby zusammengeführt.
+Jeder Spieler setzt seine Pins auf der Karte, welche live an alle Teilnehmer übertragen werden.
+Zusätzlich wird der richtige Pin angezeigt, um die Vergleichbarkeit der Ergebnisse zu gewährleisten.
+Ein Vektor zwischen der geratenen Position jedes Spielers und dem tatsächlichen Standort
+wird dargestellt, und die Distanz sowie die erreichten Punkte werden für alle Spieler
+übersichtlich angezeigt.
+Dies ermöglicht ein direktes, kompetitives Spielerlebnis und fördert die Interaktion
+zwischen den Teilnehmern.
 
-\subsection{Österreichweite Spielmodi}
-Es existieren zwei Varianten:
-\begin{itemize}
-    \item \textbf{Ganz Österreich} – zufällige Orte im gesamten Bundesgebiet.
-    \item \textbf{Spezifische Bundesländer} – Einschränkung auf einzelne Regionen.
-\end{itemize}
 
-\subsection{Chat mit Freunden}
-Spieler können miteinander chatten.  
-Nachrichten werden über Supabase Realtime synchronisiert und persistent gespeichert.
+\subsection{Backend-Anbindung mit Supabase}
+\subsubsection{Datenbankstruktur}
+\subsubsection{Authentifizierung der Benutzer - Supabase Auth, OAuth2}
 
-\subsection{Freundesliste und Anfragen}
-Es besteht die Möglichkeit:
-\begin{itemize}
-    \item nach Freunden zu suchen,
-    \item Freundschaftsanfragen zu senden und zu akzeptieren,
-    \item eine bestehende Liste von Freunden zu verwalten.
-\end{itemize}
+\subsection{Spielmechanik und Logik}
+Dieser Abschnitt beschreibt die grundlegende Spielmechanik von \textit{WoSamma}.
+Dabei wird erläutert, wie Spielrunden erstellt werden, wie Mehrspieler-Partien
+mit Freunden umgesetzt sind und nach welchen Kriterien die Punktevergabe erfolgt.
 
-\subsection{Profilbilder und Shop-System}
-Spieler können Profilbilder „kaufen“.  
-Der Kaufvorgang ist derzeit simuliert und dient als Platzhalter für ein zukünftiges Zahlungssystem.
+\subsubsection{Generierung der Spielrunden}
+\subsubsection{Generierung des täglichen Spiels}
+\subsubsection{Live-Einladungen für Freundesrunden}
+\subsubsection{Punkteberechnung}
 
-\section{Datenhaltung}
-Die Datenbank basiert auf PostgreSQL mit Supabase als Service.  
-Tabellen umfassen u.\,a.:
-\begin{itemize}
-    \item Benutzer
-    \item Freundesbeziehungen
-    \item Chats und Nachrichten
-    \item Meldungen
-    \item Ergebnisse (Einzelspieler/Mehrspieler)
-    \item tägliche Spiele
-    \item globale Nachrichten
-\end{itemize}
+\subsection{Benutzerprofil}
+Dieser Abschnitt beschreibt die Umsetzung des Benutzerprofils innerhalb der Anwendung.
+Das Benutzerprofil dient zur Darstellung spielrelevanter Informationen sowie zur Verwaltung
+von freigeschalteten Inhalten und individuellen Einstellungen.
+\subsubsection{Profilanpassung}
+\subsubsection{Kaufen und Freischalten von Profilinhalten}
 
-\section{Deployment}
-Während der Entwicklungsphase wird die App lokal über ein Apple-Developer-Konto auf iOS-Geräten ausgeführt.  
-Eine zukünftige Veröffentlichung im Apple App Store ist vorgesehen.
+\subsection{Freundesystem}
+Das Freundesystem ermöglicht die soziale Interaktion zwischen den Benutzern der Anwendung.
+Es dient dazu, Spieler miteinander zu vernetzen, gemeinsame Spielrunden zu starten
+und den Austausch innerhalb der Anwendung zu fördern.
+\subsubsection{Freundschaftsanfragen}
+\subsubsection{Herausfordern von Freunden}
+\subsubsection{Chatfunktion}
+\subsubsection{Anzeigen von Benutzerprofilen}
+
+
+\subsection{Integration der Google APIs}
+\subsubsection{Verwendung der Google Maps API}
+\subsubsection{Einbindung der Street-View-Bilder}
