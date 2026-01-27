@@ -13,6 +13,179 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \btxselectlanguage {ngerman}
+\bibitem {ComputerWeekly_Apple_iOS}
+\btxnamefont {\btxlastnamefont {Eckert}, Michael}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Apple ios}{Apple iOS}},
+  \btxprintmonthyear{.}{4}{2025}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.computerweekly.com/de/definition/Apple-iOS}.
+
+\bibitem {IT_Schulungen_Was_ist_iOS}
+\btxnamefont {\btxlastnamefont {Deinhard}, Florian}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Was ist ios?}{Was ist iOS?}},
+  \btxprintmonthyear{.}{6}{2025}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.it-schulungen.com/wir-ueber-uns/wissensblog/was-ist-ios.html}.
+
+\bibitem {Ionos_IOS_App_Entwicklung}
+\btxnamefont {\btxlastnamefont {Redaktion}, IONOS}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Der weg zur eigenen app - teil 5.2: Eine
+  ios-app veröffentlichen}{Der Weg zur eigenen App - Teil 5.2: Eine iOS-App
+  veröffentlichen}}, \btxprintmonthyear{.}{7}{2021}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.ionos.at/digitalguide/websites/web-entwicklung/die-eigene-app-entwickeln-eine-ios-app-veroeffentlichen/}.
+
+\bibitem {Featured_Android}
+\btxnamefont {\btxlastnamefont {Flemming}, Constatin}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Was ist android? das betriebssystem von
+  google im check}{Was ist Android? Das Betriebssystem von Google im Check}},
+  \btxprintmonthyear{.}{3}{2025}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.vodafone.de/featured/smartphones-tablets/was-ist-android-das-betriebssystem-von-google-im-check/#/}.
+
+\bibitem {IONOS_Android_App_Entwicklung}
+\btxnamefont {\btxlastnamefont {Redaktion}, IONOS}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Eine eigene native mobile app entwickeln –
+  teil 5.1: Im google play store eine app hochladen}{Eine eigene Native Mobile
+  App entwickeln – Teil 5.1: Im Google Play Store eine App hochladen}},
+  \btxprintmonthyear{.}{2}{2020}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.ionos.at/digitalguide/websites/web-entwicklung/die-eigene-app-entwickeln-android-app-veroeffentlichen/}.
+
+\bibitem {Denvo_Native_vs_Crossplattform}
+\btxnamefont {\btxlastnamefont {team}~denvo}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Native vs. cross-plattform app: Welcher weg ist der
+  richtige für ihre idee?}{Native vs. Cross-Plattform App: Welcher Weg ist der
+  Richtige für Ihre Idee?}}, \btxprintmonthyear{.}{11}{2023}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.denovo.at/blog/native-vs-cross-plattform-app-welcher-weg-ist-der-richtige-fuer-ihre-idee}.
+
+\bibitem {ITPortal_Native_vs_Crossplattform}
+\btxnamefont {\btxlastnamefont {Hahn}, Lennart}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Cross-platform app – plattformübergreifende entwicklung
+  mit flutter, react native \& co.}{Cross-Platform App –
+  Plattformübergreifende Entwicklung mit Flutter, React Native \& Co.}},
+  \btxprintmonthyear{.}{1}{2026}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.itportal24.de/ratgeber/cross-platform-app}.
+
+\bibitem {knguru_crossplatform}
+\btxnamefont {\btxlastnamefont {Große}, Vera}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Was ist eine cross-platform app?}{Was ist eine
+  Cross-Platform App?}}, \btxprintmonthyear{.}{3}{2025}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.knguru.de/blog/was-ist-eine-cross-platform-app}.
+
+\bibitem {Publizer_dark_mode_light_mode}
+\btxtitlefont {\btxifchangecase {Dark vs. light mode: Ästhetik, nutzbarkeit \&
+  energieeffizienz erklärt}{Dark vs. Light Mode: Ästhetik, Nutzbarkeit \&
+  Energieeffizienz erklärt}}.
+\newblock Online im Internet: URL:
+  \url{https://www.publizer.de/newsroom/dark-mode-vs-light-mode-aesthetik-funktionalitaet-und-energieeffizienz-2893524}.
+
+\bibitem {natively_mobile_app_design_trends_2025}
+\btxnamefont {\btxlastnamefont {Gusev}, Alexander}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Top mobile app design trends you should
+  watch for in 2025}{Top Mobile App Design Trends You Should Watch For In
+  2025}}, \btxprintmonthyear{.}{10}{2025}{long}.
+\newblock Online im Internet: URL:
+  \url{https://natively.dev/blog/top-mobile-app-design-trends-2025}.
+
+\bibitem {Ionos_responsive_design}
+\btxnamefont {\btxlastnamefont {Redaktion}, IONOS}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Was bedeutet responsive design?}{Was
+  bedeutet Responsive Design?}}, \btxprintmonthyear{.}{10}{2022}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.ionos.at/digitalguide/websites/webdesign/was-bedeutet-responsive-design/}.
+
+\bibitem {kinsta_responsive_vs_adaptive}
+\btxnamefont {\btxlastnamefont {Holcombe}, Jeremy}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Responsive vs. adaptive: So wählst du den
+  richtigen design-ansatz}{Responsive vs. Adaptive: So wählst du den richtigen
+  Design-Ansatz}}, \btxprintmonthyear{.}{8}{2023}{long}.
+\newblock Online im Internet: URL:
+  \url{https://kinsta.com/de/blog/responsive-vs-adaptiv/}.
+
+\btxselectlanguage {english}
+\bibitem {uxmatters}
+\btxnamefont {\btxlastnamefont {Cooper}, Emily}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Designing mobile apps with accessibility in
+  mind}{Designing Mobile Apps with Accessibility in Mind}},
+  \btxprintmonthyear{.}{5}{2024}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.uxmatters.com/mt/archives/2024/05/designing-mobile-apps-with-accessibility-in-mind.php}.
+
+\bibitem {materialdesign}
+\btxtitlefont {\btxifchangecase {Accessibility}{Accessibility}}.
+\newblock Online im Internet: URL:
+  \url{https://m2.material.io/design/usability/accessibility.html#understanding-accessibility}.
+
+\btxselectlanguage {ngerman}
+\bibitem {appinio_zielgruppenanalyse}
+\btxnamefont {\btxlastnamefont {Research}, Appinio}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Zielgruppenanalyse: In 7 schritten zum
+  erfolg}{Zielgruppenanalyse: In 7 Schritten zum Erfolg}},
+  \btxprintmonthyear{.}{3}{2024}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.appinio.com/de/blog/marktforschung/zielgruppenanalyse}.
+
+\bibitem {webdesign_journal_zielgruppenanalyse}
+\btxtitlefont {\btxifchangecase {Zielgruppenanalyse so definierst du deine
+  besucher und kunden}{Zielgruppenanalyse so definierst du deine Besucher und
+  Kunden}}, \btxprintmonthyear{.}{5}{2025}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.webdesign-journal.de/zielgruppenanalyse/}.
+
+\bibitem {b13_informationsarchitektur}
+\btxnamefont {\btxlastnamefont {Heine}, Laura}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Informationsarchitektur in ux - best
+  practices}{Informationsarchitektur in UX - Best Practices}},
+  \btxprintmonthyear{.}{11}{2021}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.b13.com/de/blog/informationsarchitektur-in-ux-best-practices}.
+
+\bibitem {eresult_informationsarchitektur}
+\btxnamefont {\btxlastnamefont {Bauer}, Anna}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Informationsarchitektur verstehen - oder war es doch die
+  sitemap?}{Informationsarchitektur verstehen - oder war es doch die
+  Sitemap?}}, \btxprintmonthyear{.}{11}{2025}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.eresult.de/blog/ux-design/blog-informationsarchitektur-ux/}.
+
+\bibitem {popwebdesign_wire}
+\btxtitlefont {\btxifchangecase {Wireframe vs. prototype - was ist der
+  unterschied?}{Wireframe vs. Prototype - Was ist der Unterschied?}},
+  \btxprintmonthyear{.}{6}{2017}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.popwebdesign.de/popart_blog/de/2017/06/wireframe-vs-prototype-was-ist-der-unterschied/}.
+
+\bibitem {justinmind_wireframe_prototyp_mockup}
+\btxtitlefont {\btxifchangecase {Was ist der unterschied zwischen wireframes,
+  prototypen und mockups?}{Was ist der Unterschied zwischen Wireframes,
+  Prototypen und Mockups?}}, \btxprintmonthyear{.}{6}{2024}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.justinmind.com/de/wireframe/unterschied-wireframe-vs-prototyp-vs-mockup}.
+
+\bibitem {miro_wire}
+\btxtitlefont {\btxifchangecase {Wireframe vs. prototype}{Wireframe vs.
+  Prototype}}.
+\newblock Online im Internet: URL:
+  \url{https://miro.com/de/wireframing/wireframe-vs-prototyp/#high-fidelity-wireframe-vs.-prototyp}.
+
+\bibitem {Toolmaster_Design}
+\btxnamefont {\btxlastnamefont {Olav}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Visuelles design - was ist visuelles design?}{Visuelles
+  Design - Was ist Visuelles Design?}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://toolmaster.ch/visuelles-design-was-ist-visuelles-design/}.
+
+\bibitem {StudySmarter_Visual_Design}
+\btxnamefont {\btxlastnamefont {Hulatt}, Lily}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Visual design}{Visual Design}},
+  \btxprintmonthyear{.}{11}{2024}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.studysmarter.de/schule/kunst/grafikdesign-kunst/visual-design/}.
+
 \bibitem {brainhub_react_native}
 \btxnamefont {\btxlastnamefont {Warcholinski}, Matt}\btxauthorcolon\
   \btxtitlefont {\btxifchangecase {Was ist react native? alles was sie für

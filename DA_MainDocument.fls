@@ -615,14 +615,6 @@ INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\3_Theorie\jan.tex
 INPUT .\3_Theorie\jan.tex
 INPUT 3_Theorie\jan.tex
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt12.tfm
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
@@ -777,6 +769,11 @@ INPUT 6_appendix\listofeverything.tex
 INPUT .\DA_MainDocument.bbl
 INPUT .\DA_MainDocument.bbl
 INPUT DA_MainDocument.bbl
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt12.tfm
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\DA_MainDocument.lof

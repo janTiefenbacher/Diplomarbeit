@@ -19,11 +19,7 @@ namens Darwin, was eine solide, stabile Basis für moderne mobile Anwendungen sc
 die Plattform stark kontrolliert, können Updates, Sicherheitsmechanismen und Apple-Dienste über alle unterstützten Geräte sehr einheitlich 
 bereitgestellt werden. Um eine Applikation für iOS Geräte verfügbar zu machen, muss diese über den Apple App Store vertrieben werden,
 wobei strenge Richtlinien und Prüfprozesse sicherstellen, dass nur qualitativ hochwertige und sichere Apps zugelassen werden. Außerdem braucht man 
-eine Apple Developer Lizenz, um Apps im App Store veröffentlichen zu können.
-
-\url{https://www.ionos.at/digitalguide/websites/web-entwicklung/die-eigene-app-entwickeln-eine-ios-app-veroeffentlichen/}
-\texttt{https://www.it-schulungen.com/wir-ueber-uns/wissensblog/was-ist-ios.html }
-\texttt{https://www.computerweekly.com/de/definition/Apple-iOS }
+eine Apple Developer Lizenz, um Apps im App Store veröffentlichen zu können.\cite{ComputerWeekly_Apple_iOS} \cite{IT_Schulungen_Was_ist_iOS} \cite{Ionos_IOS_App_Entwicklung} 
 
 \vspace{0.5em}
 \textbf{Android}\\
@@ -34,10 +30,7 @@ zu bauen. Obwohl die Basis offen ist, enthalten die meisten Geräte zusätzliche
 Dadurch ist Android heute das am weitesten verbreitete mobile Betriebssystem weltweit. Um eine Applikation für Android-Geräte verfügbar zu machen, 
 wird diese in der Regel über den Google Play Store vertrieben. Auch hier gibt es Richtlinien und Prüfverfahren, die sicherstellen sollen, dass nur 
 funktionierende und sichere Apps veröffentlicht werden. Zusätzlich benötigt man ein Google Developer-Konto, um Anwendungen im Play Store 
-bereitstellen zu können.
-
-\url{https://www.ionos.at/digitalguide/websites/web-entwicklung/die-eigene-app-entwickeln-android-app-veroeffentlichen/}
-\verb|https://www.vodafone.de/featured/smartphones-tablets/was-ist-android-das-betriebssystem-von-google-im-check/#/|
+bereitstellen zu können. \cite{Featured_Android} \cite{IONOS_Android_App_Entwicklung}
 
 \vspace{0.5em}
 \textbf{Plattformspezifische Unterschiede zwischen iOS und Android}\\
@@ -53,13 +46,13 @@ Bei der nativen App-Entwicklung handelt es sich um die Entwicklung von Anwendung
 
 Ein wesentliches Merkmal nativer Anwendungen ist der direkte Zugriff auf systemnahe Funktionen und Hardware-Komponenten des Endgeräts, wie Kamera, GPS oder Sensoren. Native Apps können zudem systeminterne Funktionen wie Push-Benachrichtigungen nutzen. Durch die enge Integration mit dem Betriebssystem ist eine optimale Nutzung von Ressourcen wie Arbeitsspeicher und Hardware möglich, was zu einer guten Performance und hoher Usability führt.
 
-Allerdings erfordert dieser Ansatz für jedes Betriebssystem eine eigene Implementierung, wodurch separate Versionen für iOS und Android entwickelt werden müssen. Dies erhöht den Entwicklungsaufwand deutlich.
+Allerdings erfordert dieser Ansatz für jedes Betriebssystem eine eigene Implementierung, wodurch separate Versionen für iOS und Android entwickelt werden müssen. Dies erhöht den Entwicklungsaufwand deutlich. \cite{Denvo_Native_vs_Crossplattform} \cite{ITPortal_Native_vs_Crossplattform} \cite{knguru_crossplatform}
 
 \vspace{0.5em}
 \textbf{Native Apps – Design und Monetarisierung}\\
 Native Apps orientieren sich stark an den Design- und Interaktionsrichtlinien des jeweiligen Betriebssystems. Dadurch fügen sie sich nahtlos in die Benutzeroberfläche von iOS oder Android ein und bieten eine konsistente User Experience. Die hohe Usability entsteht durch die Verwendung systemeigener UI-Elemente und Interaktionsmuster, die den Nutzerinnen und Nutzern bereits vertraut sind.
 
-Die Bereitstellung nativer Apps erfolgt über die jeweiligen App Stores der Betriebssysteme. Dadurch sind sie direkt an das Ökosystem der Plattform gebunden und können die dort vorgesehenen Mechanismen zur Verteilung und Nutzung verwenden.
+Die Bereitstellung nativer Apps erfolgt über die jeweiligen App Stores der Betriebssysteme. Dadurch sind sie direkt an das Ökosystem der Plattform gebunden und können die dort vorgesehenen Mechanismen zur Verteilung und Nutzung verwenden. \cite{Denvo_Native_vs_Crossplattform} \cite{ITPortal_Native_vs_Crossplattform} \cite{knguru_crossplatform}
 
 \vspace{0.5em}
 \textbf{Cross-Platform Apps – Technische Grundlagen}\\
@@ -67,30 +60,20 @@ Bei der Cross-Platform-App-Entwicklung wird eine gemeinsame Codebasis verwendet,
 
 Cross-Platform-Frameworks abstrahieren die zugrunde liegenden Betriebssysteme und stellen einheitliche Schnittstellen zur Verfügung. Dadurch ist es möglich, eine Anwendung zu entwickeln, ohne für jedes Betriebssystem eine vollständig eigene Implementierung zu erstellen. Die Interaktion mit gerätespezifischen Funktionen erfolgt dabei häufig über zusätzliche Abstraktionsschichten oder spezielle Erweiterungen.
 
-Durch die gemeinsame Codebasis verringert sich der Entwicklungsaufwand, und Änderungen müssen nur einmal durchgeführt werden, um sie auf allen unterstützten Plattformen verfügbar zu machen. Dies erleichtert zudem die Wartung der Anwendung.
+Durch die gemeinsame Codebasis verringert sich der Entwicklungsaufwand, und Änderungen müssen nur einmal durchgeführt werden, um sie auf allen unterstützten Plattformen verfügbar zu machen. Dies erleichtert zudem die Wartung der Anwendung. \cite{Denvo_Native_vs_Crossplattform} \cite{ITPortal_Native_vs_Crossplattform} \cite{knguru_crossplatform}
 
 \vspace{0.5em}
 \textbf{Cross-Platform Apps – Design und Monetarisierung}\\
 Cross-Platform-Apps können viele native Funktionen nutzen und sich in vielerlei Hinsicht wie native Anwendungen anfühlen, auch wenn sie nicht vollständig plattformspezifisch entwickelt wurden. Das Design ist dabei weniger strikt an die Richtlinien eines einzelnen Betriebssystems gebunden, da eine einheitliche Umsetzung für mehrere Plattformen angestrebt wird.
 
-Durch die schnellere Markteinführung und den geringeren Entwicklungsaufwand eignet sich dieser Ansatz besonders für Anwendungen, die gleichzeitig auf mehreren Plattformen verfügbar sein sollen.
-
-\vspace{0.5em}
-
-\url{https://www.denovo.at/blog/native-vs-cross-plattform-app-welcher-weg-ist-der-richtige-fuer-ihre-idee}
-
-\url{https://de.ryte.com/wiki/Native_App/}
-
-\url{https://www.itportal24.de/ratgeber/cross-platform-app}
-
-\url{https://www.knguru.de/blog/was-ist-eine-cross-platform-app}
+Durch die schnellere Markteinführung und den geringeren Entwicklungsaufwand eignet sich dieser Ansatz besonders für Anwendungen, die gleichzeitig auf mehreren Plattformen verfügbar sein sollen. \cite{Denvo_Native_vs_Crossplattform} \cite{ITPortal_Native_vs_Crossplattform} \cite{knguru_crossplatform}
 
 
 \vspace{0.5em}
 \textbf{Cross-Platform-Lösung}\\
 Bevor mit der eigentlichen Entwicklung der App begonnen werden konnte, musste zunächst eine Entscheidung 
 bezüglich der Zielplattform getroffen werden. Aufgrund der definierten Zielgruppe sowie der angestrebten 
-Reichweite fiel die Wahl auf eine Cross-Platform-Lösung, um sowohl iOS- als auch Android-Nutzer zu erreichen. 
+Reichweite fiel die Wahl auf eine Cross-Platform-Lösung, um sowohl iOS- als auch Android-Nutzer zu erreichen.
 
 \vspace{0.5em}
 \textbf{Einsatz von React Native}\\
@@ -103,12 +86,7 @@ App gewährleisten. Durch dieses komponentenbasierte System können Entwickelnde
 Unterschiede adressieren und zugleich einen einheitlichen Look \& Feel über beide Zielplattformen erreichen, 
 da React Native die native Darstellung der Komponenten auf iOS und Android übernimmt. React Native bietet 
 zudem die Möglichkeit, bei Bedarf auf native APIs zuzugreifen, um plattformspezifische Funktionalität zu 
-integrieren.
-
-\url{https://www.knguru.de/blog/app-entwicklung-mit-react-native-vor-und-nachteile}
-\url{https://reactnative.dev/}
-
-
+integrieren. \cite{Denvo_Native_vs_Crossplattform} \cite{ITPortal_Native_vs_Crossplattform} \cite{knguru_crossplatform}
 
 
 % --------------------------------------------------
@@ -133,11 +111,7 @@ potenzielle Energieeinsparungen auf OLED- und AMOLED-Displays. Moderne Designs b
 und Nutzungskontexte und passen Kontraste sowie Farbschemata dynamisch an, um sowohl Nutzbarkeit als auch Zugänglichkeit zu optimieren. 
 Dennoch bleibt der Light Mode in hellen Umgebungen oder für bestimmte Nutzergruppen weiterhin relevant, weshalb eine flexible Umschaltmöglichkeit 
 zwischen beiden Modi als bewährte Praxis gilt. Genau aus diesem Grund stellen Dark Mode und Light Mode gemeinsam einen wichtigen Bestandteil 
-einer zeitgemäßen Designstrategie dar.
-\url{https://techwerk.io/blogs/ux-trends-2025}
-\url{https://www.knguru.de/blog/ux-design-trends-fur-erfolgreiche-digitale-produkte}
-\url{https://www.publizer.de/newsroom/dark-mode-vs-light-mode-aesthetik-funktionalitaet-und-energieeffizienz-2893524}
-\url{https://natively.dev/blog/top-mobile-app-design-trends-2025}
+einer zeitgemäßen Designstrategie dar. \cite{Publizer_dark_mode_light_mode} \cite{natively_mobile_app_design_trends_2025}
 
 
 \vspace{0.5em}
@@ -151,13 +125,7 @@ User Experience auf allen Geräten zu gewährleisten. Adaptive Design hingegen a
 abhängig von Geräteeigenschaften wie Bildschirmgröße oder Ausrichtung geladen werden und häufig feste Pixelwerte verwenden. Beide Ansätze zielen 
 darauf ab, Usability, Performance und Designqualität zu optimieren, unterscheiden sich jedoch in ihrer Philosophie: Während Responsive Design das 
 Verhalten der Inhalte definiert, legt Adaptive Design das konkrete Darstellungsergebnis für bestimmte Gerätekategorien fest. In der Praxis werden 
-die Vorteile beider Konzepte oft kombiniert, um sowohl Flexibilität als auch gezielte Optimierung für ausgewählte Endgeräte zu erreichen.
-
-\url{https://www.ionos.at/digitalguide/websites/webdesign/was-bedeutet-responsive-design/}
-\url{https://de.ryte.com/wiki/Responsive_Design/}
-\url{https://webstollen.de/responsive-design-oder-adaptive-design/}
-\url{https://kinsta.com/de/blog/responsive-vs-adaptiv/}
-
+die Vorteile beider Konzepte oft kombiniert, um sowohl Flexibilität als auch gezielte Optimierung für ausgewählte Endgeräte zu erreichen. \cite{Ionos_responsive_design} \cite{kinsta_responsive_vs_adaptive}
 
 \vspace{0.5em}
 \textbf{Accessibility \& Barrierefreiheit}\\
@@ -165,7 +133,7 @@ Accessibility bzw. Barrierefreiheit beschreibt das Ziel, digitale Produkte so zu
 gleichwertig genutzt werden können. Das betrifft nicht nur Personen mit dauerhaften Einschränkungen wie Seh- oder Hörbehinderungen, motorischen oder 
 kognitiven Beeinträchtigungen, sondern auch situative Einschränkungen, etwa wenn jemand kurzfristig eine verletzte Hand hat oder bei starker Sonne kaum 
 etwas am Display erkennt. Barrierefreiheit ist damit kein „Extra-Feature“, sondern ein Qualitätsmerkmal guter User Interfaces: Wenn eine App klar strukturiert, gut 
-bedienbar und verständlich ist, profitieren am Ende alle Nutzer.
+bedienbar und verständlich ist, profitieren am Ende alle Nutzer. \cite{uxmatters} \cite{materialdesign}
 
 \vspace{0.5em}
 \textbf{Warum Barrierefreiheit wichtig ist}\\
@@ -173,7 +141,7 @@ Barrierefreiheit hat mehrere Ebenen an Relevanz. Aus ethischer Sicht geht es um 
 Kommunikation und Services, weshalb Ausschlüsse durch schlechtes Design reale Konsequenzen haben. Zusätzlich spielt eine rechtliche Dimension hinein, 
 da Accessibility-Anforderungen in vielen Ländern und Branchen stärker reguliert werden. Und auch wirtschaftlich ist das Thema relevant. Barrierefreie 
 Produkte verbessern oft die Markenwahrnehmung, erhöhen die Nutzerbindung und erschließen zusätzliche Zielgruppen, statt potenzielle User einfach 
-auszulassen.
+auszulassen.\cite{uxmatters} \cite{materialdesign}
 
 \vspace{0.5em}
 \textbf{Struktur, Hierarchie und Fokusführung}\\
@@ -181,7 +149,7 @@ Ein Kernpunkt barrierefreier Gestaltung ist eine klare Informationshierarchie. N
 Aktionen sind. Dabei ist nicht nur das visuelle Layout relevant, sondern auch die Reihenfolge, in der Inhalte technisch angeordnet sind. Screenreader lesen 
 Inhalte typischerweise in einer top-down Reihenfolge aus dem Markup. Deshalb ist die Zusammenarbeit zwischen Design und Development wichtig, damit visuelle 
 Hierarchie, DOM-Reihenfolge und Fokuslogik zusammenpassen. Elemente sollen
-in einer logischen Reihenfolge erreichbar sein und Gruppierungen sollen verständlich sein, damit Nutzer sich schnell orientieren können. 
+in einer logischen Reihenfolge erreichbar sein und Gruppierungen sollen verständlich sein, damit Nutzer sich schnell orientieren können. \cite{uxmatters} \cite{materialdesign}
 
 \vspace{0.5em}
 
@@ -190,19 +158,19 @@ Damit Inhalte für möglichst viele Menschen wahrnehmbar sind, spielen Kontrast 
 und Hintergrund helfen insbesondere bei Sehbehinderungen, aber auch in Alltagssituationen wie starkem Umgebungslicht. Wichtig ist außerdem, Informationen 
 nicht ausschließlich über Farbe zu kommunizieren, beispielsweise einen Fehler nur Rot zu markieren, sondern zusätzliche Hinweise wie Text, Icons oder Umrandungen zu 
 verwenden. Typografie und Layout sollten so angelegt sein, dass größere Schriftgrößen und Zoom nicht zu überlappenden oder abgeschnittenen Elementen führen. 
-Flexible Layouts, ausreichende Abstände und skalierbare Schriftgrößen sind hier zentrale Bausteine.
+Flexible Layouts, ausreichende Abstände und skalierbare Schriftgrößen sind hier zentrale Bausteine.\cite{uxmatters} \cite{materialdesign}
 
 \vspace{0.5em}
 \textbf{Bedienbarkeit: Touch Targets und Eingabemethoden}\\
 Gerade auf mobilen Geräten ist die Größe von Interaktionsflächen entscheidend. Kleine Icons ohne ausreichende Abstände führen schnell zu Fehlbedienungen, 
 besonders bei motorischen Einschränkungen. Deshalb sollten Buttons, Icons und interaktive Elemente genügend 
-große Touch- bzw. Pointer-Flächen haben und mit ausreichendem Abstand zueinander platziert werden.
+große Touch- bzw. Pointer-Flächen haben und mit ausreichendem Abstand zueinander platziert werden.\cite{uxmatters} \cite{materialdesign}
 
 \vspace{0.5em}
 \textbf{Labels und Alt-Text}\\
 Ein weiterer zentraler Baustein ist eine klare und aussagekräftige Textgestaltung innerhalb der Anwendung. Dazu zählen sichtbare Beschriftungen wie Buttontexte sowie kurze beschreibende Texte für Symbole und grafische Elemente. Diese Inhalte sollten präzise, eindeutig und handlungsorientiert formuliert sein, um eine schnelle Orientierung und effiziente Nutzung zu ermöglichen.
 
-Auch bei Bildern ist eine bewusste Textzuordnung wichtig, sofern sie relevante Informationen vermitteln. Der Text sollte sich dabei auf das Wesentliche beschränken und den inhaltlichen Zweck des Bildes erklären. Grafische Elemente ohne Informationsgehalt oder mit bereits erklärendem Kontext können bewusst ohne zusätzliche Beschreibung eingesetzt werden, um Wiederholungen zu vermeiden.
+Auch bei Bildern ist eine bewusste Textzuordnung wichtig, sofern sie relevante Informationen vermitteln. Der Text sollte sich dabei auf das Wesentliche beschränken und den inhaltlichen Zweck des Bildes erklären. Grafische Elemente ohne Informationsgehalt oder mit bereits erklärendem Kontext können bewusst ohne zusätzliche Beschreibung eingesetzt werden, um Wiederholungen zu vermeiden.\cite{uxmatters} \cite{materialdesign}
 
 \vspace{0.5em}
 \textbf{Testing und Umsetzung}\\
@@ -210,8 +178,7 @@ Barrierefreiheit entsteht nicht nur durch „Guidelines lesen“, sondern durch 
 stabile Basis, während Custom Widgets schnell mehr Aufwand und Fehlerquellen bringen. In der Praxis sollten zentrale Tasks end-to-end mit aktivierten 
 Accessibility-Funktionen getestet werden, wie Screenreader-Navigation, Fokus-Reihenfolge, große Schrift und Kontrastanpassungen. Zusätzlich sind Tests mit 
 betroffenen Nutzer:innen extrem wertvoll, weil sie reale Nutzungsmuster sichtbar machen, die im Team sonst leicht übersehen werden.
-\url{https://m2.material.io/design/usability/accessibility.html#implementing-accessibility}
-\url{https://www.uxmatters.com/mt/archives/2024/05/designing-mobile-apps-with-accessibility-in-mind.php}
+
 
 
 % --------------------------------------------------
@@ -219,54 +186,42 @@ betroffenen Nutzer:innen extrem wertvoll, weil sie reale Nutzungsmuster sichtbar
 
 \subsection{UI/UX-Design \& Nutzererlebnis}
 
-\textbf{Zielgruppenanalyse \& Personas}\\
+\textbf{Zielgruppenanalyse}\\
 Eine zielgerichtete Kommunikation und ein passgenaues Angebot setzen voraus, dass klar ist, wer überhaupt angesprochen werden soll und warum
 diese Personen ein Produkt oder eine Dienstleistung nutzen würden. Genau hier setzt die Zielgruppenanalyse an. Sie ist ein strukturierter Prozess,
 um potenzielle und bestehende Nutzer besser zu verstehen und daraus konkrete Entscheidungen für Content, Design, Funktionen,
 Marketing und Produktstrategie abzuleiten. In digitalen Projekten bildet sie damit eine zentrale
-Grundlage für nutzerorientierte Entwicklung und eine konsistente Markenkommunikation. \\
+Grundlage für nutzerorientierte Entwicklung und eine konsistente Markenkommunikation. \cite{appinio_zielgruppenanalyse} \cite{webdesign_journal_zielgruppenanalyse}\\
 
 \textbf{Begriff und Bedeutung der Zielgruppe}\\
 Eine Zielgruppe beschreibt eine Gruppe von Menschen, die hinsichtlich bestimmter Merkmale wie Alter, Bedürfnisse, Verhalten und
 Budget ausreichend ähnlich sind, um mit gezielten Maßnahmen angesprochen werden zu können. Die Zielgruppe umfasst dabei nicht nur bereits bestehende
-Kunden, sondern auch potenzielle Nutzer, die prinzipiell Interesse am Angebot haben könnten. \\
+Kunden, sondern auch potenzielle Nutzer, die prinzipiell Interesse am Angebot haben könnten. \cite{appinio_zielgruppenanalyse} \cite{webdesign_journal_zielgruppenanalyse}\\
 
 \textbf{Ziel und Inhalt der Zielgruppenanalyse}\\
 Die Zielgruppenanalyse umfasst alle Aktivitäten, die dazu dienen, diese Gruppe genauer zu beschreiben. Dabei geht es nicht nur um „harte Fakten“
 wie demografische Daten, sondern vor allem um die Frage: Welche Bedürfnisse, Motive, Barrieren und Erwartungen bestimmen Entscheidungen und
-Verhalten? Ziel ist es, ein belastbares Verständnis zu gewinnen, um Maßnahmen nicht nach Bauchgefühl zu planen, sondern zielgerichtet auszurichten.\\
-
-\textbf{Personas als Ergebnis der Zielgruppenanalyse}\\
-Ein wichtiges Ergebnis dieses Prozesses ist häufig die Erstellung von Personas. Eine Persona ist eine fiktive, aber datenbasierte Modellperson, die
-typische Merkmale, Ziele und Herausforderungen einer Teilgruppe repräsentiert. Dabei wird unterschieden:
-\begin{itemize}
-\item Buyer Persona: Fokus auf Kauf- und Entscheidungsprozesse (z. B. Budget, Entscheidungskriterien, Einflussfaktoren).
-\item User Persona: Fokus auf Nutzung und Interaktion (z. B. Ziele bei der Nutzung, Bedienkontext, digitale Kompetenz, typische Aufgaben).
-\end{itemize}
-In der Praxis ergänzen sich beide. Während die Buyer Persona stärker Marketing und Vertrieb unterstützt, liefert die User Persona wertvolle Grundlagen für UX,
-Informationsarchitektur und Feature-Entscheidungen. \\
+Verhalten? Ziel ist es, ein belastbares Verständnis zu gewinnen, um Maßnahmen nicht nach Bauchgefühl zu planen, sondern zielgerichtet auszurichten.\cite{appinio_zielgruppenanalyse} \cite{webdesign_journal_zielgruppenanalyse}\\
 
 \textbf{Risiken fehlender Zielgruppenanalyse}\\
 Ohne Zielgruppenanalyse besteht das Risiko, dass Produkte, Inhalte oder Kommunikationsmaßnahmen an den Bedürfnissen der Nutzer vorbeigehen. Das führt
 häufig zu ineffizientem Ressourceneinsatz, geringer Reichweite, schwacher Conversion und langfristig zu sinkender Kundenzufriedenheit. Umgekehrt
-ermöglicht eine fundierte Analyse, Angebote und Inhalte zielgenau zu gestalten. \\
+ermöglicht eine fundierte Analyse, Angebote und Inhalte zielgenau zu gestalten.\cite{appinio_zielgruppenanalyse} \cite{webdesign_journal_zielgruppenanalyse} \\
 
 \textbf{Zielgruppenanalyse als iterativer Prozess}\\
 Gerade im digitalen Kontext ist außerdem wichtig, dass Zielgruppen sich verändern. Deshalb ist Zielgruppenanalyse kein einmaliger Schritt, sondern ein iterativer Prozess, der
-regelmäßig überprüft und aktualisiert werden sollte. \\
+regelmäßig überprüft und aktualisiert werden sollte.\cite{appinio_zielgruppenanalyse} \cite{webdesign_journal_zielgruppenanalyse} \\
 
 \textbf{Segmentierung von Zielgruppen}\\
 Um eine Zielgruppe greifbar zu machen, wird sie anhand verschiedener Kriterien segmentiert.
-Je mehr Perspektiven kombiniert werden, desto realistischer wird das Bild der Zielgruppe. \\
+Je mehr Perspektiven kombiniert werden, desto realistischer wird das Bild der Zielgruppe.\cite{appinio_zielgruppenanalyse} \cite{webdesign_journal_zielgruppenanalyse} \\
 
 \textbf{Geografische, demografische und sozioökonomische Kriterien}\\
 Ergänzend dazu spielen geografische Kriterien eine wichtige Rolle, insbesondere bei lokalen oder sprach- und kulturabhängigen Angeboten.
-Demografische Merkmale sowie sozioökonomische Faktoren wie Bildung, Beruf oder Einkommen tragen dazu bei, die Zielgruppe weiter zu konkretisieren. \\
+Demografische Merkmale sowie sozioökonomische Faktoren wie Bildung, Beruf oder Einkommen tragen dazu bei, die Zielgruppe weiter zu konkretisieren. \cite{appinio_zielgruppenanalyse} \cite{webdesign_journal_zielgruppenanalyse}\\
 
-Wichtig ist, dass Personas keine Fantasiefiguren sind, sondern auf Daten beruhen. Sie helfen Teams dabei, Entscheidungen zu treffen über themen wie
-welche Funktionen Priorität haben, welche Inhalte fehlen oder welcher Kommunikationsstil sich am besten eignet.
-\url{https://www.appinio.com/de/blog/marktforschung/zielgruppenanalyse}
-\url{https://www.webdesign-journal.de/zielgruppenanalyse/}   
+Wichtig ist, dass diese Zielgruppen keine Fantasiefiguren sind, sondern auf Daten beruhen. Sie helfen Teams dabei, Entscheidungen zu treffen über themen wie
+welche Funktionen Priorität haben, welche Inhalte fehlen oder welcher Kommunikationsstil sich am besten eignet. \cite{appinio_zielgruppenanalyse} \cite{webdesign_journal_zielgruppenanalyse}
 
 \vspace{0.5em}
 
@@ -277,17 +232,17 @@ Gliederung und Verknüpfung von Informationen in digitalen Anwendungen. Ziel ist
 logische Hierarchie zu schaffen, die Inhalte verständlich organisiert und dadurch die 
 Auffindbarkeit sowie die Orientierung verbessert. Informationsarchitektur wirkt meist 
 „unsichtbar“, beeinflusst aber unmittelbar, ob eine Website oder eine App als klar und intuitiv 
-oder als unübersichtlich wahrgenommen wird. \\
+oder als unübersichtlich wahrgenommen wird. \cite{b13_informationsarchitektur} \cite{eresult_informationsarchitektur}\\
 
 Informationsarchitektur ist das konzeptionelle „Gerüst“ einer Website oder Anwendung. 
 Sie umfasst nicht nur die Anordnung von Inhalten innerhalb eines Hauptmenüs, sondern auch das 
 „Wie und Wo“: Welche Inhalte und Funktionen existieren, wie sind sie gebündelt, wie hängen 
 sie zusammen und an welchen Stellen werden sie angeboten. Damit betrifft Informationsarchitektur
 auch die Struktur einzelner Seiten, bezüglich der Platzierung von Modulen wie Menüs, Suchfunktionen,
-Newsfeeds oder Profilbereichen. \\
+Newsfeeds oder Profilbereichen. \cite{b13_informationsarchitektur} \cite{eresult_informationsarchitektur}\\
 
 Auf Basis etablierter Informationsarchitektur-Modelle lässt sie sich in vier 
-zentrale Komponenten gliedern:
+zentrale Komponenten gliedern:\cite{b13_informationsarchitektur} \cite{eresult_informationsarchitektur}
 \begin{itemize}
     \item Organisationssysteme: Definieren, wie Inhalte gruppiert und kategorisiert werden (z. B. thematisch, alphabetisch, nach Nutzerrollen).
     \item Navigationssysteme: Bestimmen, wie Nutzer durch die Informationsstruktur geführt werden (z. B. Menüs, Suchfunktionen).
@@ -297,25 +252,23 @@ zentrale Komponenten gliedern:
 \vspace{0.5em}
 Die Informationsarchitektur wird idealerweise bereits in frühen Projektphasen definiert, sie sorgt für eine
 bessere User Experience, indem sie Klarheit schafft und Suchzeiten minimiert. Sie sorgt außerdem für mehr energetische Effizienz,
-da der User weniger Klicks braucht um ans Ziel zu kommen, jenes ist vor allem bei Websites relevant. \\
+da der User weniger Klicks braucht um ans Ziel zu kommen, jenes ist vor allem bei Websites relevant. \cite{b13_informationsarchitektur} \cite{eresult_informationsarchitektur}\\
 
-Ein gutes Informationsarchitektur-Design achtet auf folgende Prinzipien:
+Ein gutes Informationsarchitektur-Design achtet auf folgende Prinzipien:\cite{b13_informationsarchitektur}\cite{eresult_informationsarchitektur}
 \begin{itemize}
     \item begrenzte Auswahl pro Ebenen
     \item angemessene Offenlegung von Informationen
     \item Mehrfachklassifikation, mehrere Wege führen zum Ziel
-    \item Skalierbarkeit, die Struktur sollte zukünftiges Wachstum und neue Inhalte berücksichtigen.
+    \item Skalierbarkeit, die Struktur sollte zukünftiges Wachstum und neue Inhalte berücksichtigen. 
 \end{itemize}
 
-\url{https://www.eresult.de/blog/ux-design/blog-informationsarchitektur-ux/}
-\url{https://b13.com/de/blog/informationsarchitektur-in-ux-best-practices}
 \vspace{0.5em}
 
 \textbf{Mockups, Prototypen \& Wireframes}\\
 Wireframes und Prototypen sind zentrale Bestandteile des modernen Designprozesses für digitale Produkte wie Websites, 
 Webanwendungen oder mobile Apps. Sie dienen dazu, Ideen frühzeitig zu strukturieren, zu visualisieren und zu überprüfen, 
 bevor zeit- und kostenintensive Entwicklungsarbeiten beginnen. Obwohl die Begriffe im Alltag häufig synonym verwendet werden, 
-erfüllen Wireframes und Prototypen unterschiedliche Aufgaben und besitzen jeweils eigene Eigenschaften und Zielsetzungen.\\
+erfüllen Wireframes und Prototypen unterschiedliche Aufgaben und besitzen jeweils eigene Eigenschaften und Zielsetzungen. \cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire}\\
 
 \textbf{Wireframes: Struktur und Funktion als Grundlage}
 
@@ -330,37 +283,32 @@ erstellen, zu diskutieren und zu verändern. Dadurch eignen sie sich besonders g
 abzustimmen und grundlegende Designentscheidungen zu treffen. Ein weiterer Vorteil liegt in der Kosten- und Zeiteffizienz, 
 da Anpassungen ohne großen Aufwand vorgenommen werden können. Gleichzeitig liegt hier auch eine Einschränkung: Da Wireframes 
 kaum Interaktivität und keine realistischen Inhalte enthalten, sind sie nur bedingt geeignet, um Benutzerfreundlichkeit oder 
-Nutzerinteraktionen zu testen.
+Nutzerinteraktionen zu testen.\cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire}
 \vspace{0.5em}
 
 \textbf{Prototypen: Interaktion und Realitätsnähe} \\
 Prototypen bauen auf Wireframes auf und stellen eine weiterentwickelte, interaktive Version des Produkts dar. 
 Sie reichen von einfachen Low-Fidelity-Prototypen bis hin zu High-Fidelity-Prototypen, die dem späteren Endprodukt 
 visuell und funktional sehr nahekommen. Prototypen enthalten reale Inhalte, UI-Elemente, Animationen und definierte 
-Interaktionen. Nutzer können klicken, navigieren und Abläufe realistisch nachvollziehen. \\
+Interaktionen. Nutzer können klicken, navigieren und Abläufe realistisch nachvollziehen.\cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire} \\
 
 Der Hauptzweck von Prototypen liegt in der Validierung von Designentscheidungen. Durch Nutzertests 
 lassen sich Missverständnisse oder Schwächen im Benutzerfluss frühzeitig erkennen. Dadurch kann wertvolles Feedback 
 gesammelt werden, bevor mit der technischen Umsetzung begonnen wird. Zwar ist die Erstellung von Prototypen aufwendiger 
-als die von Wireframes, langfristig helfen sie jedoch, Fehlentwicklungen und teure Nachbesserungen zu vermeiden. \\
+als die von Wireframes, langfristig helfen sie jedoch, Fehlentwicklungen und teure Nachbesserungen zu vermeiden.\cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire} \\
 
 \textbf{Mockups: Visueller Designprozess} \\
 Neben Wireframes und Prototypen werden häufig auch Mockups verwendet. Mockups sind statische, visuell ausgearbeitete 
 Darstellungen eines Produkts. Sie zeigen Farben, Typografie und das visuelle Erscheinungsbild sehr genau, bieten 
 jedoch keine Interaktivität. Während Wireframes die Struktur festlegen und Prototypen die Nutzung simulieren, 
-dienen Mockups vor allem der Beurteilung des visuellen Designs.\\
+dienen Mockups vor allem der Beurteilung des visuellen Designs.\cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire}\\
 
 \textbf{Zusammenspiel im Designprozess} \\
 Die verschiedenen Design-Artefakte sind keine konkurrierenden Phasen, sondern ergänzen sich. In der Regel beginnt der
 Designprozess mit Wireframes, die als Fundament dienen. Danach werden Mockups angefertigt um das visuelle Erscheinungsbild zu evaluieren. Sobald Struktur und Funktionalität festgelegt sind, 
 werden diese Entwürfe in Prototypen überführt, um das Nutzungserlebnis realistisch darzustellen und zu testen. 
 In manchen Fällen entstehen auch High-Fidelity-Wireframes, die bereits detaillierter sind, jedoch noch nicht den 
-vollen Funktionsumfang eines Prototyps besitzen. 
-\vspace{0.5em}
-
-\url{https://miro.com/de/wireframing/wireframe-vs-prototyp/#high-fidelity-wireframe-vs.-prototyp}
-\url{https://www.justinmind.com/de/wireframe/unterschied-wireframe-vs-prototyp-vs-mockup}
-\url{https://www.popwebdesign.de/popart_blog/de/2017/06/wireframe-vs-prototype-was-ist-der-unterschied/}
+vollen Funktionsumfang eines Prototyps besitzen. \cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire}
 \vspace{0.5em}
 
 \textbf{Visuelles Design}\\
@@ -369,14 +317,14 @@ Visuelles Design bezeichnet die gezielte Gestaltung visueller Elemente mit dem Z
 Gestaltung und Nutzererfahrung, da es nicht nur das äußere Erscheinungsbild eines Produkts prägt, sondern 
 auch maßgeblich beeinflusst, wie Inhalte wahrgenommen, verstanden und genutzt werden. In der digitalen Welt 
 ist visuelles Design daher ein wesentlicher Bestandteil von Webanwendungen, Software, Marketingplattformen 
-und interaktiven Medien.\\
+und interaktiven Medien.\cite{Toolmaster_Design}\cite{StudySmarter_Visual_Design}\\
 
 \textbf{Bestandteile des visuellen Designs}\\
 Im Kern umfasst visuelles Design alle sichtbaren Gestaltungskomponenten eines digitalen Produkts. Dazu 
 zählen Bilder, grafische Elemente, Farben, Typografie, Layoutstrukturen sowie der gezielte Einsatz von 
 Weißraum. Diese Elemente wirken nicht isoliert, sondern entfalten ihre Wirkung im Zusammenspiel. Ein
 konsistentes und durchdachtes visuelles Design trägt zur Stärkung der Markenidentität bei, erhöht die 
-Wiedererkennbarkeit und unterstützt eine klare Kommunikation von Inhalten.\\
+Wiedererkennbarkeit und unterstützt eine klare Kommunikation von Inhalten.\cite{Toolmaster_Design}\cite{StudySmarter_Visual_Design}\\
 
 \textbf{Zentrale Gestaltungselemente}\\
 Besondere Bedeutung kommt den einzelnen Gestaltungselementen zu. Bilder und grafische Elemente dienen nicht 
@@ -384,19 +332,13 @@ nur der Dekoration, sondern übernehmen eine informative und emotionale Funktion
 vereinfachen, Aufmerksamkeit lenken und eine Verbindung zum Nutzer herstellen. Typografie beeinflusst maßgeblich 
 die Lesbarkeit und visuelle Hierarchie. Schriftart, -größe und -gewicht bestimmen, welche Inhalte priorisiert 
 wahrgenommen werden. Die Farbgestaltung wirkt stark auf die emotionale Ebene und kann Stimmungen erzeugen, 
-Kontraste verstärken sowie Orientierung bieten.\\
+Kontraste verstärken sowie Orientierung bieten.\cite{Toolmaster_Design}\cite{StudySmarter_Visual_Design}\\
 
 \textbf{Evaluation und Optimierung im Designprozess}\\
 Moderne visuelle Designs werden zunehmend daten- und nutzerorientiert entwickelt. Mithilfe von 
 Benutzeranalysen, Usability-Tests und Rapid-Prototyping-Methoden lassen sich Designentscheidungen 
 überprüfen und optimieren. Die Wirkung visueller Gestaltung ist somit messbar und kann gezielt zur 
-Verbesserung der Nutzererfahrung und Markenwahrnehmung eingesetzt werden.
-\url{https://toolmaster.ch/visuelles-design-was-ist-visuelles-design/}
-\url{https://www.studysmarter.de/schule/kunst/grafikdesign-kunst/visual-design/}
-\url{https://www.studysmarter.de/schule/kunst/grafikdesign-kunst/visual-design/}
-
-
-
+Verbesserung der Nutzererfahrung und Markenwahrnehmung eingesetzt werden.\cite{Toolmaster_Design}\cite{StudySmarter_Visual_Design}
 
 % ==================================================
 \section{Monetarisierung von mobilen Apps}
