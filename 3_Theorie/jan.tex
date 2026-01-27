@@ -176,14 +176,6 @@ Produkte verbessern oft die Markenwahrnehmung, erhöhen die Nutzerbindung und er
 auszulassen.
 
 \vspace{0.5em}
-\textbf{Assistive Technologien als Grundlage}\\
-Viele Nutzer greifen auf assistive Technologien zurück, die fehlende oder eingeschränkte Fähigkeiten kompensieren. Dazu zählen Screenreader, Vergrößerungstools,externe Eingabegeräte 
-oder Schaltersteuerungen. Besonders Screenreader sind entscheidend, weil 
-sie Inhalte nicht „sehen“, sondern sie anhand von Struktur, Beschriftungen und semantischen Rollen interpretieren. Für die Praxis heißt das, eine 
-Oberfläche kann optisch ansprechend wirken, aber wenn Überschriften fehlen, Buttons nicht sinnvoll beschriftet sind oder die Reihenfolge im Code nicht zur 
-visuellen Logik passt, wird die Bedienung für Screenreader-Nutzer unmöglich.
-
-\vspace{0.5em}
 \textbf{Struktur, Hierarchie und Fokusführung}\\
 Ein Kernpunkt barrierefreier Gestaltung ist eine klare Informationshierarchie. Nutzer müssen schnell erkennen können, wo sie sind und was die wichtigsten 
 Aktionen sind. Dabei ist nicht nur das visuelle Layout relevant, sondern auch die Reihenfolge, in der Inhalte technisch angeordnet sind. Screenreader lesen 
@@ -207,12 +199,10 @@ besonders bei motorischen Einschränkungen. Deshalb sollten Buttons, Icons und i
 große Touch- bzw. Pointer-Flächen haben und mit ausreichendem Abstand zueinander platziert werden.
 
 \vspace{0.5em}
-\textbf{Accessibility-Text: Labels und Alt-Text}\\
-Ein weiterer zentraler Baustein ist aussagekräftiger Accessibility-Text. Dazu gehören sichtbare Labels, wie Buttontexte, und unsichtbare Beschreibungen wie 
-aria-labels oder contentdescriptions für Icons. Diese Texte sollten kurz, eindeutig und handlungsorientiert sein, weil Screenreader alles vorlesen und lange 
-Formulierungen die Navigation verlangsamen. Für Bilder ist Alt-Text wichtig, wenn das Bild Information trägt: Er soll beschreiben, was relevant ist, ohne unnötige 
-Floskeln. Wenn ein Bild rein dekorativ ist oder bereits durch angrenzenden Text erklärt wird, kann es sinnvoll sein, es für Screenreader zu überspringen, statt 
-redundante Infos vorzulesen.
+\textbf{Labels und Alt-Text}\\
+Ein weiterer zentraler Baustein ist eine klare und aussagekräftige Textgestaltung innerhalb der Anwendung. Dazu zählen sichtbare Beschriftungen wie Buttontexte sowie kurze beschreibende Texte für Symbole und grafische Elemente. Diese Inhalte sollten präzise, eindeutig und handlungsorientiert formuliert sein, um eine schnelle Orientierung und effiziente Nutzung zu ermöglichen.
+
+Auch bei Bildern ist eine bewusste Textzuordnung wichtig, sofern sie relevante Informationen vermitteln. Der Text sollte sich dabei auf das Wesentliche beschränken und den inhaltlichen Zweck des Bildes erklären. Grafische Elemente ohne Informationsgehalt oder mit bereits erklärendem Kontext können bewusst ohne zusätzliche Beschreibung eingesetzt werden, um Wiederholungen zu vermeiden.
 
 \vspace{0.5em}
 \textbf{Testing und Umsetzung}\\
@@ -273,82 +263,10 @@ Je mehr Perspektiven kombiniert werden, desto realistischer wird das Bild der Zi
 Ergänzend dazu spielen geografische Kriterien eine wichtige Rolle, insbesondere bei lokalen oder sprach- und kulturabhängigen Angeboten.
 Demografische Merkmale sowie sozioökonomische Faktoren wie Bildung, Beruf oder Einkommen tragen dazu bei, die Zielgruppe weiter zu konkretisieren. \\
 
-\textbf{Psychografische und verhaltensorientierte Kriterien}\\
-Besonders tiefgehende Einblicke liefern psychografische und verhaltensorientierte Kriterien.
-Dazu zählen unter anderem Werte, Motive, Mediennutzung, Markenpräferenzen sowie das tatsächliche Nutzungs- und Kaufverhalten. \\
-
-\textbf{Methoden der Datenerhebung}\\
-Zur Datenerhebung kommen unterschiedliche Methoden zum Einsatz, darunter Kundenbefragungen, Social-Media-Monitoring, Webanalysen und die Auswertung von Keyword-Daten.
-Während quantitative Methoden vor allem aufzeigen, was passiert, liefern qualitative Methoden Erklärungen dafür, warum bestimmtes Verhalten auftritt.
-
-Während Zielgruppen häufig eher abstrakt bleiben, machen Personas diese Informationen handlungsorientiert. Eine Persona bündelt 
-typische Merkmale und ergänzt sie um:
-
-\begin{itemize}
-    \item Ziele (Was will die Person erreichen?)
-    \item Herausforderungen/Schmerzpunkte (Was hindert sie?)
-    \item Entscheidungskriterien (Warum kauft/nutzt sie etwas, oder nicht?)
-    \item Kontext der Nutzung (Wann, wo, mit welchem Gerät?)
-    \item Informations- und Medienverhalten (Wie recherchiert sie?)
-    \item Erwartung an Tonalität, Design, Vertrauen und Service
-\end{itemize}
-
-Wichtig ist: Personas sind keine Fantasiefiguren, sondern sollen auf Daten beruhen. Sie helfen Teams dabei, Entscheidungen zu treffen über themen wie
+Wichtig ist, dass Personas keine Fantasiefiguren sind, sondern auf Daten beruhen. Sie helfen Teams dabei, Entscheidungen zu treffen über themen wie
 welche Funktionen Priorität haben, welche Inhalte fehlen oder welcher Kommunikationsstil sich am besten eignet.
 \url{https://www.appinio.com/de/blog/marktforschung/zielgruppenanalyse}
 \url{https://www.webdesign-journal.de/zielgruppenanalyse/}   
-
-\vspace{0.5em}
-\textbf{User Journey}\\
-Eine User Journey beschreibt den gesamten Weg, den Nutzende durchlaufen, um mit einem Produkt oder Service ein bestimmtes Ziel zu erreichen. Dabei werden 
-alle relevanten Touchpoints, Interaktionen sowie die Emotionen und Entscheidungen der Nutzenden berücksichtigt. Ziel einer User Journey ist es, das 
-Nutzungserlebnis ganzheitlich zu verstehen und Optimierungspotenziale sichtbar zu machen, um Produkte langfristig nutzerfreundlicher und besser zu gestalten. 
-Ein optimiertes Nutzererlebnis stärkt nicht nur die Zufriedenheit, sondern auch die emotionale Bindung zur Marke. Das Ergebnis sind loyale Nutzende, 
-die das Produkt weiterempfehlen und langfristig nutzen. \vspace{0.5em}
-
-Eine User Journey Map beantwortet unter anderem folgende zentrale Fragen:
-\begin{itemize}
-    \item Welche Schritte durchlaufen Nutzende vom ersten Kontakt bis zur Zielerreichung?
-
-    \item Wie interagieren sie aktuell mit dem Produkt oder Service und wie könnte diese Interaktion idealerweise aussehen?
-
-    \item Welche Faktoren wie Emotionen, Budget, Werte, Zeitdruck oder Informationslage beeinflussen ihre Entscheidungen?
-
-    \item Wo treten Schwierigkeiten oder Frustrationen auf?
-     
-    \item Wie kann das Produkt Nutzende besser unterstützen und effizienter zum Ziel führen?
-
-    \item An welchen Stellen lässt sich das Nutzererlebnis optimieren, um eine langfristige Kundenbindung aufzubauen?
-
-    \item Wie unterscheidet sich die Nutzung zwischen verschiedenen Zielgruppen?
-\end{itemize} \vspace{0.5em}
-
-Unabhängig vom Produkt lassen sich User Journeys typischerweise in mehrere Phasen gliedern:
-\begin{itemize}
-    \item Aufmerksamkeit – Nutzende erkennen ein Bedürfnis oder Problem
-
-    \item Bewertung – verschiedene Optionen werden verglichen
-
-    \item Überlegung – eine konkrete Entscheidung wird vorbereitet
-
-    \item Einkauf/Nutzung – Kauf oder aktive Nutzung des Produkts
-     
-    \item Bindung – Nachkaufphase, Feedback, Wiederkehr und Loyalität
-\end{itemize}
-Diese Phasen sind nicht strikt linear, sondern können sich wiederholen oder überschneiden. 
-Eine positive Erfahrung in der Bindungsphase kann Nutzende erneut in die Aufmerksamkeits-Phase bringen, ein stabiler Kreislauf, 
-der für Unternehmen langfristig Gewinn bringt.
-
-Während der User Journey werden Nutzende von zahlreichen Faktoren beeinflusst, darunter persönliche Werte, Budget, Zeit, Benutzerfreundlichkeit der Platform und Servicequalität.
-Sogennante Pain Points, beschreiben stellen, an denen ein User nicht mehr eindeutig weiß was zu tun ist, sie entstehen vor allem dann, wenn Informationen fehlen, Prozesse unübersichtlich sind oder Erwartungen nicht erfüllt werden. Genau hier setzt User Journey 
-Mapping an. Diese Problemstellen werden sichtbar gemacht und gezielt adressiert. \\
-
-Als Ergebnis entsteht eine grafisch aufbereitete User Journey Map, die alle Phasen, Schritte, Touchpoints und Emotionen der Nutzenden darstellt. 
-Ergänzt wird diese durch zusätzliche Informationen wie Nutzerzitate, genutzte Kanäle oder Endgeräte. 
-Interaktive User Journey Maps ermöglichen es zudem, Inhalte flexibel ein- und auszublenden und die Analyse gezielt zu vertiefen.
-\url{https://www.usability.de/leistungen/methoden/user-journey-mapping.html}
-\url{https://mailchimp.com/de/resources/user-journey/}
-\url{https://piwikpro.de/glossar/user-journey/}
 
 \vspace{0.5em}
 
@@ -478,15 +396,7 @@ Verbesserung der Nutzererfahrung und Markenwahrnehmung eingesetzt werden.
 \url{https://www.studysmarter.de/schule/kunst/grafikdesign-kunst/visual-design/}
 
 
-% --------------------------------------------------
-\subsection{Designentscheidungen im Hinblick auf Monetarisierung}
 
-\begin{itemize}
-    \item Einfluss von UI/UX auf die Zahlungsbereitschaft der Nutzer
-    \item Sichtbare, aber nicht aufdringliche Platzierung von Call-to-Actions
-    \item Dezente Integration von Bezahl- und Werbeelementen
-    \item Bewusste Vermeidung von manipulativen Dark Patterns
-\end{itemize}
 
 % ==================================================
 \section{Monetarisierung von mobilen Apps}

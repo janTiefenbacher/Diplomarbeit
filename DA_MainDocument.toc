@@ -17,67 +17,66 @@
 \contentsline {subsection}{\numberline {3.1.1}Plattformwahl \& technische Grundlagen}{14}{subsection.16}%
 \contentsline {subsection}{\numberline {3.1.2}Trends \& Weiterentwicklungen im App-Design}{17}{subsection.17}%
 \contentsline {subsection}{\numberline {3.1.3}UI/UX-Design \& Nutzererlebnis}{19}{subsection.18}%
-\contentsline {subsection}{\numberline {3.1.4}Designentscheidungen im Hinblick auf Monetarisierung}{26}{subsection.19}%
-\contentsline {section}{\numberline {3.2}Monetarisierung von mobilen Apps}{26}{section.20}%
-\contentsline {subsection}{\numberline {3.2.1}Grundlagen \& Marktüberblick}{26}{subsection.21}%
-\contentsline {subsection}{\numberline {3.2.2}Werbung als Einnahmequelle}{26}{subsection.22}%
-\contentsline {subsection}{\numberline {3.2.3}Sponsoring \& Partnerschaften}{27}{subsection.23}%
-\contentsline {subsection}{\numberline {3.2.4}Kostenpflichtige App-Modelle}{27}{subsection.24}%
-\contentsline {subsection}{\numberline {3.2.5}In-App-Käufe}{27}{subsection.25}%
-\contentsline {subsection}{\numberline {3.2.6}Spenden \& freiwillige Unterstützung}{28}{subsection.26}%
-\contentsline {subsection}{\numberline {3.2.7}Vergleich \& Bewertung der Monetarisierungsstrategien}{28}{subsection.27}%
-\contentsline {section}{\numberline {3.3}Laurenz Ausarbeitung}{28}{section.28}%
-\contentsline {subsection}{\numberline {3.3.1}Mobile App Entwicklung}{28}{subsection.29}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}React Native Framework}{28}{subsubsection.30}%
-\contentsline {subsection}{\numberline {3.3.2}Backend-Technologien}{29}{subsection.31}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}APIs}{29}{subsubsection.32}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Datenbanken}{30}{subsubsection.33}%
-\contentsline {subsubsection}{\numberline {3.3.2.3}Backend-as-a-Service (BaaS)}{30}{subsubsection.34}%
-\contentsline {subsection}{\numberline {3.3.3}Hosting- und Infrastrukturmodelle}{31}{subsection.35}%
-\contentsline {subsubsection}{\numberline {3.3.3.1}On-Premise, Cloud und Hybrid-Architekturen}{31}{subsubsection.36}%
-\contentsline {subsubsection}{\numberline {3.3.3.2}IaaS, PaaS, FaaS und Serverless}{32}{subsubsection.37}%
-\contentsline {subsubsection}{\numberline {3.3.3.3}Relationale Datenbanken}{33}{subsubsection.38}%
-\contentsline {subsubsection}{\numberline {3.3.3.4}Datenmodellierung und Normalisierung}{33}{subsubsection.39}%
-\contentsline {subsubsection}{\numberline {3.3.3.5}Echtzeit-Daten}{34}{subsubsection.40}%
-\contentsline {subsubsection}{\numberline {3.3.3.6}Vertikale vs. horizontale Skalierung}{34}{subsubsection.41}%
-\contentsline {subsubsection}{\numberline {3.3.3.7}Autoscaling und Lastverteilung}{35}{subsubsection.42}%
-\contentsline {subsubsection}{\numberline {3.3.3.8}Latenzoptimierung und Durchsatzsteigerung}{35}{subsubsection.43}%
-\contentsline {subsubsection}{\numberline {3.3.3.9}Auth-Systeme}{36}{subsubsection.44}%
-\contentsline {subsubsection}{\numberline {3.3.3.10}Verschlüsselung}{37}{subsubsection.45}%
-\contentsline {subsubsection}{\numberline {3.3.3.11}Datenschutz}{38}{subsubsection.46}%
-\contentsline {chapter}{\numberline {4}Dokumentation der Implementierung}{39}{chapter.47}%
-\contentsline {section}{\numberline {4.1}Systemumgebung}{39}{section.48}%
-\contentsline {subsection}{\numberline {4.1.1}Verwendete Technologien}{39}{subsection.49}%
-\contentsline {section}{\numberline {4.2}Implementierung}{40}{section.50}%
-\contentsline {subsection}{\numberline {4.2.1}Architektur der Anwendung}{40}{subsection.51}%
-\contentsline {subsection}{\numberline {4.2.2}Frontend-Implementierung - JAN NOCH UMSCHREIBEN}{40}{subsection.52}%
-\contentsline {subsubsection}{\numberline {4.2.2.1}Projektstruktur und Navigation}{40}{subsubsection.53}%
-\contentsline {subsubsection}{\numberline {4.2.2.2}Spielansicht und Benutzerinteraktion}{40}{subsubsection.54}%
-\contentsline {paragraph}{\numberline {4.2.2.2.1}Einzelspieler-Modus:}{41}{paragraph.55}%
-\contentsline {paragraph}{\numberline {4.2.2.2.2}Mehrspieler-Modus:}{41}{paragraph.56}%
-\contentsline {subsection}{\numberline {4.2.3}Backend-Anbindung mit Supabase}{41}{subsection.57}%
-\contentsline {subsubsection}{\numberline {4.2.3.1}Datenbankstruktur}{41}{subsubsection.58}%
-\contentsline {subsubsection}{\numberline {4.2.3.2}Authentifizierung der Benutzer - Supabase Auth, OAuth2}{41}{subsubsection.59}%
-\contentsline {subsection}{\numberline {4.2.4}Spielmechanik und Logik}{41}{subsection.60}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}Generierung der Spielrunden}{41}{subsubsection.61}%
-\contentsline {subsubsection}{\numberline {4.2.4.2}Generierung des täglichen Spiels}{41}{subsubsection.62}%
-\contentsline {subsubsection}{\numberline {4.2.4.3}Live-Einladungen für Freundesrunden}{41}{subsubsection.63}%
-\contentsline {subsubsection}{\numberline {4.2.4.4}Punkteberechnung}{41}{subsubsection.64}%
-\contentsline {subsection}{\numberline {4.2.5}Benutzerprofil}{41}{subsection.65}%
-\contentsline {subsubsection}{\numberline {4.2.5.1}Profilanpassung}{42}{subsubsection.66}%
-\contentsline {subsubsection}{\numberline {4.2.5.2}Kaufen und Freischalten von Profilinhalten}{42}{subsubsection.67}%
-\contentsline {subsection}{\numberline {4.2.6}Freundesystem}{42}{subsection.68}%
-\contentsline {subsubsection}{\numberline {4.2.6.1}Freundschaftsanfragen}{42}{subsubsection.69}%
-\contentsline {subsubsection}{\numberline {4.2.6.2}Herausfordern von Freunden}{42}{subsubsection.70}%
-\contentsline {subsubsection}{\numberline {4.2.6.3}Chatfunktion}{42}{subsubsection.71}%
-\contentsline {subsubsection}{\numberline {4.2.6.4}Anzeigen von Benutzerprofilen}{42}{subsubsection.72}%
-\contentsline {subsection}{\numberline {4.2.7}Integration der Google APIs}{42}{subsection.73}%
-\contentsline {subsubsection}{\numberline {4.2.7.1}Verwendung der Google Maps API}{42}{subsubsection.74}%
-\contentsline {subsubsection}{\numberline {4.2.7.2}Einbindung der Street-View-Bilder}{42}{subsubsection.75}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{43}{chapter.76}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung}{43}{section.77}%
-\contentsline {section}{\numberline {5.2}Ausblick}{43}{section.78}%
-\contentsline {chapter}{\numberline {I}Literaturverzeichnis}{44}{chapter.79}%
+\contentsline {section}{\numberline {3.2}Monetarisierung von mobilen Apps}{24}{section.19}%
+\contentsline {subsection}{\numberline {3.2.1}Grundlagen \& Marktüberblick}{24}{subsection.20}%
+\contentsline {subsection}{\numberline {3.2.2}Werbung als Einnahmequelle}{24}{subsection.21}%
+\contentsline {subsection}{\numberline {3.2.3}Sponsoring \& Partnerschaften}{25}{subsection.22}%
+\contentsline {subsection}{\numberline {3.2.4}Kostenpflichtige App-Modelle}{25}{subsection.23}%
+\contentsline {subsection}{\numberline {3.2.5}In-App-Käufe}{26}{subsection.24}%
+\contentsline {subsection}{\numberline {3.2.6}Spenden \& freiwillige Unterstützung}{26}{subsection.25}%
+\contentsline {subsection}{\numberline {3.2.7}Vergleich \& Bewertung der Monetarisierungsstrategien}{26}{subsection.26}%
+\contentsline {section}{\numberline {3.3}Laurenz Ausarbeitung}{26}{section.27}%
+\contentsline {subsection}{\numberline {3.3.1}Mobile App Entwicklung}{26}{subsection.28}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}React Native Framework}{27}{subsubsection.29}%
+\contentsline {subsection}{\numberline {3.3.2}Backend-Technologien}{27}{subsection.30}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}APIs}{27}{subsubsection.31}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Datenbanken}{28}{subsubsection.32}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}Backend-as-a-Service (BaaS)}{28}{subsubsection.33}%
+\contentsline {subsection}{\numberline {3.3.3}Hosting- und Infrastrukturmodelle}{29}{subsection.34}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}On-Premise, Cloud und Hybrid-Architekturen}{29}{subsubsection.35}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}IaaS, PaaS, FaaS und Serverless}{30}{subsubsection.36}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}Relationale Datenbanken}{31}{subsubsection.37}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}Datenmodellierung und Normalisierung}{31}{subsubsection.38}%
+\contentsline {subsubsection}{\numberline {3.3.3.5}Echtzeit-Daten}{32}{subsubsection.39}%
+\contentsline {subsubsection}{\numberline {3.3.3.6}Vertikale vs. horizontale Skalierung}{32}{subsubsection.40}%
+\contentsline {subsubsection}{\numberline {3.3.3.7}Autoscaling und Lastverteilung}{33}{subsubsection.41}%
+\contentsline {subsubsection}{\numberline {3.3.3.8}Latenzoptimierung und Durchsatzsteigerung}{33}{subsubsection.42}%
+\contentsline {subsubsection}{\numberline {3.3.3.9}Auth-Systeme}{34}{subsubsection.43}%
+\contentsline {subsubsection}{\numberline {3.3.3.10}Verschlüsselung}{35}{subsubsection.44}%
+\contentsline {subsubsection}{\numberline {3.3.3.11}Datenschutz}{36}{subsubsection.45}%
+\contentsline {chapter}{\numberline {4}Dokumentation der Implementierung}{37}{chapter.46}%
+\contentsline {section}{\numberline {4.1}Systemumgebung}{37}{section.47}%
+\contentsline {subsection}{\numberline {4.1.1}Verwendete Technologien}{37}{subsection.48}%
+\contentsline {section}{\numberline {4.2}Implementierung}{38}{section.49}%
+\contentsline {subsection}{\numberline {4.2.1}Architektur der Anwendung}{38}{subsection.50}%
+\contentsline {subsection}{\numberline {4.2.2}Frontend-Implementierung - JAN NOCH UMSCHREIBEN}{38}{subsection.51}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Projektstruktur und Navigation}{38}{subsubsection.52}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}Spielansicht und Benutzerinteraktion}{38}{subsubsection.53}%
+\contentsline {paragraph}{\numberline {4.2.2.2.1}Einzelspieler-Modus:}{39}{paragraph.54}%
+\contentsline {paragraph}{\numberline {4.2.2.2.2}Mehrspieler-Modus:}{39}{paragraph.55}%
+\contentsline {subsection}{\numberline {4.2.3}Backend-Anbindung mit Supabase}{39}{subsection.56}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}Datenbankstruktur}{39}{subsubsection.57}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}Authentifizierung der Benutzer - Supabase Auth, OAuth2}{39}{subsubsection.58}%
+\contentsline {subsection}{\numberline {4.2.4}Spielmechanik und Logik}{39}{subsection.59}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Generierung der Spielrunden}{39}{subsubsection.60}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}Generierung des täglichen Spiels}{39}{subsubsection.61}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}Live-Einladungen für Freundesrunden}{39}{subsubsection.62}%
+\contentsline {subsubsection}{\numberline {4.2.4.4}Punkteberechnung}{39}{subsubsection.63}%
+\contentsline {subsection}{\numberline {4.2.5}Benutzerprofil}{39}{subsection.64}%
+\contentsline {subsubsection}{\numberline {4.2.5.1}Profilanpassung}{40}{subsubsection.65}%
+\contentsline {subsubsection}{\numberline {4.2.5.2}Kaufen und Freischalten von Profilinhalten}{40}{subsubsection.66}%
+\contentsline {subsection}{\numberline {4.2.6}Freundesystem}{40}{subsection.67}%
+\contentsline {subsubsection}{\numberline {4.2.6.1}Freundschaftsanfragen}{40}{subsubsection.68}%
+\contentsline {subsubsection}{\numberline {4.2.6.2}Herausfordern von Freunden}{40}{subsubsection.69}%
+\contentsline {subsubsection}{\numberline {4.2.6.3}Chatfunktion}{40}{subsubsection.70}%
+\contentsline {subsubsection}{\numberline {4.2.6.4}Anzeigen von Benutzerprofilen}{40}{subsubsection.71}%
+\contentsline {subsection}{\numberline {4.2.7}Integration der Google APIs}{40}{subsection.72}%
+\contentsline {subsubsection}{\numberline {4.2.7.1}Verwendung der Google Maps API}{40}{subsubsection.73}%
+\contentsline {subsubsection}{\numberline {4.2.7.2}Einbindung der Street-View-Bilder}{40}{subsubsection.74}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{41}{chapter.75}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung}{41}{section.76}%
+\contentsline {section}{\numberline {5.2}Ausblick}{41}{section.77}%
+\contentsline {chapter}{\numberline {I}Literaturverzeichnis}{42}{chapter.78}%
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
@@ -94,16 +93,16 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{46}{chapter.80}%
-\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{47}{chapter.81}%
-\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{48}{chapter.82}%
-\contentsline {chapter}{\numberline {A}Anhang}{49}{chapter.83}%
-\contentsline {section}{\numberline {A.1}Arbeitsteilung}{49}{section.84}%
-\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{49}{section.85}%
-\contentsline {section}{\numberline {A.3}Projekttagebücher}{49}{section.86}%
-\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Max Mustermann}{49}{subsection.87}%
-\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Mex Musterjuan}{49}{subsection.88}%
-\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{50}{section.89}%
-\contentsline {section}{\numberline {A.5}Besprechungsprotokolle 1}{52}{section.90}%
-\contentsline {section}{\numberline {A.6}Datenträgerbeschreibung}{53}{section.91}%
+\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{44}{chapter.79}%
+\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{45}{chapter.80}%
+\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{46}{chapter.81}%
+\contentsline {chapter}{\numberline {A}Anhang}{47}{chapter.82}%
+\contentsline {section}{\numberline {A.1}Arbeitsteilung}{47}{section.83}%
+\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{47}{section.84}%
+\contentsline {section}{\numberline {A.3}Projekttagebücher}{47}{section.85}%
+\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Max Mustermann}{47}{subsection.86}%
+\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Mex Musterjuan}{47}{subsection.87}%
+\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{48}{section.88}%
+\contentsline {section}{\numberline {A.5}Besprechungsprotokolle 1}{50}{section.89}%
+\contentsline {section}{\numberline {A.6}Datenträgerbeschreibung}{51}{section.90}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
