@@ -24,22 +24,22 @@
 \contentsline {subsection}{\numberline {3.2.4}Kostenpflichtige App-Modelle}{27}{subsection.23}%
 \contentsline {subsection}{\numberline {3.2.5}In-App-Käufe}{27}{subsection.24}%
 \contentsline {subsection}{\numberline {3.2.6}Spenden \& freiwillige Unterstützung}{27}{subsection.25}%
-\contentsline {section}{\numberline {3.3}Laurenz Ausarbeitung}{27}{section.26}%
-\contentsline {subsection}{\numberline {3.3.1}Mobile App Entwicklung}{27}{subsection.27}%
+\contentsline {section}{\numberline {3.3}Technische Grundlagen der Anwendung}{27}{section.26}%
+\contentsline {subsection}{\numberline {3.3.1}Mobile App Entwicklung}{28}{subsection.27}%
 \contentsline {subsubsection}{\numberline {3.3.1.1}React Native Framework}{28}{subsubsection.28}%
 \contentsline {subsection}{\numberline {3.3.2}Backend-Technologien}{28}{subsection.29}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}APIs}{28}{subsubsection.30}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}APIs}{29}{subsubsection.30}%
 \contentsline {subsubsection}{\numberline {3.3.2.2}Datenbanken}{29}{subsubsection.31}%
-\contentsline {subsubsection}{\numberline {3.3.2.3}Backend-as-a-Service (BaaS)}{29}{subsubsection.32}%
-\contentsline {subsection}{\numberline {3.3.3}Hosting- und Infrastrukturmodelle}{30}{subsection.33}%
-\contentsline {subsubsection}{\numberline {3.3.3.1}On-Premise, Cloud und Hybrid-Architekturen}{30}{subsubsection.34}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}Backend-as-a-Service (BaaS)}{30}{subsubsection.32}%
+\contentsline {subsection}{\numberline {3.3.3}Hosting- und Infrastrukturmodelle}{31}{subsection.33}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}On-Premise, Cloud und Hybrid-Architekturen}{31}{subsubsection.34}%
 \contentsline {subsubsection}{\numberline {3.3.3.2}IaaS, PaaS, FaaS und Serverless}{31}{subsubsection.35}%
 \contentsline {subsubsection}{\numberline {3.3.3.3}Relationale Datenbanken}{32}{subsubsection.36}%
-\contentsline {subsubsection}{\numberline {3.3.3.4}Datenmodellierung und Normalisierung}{32}{subsubsection.37}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}Datenmodellierung und Normalisierung}{33}{subsubsection.37}%
 \contentsline {subsubsection}{\numberline {3.3.3.5}Echtzeit-Daten}{33}{subsubsection.38}%
-\contentsline {subsubsection}{\numberline {3.3.3.6}Vertikale vs. horizontale Skalierung}{33}{subsubsection.39}%
+\contentsline {subsubsection}{\numberline {3.3.3.6}Vertikale vs. horizontale Skalierung}{34}{subsubsection.39}%
 \contentsline {subsubsection}{\numberline {3.3.3.7}Autoscaling und Lastverteilung}{34}{subsubsection.40}%
-\contentsline {subsubsection}{\numberline {3.3.3.8}Latenzoptimierung und Durchsatzsteigerung}{34}{subsubsection.41}%
+\contentsline {subsubsection}{\numberline {3.3.3.8}Latenzoptimierung und Durchsatzsteigerung}{35}{subsubsection.41}%
 \contentsline {subsubsection}{\numberline {3.3.3.9}Auth-Systeme}{35}{subsubsection.42}%
 \contentsline {subsubsection}{\numberline {3.3.3.10}Verschlüsselung}{36}{subsubsection.43}%
 \contentsline {subsubsection}{\numberline {3.3.3.11}Datenschutz}{37}{subsubsection.44}%
