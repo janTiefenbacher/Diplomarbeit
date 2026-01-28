@@ -8,44 +8,44 @@ The style file: babunsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: DA_Literatur.bib
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 48 entries,
+You've used 49 entries,
             2465 wiz_defined-function locations,
-            789 strings with 14877 characters,
-and the built_in function-call counts, 9153 in all, are:
-= -- 647
-> -- 182
+            794 strings with 15061 characters,
+and the built_in function-call counts, 9347 in all, are:
+= -- 661
+> -- 186
 < -- 0
-+ -- 92
-- -- 44
-* -- 757
-:= -- 1114
-add.period$ -- 96
-call.type$ -- 48
-change.case$ -- 48
++ -- 94
+- -- 45
+* -- 774
+:= -- 1138
+add.period$ -- 98
+call.type$ -- 49
+change.case$ -- 49
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 520
-empty$ -- 1433
-format.name$ -- 92
-if$ -- 2224
+cite$ -- 49
+duplicate$ -- 531
+empty$ -- 1463
+format.name$ -- 94
+if$ -- 2271
 int.to.chr$ -- 0
-int.to.str$ -- 48
+int.to.str$ -- 49
 missing$ -- 0
-newline$ -- 220
-num.names$ -- 42
-pop$ -- 537
+newline$ -- 224
+num.names$ -- 43
+pop$ -- 548
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 234
+skip$ -- 239
 stack$ -- 0
 substring$ -- 0
-swap$ -- 184
+swap$ -- 188
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 42
-width$ -- 50
-write$ -- 450
+while$ -- 43
+width$ -- 51
+write$ -- 459
