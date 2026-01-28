@@ -121,21 +121,6 @@
   \url{https://m2.material.io/design/usability/accessibility.html#understanding-accessibility}.
 
 \btxselectlanguage {ngerman}
-\bibitem {appinio_zielgruppenanalyse}
-\btxnamefont {\btxlastnamefont {Research}, Appinio}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {Zielgruppenanalyse: In 7 schritten zum
-  erfolg}{Zielgruppenanalyse: In 7 Schritten zum Erfolg}},
-  \btxprintmonthyear{.}{3}{2024}{long}.
-\newblock Online im Internet: URL:
-  \url{https://www.appinio.com/de/blog/marktforschung/zielgruppenanalyse}.
-
-\bibitem {webdesign_journal_zielgruppenanalyse}
-\btxtitlefont {\btxifchangecase {Zielgruppenanalyse so definierst du deine
-  besucher und kunden}{Zielgruppenanalyse so definierst du deine Besucher und
-  Kunden}}, \btxprintmonthyear{.}{5}{2025}{long}.
-\newblock Online im Internet: URL:
-  \url{https://www.webdesign-journal.de/zielgruppenanalyse/}.
-
 \bibitem {b13_informationsarchitektur}
 \btxnamefont {\btxlastnamefont {Heine}, Laura}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {Informationsarchitektur in ux - best
@@ -386,5 +371,20 @@
   \btxprintmonthyear{.}{10}{2017}{long}.
 \newblock Online im Internet: URL:
   \url{https://www.onlinesicherheit.gv.at/Services/Technologie-Schwerpunkte/Mobile-Apps/Mobile-Apps-und-Informationspflichten.html}.
+
+\bibitem {appinio_zielgruppenanalyse}
+\btxnamefont {\btxlastnamefont {Research}, Appinio}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Zielgruppenanalyse: In 7 schritten zum
+  erfolg}{Zielgruppenanalyse: In 7 Schritten zum Erfolg}},
+  \btxprintmonthyear{.}{3}{2024}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.appinio.com/de/blog/marktforschung/zielgruppenanalyse}.
+
+\bibitem {webdesign_journal_zielgruppenanalyse}
+\btxtitlefont {\btxifchangecase {Zielgruppenanalyse so definierst du deine
+  besucher und kunden}{Zielgruppenanalyse so definierst du deine Besucher und
+  Kunden}}, \btxprintmonthyear{.}{5}{2025}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.webdesign-journal.de/zielgruppenanalyse/}.
 
 \end{thebibliography}
