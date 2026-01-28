@@ -54,28 +54,35 @@
 \contentsline {paragraph}{\numberline {4.2.2.2.1}Einzelspieler-Modus:}{41}{paragraph.53}%
 \contentsline {paragraph}{\numberline {4.2.2.2.2}Mehrspieler-Modus:}{41}{paragraph.54}%
 \contentsline {subsection}{\numberline {4.2.3}Backend-Anbindung mit Supabase}{41}{subsection.55}%
-\contentsline {subsubsection}{\numberline {4.2.3.1}Datenbankstruktur}{41}{subsubsection.56}%
-\contentsline {subsubsection}{\numberline {4.2.3.2}Authentifizierung der Benutzer - Supabase Auth, OAuth2}{41}{subsubsection.57}%
-\contentsline {subsection}{\numberline {4.2.4}Spielmechanik und Logik}{41}{subsection.58}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}Generierung der Spielrunden}{41}{subsubsection.59}%
-\contentsline {subsubsection}{\numberline {4.2.4.2}Generierung des täglichen Spiels}{41}{subsubsection.60}%
-\contentsline {subsubsection}{\numberline {4.2.4.3}Live-Einladungen für Freundesrunden}{41}{subsubsection.61}%
-\contentsline {subsubsection}{\numberline {4.2.4.4}Punkteberechnung}{41}{subsubsection.62}%
-\contentsline {subsection}{\numberline {4.2.5}Benutzerprofil}{41}{subsection.63}%
-\contentsline {subsubsection}{\numberline {4.2.5.1}Profilanpassung}{42}{subsubsection.64}%
-\contentsline {subsubsection}{\numberline {4.2.5.2}Kaufen und Freischalten von Profilinhalten}{42}{subsubsection.65}%
-\contentsline {subsection}{\numberline {4.2.6}Freundesystem}{42}{subsection.66}%
-\contentsline {subsubsection}{\numberline {4.2.6.1}Freundschaftsanfragen}{42}{subsubsection.67}%
-\contentsline {subsubsection}{\numberline {4.2.6.2}Herausfordern von Freunden}{42}{subsubsection.68}%
-\contentsline {subsubsection}{\numberline {4.2.6.3}Chatfunktion}{42}{subsubsection.69}%
-\contentsline {subsubsection}{\numberline {4.2.6.4}Anzeigen von Benutzerprofilen}{42}{subsubsection.70}%
-\contentsline {subsection}{\numberline {4.2.7}Integration der Google APIs}{42}{subsection.71}%
-\contentsline {subsubsection}{\numberline {4.2.7.1}Verwendung der Google Maps API}{42}{subsubsection.72}%
-\contentsline {subsubsection}{\numberline {4.2.7.2}Einbindung der Street-View-Bilder}{42}{subsubsection.73}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{43}{chapter.74}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung}{43}{section.75}%
-\contentsline {section}{\numberline {5.2}Ausblick}{43}{section.76}%
-\contentsline {chapter}{\numberline {I}Literaturverzeichnis}{44}{chapter.77}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}Authentifizierung der Benutzer (Supabase Auth, OAuth2)}{41}{subsubsection.56}%
+\contentsline {paragraph}{\numberline {4.2.3.1.1}Laden von Benutzer- und Profildaten}{41}{paragraph.57}%
+\contentsline {paragraph}{\numberline {4.2.3.1.2}Logout}{42}{paragraph.58}%
+\contentsline {paragraph}{\numberline {4.2.3.1.3}Sicherheitsaspekte}{42}{paragraph.59}%
+\contentsline {subsection}{\numberline {4.2.4}Spielmechanik und Logik}{42}{subsection.60}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Generierung der Spielrunden}{42}{subsubsection.61}%
+\contentsline {paragraph}{\numberline {4.2.4.1.1}Punkt-in-Polygon-Prüfung}{42}{paragraph.74}%
+\contentsline {paragraph}{\numberline {4.2.4.1.2}Zufällige Koordinatenerzeugung}{43}{paragraph.75}%
+\contentsline {paragraph}{\numberline {4.2.4.1.3}Abbruchbedingung und Robustheit}{43}{paragraph.76}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}Generierung des täglichen Spiels}{43}{subsubsection.77}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}Live-Einladungen für Freundesrunden}{43}{subsubsection.78}%
+\contentsline {subsubsection}{\numberline {4.2.4.4}Punkteberechnung}{45}{subsubsection.173}%
+\contentsline {paragraph}{\numberline {4.2.4.4.1}Grundprinzip}{45}{paragraph.174}%
+\contentsline {paragraph}{\numberline {4.2.4.4.2}Punktebereiche und Berechnungsformeln}{46}{paragraph.175}%
+\contentsline {subsection}{\numberline {4.2.5}Benutzerprofil}{47}{subsection.213}%
+\contentsline {subsubsection}{\numberline {4.2.5.1}Profilanpassung}{47}{subsubsection.214}%
+\contentsline {subsubsection}{\numberline {4.2.5.2}Kaufen und Freischalten von Profilinhalten}{47}{subsubsection.215}%
+\contentsline {subsection}{\numberline {4.2.6}Freundesystem}{47}{subsection.216}%
+\contentsline {subsubsection}{\numberline {4.2.6.1}Freundschaftsanfragen}{48}{subsubsection.217}%
+\contentsline {subsubsection}{\numberline {4.2.6.2}Herausfordern von Freunden}{48}{subsubsection.218}%
+\contentsline {subsubsection}{\numberline {4.2.6.3}Chatfunktion}{48}{subsubsection.219}%
+\contentsline {subsubsection}{\numberline {4.2.6.4}Anzeigen von Benutzerprofilen}{48}{subsubsection.220}%
+\contentsline {subsection}{\numberline {4.2.7}Integration der Google APIs}{48}{subsection.221}%
+\contentsline {subsubsection}{\numberline {4.2.7.1}Verwendung der Google Maps API}{48}{subsubsection.222}%
+\contentsline {subsubsection}{\numberline {4.2.7.2}Einbindung der Street-View-Bilder}{48}{subsubsection.223}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{49}{chapter.224}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung}{49}{section.225}%
+\contentsline {section}{\numberline {5.2}Ausblick}{49}{section.226}%
+\contentsline {chapter}{\numberline {I}Literaturverzeichnis}{50}{chapter.227}%
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
@@ -104,16 +111,16 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{48}{chapter.78}%
-\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{49}{chapter.79}%
-\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{50}{chapter.80}%
-\contentsline {chapter}{\numberline {A}Anhang}{51}{chapter.81}%
-\contentsline {section}{\numberline {A.1}Arbeitsteilung}{51}{section.82}%
-\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{51}{section.83}%
-\contentsline {section}{\numberline {A.3}Projekttagebücher}{51}{section.84}%
-\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Max Mustermann}{51}{subsection.85}%
-\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Mex Musterjuan}{51}{subsection.86}%
-\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{52}{section.87}%
-\contentsline {section}{\numberline {A.5}Besprechungsprotokolle 1}{54}{section.88}%
-\contentsline {section}{\numberline {A.6}Datenträgerbeschreibung}{55}{section.89}%
+\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{54}{chapter.228}%
+\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{55}{chapter.229}%
+\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{56}{chapter.230}%
+\contentsline {chapter}{\numberline {A}Anhang}{57}{chapter.231}%
+\contentsline {section}{\numberline {A.1}Arbeitsteilung}{57}{section.232}%
+\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{57}{section.233}%
+\contentsline {section}{\numberline {A.3}Projekttagebücher}{57}{section.234}%
+\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Max Mustermann}{57}{subsection.235}%
+\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Mex Musterjuan}{57}{subsection.236}%
+\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{58}{section.237}%
+\contentsline {section}{\numberline {A.5}Besprechungsprotokolle 1}{60}{section.238}%
+\contentsline {section}{\numberline {A.6}Datenträgerbeschreibung}{61}{section.239}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

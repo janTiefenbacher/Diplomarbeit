@@ -1,4 +1,4 @@
-In diesem Kapitel wird die technische Umsetzung des Spiels \textit{WoSamma} dokumentiert.
+ACIn diesem Kapitel wird die technische Umsetzung des Spiels \textit{WoSamma} dokumentiert.
 Dabei werden die verwendete Systemumgebung, eingesetzte Technologien sowie die grundlegenden
 Konzepte der Implementierung beschrieben, um einen strukturierten Überblick über die Realisierung
 der Anwendung zu geben.
@@ -81,8 +81,28 @@ zwischen den Teilnehmern.
 
 
 \subsection{Backend-Anbindung mit Supabase}
-\subsubsection{Datenbankstruktur}
-\subsubsection{Authentifizierung der Benutzer - Supabase Auth, OAuth2}
+Das Backend der Anwendung \textit{WoSamma} basiert auf Supabase und stellt zentrale Server-Funktionalitäten als \textit{Backend-as-a-Service} bereit. 
+Dadurch werden Kernaufgaben wie Authentifizierung, Datenpersistenz sowie Echtzeit-Kommunikation über eine konsistente API abstrahiert. 
+Die mobile Anwendung kommuniziert über das Supabase-SDK mit der PostgreSQL-Datenbank und nutzt dabei eine tokenbasierte Zugriffskontrolle. 
+Schreib- und Leseoperationen erfolgen ausschließlich innerhalb der durch Supabase bereitgestellten Sicherheitsmechanismen (z.\,B. JWT-basierte Sessions und Row Level Security), wodurch eine klare Trennung zwischen Client-Logik und serverseitiger Datenhaltung gewährleistet wird.
+
+\subsubsection{Authentifizierung der Benutzer (Supabase Auth, OAuth2)}
+Die Authentifizierung erfolgt über Supabase Auth als zentrales Identitäts- und Sitzungsmanagement. 
+Supabase übernimmt dabei insbesondere die Verwaltung von Benutzer-Sessions, die Erstellung und Validierung von JSON Web Tokens (JWT), das Handling von Refresh-Tokens sowie sicherheitsrelevante Funktionen wie Passwort-Hashing (bei E-Mail/Passwort-Login) und die Integration externer OAuth-Provider.
+
+\paragraph{Laden von Benutzer- und Profildaten}
+Nach erfolgreicher Authentifizierung wird die eindeutige \texttt{user.id} aus der Supabase-Session extrahiert und als primärer Schlüssel für benutzerspezifische Abfragen verwendet. 
+Darauf basierend werden Profildaten (z.\,B. Benutzername, Avatar) aus einer \texttt{profiles}-Tabelle geladen und im lokalen Zustand der Anwendung gehalten, um personalisierte Inhalte und Spielzustände konsistent darstellen zu können.
+
+\paragraph{Logout}
+Der Logout erfolgt über \texttt{supabase.auth.signOut()}, wodurch die Session invalidiert und gespeicherte Tokens entfernt werden. 
+Zusätzlich wird der lokale Session-Speicher geleert und der Benutzer in den Login-Bereich der Anwendung zurückgeführt, um einen konsistenten und sicheren Zustand sicherzustellen.
+
+\paragraph{Sicherheitsaspekte}
+Die Übertragung der Tokens erfolgt verschlüsselt über TLS. 
+Google übernimmt im OAuth2-Flow die Identitätsprüfung des Benutzers; Supabase prüft anschließend die Gültigkeit und Signatur der Tokens bei jeder autorisierten Anfrage. 
+Darüber hinaus schützt Row Level Security (RLS) auf Datenbankebene benutzerspezifische Datensätze vor unautorisierten Zugriffen, indem Abfragen und Mutationen nur innerhalb der durch Policies definierten Rechte möglich sind. 
+Im OAuth-basierten Verfahren werden keine Passwörter in der Anwendung gespeichert oder verarbeitet.
 
 \subsection{Spielmechanik und Logik}
 Dieser Abschnitt beschreibt die grundlegende Spielmechanik von \textit{WoSamma}.
@@ -90,9 +110,238 @@ Dabei wird erläutert, wie Spielrunden erstellt werden, wie Mehrspieler-Partien
 mit Freunden umgesetzt sind und nach welchen Kriterien die Punktevergabe erfolgt.
 
 \subsubsection{Generierung der Spielrunden}
+
+Die Generierung der Spielrunden im Einzelspieler-Modus \emph{„Ganz Österreich“} basiert auf der zufälligen Auswahl einer geografischen Position innerhalb der Landesgrenzen Österreichs. 
+Hierzu wird die Staatsgrenze als Polygon modelliert, das durch eine sequenzielle Liste von Breiten- und Längengraden beschrieben wird:
+\begin{lstlisting}
+const austriaPolygon = [
+  [47.441885, 13.070504],
+  [47.657838, 13.179834],
+  [47.755772, 13.020078],
+  [47.882686, 13.070962],
+  [48.096828, 12.838373],
+  ...
+  [47.447035, 12.895931],
+  [47.442109, 13.077460],
+  [47.491624, 13.099476]
+];
+\end{lstlisting}
+Dieses Polygon definiert den zulässigen Suchraum für die Erzeugung gültiger Zielkoordinaten.
+
+\paragraph{Punkt-in-Polygon-Prüfung}
+Zur Überprüfung, ob eine zufällig generierte Koordinate innerhalb des definierten Polygons liegt, wird der Ray-Casting-Algorithmus eingesetzt. 
+Dabei wird von der zu prüfenden Position aus ein horizontaler Strahl konstruiert und die Anzahl der Schnittpunkte dieses Strahls mit den Polygonkanten bestimmt. 
+Ist die Anzahl der Schnittpunkte ungerade, befindet sich der Punkt innerhalb des Polygons; ist sie gerade, liegt der Punkt außerhalb. 
+Diese Methode gewährleistet eine effiziente und robuste Klassifikation der Koordinaten in Bezug auf die Landesgrenzen.
+
+\paragraph{Zufällige Koordinatenerzeugung}
+Die Generierung einer Spielrunde erfolgt durch wiederholte Erzeugung zufälliger Koordinaten innerhalb eines umschließenden Rechtecks (Bounding Box), das die maximalen und minimalen Breiten- und Längengrade Österreichs abdeckt. 
+Für jede generierte Position wird anschließend mittels der Punkt-in-Polygon-Prüfung verifiziert, ob sich diese innerhalb der tatsächlichen Landesgrenze befindet. 
+Nur gültige Koordinaten werden als Zielposition für eine Spielrunde akzeptiert.
+
+\paragraph{Abbruchbedingung und Robustheit}
+Um eine potenziell unendliche Schleife bei ungünstigen Zufallskonstellationen zu vermeiden, ist eine maximale Anzahl von Iterationen definiert. 
+Wird diese Grenze überschritten, wird die Generierung abgebrochen und der zuletzt berechnete Wert zurückgegeben. 
+Diese Maßnahme stellt die Stabilität der Anwendung sicher und verhindert eine Blockierung des Spielablaufs.
+
 \subsubsection{Generierung des täglichen Spiels}
+
+Das tägliche Spiel wird bei jedem Start der Anwendung initial geprüft und gegebenenfalls neu erzeugt. 
+Hierzu wird zunächst eine Abfrage an das Backend durchgeführt, um festzustellen, ob für das aktuelle Kalenderdatum bereits eine gültige Spielrunde in der Datenbank existiert. 
+Diese Prüfung erfolgt anhand eines datumsbasierten Identifikators, der sicherstellt, dass pro Tag genau eine eindeutige Zielposition verwendet wird.
+
+Ist kein Eintrag für den aktuellen Tag vorhanden, wird die Zielkoordinate nach demselben Verfahren generiert wie im Einzelspieler-Modus. 
+Dabei wird eine zufällige Position innerhalb der definierten Landesgrenzen Österreichs erzeugt und mittels Punkt-in-Polygon-Prüfung validiert. 
+Die validierte Koordinate wird anschließend zusammen mit Metadaten (z.\,B. Erstellungsdatum, Runden-ID und Spieltyp) persistent in der Datenbank gespeichert.
+
+Existiert bereits ein tägliches Spiel für den aktuellen Tag, wird die gespeicherte Zielposition aus der Datenbank geladen und für alle Spieler identisch verwendet. 
+Durch dieses Vorgehen wird gewährleistet, dass alle Teilnehmer eines Tages unter denselben Bedingungen spielen und die Vergleichbarkeit der Ergebnisse sowie die Integrität der Ranglisten sichergestellt sind.
+
 \subsubsection{Live-Einladungen für Freundesrunden}
+
+Der folgende Code implementiert eine globale Echtzeit-Subscription für Lobby-Einladungen. 
+Sobald eine neue Einladung für den eingeloggten Benutzer in der Datenbank erstellt wird, 
+erscheint automatisch ein Popup mit den relevanten Lobby- und Einladungsinformationen.
+\begin{lstlisting}
+useEffect(() => {
+  // Vorbedingung:
+  // Abbruch der Ausführung, falls keine Benutzer-ID vorhanden ist,
+  // da in diesem Fall keine personalisierten Einladungen verarbeitet werden können.
+  if (!userId) return;
+
+  // Ressourcenverwaltung:
+  // Referenz auf das Realtime-Subscription-Objekt zur späteren Deregistrierung.
+  let subscription: any;
+
+  // Initialisierung:
+  // Startet die Echtzeit-Überwachung für neue Lobby-Einladungen.
+  async function subscribeInvites() {
+    // Kanalaufbau:
+    // Erstellung eines Supabase-Realtime-Kanals, der auf neue Einträge
+    // in der Tabelle "lobby_invites" für den aktuellen Benutzer reagiert.
+    subscription = (supabase.channel('global-lobby-invites-' + userId) as any)
+      .on(
+        'postgres_changes',
+        {
+          // Ereignistyp:
+          // Reaktion ausschließlich auf das Einfügen neuer Datensätze.
+          event: 'insert',
+
+          // Schema:
+          // Angabe des relevanten Datenbankschemas.
+          schema: 'public',
+
+          // Ziel:
+          // Tabelle, die die Einladungen zu Mehrspieler-Lobbys enthält.
+          table: 'lobby_invites',
+
+          // Filter:
+          // Einschränkung auf Einladungen, die an den aktuell angemeldeten Benutzer gerichtet sind.
+          filter: `invited_user_id=eq.${userId}`
+        },
+        // Callback:
+        // Wird ausgeführt, sobald eine neue Einladung empfangen wird.
+        async (payload: any) => {
+          // Datenextraktion:
+          // Auslesen des neu eingefügten Einladungseintrags aus dem Ereignisobjekt.
+          const invite = payload.new;
+
+          // Datenabfrage:
+          // Parallelisierte Abfrage der zugehörigen Lobby-Informationen
+          // sowie des Benutzernamens des einladenden Spielers.
+          const [{ data: lobby }, { data: inviter }] = await Promise.all([
+            supabase.from('lobbies')
+              .select('name, code')
+              .eq('id', invite.lobby_id)
+              .single(),
+            supabase.from('profiles')
+              .select('username')
+              .eq('id', invite.invited_by)
+              .single(),
+          ]);
+
+          // UI-Aktualisierung:
+          // Setzt den lokalen Zustand zur Anzeige des Einladungs-Popups
+          // mit allen relevanten Informationen für den Benutzer.
+          setInvitePopup({
+            id: invite.id,
+            lobbyId: invite.lobby_id,
+            lobbyName: lobby?.name || 'Lobby',
+            lobbyCode: lobby?.code || '',
+            inviterName: inviter?.username || 'Ein Freund',
+          });
+
+          // Visualisierung:
+          // Einblendung des Popups mittels Animation zur Verbesserung der Benutzererfahrung.
+          Animated.timing(popupAnim, {
+            toValue: 0,
+            duration: 350,
+            useNativeDriver: true
+          }).start();
+        }
+      )
+      // Aktivierung:
+      // Startet den Realtime-Kanal und beginnt mit dem Empfang von Ereignissen.
+      .subscribe();
+  }
+
+  // Initialaufruf:
+  // Start der Echtzeit-Überwachung nach dem Initialisieren der Komponente.
+  subscribeInvites();
+
+  // Aufräumroutine:
+  // Wird beim Verlassen der Komponente ausgeführt, um die
+  // Realtime-Verbindung ordnungsgemäß zu schließen und Ressourcen freizugeben.
+  return () => {
+    if (subscription) supabase.removeChannel(subscription);
+  };
+}, [userId]);
+\end{lstlisting}
 \subsubsection{Punkteberechnung}
+
+In diesem Abschnitt wird die Berechnung der Punktzahl im Einzelspieler-Modus von \textit{WoSamma} detailliert beschrieben. 
+Die Punktevergabe basiert auf der Entfernung in Kilometern zwischen der vom Spieler gewählten Position und dem tatsächlichen Standort.
+
+\paragraph{Grundprinzip}
+Die erreichte Punktzahl ist eine monotone, stückweise linear fallende Funktion der Distanz $d$ (in Kilometern) zwischen der vom Spieler gewählten Position und dem tatsächlichen Zielort. 
+Mit abnehmender Distanz erhöht sich die Punktzahl entsprechend. 
+Negative Punktwerte sind grundsätzlich ausgeschlossen; im speziellen Einzelspieler-Modus \emph{„Ganz Österreich“} wird jedoch bei einer Distanz von mehr als $500\,\text{km}$ eine negative Punktzahl von bis zu $-5000$ Punkten vergeben. 
+Diese Maßnahme dient dazu, gezielte Fehlplatzierungen zu verhindern und eine künstliche Erhöhung der Platzierung in der Bestenliste durch zufällige oder absichtlich falsche Eingaben zu unterbinden.
+
+\paragraph{Punktebereiche und Berechnungsformeln}
+
+\begin{itemize}
+  \item \textbf{Perfekter Treffer ($d < 1\,\text{km}$)}\\
+  Maximale Punktzahl von \textbf{5000 Punkten}.\\
+  \emph{Begründung:} Der Spieler befindet sich nahezu exakt auf der korrekten Position.
+
+  \item \textbf{Sehr nah ($1\,\text{km} \leq d < 10\,\text{km}$)}\\
+  Die Punktzahl sinkt linear von 5000 auf 4000 Punkte.\\
+  \emph{Formel:}
+  \[
+    P(d) = 5000 - 1000 \cdot \frac{d}{10}
+  \]
+  \emph{Beispiel:} Bei $d = 5\,\text{km}$ ergibt sich $P(5) = 4500$ Punkte.
+
+  \item \textbf{Nah ($10\,\text{km} \leq d < 100\,\text{km}$)}\\
+  Die Punktzahl sinkt linear von 4000 auf 1000 Punkte.\\
+  \emph{Formel:}
+  \[
+    P(d) = 4000 - 3000 \cdot \frac{d - 10}{90}
+  \]
+  \emph{Beispiel:} Bei $d = 55\,\text{km}$ ergibt sich $P(55) = 2500$ Punkte.
+
+  \item \textbf{Weit entfernt ($100\,\text{km} \leq d < 500\,\text{km}$)}\\
+  Die Punktzahl sinkt linear von 1000 auf 0 Punkte.\\
+  \emph{Formel:}
+  \[
+    P(d) = 1000 - 1000 \cdot \frac{d - 100}{400}
+  \]
+  \emph{Beispiel:} Bei $d = 300\,\text{km}$ ergibt sich $P(300) = 500$ Punkte.
+
+  \item \textbf{Sehr weit entfernt ($d \geq 500\,\text{km}$)}\\
+  Es werden \textbf{0 Punkte} vergeben.\\
+  \emph{Begründung:} Der Tipp liegt außerhalb des definierten Bewertungsbereichs.
+\end{itemize}
+
+\begin{lstlisting}
+// Distanzberechnung unter Berücksichtigung der Erdkrümmung
+// Implementierung der Haversine-Formel zur Bestimmung der Großkreisentfernung
+// zwischen zwei geografischen Koordinaten (Breiten- und Längengrad).
+// Die berechnete Distanz dient als Grundlage für die anschließende Punkteberechnung.
+function haversineDistance(lat1: number, lon1: number, lat2: number, lon2: number) {
+
+  // Umrechnung von Gradmaß in Bogenmaß, da trigonometrische Funktionen
+  // in JavaScript/TypeScript mit Radiantwerten arbeiten
+  const toRad = (deg: number) => (deg * Math.PI) / 180;
+
+  // Mittlerer Erdradius in Kilometern gemäß internationalem Referenzwert
+  const R = 6371;
+
+  // Berechnung der Differenzen der Breiten- und Längengrade in Radiant
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+
+  // Haversine-Term:
+  // Kombination aus Sinus- und Kosinusfunktionen zur Modellierung
+  // der sphärischen Geometrie der Erdoberfläche
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+
+  // Zentrale Winkelentfernung zwischen den beiden Punkten auf der Erdoberfläche
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+  // Berechnung der realen Distanz in Kilometern als Produkt aus
+  // Erdradius und zentralem Winkel
+  const distance = R * c;
+
+  // Rückgabe der berechneten Distanz, welche anschließend als Eingangsgröße
+  // für die Punktefunktion verwendet wird
+  return distance;
+}
+\end{lstlisting}
 
 \subsection{Benutzerprofil}
 Dieser Abschnitt beschreibt die Umsetzung des Benutzerprofils innerhalb der Anwendung.
