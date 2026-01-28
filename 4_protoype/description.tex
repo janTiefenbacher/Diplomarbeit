@@ -86,19 +86,69 @@ Dadurch werden Kernaufgaben wie Authentifizierung, Datenpersistenz sowie Echtzei
 Die mobile Anwendung kommuniziert über das Supabase-SDK mit der PostgreSQL-Datenbank und nutzt dabei eine tokenbasierte Zugriffskontrolle. 
 Schreib- und Leseoperationen erfolgen ausschließlich innerhalb der durch Supabase bereitgestellten Sicherheitsmechanismen (z.\,B. JWT-basierte Sessions und Row Level Security), wodurch eine klare Trennung zwischen Client-Logik und serverseitiger Datenhaltung gewährleistet wird.
 
+\subsubsection{Echtzeit-Kommunikation über Supabase Channels}
+Die Übertragung von Echtzeitdaten erfolgt über sogenannte \emph{Channels}, die als persistente Kommunikationskanäle zwischen Client und Backend fungieren. 
+Diese Kanäle können von der Anwendung abonniert (\textit{subscribed}) werden, um Datenbankereignisse oder benutzerdefinierte Nachrichten unmittelbar zu empfangen.
+
+Technisch basiert dieses Verfahren auf WebSocket-Verbindungen, über die Supabase Änderungen an ausgewählten Tabellen oder spezifische Ereignistypen in nahezu Echtzeit an alle verbundenen Clients verteilt. 
+Die Anwendung registriert sich dabei auf bestimmten Channels, die jeweils an einen fachlichen Kontext gebunden sind, beispielsweise an eine Lobby, eine Benutzer-ID oder eine Spielrunde.
+
+Durch dieses Publish-Subscribe-Modell wird eine latenzarme und skalierbare Synchronisation zwischen mehreren Benutzern ermöglicht. 
+Dies ist insbesondere für interaktive Funktionen wie Live-Einladungen, Mehrspieler-Lobbys und Chat-Kommunikation von zentraler Bedeutung, da Zustandsänderungen ohne explizite Polling-Mechanismen unmittelbar in der Benutzeroberfläche reflektiert werden.
+
+\begin{lstlisting}
+// Initialisierung einer Realtime-Subscription für die Tabelle "friend_requests"
+// Zweck dieses Codes ist es, die Freundesliste und die Freundschaftsanfragen
+// in der Benutzeroberfläche in Echtzeit zu synchronisieren. Dadurch werden
+// Änderungen wie das Hinzufügen, Annehmen oder Entfernen von Freunden sofort
+// sichtbar, ohne dass die Ansicht manuell neu geladen werden muss.
+subscription = supabase.channel('friend-requests-realtime')
+  .on(
+    'postgres_changes',
+    {
+      // Reaktion auf alle relevanten Datenbankereignisse (INSERT, UPDATE, DELETE),
+      // um jede Statusänderung einer Freundschaftsanfrage zu erfassen
+      event: '*',
+
+      // Angabe des Datenbankschemas, in dem die Beziehungstabelle liegt
+      schema: 'public',
+
+      // Ziel-Tabelle, die Freundschaftsanfragen und Beziehungsstatus speichert
+      table: 'friend_requests'
+    },
+    // Callback-Funktion, die bei jeder erkannten Änderung ausgeführt wird
+    () => {
+      // Neuladen der Freundesliste, um neu hinzugefügte oder entfernte Freunde
+      // unmittelbar in der Benutzeroberfläche darzustellen
+      fetchFriends(user.id);
+
+      // Aktualisierung aller offenen und eingehenden Freundschaftsanfragen,
+      // sodass angenommene oder abgelehnte Anfragen sofort korrekt angezeigt werden
+      fetchRequests(user.id);
+
+      // Synchronisation aller bestehenden Beziehungen, um den globalen
+      // Beziehungszustand (accepted, pending, declined) konsistent zu halten
+      fetchAllRelations(user.id);
+    }
+  )
+  // Aktivierung des Realtime-Kanals und Start des kontinuierlichen Empfangs
+  // von Datenbankereignissen für die Live-Aktualisierung der Benutzeransicht
+  .subscribe();
+\end{lstlisting}
+
 \subsubsection{Authentifizierung der Benutzer (Supabase Auth, OAuth2)}
 Die Authentifizierung erfolgt über Supabase Auth als zentrales Identitäts- und Sitzungsmanagement. 
 Supabase übernimmt dabei insbesondere die Verwaltung von Benutzer-Sessions, die Erstellung und Validierung von JSON Web Tokens (JWT), das Handling von Refresh-Tokens sowie sicherheitsrelevante Funktionen wie Passwort-Hashing (bei E-Mail/Passwort-Login) und die Integration externer OAuth-Provider.
 
-\paragraph{Laden von Benutzer- und Profildaten}
+\paragraph{Laden von Benutzer- und Profildaten: }
 Nach erfolgreicher Authentifizierung wird die eindeutige \texttt{user.id} aus der Supabase-Session extrahiert und als primärer Schlüssel für benutzerspezifische Abfragen verwendet. 
 Darauf basierend werden Profildaten (z.\,B. Benutzername, Avatar) aus einer \texttt{profiles}-Tabelle geladen und im lokalen Zustand der Anwendung gehalten, um personalisierte Inhalte und Spielzustände konsistent darstellen zu können.
 
-\paragraph{Logout}
+\paragraph{Logout: }
 Der Logout erfolgt über \texttt{supabase.auth.signOut()}, wodurch die Session invalidiert und gespeicherte Tokens entfernt werden. 
 Zusätzlich wird der lokale Session-Speicher geleert und der Benutzer in den Login-Bereich der Anwendung zurückgeführt, um einen konsistenten und sicheren Zustand sicherzustellen.
 
-\paragraph{Sicherheitsaspekte}
+\paragraph{Sicherheitsaspekte: }
 Die Übertragung der Tokens erfolgt verschlüsselt über TLS. 
 Google übernimmt im OAuth2-Flow die Identitätsprüfung des Benutzers; Supabase prüft anschließend die Gültigkeit und Signatur der Tokens bei jeder autorisierten Anfrage. 
 Darüber hinaus schützt Row Level Security (RLS) auf Datenbankebene benutzerspezifische Datensätze vor unautorisierten Zugriffen, indem Abfragen und Mutationen nur innerhalb der durch Policies definierten Rechte möglich sind. 
@@ -128,18 +178,18 @@ const austriaPolygon = [
 \end{lstlisting}
 Dieses Polygon definiert den zulässigen Suchraum für die Erzeugung gültiger Zielkoordinaten.
 
-\paragraph{Punkt-in-Polygon-Prüfung}
+\paragraph{Punkt-in-Polygon-Prüfung: }
 Zur Überprüfung, ob eine zufällig generierte Koordinate innerhalb des definierten Polygons liegt, wird der Ray-Casting-Algorithmus eingesetzt. 
 Dabei wird von der zu prüfenden Position aus ein horizontaler Strahl konstruiert und die Anzahl der Schnittpunkte dieses Strahls mit den Polygonkanten bestimmt. 
 Ist die Anzahl der Schnittpunkte ungerade, befindet sich der Punkt innerhalb des Polygons; ist sie gerade, liegt der Punkt außerhalb. 
 Diese Methode gewährleistet eine effiziente und robuste Klassifikation der Koordinaten in Bezug auf die Landesgrenzen.
 
-\paragraph{Zufällige Koordinatenerzeugung}
+\paragraph{Zufällige Koordinatenerzeugung: }
 Die Generierung einer Spielrunde erfolgt durch wiederholte Erzeugung zufälliger Koordinaten innerhalb eines umschließenden Rechtecks (Bounding Box), das die maximalen und minimalen Breiten- und Längengrade Österreichs abdeckt. 
 Für jede generierte Position wird anschließend mittels der Punkt-in-Polygon-Prüfung verifiziert, ob sich diese innerhalb der tatsächlichen Landesgrenze befindet. 
 Nur gültige Koordinaten werden als Zielposition für eine Spielrunde akzeptiert.
 
-\paragraph{Abbruchbedingung und Robustheit}
+\paragraph{Abbruchbedingung und Robustheit: }
 Um eine potenziell unendliche Schleife bei ungünstigen Zufallskonstellationen zu vermeiden, ist eine maximale Anzahl von Iterationen definiert. 
 Wird diese Grenze überschritten, wird die Generierung abgebrochen und der zuletzt berechnete Wert zurückgegeben. 
 Diese Maßnahme stellt die Stabilität der Anwendung sicher und verhindert eine Blockierung des Spielablaufs.
@@ -262,13 +312,13 @@ useEffect(() => {
 In diesem Abschnitt wird die Berechnung der Punktzahl im Einzelspieler-Modus von \textit{WoSamma} detailliert beschrieben. 
 Die Punktevergabe basiert auf der Entfernung in Kilometern zwischen der vom Spieler gewählten Position und dem tatsächlichen Standort.
 
-\paragraph{Grundprinzip}
+\paragraph{Grundprinzip: }
 Die erreichte Punktzahl ist eine monotone, stückweise linear fallende Funktion der Distanz $d$ (in Kilometern) zwischen der vom Spieler gewählten Position und dem tatsächlichen Zielort. 
 Mit abnehmender Distanz erhöht sich die Punktzahl entsprechend. 
 Negative Punktwerte sind grundsätzlich ausgeschlossen; im speziellen Einzelspieler-Modus \emph{„Ganz Österreich“} wird jedoch bei einer Distanz von mehr als $500\,\text{km}$ eine negative Punktzahl von bis zu $-5000$ Punkten vergeben. 
 Diese Maßnahme dient dazu, gezielte Fehlplatzierungen zu verhindern und eine künstliche Erhöhung der Platzierung in der Bestenliste durch zufällige oder absichtlich falsche Eingaben zu unterbinden.
 
-\paragraph{Punktebereiche und Berechnungsformeln}
+\paragraph{Punktebereiche und Berechnungsformeln: }
 
 \begin{itemize}
   \item \textbf{Perfekter Treffer ($d < 1\,\text{km}$)}\\
@@ -347,19 +397,108 @@ function haversineDistance(lat1: number, lon1: number, lat2: number, lon2: numbe
 Dieser Abschnitt beschreibt die Umsetzung des Benutzerprofils innerhalb der Anwendung.
 Das Benutzerprofil dient zur Darstellung spielrelevanter Informationen sowie zur Verwaltung
 von freigeschalteten Inhalten und individuellen Einstellungen.
+
 \subsubsection{Profilanpassung}
+Beim Öffnen des Benutzerprofils werden die gespeicherten Basisdaten des angemeldeten Nutzers aus der Datenbank geladen und im lokalen Zustand der Anwendung initialisiert. 
+Hierzu zählen insbesondere der Benutzername, die zugewiesene Rolle sowie individuelle Profileinstellungen. 
+Zusätzlich wird ermittelt, welches Profilbild aktuell als aktiv markiert ist und welche Profilbilder dem Benutzer grundsätzlich zur Verfügung stehen beziehungsweise bereits freigeschaltet wurden.
+
+Die Auswahl eines neuen Profilbilds erfolgt über einen konsistenten Aktualisierungsmechanismus. 
+Zunächst werden alle bisher als aktiv markierten Profilbilder des Benutzers zurückgesetzt. 
+Anschließend wird das neu gewählte Profilbild eindeutig als aktiv gesetzt und persistent in der Datenbank gespeichert. 
+Dieses Verfahren stellt sicher, dass zu jedem Zeitpunkt genau ein Profilbild als gültig ausgewählt ist.
+
+Benutzer mit administrativen oder entwicklungsbezogenen Rollen erhalten automatisch Zugriff auf alle verfügbaren Profilbilder. 
+Diese Berechtigung wird serverseitig über rollenbasierte Zugriffsregeln realisiert und clientseitig entsprechend visualisiert.
+
+Werden Profildaten geändert, so erfolgt eine zentrale Speicherung der aktualisierten Attribute in der Datenbank. 
+Hierzu zählen unter anderem der Benutzername, das Geburtsdatum sowie – sofern vom Authentifizierungssystem unterstützt – E-Mail-Adresse und Zugangsdaten. 
+Durch die zentrale Persistenz wird gewährleistet, dass die Änderungen konsistent in allen Ansichten der Anwendung reflektiert werden.
+
 \subsubsection{Kaufen und Freischalten von Profilinhalten}
+Der integrierte Shop stellt dem Benutzer alle verfügbaren Profilinhalte, insbesondere Profilbilder und Zubehör, in einer strukturierten Übersicht dar. 
+Bereits freigeschaltete Inhalte werden visuell von noch nicht erworbenen Elementen unterschieden, um den aktuellen Besitzstatus transparent darzustellen.
+
+Der Erwerb eines Profilinhalts erfolgt über einen simulierten Kaufprozess ohne Anbindung an ein externes Bezahlsystem. 
+Bei Bestätigung des Kaufs wird das ausgewählte Element dem Benutzer dauerhaft in der Datenbank zugeordnet. 
+Diese Zuordnung wird in einer Besitzrelation gespeichert, die den Benutzer eindeutig mit den freigeschalteten Inhalten verknüpft.
+
+Nach erfolgreichem Erwerb werden die freigeschalteten Inhalte unmittelbar im Profilbereich verfügbar gemacht und können dort als aktive Darstellungselemente ausgewählt werden. 
+Ein vergleichbarer Mechanismus wird für Zubehör verwendet, wobei der Besitzstatus ebenfalls persistent gespeichert und in der Benutzeroberfläche entsprechend visualisiert wird.
+
+Im öffentlichen Profil eines Benutzers wird stets das aktuell aktivierte Profilbild angezeigt. 
+Diese Darstellung basiert auf der zuletzt im privaten Profil vorgenommenen Auswahl und gewährleistet eine konsistente Repräsentation des Benutzers innerhalb der Anwendung.
+
 
 \subsection{Freundesystem}
 Das Freundesystem ermöglicht die soziale Interaktion zwischen den Benutzern der Anwendung.
 Es dient dazu, Spieler miteinander zu vernetzen, gemeinsame Spielrunden zu starten
 und den Austausch innerhalb der Anwendung zu fördern.
 \subsubsection{Freundschaftsanfragen}
-\subsubsection{Herausfordern von Freunden}
-\subsubsection{Chatfunktion}
-\subsubsection{Anzeigen von Benutzerprofilen}
+Die Anwendung stellt eine Suchfunktion zur Verfügung, über die Benutzer gezielt nach anderen Spielern suchen und Freundschaftsanfragen initiieren können. 
+Beim Senden einer Anfrage wird in der Datenbank eine neue Beziehung zwischen den beiden Benutzern angelegt und initial mit dem Status \texttt{pending} versehen.
 
+Vor dem Erstellen einer Anfrage erfolgt eine serverseitige Validierung, um sicherzustellen, dass zwischen den beiden Benutzern noch keine bestehende Beziehung vorliegt und dass der Empfänger den Erhalt von Freundschaftsanfragen nicht deaktiviert hat. 
+Diese Prüfungen verhindern redundante Einträge und unerwünschte Kontaktaufnahmen.
+
+Eingehende Anfragen werden dem Benutzer in einer konsolidierten Übersicht angezeigt. 
+Der Benutzer kann jede Anfrage entweder annehmen oder ablehnen, wodurch der Status der Beziehung entsprechend auf \texttt{accepted} beziehungsweise \texttt{declined} gesetzt wird. 
+Die Listen der bestehenden Freundschaften und offenen Anfragen werden über eine Echtzeit-Synchronisation automatisch aktualisiert, sodass Statusänderungen unmittelbar in der Benutzeroberfläche reflektiert werden.
+
+\subsubsection{Herausfordern von Freunden}
+Ausgehend von der Freundesliste kann ein Benutzer einen direkten Mehrspieler-Vergleich initiieren. 
+Hierzu wird eine private Lobby erzeugt, in der der initiierende Benutzer als Host eingetragen wird. 
+Der ausgewählte Freund wird über einen Einladungsmechanismus mit dieser Lobby verknüpft.
+
+Zusätzlich wird eine Beitrittsoption bereitgestellt, sofern sich der Freund in einer offenen, öffentlichen Lobby befindet und dort freie Teilnehmerplätze verfügbar sind. 
+Einladungen werden als eigenständige Datensätze in der Datenbank geführt und können vom Empfänger explizit angenommen oder abgelehnt werden. 
+Dieses Verfahren stellt sicher, dass der Beitritt zu einer Spielrunde stets kontrolliert und nachvollziehbar erfolgt.
+
+\subsubsection{Chatfunktion}
+Die Chatfunktion ist als bidirektionale 1-zu-1-Kommunikation zwischen zwei befreundeten Benutzern realisiert. 
+Nachrichten werden in einer dedizierten Nachrichtentabelle persistent gespeichert und über Echtzeit-Mechanismen an beide Teilnehmer synchronisiert.
+
+Beim Öffnen eines Chatfensters werden alle vorhandenen Nachrichten beider Benutzer aus der Datenbank geladen. 
+Neu eingehende Nachrichten werden unmittelbar in der Benutzeroberfläche angezeigt, wodurch eine kontinuierliche und nahezu verzögerungsfreie Kommunikation ermöglicht wird.
+
+\subsubsection{Anzeigen von Benutzerprofilen}
+Benutzerprofile können sowohl aus der Freundesliste als auch aus spielbezogenen Kontexten, wie beispielsweise Lobbys oder Bestenlisten, aufgerufen werden. 
+Das öffentliche Profil stellt grundlegende Informationen wie den Benutzernamen, die zugewiesene Rolle sowie ausgewählte statistische Kennzahlen dar.
+
+Darüber hinaus wird das aktuell aktive Profilbild des Benutzers angezeigt. 
+Diese Darstellung basiert auf der zuletzt im privaten Profil vorgenommenen Auswahl und gewährleistet eine konsistente Repräsentation des Benutzers über alle Ansichten der Anwendung hinweg.
 
 \subsection{Integration der Google APIs}
+In diesem Abschnitt wird die technische Einbindung der externen Google-Dienste beschrieben, die zur Darstellung, Interaktion und Auswertung geografischer Inhalte innerhalb der Anwendung verwendet werden. 
+Die Google Maps API und die Google Street View API bilden die visuelle und funktionale Grundlage für die Spielmechanik, indem sie sowohl die kartografische Interaktion als auch die realitätsnahe Darstellung der Spielorte ermöglichen. 
+Der Fokus liegt auf der Architektur der Einbindung, der Kommunikation zwischen WebView und nativer Anwendung sowie auf der Validierung und Synchronisation der bereitgestellten Geodaten.
+
 \subsubsection{Verwendung der Google Maps API}
+Die Anwendung integriert die Google Maps API zur Darstellung und Interaktion mit geografischen Karteninhalten. 
+Der zugehörige API-Schlüssel wird zur Laufzeit aus einer zentralen Konfigurationstabelle im Backend geladen und im Arbeitsspeicher der Anwendung zwischengespeichert. 
+Durch dieses Caching wird vermieden, dass der Schlüssel bei jedem Wechsel der Benutzeransicht erneut aus der Datenbank abgerufen werden muss, wodurch sowohl die Netzwerklast als auch die Latenz reduziert werden.
+
+Die Karten werden nicht als native Kartenkomponenten gerendert, sondern als Web-Inhalte in einer \textit{WebView}. 
+Hierzu wird dynamisch eine HTML-Seite erzeugt, in die das Google Maps JavaScript SDK eingebunden wird. 
+Diese Seite wird innerhalb der mobilen Anwendung ausgeführt und ermöglicht eine plattformunabhängige Nutzung identischer Kartenlogik auf iOS und Android.
+
+Für die Umsetzung der Spielmechanik werden unterschiedliche Kartenvarianten erzeugt, die jeweils auf spezifische Interaktionsszenarien ausgelegt sind. 
+Hierzu zählen insbesondere sogenannte \emph{Guess-Karten}, welche das Setzen eines Markers zur Abgabe eines Spieler-Tipps ermöglichen, sowie \emph{Ergebnis-Karten}, die die gewählte Position und den tatsächlichen Zielstandort simultan visualisieren.
+
+Benutzerinteraktionen innerhalb der WebView, wie das Platzieren eines Markers, das Verändern des Zoom- und Kartenfokus oder das Auslösen von Ereignissen, werden über einen Nachrichtenkanal an die native Anwendung zurückgemeldet. 
+Diese bidirektionale Kommunikation stellt sicher, dass die Benutzeroberfläche und die zugrunde liegende Spiel- und Auswertungslogik stets synchron zum aktuellen Kartenzustand bleiben.
+
 \subsubsection{Einbindung der Street-View-Bilder}
+Die Einbindung der Street-View-Funktionalität erfolgt ebenfalls über das Google Maps JavaScript SDK innerhalb einer WebView. 
+Hierbei wird ein Street-View-Panorama erzeugt, das dem Benutzer eine 360-Grad-Ansicht des jeweiligen Spielorts bereitstellt und die visuelle Grundlage für das spielerische Erkundungskonzept bildet.
+
+Zur Reduktion visueller Komplexität werden zentrale Benutzeroberflächenelemente des Street-View-Panoramas, wie beispielsweise Navigations- und Zoom-Steuerelemente, weitgehend ausgeblendet. 
+Dadurch wird der Fokus des Benutzers auf die Umgebung und die räumliche Orientierung innerhalb der Spielansicht gelenkt.
+
+Vor der Initialisierung eines Panoramas wird geprüft, ob für die gewünschte Region ein gültiger Street-View-Datenpunkt verfügbar ist. 
+Diese Prüfung erfolgt über eine Kombination aus Street-View-Suchanfragen und, falls erforderlich, zusätzlichen Validierungsmechanismen wie regionsbasierten oder polygonalen Verfügbarkeitsprüfungen. 
+Wird kein geeigneter Punkt gefunden, wird entweder eine alternative Position gesucht oder dem Benutzer eine entsprechende Fehlermeldung angezeigt.
+
+Die aktuelle Kameraausrichtung des Panoramas (Heading) wird in regelmäßigen Abständen aus der WebView an die native Anwendung übertragen. 
+Diese Information wird verwendet, um zusätzliche Overlays, wie beispielsweise einen Kompass, synchron zur Blickrichtung des Benutzers darzustellen und somit eine konsistente und kohärente Benutzererfahrung zu gewährleisten.
+
