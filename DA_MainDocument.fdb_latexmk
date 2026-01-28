@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex DA_MainDocument"] 1769585188.25549 "DA_MainDocument.aux" "DA_MainDocument.bbl" "DA_MainDocument" 1769585192.25082 0
-  "./DA_Literatur.bib" 1769582619 14674 2ebe3585cdd68d644ae5af4ebea361a7 ""
-  "6_appendix/listofeverything.aux" 1769585191 4198 400da68851b93a50f2d005d72bfe8b84 "pdflatex"
+["bibtex DA_MainDocument"] 1769600172.5022 "DA_MainDocument.aux" "DA_MainDocument.bbl" "DA_MainDocument" 1769600180.65023 0
+  "./DA_Literatur.bib" 1769598997 15420 8a0b87ea97da0529917e317be7be17f6 ""
+  "6_appendix/listofeverything.aux" 1769600179 4348 868cf8204f1bc5783dd61a157e99d53d "pdflatex"
   "C:/Users/janti/AppData/Roaming/MiKTeX/bibtex/bst/babelbib/babunsrt.bst" 1610365731 25258 5676363a009d917405b271fe05aa55ce ""
-  "DA_MainDocument.aux" 1769585191 37650 64f6816a59a3d2a8647ef7944675c780 "pdflatex"
+  "DA_MainDocument.aux" 1769600179 37908 9c2b6136da212459405f7134e0e47650 "pdflatex"
   (generated)
   "DA_MainDocument.bbl"
   "DA_MainDocument.blg"
   (rewritten before read)
-["makeindex DA_MainDocument.idx"] 1769525359.7328 "DA_MainDocument.idx" "DA_MainDocument.ind" "DA_MainDocument" 1769585192.25033 0
-  "DA_MainDocument.idx" 1769585190 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex DA_MainDocument.idx"] 1769599053.57776 "DA_MainDocument.idx" "DA_MainDocument.ind" "DA_MainDocument" 1769600180.64978 0
+  "DA_MainDocument.idx" 1769600178 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "DA_MainDocument.ilg"
   "DA_MainDocument.ind"
   (rewritten before read)
-["pdflatex"] 1769585188.49498 "c:/Users/janti/Desktop/DPLM/Diplomarbeit/DA_MainDocument.tex" "DA_MainDocument.pdf" "DA_MainDocument" 1769585192.2516 0
+["pdflatex"] 1769600176.83601 "c:/Users/janti/Desktop/DPLM/Diplomarbeit/DA_MainDocument.tex" "DA_MainDocument.pdf" "DA_MainDocument" 1769600180.65128 0
   "0_prelude/da_doku_de.tex" 1769582619 3346 9733f29a865709c0bfe7edea94dca953 ""
   "0_prelude/da_doku_en.tex" 1769582619 3266 7ab0f335219b1dbf7a45d1970b692061 ""
   "0_prelude/section.tex" 1769582619 163 20a5023facb41cf866eba377ef40fb43 ""
@@ -30,7 +30,7 @@
   "2_approach/section.tex" 1769582619 92 7124ab081eac7df02a65d78144244a04 ""
   "2_approach/solution1.tex" 1769582619 2923 e73c63babac11eea9dc25d49fd785261 ""
   "2_approach/stateoftheart.tex" 1769582619 96 7512d8deaa94ea4f8ed62eb060647a6a ""
-  "3_Theorie/jan.tex" 1769585183 43705 a2bd43d32c7804d39cd518c2d2498030 ""
+  "3_Theorie/jan.tex" 1769600172 49474 9edb04dd077325674027fac7a75d8ad7 ""
   "3_Theorie/laurenz.tex" 1769584515 32118 e791532aa265f876b2279de4793e7cb2 ""
   "3_Theorie/section.tex" 1769582619 89 31b9675d3ab4c0810f49f23ac015b969 ""
   "4_protoype/description.tex" 1769582619 7355 f2ca70a66e942c2bb62d4198b4740201 ""
@@ -39,7 +39,7 @@
   "5_summary/section.tex" 1769582619 93 d541bf74202d3ea6d1f777a36d942a96 ""
   "5_summary/summary.tex" 1769582619 149 16410a8bef949a2847cbef27fba7b0a2 ""
   "6_appendix/laborDivision.tex" 1769582619 858 37cd2a866b0a469decfda06401d83552 ""
-  "6_appendix/listofeverything.aux" 1769585191 4198 400da68851b93a50f2d005d72bfe8b84 "pdflatex"
+  "6_appendix/listofeverything.aux" 1769600179 4348 868cf8204f1bc5783dd61a157e99d53d "pdflatex"
   "6_appendix/listofeverything.tex" 1769582619 830 d8103230342805eebee24d9602e321b1 ""
   "6_appendix/meetingMinutes.tex" 1769582619 341 63fb7885b6fcb1199af1abcd0dc9c5a3 ""
   "6_appendix/projectDiary.tex" 1769582619 833 af5f6d156f349047c2e0d7828dd356d0 ""
@@ -276,14 +276,14 @@
   "C:/Users/janti/AppData/Roaming/MiKTeX/tex/latex/tracklang/tracklang.sty" 1741688950 10062 6009a67f1c2bd376a9f34880dc509a07 ""
   "C:/Users/janti/AppData/Roaming/MiKTeX/tex/latex/translator/translator.sty" 1622471510 8765 56d370785f0143111ff9898b5adfe08e ""
   "C:/Users/janti/AppData/Roaming/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
-  "DA_MainDocument.aux" 1769585191 37650 64f6816a59a3d2a8647ef7944675c780 "pdflatex"
-  "DA_MainDocument.bbl" 1769585188 18902 6725bf6dca12ebcc23821823611d65ba "bibtex DA_MainDocument"
-  "DA_MainDocument.ind" 1769582619 0 d41d8cd98f00b204e9800998ecf8427e "makeindex DA_MainDocument.idx"
-  "DA_MainDocument.lof" 1769585191 1045 84350ece9c7b4fbb9df29157361247fa "pdflatex"
-  "DA_MainDocument.lol" 1769585191 1045 84350ece9c7b4fbb9df29157361247fa "pdflatex"
-  "DA_MainDocument.lot" 1769585191 1334 0d069090aa987505fcd4149e9f7a3f1b "pdflatex"
+  "DA_MainDocument.aux" 1769600179 37908 9c2b6136da212459405f7134e0e47650 "pdflatex"
+  "DA_MainDocument.bbl" 1769600172 19877 d7e5ff1318576cdaa9a049e3d72e1704 "bibtex DA_MainDocument"
+  "DA_MainDocument.ind" 1769599053 0 d41d8cd98f00b204e9800998ecf8427e "makeindex DA_MainDocument.idx"
+  "DA_MainDocument.lof" 1769600179 1165 50b6a6656594d9d9d705d5e1e948552c "pdflatex"
+  "DA_MainDocument.lol" 1769600179 1165 50b6a6656594d9d9d705d5e1e948552c "pdflatex"
+  "DA_MainDocument.lot" 1769600179 1454 2d7beece1e9f2dda9b9f07978f5336a3 "pdflatex"
   "DA_MainDocument.tex" 1769582619 1185 c08598b5a0df19f09d107bcd880d47bd ""
-  "DA_MainDocument.toc" 1769585191 8971 85045a4f8beb23fae9fd254142b8e387 "pdflatex"
+  "DA_MainDocument.toc" 1769600179 9091 055f85c1f0d327519b2f3b657fe37716 "pdflatex"
   "c:/Users/janti/Desktop/DPLM/Diplomarbeit/DA_MainDocument.tex" 1769582619 1185 c08598b5a0df19f09d107bcd880d47bd ""
   "content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf" 1769582619 134964 98254720596769cbb0fec94b9b071921 ""
   "setup/abteilungsregeln.tex" 1769582619 196 17d229db5949f244a94bc87c9fd38670 ""
