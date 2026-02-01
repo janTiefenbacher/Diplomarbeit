@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {3.1.5}Hosting- und Infrastrukturmodelle}{32}{subsection.37}%
 \contentsline {subsubsection}{\numberline {3.1.5.1}On-Premise, Cloud und Hybrid-Architekturen}{32}{subsubsection.38}%
 \contentsline {subsubsection}{\numberline {3.1.5.2}IaaS, PaaS, FaaS und Serverless}{33}{subsubsection.39}%
-\contentsline {subsubsection}{\numberline {3.1.5.3}Skalierung: vertikal und horizontal}{33}{subsubsection.40}%
+\contentsline {subsubsection}{\numberline {3.1.5.3}Skalierung: vertikal und horizontal}{34}{subsubsection.40}%
 \contentsline {subsubsection}{\numberline {3.1.5.4}Autoscaling und Lastverteilung}{34}{subsubsection.41}%
 \contentsline {subsubsection}{\numberline {3.1.5.5}Latenzoptimierung und Durchsatzsteigerung}{34}{subsubsection.42}%
 \contentsline {chapter}{\numberline {4}Dokumentation der Implementierung}{35}{chapter.43}%
