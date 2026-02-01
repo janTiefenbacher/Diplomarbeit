@@ -30,58 +30,63 @@
 \contentsline {paragraph}{\numberline {3.1.4.1.1}React Native Framework}{28}{paragraph.29}%
 \contentsline {subsubsection}{\numberline {3.1.4.2}Backend-Technologien}{29}{subsubsection.30}%
 \contentsline {paragraph}{\numberline {3.1.4.2.1}APIs}{29}{paragraph.31}%
-\contentsline {paragraph}{\numberline {3.1.4.2.2}Datenbanken}{29}{paragraph.32}%
-\contentsline {paragraph}{\numberline {3.1.4.2.3}Backend-as-a-Service (BaaS)}{30}{paragraph.33}%
-\contentsline {paragraph}{\numberline {3.1.4.2.4}Auth-Systeme}{31}{paragraph.34}%
-\contentsline {paragraph}{\numberline {3.1.4.2.5}Verschlüsselung}{31}{paragraph.35}%
-\contentsline {paragraph}{\numberline {3.1.4.2.6}Datenschutz}{32}{paragraph.36}%
-\contentsline {subsection}{\numberline {3.1.5}Hosting- und Infrastrukturmodelle}{32}{subsection.37}%
-\contentsline {subsubsection}{\numberline {3.1.5.1}On-Premise, Cloud und Hybrid-Architekturen}{32}{subsubsection.38}%
-\contentsline {subsubsection}{\numberline {3.1.5.2}IaaS, PaaS, FaaS und Serverless}{33}{subsubsection.39}%
-\contentsline {subsubsection}{\numberline {3.1.5.3}Skalierung: vertikal und horizontal}{34}{subsubsection.40}%
-\contentsline {subsubsection}{\numberline {3.1.5.4}Autoscaling und Lastverteilung}{34}{subsubsection.41}%
-\contentsline {subsubsection}{\numberline {3.1.5.5}Latenzoptimierung und Durchsatzsteigerung}{34}{subsubsection.42}%
-\contentsline {chapter}{\numberline {4}Dokumentation der Implementierung}{35}{chapter.43}%
-\contentsline {section}{\numberline {4.1}Systemumgebung}{35}{section.44}%
-\contentsline {subsection}{\numberline {4.1.1}Verwendete Technologien}{35}{subsection.45}%
-\contentsline {section}{\numberline {4.2}Implementierung}{36}{section.46}%
-\contentsline {subsection}{\numberline {4.2.1}Architektur der Anwendung}{36}{subsection.47}%
-\contentsline {subsection}{\numberline {4.2.2}Frontend-Implementierung - JAN NOCH UMSCHREIBEN}{36}{subsection.48}%
-\contentsline {subsubsection}{\numberline {4.2.2.1}Projektstruktur und Navigation}{36}{subsubsection.49}%
-\contentsline {subsubsection}{\numberline {4.2.2.2}Spielansicht und Benutzerinteraktion}{36}{subsubsection.50}%
-\contentsline {paragraph}{\numberline {4.2.2.2.1}Einzelspieler-Modus:}{37}{paragraph.51}%
-\contentsline {paragraph}{\numberline {4.2.2.2.2}Mehrspieler-Modus:}{37}{paragraph.52}%
-\contentsline {subsection}{\numberline {4.2.3}Backend-Anbindung mit Supabase}{37}{subsection.53}%
-\contentsline {subsubsection}{\numberline {4.2.3.1}Echtzeit-Kommunikation über Supabase Channels}{37}{subsubsection.54}%
-\contentsline {subsubsection}{\numberline {4.2.3.2}Authentifizierung der Benutzer (Supabase Auth, OAuth2)}{39}{subsubsection.93}%
-\contentsline {paragraph}{\numberline {4.2.3.2.1}Laden von Benutzer- und Profildaten:}{39}{paragraph.94}%
-\contentsline {paragraph}{\numberline {4.2.3.2.2}Logout:}{39}{paragraph.95}%
-\contentsline {paragraph}{\numberline {4.2.3.2.3}Sicherheitsaspekte:}{39}{paragraph.96}%
-\contentsline {subsection}{\numberline {4.2.4}Spielmechanik und Logik}{39}{subsection.97}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}Generierung der Spielrunden}{39}{subsubsection.98}%
-\contentsline {paragraph}{\numberline {4.2.4.1.1}Punkt-in-Polygon-Prüfung:}{40}{paragraph.111}%
-\contentsline {paragraph}{\numberline {4.2.4.1.2}Zufällige Koordinatenerzeugung:}{40}{paragraph.112}%
-\contentsline {paragraph}{\numberline {4.2.4.1.3}Abbruchbedingung und Robustheit:}{40}{paragraph.113}%
-\contentsline {subsubsection}{\numberline {4.2.4.2}Generierung des täglichen Spiels}{40}{subsubsection.114}%
-\contentsline {subsubsection}{\numberline {4.2.4.3}Live-Einladungen für Freundesrunden}{41}{subsubsection.115}%
-\contentsline {subsubsection}{\numberline {4.2.4.4}Punkteberechnung}{43}{subsubsection.210}%
-\contentsline {paragraph}{\numberline {4.2.4.4.1}Grundprinzip:}{43}{paragraph.211}%
-\contentsline {paragraph}{\numberline {4.2.4.4.2}Punktebereiche und Berechnungsformeln:}{43}{paragraph.212}%
-\contentsline {subsection}{\numberline {4.2.5}Benutzerprofil}{44}{subsection.250}%
-\contentsline {subsubsection}{\numberline {4.2.5.1}Profilanpassung}{45}{subsubsection.251}%
-\contentsline {subsubsection}{\numberline {4.2.5.2}Kaufen und Freischalten von Profilinhalten}{45}{subsubsection.252}%
-\contentsline {subsection}{\numberline {4.2.6}Freundesystem}{46}{subsection.253}%
-\contentsline {subsubsection}{\numberline {4.2.6.1}Freundschaftsanfragen}{46}{subsubsection.254}%
-\contentsline {subsubsection}{\numberline {4.2.6.2}Herausfordern von Freunden}{46}{subsubsection.255}%
-\contentsline {subsubsection}{\numberline {4.2.6.3}Chatfunktion}{46}{subsubsection.256}%
-\contentsline {subsubsection}{\numberline {4.2.6.4}Anzeigen von Benutzerprofilen}{47}{subsubsection.257}%
-\contentsline {subsection}{\numberline {4.2.7}Integration der Google APIs}{47}{subsection.258}%
-\contentsline {subsubsection}{\numberline {4.2.7.1}Verwendung der Google Maps API}{47}{subsubsection.259}%
-\contentsline {subsubsection}{\numberline {4.2.7.2}Einbindung der Street-View-Bilder}{48}{subsubsection.260}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{49}{chapter.261}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung}{49}{section.262}%
-\contentsline {section}{\numberline {5.2}Ausblick}{49}{section.263}%
-\contentsline {chapter}{\numberline {I}Literaturverzeichnis}{50}{chapter.264}%
+\contentsline {paragraph}{\numberline {3.1.4.2.2}Relationale Datenbanken}{29}{paragraph.32}%
+\contentsline {paragraph}{\numberline {3.1.4.2.3}Datenmodellierung und Normalisierung}{30}{paragraph.33}%
+\contentsline {paragraph}{\numberline {3.1.4.2.4}Echtzeit-Daten}{30}{paragraph.34}%
+\contentsline {paragraph}{\numberline {3.1.4.2.5}Vertikale vs. horizontale Skalierung}{31}{paragraph.35}%
+\contentsline {paragraph}{\numberline {3.1.4.2.6}Autoscaling und Lastverteilung}{31}{paragraph.36}%
+\contentsline {paragraph}{\numberline {3.1.4.2.7}Latenzoptimierung und Durchsatzsteigerung}{32}{paragraph.37}%
+\contentsline {paragraph}{\numberline {3.1.4.2.8}Backend-as-a-Service (BaaS)}{32}{paragraph.38}%
+\contentsline {paragraph}{\numberline {3.1.4.2.9}Auth-Systeme}{33}{paragraph.39}%
+\contentsline {paragraph}{\numberline {3.1.4.2.10}Verschlüsselung}{34}{paragraph.40}%
+\contentsline {paragraph}{\numberline {3.1.4.2.11}Datenschutz}{35}{paragraph.41}%
+\contentsline {subsection}{\numberline {3.1.5}Hosting- und Infrastrukturmodelle}{35}{subsection.42}%
+\contentsline {subsubsection}{\numberline {3.1.5.1}On-Premise, Cloud und Hybrid-Architekturen}{35}{subsubsection.43}%
+\contentsline {subsubsection}{\numberline {3.1.5.2}IaaS, PaaS, FaaS und Serverless}{36}{subsubsection.44}%
+\contentsline {subsubsection}{\numberline {3.1.5.3}Skalierung: vertikal und horizontal}{36}{subsubsection.45}%
+\contentsline {subsubsection}{\numberline {3.1.5.4}Autoscaling und Lastverteilung}{37}{subsubsection.46}%
+\contentsline {subsubsection}{\numberline {3.1.5.5}Latenzoptimierung und Durchsatzsteigerung}{37}{subsubsection.47}%
+\contentsline {chapter}{\numberline {4}Dokumentation der Implementierung}{38}{chapter.48}%
+\contentsline {section}{\numberline {4.1}Systemumgebung}{38}{section.49}%
+\contentsline {subsection}{\numberline {4.1.1}Verwendete Technologien}{38}{subsection.50}%
+\contentsline {section}{\numberline {4.2}Implementierung}{39}{section.51}%
+\contentsline {subsection}{\numberline {4.2.1}Architektur der Anwendung}{39}{subsection.52}%
+\contentsline {subsection}{\numberline {4.2.2}Frontend-Implementierung - JAN NOCH UMSCHREIBEN}{39}{subsection.53}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Projektstruktur und Navigation}{39}{subsubsection.54}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}Spielansicht und Benutzerinteraktion}{39}{subsubsection.55}%
+\contentsline {paragraph}{\numberline {4.2.2.2.1}Einzelspieler-Modus:}{40}{paragraph.56}%
+\contentsline {paragraph}{\numberline {4.2.2.2.2}Mehrspieler-Modus:}{40}{paragraph.57}%
+\contentsline {subsection}{\numberline {4.2.3}Backend-Anbindung mit Supabase}{40}{subsection.58}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}Echtzeit-Kommunikation über Supabase Channels}{40}{subsubsection.59}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}Authentifizierung der Benutzer (Supabase Auth, OAuth2)}{42}{subsubsection.98}%
+\contentsline {paragraph}{\numberline {4.2.3.2.1}Laden von Benutzer- und Profildaten:}{42}{paragraph.99}%
+\contentsline {paragraph}{\numberline {4.2.3.2.2}Logout:}{42}{paragraph.100}%
+\contentsline {paragraph}{\numberline {4.2.3.2.3}Sicherheitsaspekte:}{42}{paragraph.101}%
+\contentsline {subsection}{\numberline {4.2.4}Spielmechanik und Logik}{42}{subsection.102}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Generierung der Spielrunden}{42}{subsubsection.103}%
+\contentsline {paragraph}{\numberline {4.2.4.1.1}Punkt-in-Polygon-Prüfung:}{43}{paragraph.116}%
+\contentsline {paragraph}{\numberline {4.2.4.1.2}Zufällige Koordinatenerzeugung:}{43}{paragraph.117}%
+\contentsline {paragraph}{\numberline {4.2.4.1.3}Abbruchbedingung und Robustheit:}{43}{paragraph.118}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}Generierung des täglichen Spiels}{43}{subsubsection.119}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}Live-Einladungen für Freundesrunden}{44}{subsubsection.120}%
+\contentsline {subsubsection}{\numberline {4.2.4.4}Punkteberechnung}{46}{subsubsection.215}%
+\contentsline {paragraph}{\numberline {4.2.4.4.1}Grundprinzip:}{46}{paragraph.216}%
+\contentsline {paragraph}{\numberline {4.2.4.4.2}Punktebereiche und Berechnungsformeln:}{46}{paragraph.217}%
+\contentsline {subsection}{\numberline {4.2.5}Benutzerprofil}{47}{subsection.255}%
+\contentsline {subsubsection}{\numberline {4.2.5.1}Profilanpassung}{48}{subsubsection.256}%
+\contentsline {subsubsection}{\numberline {4.2.5.2}Kaufen und Freischalten von Profilinhalten}{48}{subsubsection.257}%
+\contentsline {subsection}{\numberline {4.2.6}Freundesystem}{49}{subsection.258}%
+\contentsline {subsubsection}{\numberline {4.2.6.1}Freundschaftsanfragen}{49}{subsubsection.259}%
+\contentsline {subsubsection}{\numberline {4.2.6.2}Herausfordern von Freunden}{49}{subsubsection.260}%
+\contentsline {subsubsection}{\numberline {4.2.6.3}Chatfunktion}{49}{subsubsection.261}%
+\contentsline {subsubsection}{\numberline {4.2.6.4}Anzeigen von Benutzerprofilen}{50}{subsubsection.262}%
+\contentsline {subsection}{\numberline {4.2.7}Integration der Google APIs}{50}{subsection.263}%
+\contentsline {subsubsection}{\numberline {4.2.7.1}Verwendung der Google Maps API}{50}{subsubsection.264}%
+\contentsline {subsubsection}{\numberline {4.2.7.2}Einbindung der Street-View-Bilder}{51}{subsubsection.265}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{52}{chapter.266}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung}{52}{section.267}%
+\contentsline {section}{\numberline {5.2}Ausblick}{52}{section.268}%
+\contentsline {chapter}{\numberline {I}Literaturverzeichnis}{53}{chapter.269}%
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
@@ -110,16 +115,16 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{54}{chapter.265}%
-\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{55}{chapter.266}%
-\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{56}{chapter.267}%
-\contentsline {chapter}{\numberline {A}Anhang}{57}{chapter.268}%
-\contentsline {section}{\numberline {A.1}Arbeitsteilung}{57}{section.269}%
-\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{57}{section.270}%
-\contentsline {section}{\numberline {A.3}Projekttagebücher}{57}{section.271}%
-\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Max Mustermann}{57}{subsection.272}%
-\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Mex Musterjuan}{57}{subsection.273}%
-\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{58}{section.274}%
-\contentsline {section}{\numberline {A.5}Besprechungsprotokolle 1}{60}{section.275}%
-\contentsline {section}{\numberline {A.6}Datenträgerbeschreibung}{61}{section.276}%
+\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{57}{chapter.270}%
+\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{58}{chapter.271}%
+\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{59}{chapter.272}%
+\contentsline {chapter}{\numberline {A}Anhang}{60}{chapter.273}%
+\contentsline {section}{\numberline {A.1}Arbeitsteilung}{60}{section.274}%
+\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{60}{section.275}%
+\contentsline {section}{\numberline {A.3}Projekttagebücher}{60}{section.276}%
+\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Max Mustermann}{60}{subsection.277}%
+\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Mex Musterjuan}{60}{subsection.278}%
+\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{61}{section.279}%
+\contentsline {section}{\numberline {A.5}Besprechungsprotokolle 1}{63}{section.280}%
+\contentsline {section}{\numberline {A.6}Datenträgerbeschreibung}{64}{section.281}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

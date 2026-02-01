@@ -452,16 +452,65 @@ Eine API fungiert dabei als Vermittlungsschicht zwischen verschiedenen Softwarek
 
 In der Softwareentwicklung bilden APIs eine wesentliche Grundlage für den Aufbau modularer Systeme. Sie unterstützen die Trennung von Zuständigkeiten zwischen einzelnen Systemkomponenten und tragen zur Wartbarkeit sowie Erweiterbarkeit von Anwendungen bei \cite{talend_api_definition}.
 
-\paragraph{Datenbanken}
+\paragraph{Relationale Datenbanken}
 \mbox{}\\
 \mbox{}\\
-Datenbanken sind digitale Speichersysteme zur organisierten Verwaltung von Informationen. Sie dienen dazu, große Mengen strukturierter und unstrukturierter Daten so zu speichern, dass Anwendungen, Benutzer und Automatisierungsprozesse effizient darauf zugreifen, diese verwalten und aktualisieren können. Eine Datenbank besteht dabei aus einem Repository zur Speicherung der Daten sowie aus Software-Komponenten, die den Zugriff, die Strukturierung und die Sicherheit dieser Daten steuern \cite{ibm_database}.
+Relationale Datenbanken sind ein Datenbanktyp, bei dem Daten in Form von Tabellen mit Zeilen und Spalten strukturiert gespeichert werden. Dieses Modell basiert auf dem relationalen Datenbankmodell, bei dem jede Zeile einer Tabelle einen einzelnen Datensatz mit einer eindeutigen Kennung, dem sogenannten Primärschlüssel, darstellt, und jede Spalte ein Attribut des Datensatzes beschreibt. Durch gemeinsame Spalten zwischen verschiedenen Tabellen können Relationen zwischen Datensätzen hergestellt werden, was eine konsistente und strukturierte Verbindung von Daten über mehrere Tabellen hinweg ermöglicht.\cite{oracle_relational_database}
 
-Die grundlegende Funktion einer Datenbank besteht darin, Daten nicht nur passiv zu speichern, sondern sie in einer Form bereitzustellen, die schnelle Abfragen, konsistente Verwaltung und kontrollierten Zugriff ermöglicht. Datenbanken bilden damit eine essentielle Grundlage moderner Anwendungen, da sie die zentrale Grundlage für die Verwaltung und Bereitstellung von Daten in Informationssystemen darstellen \cite{ibm_database}.
+Im relationalen Modell sind die logischen Datenstrukturen wie Tabellen, Ansichten und Indizes von der physischen Speicherung getrennt, wodurch die Organisation und Verwaltung der Daten unabhängig von der physischen Lage erleichtert wird. Integritätsregeln sorgen dafür, dass die Daten konsistent und fehlerfrei bleiben, etwa indem doppelte Werte in Schlüsselfeldern verhindert werden.
 
-Dabei umfasst der Begriff „Datenbank“ nicht nur die gespeicherten Daten selbst, sondern auch die zugehörige Infrastruktur, die physische Speicherung und die Software-Komponenten einschließt, die Datenbankoperationen steuern und ausführen. Durch diese Struktur ermöglichen Datenbanken eine systematische Organisation großer Datenbestände, wodurch diese für Anwendungen adressierbar und nutzbar werden \cite{ibm_database}.
+Relationale Datenbanken sind weit verbreitet und werden in vielen Bereichen eingesetzt, beispielsweise zur Verwaltung von Bestellungen, Kundendaten oder anderen geschäftskritischen Informationen. Sie erlauben strukturierte Abfragen und Manipulationen der Daten mithilfe standardisierter Sprachen wie SQL (Structured Query Language), die auf dem relationalen Modell aufbauen.
 
-Datenbanken werden in vielfältigen Kontexten verwendet und sind integraler Bestandteil zahlreicher Softwarelösungen, da sie die grundlegende Datenverwaltung für Anwendungen unterstützen. Ohne Datenbanken wäre die zentrale Verwaltung großer Informationsmengen sowie deren strukturierter Zugriff, wie er für Web-Anwendungen, mobile Anwendungen und Backend-Systeme heute notwendig ist, nicht realisierbar \cite{ibm_database}.
+\paragraph{Datenmodellierung und Normalisierung}
+\mbox{}\\
+\mbox{}\\
+Die Datenmodellierung in relationalen Datenbanksystemen umfasst neben der strukturellen Abbildung von Informationsbedarfen auch die Optimierung des Datenmodells zur Vermeidung unnötiger Redundanzen. Ein zentrales Konzept in diesem Zusammenhang ist die Normalisierung, bei der das Datenmodell so gestaltet wird, dass redundante Daten möglichst vermieden und damit verbundene semantische Probleme reduziert werden. Dabei wird ein ursprünglich grob entworfenes Relationenschema durch eine Folge von Normalisierungsregeln so umgestaltet, dass die Daten konsistent und effizient gespeichert werden.\cite{dbengines_normalisierung}
+
+Das Ziel der Normalisierung besteht primär darin, Wiederholungen gleicher Informationen innerhalb einer Datenbankstruktur zu minimieren und dadurch sogenannte Anomalien zu vermeiden. Anomalien treten insbesondere beim Einfügen, Ändern oder Löschen von Daten auf und können durch redundante Speicherung auftreten. Durch die Aufteilung eines Datenmodells in mehrere, logisch getrennte Tabellenstrukturen werden Abhängigkeiten besser kontrolliert und Redundanzen reduziert, was die Konsistenz der Daten erhöht.
+
+Im Normalisierungsprozess werden Datenstrukturen (Tabellen) schrittweise so angepasst, dass sie bestimmten Normalformen entsprechen. Üblicherweise wird dieser Prozess bis zur dritten Normalform durchgeführt, da dadurch die meisten redundanzbedingten Probleme eliminiert werden, während die Komplexität des Datenmodells in einem praktikablen Rahmen bleibt. Die Anwendung von Normalisierungsregeln stellt somit einen wichtigen Schritt bei der Modellierung relationaler Datenbanken dar und bildet die Grundlage für eine konsistente und wartbare Datenstruktur.
+
+\paragraph{Echtzeit-Daten}
+\mbox{}\\
+\mbox{}\\
+Echtzeit‑Daten (engl. „Real Time Data“) sind Informationen, die unmittelbar nach ihrer Erfassung gesammelt, verarbeitet und zur Verfügung gestellt werden. Im Gegensatz zu klassischen periodisch aktualisierten Daten, die in festen Intervallen erfasst und verarbeitet werden, zeichnen sich Echtzeit‑Daten dadurch aus, dass sie nahezu ohne Verzögerung bereitgestellt werden und sofortige Reaktionen auf Ereignisse oder Veränderungen ermöglichen. Dadurch wird es möglich, Entscheidungen auf Basis aktueller Informationen zu treffen und dynamisch auf Veränderungssituationen zu reagieren.\cite{medienpalast_realtime_data}
+
+Die Entwicklung von Echtzeit‑Daten ist eng mit der technischen Weiterentwicklung leistungsfähiger Systeme und schneller Netzwerke verbunden, die es erlauben, große Datenmengen direkt zu erfassen und nahezu in Echtzeit zu verarbeiten. Anwendungen von Echtzeit‑Daten finden sich in diversen Bereichen wie beispielsweise der Finanzbranche, wo aktuelle Marktinformationen für Handelsentscheidungen essentiell sind, oder in der Logistik, wo kontinuierliche Standortdaten zur Optimierung von Lieferprozessen genutzt werden.
+
+Technologien zur Unterstützung von Echtzeit‑Daten bestehen aus Systemen, die Datenströme kontinuierlich analysieren und verarbeiten. Dazu zählen unter anderem Cloud‑Computing‑Plattformen und spezialisierte Streaming‑Technologien, welche Latenzzeiten minimieren und die Effizienz der Datenverarbeitung steigern. Durch diese technischen Ansätze wird die schnelle Verarbeitung großer Datenströme ermöglicht, wodurch Echtzeit‑Daten in vielfältigen praktischen Kontexten nutzbar werden.
+
+\paragraph{Vertikale vs. horizontale Skalierung}
+\mbox{}\\
+\mbox{}\\
+Skalierung ist ein zentrales Konzept in IT-Architekturen und beschreibt, wie Systeme mit steigender Last umgehen können. Dabei wird unterschieden zwischen der **vertikalen Skalierung**, bei der die Leistungsfähigkeit einzelner Maschinen erhöht wird, und der **horizontalen Skalierung**, bei der zusätzliche Maschinen oder Knoten zum System hinzugefügt werden \cite{akamai_scaling}.
+
+\textbf{Vertikale Skalierung}
+
+Vertikale Skalierung, auch als „Scaling Up“ (Skalierung nach oben) bezeichnet, beschreibt den Prozess der Erhöhung der Leistungsfähigkeit einer einzelnen Maschine. Dabei werden die Ressourcen eines bestehenden Systems erweitert, indem beispielsweise die Anzahl der CPUs, der Arbeitsspeicher oder der Speicherplatz vergrößert wird. Dadurch kann die Maschine höhere Arbeitslasten und mehr Anfragen verarbeiten, ohne dass zusätzliche Knoten in ein System eingeführt werden müssen. Vertikale Skalierung wird häufig genutzt, um innerhalb der Grenzen eines einzelnen Servers die Leistungsfähigkeit zu steigern und ist insbesondere dann sinnvoll, wenn ein einzelner Knoten den größten Teil der Arbeitslast übernimmt oder die Architektur einer Anwendung nicht für verteilte Systeme ausgelegt ist.\cite{akamai_scaling}
+
+\textbf{Horizontale Skalierung}
+
+Horizontale Skalierung, auch als „Scaling Out“ (Skalierung nach außen) bezeichnet, bezeichnet den Ansatz, zusätzliche Maschinen oder Knoten zu einem System hinzuzufügen, um die Arbeitslast über mehrere Einheiten zu verteilen. Bei diesem Modell werden weitere virtuelle Maschinen oder physische Server in einen Cluster integriert, um die Gesamtkapazität zu erhöhen. Die Lastverteilung erfolgt dabei über spezialisierte Ressourcenverwaltungs‑Software, die sicherstellt, dass Anfragen effizient auf die vorhandenen Knoten verteilt werden. Horizontale Skalierung ermöglicht es, die Systemkapazität bei Bedarf dynamisch zu erweitern, indem zusätzliche Einheiten eingefügt werden, was insbesondere in verteilten Systemen und cloud‑basierten Architekturen Anwendung findet.\cite{akamai_scaling}
+
+\paragraph{Autoscaling und Lastverteilung}
+\mbox{}\\
+\mbox{}\\
+Autoscaling bezeichnet einen Mechanismus in Cloud‑ und IT‑Infrastrukturen, der es ermöglicht, Rechenressourcen automatisch an die aktuelle Systemlast anzupassen. Dabei werden bei steigender Arbeitslast zusätzliche Ressourcen bereitgestellt und bei sinkender Last wieder freigegeben, ohne dass ein manuelles Eingreifen durch Administratoren erforderlich ist. Ziel des Autoscalings ist es, Leistungsfähigkeit und Effizienz der Infrastruktur dynamisch zu optimieren, indem Überlastungen vermieden und Ressourcenverschwendung reduziert werden.\cite{teamtakt_devops_lastverteilung}
+
+Lastverteilung (engl. Load Balancing) beschreibt den Prozess, eingehende Anfragen gleichmäßig auf mehrere Server oder Ressourcen zu verteilen. Durch die Verteilung der Arbeitslast auf verschiedene Knoten kann die Leistungsfähigkeit und Verfügbarkeit eines Systems gesteigert werden. Lastverteilende Komponenten analysieren den aktuellen Zustand der Server und leiten Anfragen so weiter, dass keine einzelne Ressource übermäßig belastet wird.\cite{teamtakt_devops_lastverteilung}
+
+In Kombination tragen Autoscaling und Lastverteilung dazu bei, Systeme flexibel und robust gegenüber Lastschwankungen zu machen. Während das Autoscaling die Anzahl oder Leistungsfähigkeit der Ressourcen anpasst, sorgt die Lastverteilung dafür, dass die vorhandenen Ressourcen effizient genutzt werden, indem sie die Anfragen gleichmäßig verteilt. Zusammen bilden diese Konzepte zentrale Bausteine moderner skalierbarer und hochverfügbarer IT‑Architekturen.\cite{teamtakt_devops_lastverteilung}
+
+\paragraph{Latenzoptimierung und Durchsatzsteigerung}
+\mbox{}\\
+\mbox{}\\
+Latenz bezeichnet in der Informatik die Verzögerungszeit, die ein Datenpaket benötigt, um von einem Punkt zum anderen übertragen zu werden. Sie wird üblicherweise in Millisekunden gemessen und beeinflusst maßgeblich die Reaktionsfähigkeit von Netzwerken und Systemen, da sie die Zeitspanne zwischen Anforderung und Antwort beschreibt. Eine niedrige Latenz ist insbesondere bei interaktiven oder zeitkritischen Anwendungen wie Videokonferenzen, Online‑Spielen oder Echtzeitübertragungen entscheidend.\cite{studysmarter_latenz_durchsatz}
+
+Durchsatz definiert die Menge an Daten, die innerhalb eines bestimmten Zeitraums erfolgreich übertragen werden kann. Er wird meist in Bits pro Sekunde (bps) gemessen und gibt an, wie viel Datenvolumen ein Netzwerk oder System in einer definierten Zeitspanne verarbeiten kann. Ein hoher Durchsatz ist essenziell, um große Datenmengen effizient zu übertragen und die Leistungsfähigkeit von Netzwerken zu bewerten.\cite{studysmarter_latenz_durchsatz}
+
+Techniken zur Latenzoptimierung konzentrieren sich darauf, die Verzögerungszeiten bei der Datenübertragung zu reduzieren. Dazu gehören unter anderem der Einsatz schnellerer Übertragungswege, optimierte Routing‑Algorithmen oder die Verringerung von Verarbeitungszeiten in Netzwerkknoten. Solche Maßnahmen tragen dazu bei, die benötigte Zeit bis zur Zustellung von Datenpaketen zu verkürzen und somit die Geschwindigkeit und Reaktionsfähigkeit eines Systems zu erhöhen.\cite{studysmarter_latenz_durchsatz}
+
+Die Durchsatzsteigerung wird erreicht, indem die Effizienz der Datenübertragung erhöht wird. Faktoren wie die Netzwerkarchitektur, die verfügbare Bandbreite, die Paketgröße sowie die Leistungsfähigkeit der beteiligten Hardware beeinflussen den Durchsatz. Durch den Einsatz leistungsfähiger Hardware, effizienter Protokolle und geeigneter Übertragungsstrategien kann die Datenrate gesteigert werden, wodurch mehr Daten in kürzerer Zeit verarbeitet werden können.\cite{studysmarter_latenz_durchsatz}
 
 \paragraph{Backend-as-a-Service (BaaS)}
 \mbox{}\\

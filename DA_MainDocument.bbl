@@ -246,14 +246,53 @@
 \newblock Online im Internet: URL:
   \url{https://www.talend.com/de/resources/was-ist-eine-api/}.
 
-\btxselectlanguage {english}
-\bibitem {ibm_database}
-\btxnamefont {\btxlastnamefont {Kosinski}, Matthew} \btxandlong {}\
-  \btxnamefont {IBM \btxlastnamefont {Think}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {What is a database?}{What is a database?}}, 2025.
+\bibitem {oracle_relational_database}
+\btxnamefont {\btxlastnamefont {Corporation}, Oracle}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Was ist eine relationale datenbank?
+  (rdbms)?}{Was ist eine relationale Datenbank? (RDBMS)?}},
+  \btxprintmonthyear{.}{6}{2021}{long}.
 \newblock Online im Internet: URL:
-  \url{https://www.ibm.com/think/topics/database}.
+  \url{https://www.oracle.com/de/database/what-is-a-relational-database/}.
 
+\bibitem {dbengines_normalisierung}
+\btxnamefont {\btxlastnamefont {Software}, DB\btxfnamespacelong
+  Engines\btxfnamespacelong /\btxfnamespacelong Redgate}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Normalisierung}{Normalisierung}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://db-engines.com/de/article/Normalisierung}.
+
+\bibitem {medienpalast_realtime_data}
+\btxnamefont {\btxlastnamefont {Medienpalast}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Real time data -- echtzeitdaten}{Real Time Data --
+  Echtzeitdaten}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://www.medienpalast.net/glossar/begriff/real-time-data/}.
+
+\bibitem {akamai_scaling}
+\btxnamefont {\btxlastnamefont {Technologies}, Akamai}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Horizontale und vertikale skalierung im
+  vergleich}{Horizontale und vertikale Skalierung im Vergleich}}, 2026.
+\newblock Online im Internet: URL:
+  \url{https://www.akamai.com/de/glossary/what-is-horizontal-scaling-vs-vertical-scaling}.
+
+\bibitem {teamtakt_devops_lastverteilung}
+\btxnamefont {\btxlastnamefont {Ugurcu}, Mario}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Devops-tool teil 1: Die bedeutung von lastverteilung, cdns
+  und automatischem skalieren in iaas}{DevOps-Tool Teil 1: Die Bedeutung von
+  Lastverteilung, CDNs und automatischem Skalieren in IaaS}},
+  \btxprintmonthyear{.}{3}{2024}{long}.
+\newblock Online im Internet: URL:
+  \url{https://teamtakt.de/devops-tool-teil-1-die-bedeutung-von-lastverteilung-cdns-und-automatischem-skalieren-in-iaas/}.
+
+\bibitem {studysmarter_latenz_durchsatz}
+\btxnamefont {\btxlastnamefont {Redaktion}, StudySmarter}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Latenz und durchsatz -- definition \&
+  beispiele}{Latenz und Durchsatz -- Definition \& Beispiele}},
+  \btxprintmonthyear{.}{9}{2024}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.studysmarter.de/schule/informatik/technische-informatik/latenz-und-durchsatz/}.
+
+\btxselectlanguage {english}
 \bibitem {supabase_overview_chauhan}
 \btxnamefont {\btxlastnamefont {Chauhan}, Anshul}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {Overview of supabase backend as a service
@@ -333,53 +372,14 @@
 \newblock Online im Internet: URL:
   \url{https://www.redhat.com/de/topics/cloud-native-apps/what-is-serverless}.
 
+\bibitem {ibm_database}
+\btxnamefont {\btxlastnamefont {Kosinski}, Matthew} \btxandlong {}\
+  \btxnamefont {IBM \btxlastnamefont {Think}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {What is a database?}{What is a database?}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://www.ibm.com/think/topics/database}.
+
 \btxselectlanguage {ngerman}
-\bibitem {akamai_scaling}
-\btxnamefont {\btxlastnamefont {Technologies}, Akamai}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {Horizontale und vertikale skalierung im
-  vergleich}{Horizontale und vertikale Skalierung im Vergleich}}, 2026.
-\newblock Online im Internet: URL:
-  \url{https://www.akamai.com/de/glossary/what-is-horizontal-scaling-vs-vertical-scaling}.
-
-\bibitem {teamtakt_devops_lastverteilung}
-\btxnamefont {\btxlastnamefont {Ugurcu}, Mario}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Devops-tool teil 1: Die bedeutung von lastverteilung, cdns
-  und automatischem skalieren in iaas}{DevOps-Tool Teil 1: Die Bedeutung von
-  Lastverteilung, CDNs und automatischem Skalieren in IaaS}},
-  \btxprintmonthyear{.}{3}{2024}{long}.
-\newblock Online im Internet: URL:
-  \url{https://teamtakt.de/devops-tool-teil-1-die-bedeutung-von-lastverteilung-cdns-und-automatischem-skalieren-in-iaas/}.
-
-\bibitem {studysmarter_latenz_durchsatz}
-\btxnamefont {\btxlastnamefont {Redaktion}, StudySmarter}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {Latenz und durchsatz -- definition \&
-  beispiele}{Latenz und Durchsatz -- Definition \& Beispiele}},
-  \btxprintmonthyear{.}{9}{2024}{long}.
-\newblock Online im Internet: URL:
-  \url{https://www.studysmarter.de/schule/informatik/technische-informatik/latenz-und-durchsatz/}.
-
-\bibitem {oracle_relational_database}
-\btxnamefont {\btxlastnamefont {Corporation}, Oracle}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {Was ist eine relationale datenbank?
-  (rdbms)?}{Was ist eine relationale Datenbank? (RDBMS)?}},
-  \btxprintmonthyear{.}{6}{2021}{long}.
-\newblock Online im Internet: URL:
-  \url{https://www.oracle.com/de/database/what-is-a-relational-database/}.
-
-\bibitem {dbengines_normalisierung}
-\btxnamefont {\btxlastnamefont {Software}, DB\btxfnamespacelong
-  Engines\btxfnamespacelong /\btxfnamespacelong Redgate}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {Normalisierung}{Normalisierung}}, 2025.
-\newblock Online im Internet: URL:
-  \url{https://db-engines.com/de/article/Normalisierung}.
-
-\bibitem {medienpalast_realtime_data}
-\btxnamefont {\btxlastnamefont {Medienpalast}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Real time data -- echtzeitdaten}{Real Time Data --
-  Echtzeitdaten}}, 2025.
-\newblock Online im Internet: URL:
-  \url{https://www.medienpalast.net/glossar/begriff/real-time-data/}.
-
 \bibitem {appinio_zielgruppenanalyse}
 \btxnamefont {\btxlastnamefont {Research}, Appinio}\btxauthorcolon\
   \btxtitlefont {\btxifchangecase {Zielgruppenanalyse: In 7 schritten zum
