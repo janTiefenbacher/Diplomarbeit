@@ -1,0 +1,560 @@
+% ==================================================
+\section{Theoretische Grundlagen}
+In den Theoretischen Grundlagen werden die zentralen Grundlagen für die Entwicklung der App erläutert.
+
+% ==================================================
+\subsection{App-Design \& Monetarisierungskonzepte}
+Im ersten Teil der Theoretischen Grundlagen werden das Design und die möglichen Monetarisierungskonzepte
+mobiler Applikationen erläutert.
+
+% --------------------------------------------------
+\subsubsection{Plattformwahl \& technische Grundlagen}
+
+Wenn man sich dazu entscheidet eine mobile Applikation zu entwickeln, muss man sich zuerst die Frage stellen,
+auf welchen Plattformen die App laufen soll. Die beiden dominierenden Betriebssysteme im mobilen App Bereich sind 
+iOS von Apple und Android von Google. Diese Entscheidung hat nicht nur Auswirkungen auf die technische Umsetzung,
+sondern auch auf das Design, die Verfügbarkeit und die Monetarisierungsmöglichkeiten der App. 
+\vspace{0.5em}
+
+\textbf{iOS}\\
+iOS ist das mobile Betriebssystem von Apple, das die technologische Grundlage für Geräte wie das iPhone und iPad bildet. 
+Es ist speziell für Touch-Bedienung und intuitive Nutzung konzipiert und bekannt für hohe Sicherheitsstandards, eine intuitive 
+Benutzeroberfläche und die nahtlose Integration ins Apple-Ökosystem. Technisch basiert iOS auf einem Unix-ähnlichen System-Kernel 
+namens Darwin, was eine solide, stabile Basis für moderne mobile Anwendungen schafft. Da Apple Hard- und Software eng verzahnt und 
+die Plattform stark kontrolliert, können Updates, Sicherheitsmechanismen und Apple-Dienste über alle unterstützten Geräte sehr einheitlich 
+bereitgestellt werden. Um eine Applikation für iOS Geräte verfügbar zu machen, muss diese über den Apple App Store vertrieben werden,
+wobei strenge Richtlinien und Prüfprozesse sicherstellen, dass nur qualitativ hochwertige und sichere Apps zugelassen werden. Außerdem braucht man 
+eine Apple Developer Lizenz, um Apps im App Store veröffentlichen zu können.\cite{ComputerWeekly_Apple_iOS} \cite{IT_Schulungen_Was_ist_iOS} \cite{Ionos_IOS_App_Entwicklung} 
+
+\vspace{0.5em}
+\textbf{Android}\\
+Android ist ein Linux-basiertes, mobiles Betriebssystem von Google, das hauptsächlich auf Smartphones und Tablets läuft und als Plattform 
+alle System- und Benutzerkomponenten umfasst, also das Linux-Kernel-Betriebssystem, die grafische Oberfläche und die nutzbaren Apps. Android 
+wurde unter der Apache-Open-Source-Lizenz veröffentlicht, was Herstellern und Entwicklern erlaubt, die Software anzupassen oder eigene Varianten 
+zu bauen. Obwohl die Basis offen ist, enthalten die meisten Geräte zusätzliche proprietäre Programme wie Google-Apps, die vorinstalliert sind. 
+Dadurch ist Android heute das am weitesten verbreitete mobile Betriebssystem weltweit. Um eine Applikation für Android-Geräte verfügbar zu machen, 
+wird diese in der Regel über den Google Play Store vertrieben. Auch hier gibt es Richtlinien und Prüfverfahren, die sicherstellen sollen, dass nur 
+funktionierende und sichere Apps veröffentlicht werden. Zusätzlich benötigt man ein Google Developer-Konto, um Anwendungen im Play Store 
+bereitstellen zu können. \cite{Featured_Android} \cite{IONOS_Android_App_Entwicklung}
+
+\vspace{0.5em}
+\textbf{Plattformspezifische Unterschiede zwischen iOS und Android}\\
+iOS- und Android-Systeme unterscheiden sich unter anderem in ihrer Systemarchitektur, 
+Designrichtlinien und Gerätevielfalt. Während iOS auf eine begrenzte Anzahl an Endgeräten 
+optimiert ist, existiert im Android-Bereich eine große Vielfalt an Bildschirmgrößen und 
+Hardwarekonfigurationen. Diese Unterschiede erhöhen den Entwicklungs- und Wartungsaufwand 
+bei nativen Anwendungen.
+
+\vspace{0.5em}
+\textbf{Native Apps – Technische Grundlagen}\\
+Bei der nativen App-Entwicklung handelt es sich um die Entwicklung von Anwendungen, die speziell für ein bestimmtes Betriebssystem programmiert werden. Für iOS-Anwendungen wird beispielsweise die Programmiersprache Swift verwendet, während Android-Applikationen typischerweise in Kotlin entwickelt werden. Die Anwendung wird direkt für das jeweilige Betriebssystem entwickelt und ist nicht mit anderen Systemen kompatibel.
+
+Ein wesentliches Merkmal nativer Anwendungen ist der direkte Zugriff auf systemnahe Funktionen und Hardware-Komponenten des Endgeräts, wie Kamera, GPS oder Sensoren. Native Apps können zudem systeminterne Funktionen wie Push-Benachrichtigungen nutzen. Durch die enge Integration mit dem Betriebssystem ist eine optimale Nutzung von Ressourcen wie Arbeitsspeicher und Hardware möglich, was zu einer guten Performance und hoher Usability führt.
+
+Allerdings erfordert dieser Ansatz für jedes Betriebssystem eine eigene Implementierung, wodurch separate Versionen für iOS und Android entwickelt werden müssen. Dies erhöht den Entwicklungsaufwand deutlich. \cite{Denvo_Native_vs_Crossplattform} \cite{ITPortal_Native_vs_Crossplattform} \cite{knguru_crossplatform}
+
+\vspace{0.5em}
+\textbf{Native Apps – Design und Monetarisierung}\\
+Native Apps orientieren sich stark an den Design- und Interaktionsrichtlinien des jeweiligen Betriebssystems. Dadurch fügen sie sich nahtlos in die Benutzeroberfläche von iOS oder Android ein und bieten eine konsistente User Experience. Die hohe Usability entsteht durch die Verwendung systemeigener UI-Elemente und Interaktionsmuster, die den Nutzern bereits vertraut sind.
+
+Die Bereitstellung nativer Apps erfolgt über die jeweiligen App Stores der Betriebssysteme. Dadurch sind sie direkt an das Ökosystem der Plattform gebunden und können die dort vorgesehenen Mechanismen zur Verteilung und Nutzung verwenden. \cite{Denvo_Native_vs_Crossplattform} \cite{ITPortal_Native_vs_Crossplattform} \cite{knguru_crossplatform}
+
+\vspace{0.5em}
+\textbf{Cross-Platform Apps – Technische Grundlagen}\\
+Bei der Cross-Platform-App-Entwicklung wird eine gemeinsame Codebasis verwendet, um Anwendungen für mehrere Betriebssysteme wie iOS und Android zu realisieren. Mithilfe spezieller Frameworks wie Flutter, React Native oder Xamarin wird dieser Code für die jeweiligen Plattformen umgesetzt. Ziel dieses Ansatzes ist es, große Teile des Codes plattformübergreifend wiederzuverwenden.
+
+Cross-Platform-Frameworks abstrahieren die zugrunde liegenden Betriebssysteme und stellen einheitliche Schnittstellen zur Verfügung. Dadurch ist es möglich, eine Anwendung zu entwickeln, ohne für jedes Betriebssystem eine vollständig eigene Implementierung zu erstellen. Die Interaktion mit gerätespezifischen Funktionen erfolgt dabei häufig über zusätzliche Abstraktionsschichten oder spezielle Erweiterungen.
+
+Durch die gemeinsame Codebasis verringert sich der Entwicklungsaufwand, und Änderungen müssen nur einmal durchgeführt werden, um sie auf allen unterstützten Plattformen verfügbar zu machen. Dies erleichtert zudem die Wartung der Anwendung. \cite{Denvo_Native_vs_Crossplattform} \cite{ITPortal_Native_vs_Crossplattform} \cite{knguru_crossplatform}
+
+\vspace{0.5em}
+\textbf{Cross-Platform Apps – Design und Monetarisierung}\\
+Cross-Platform-Apps können viele native Funktionen nutzen und sich in vielerlei Hinsicht wie native Anwendungen anfühlen, auch wenn sie nicht vollständig plattformspezifisch entwickelt wurden. Das Design ist dabei weniger strikt an die Richtlinien eines einzelnen Betriebssystems gebunden, da eine einheitliche Umsetzung für mehrere Plattformen angestrebt wird.
+
+Durch die schnellere Markteinführung und den geringeren Entwicklungsaufwand eignet sich dieser Ansatz besonders für Anwendungen, die gleichzeitig auf mehreren Plattformen verfügbar sein sollen. \cite{Denvo_Native_vs_Crossplattform} \cite{ITPortal_Native_vs_Crossplattform} \cite{knguru_crossplatform}
+
+\vspace{0.5em}
+\textbf{Cross-Platform-Lösung}\\
+Bevor mit der eigentlichen Entwicklung der App begonnen werden konnte, musste zunächst eine Entscheidung 
+bezüglich der Zielplattform getroffen werden. Aufgrund der definierten Zielgruppe sowie der angestrebten 
+Reichweite fiel die Wahl auf eine Cross-Platform-Lösung, um sowohl iOS- als auch Android-Nutzer zu erreichen.
+
+
+% WICHTIG: Den "Einsatz von React Native"-Block hier NUR kurz halten oder rausnehmen.
+% Empfehlung: hier nur 2-3 Sätze (warum RN), Details dann in 3.3.1.
+\vspace{0.5em}
+\textbf{Einsatz von React Native (Kurzüberblick)}\\
+Für die Umsetzung der App wurde React Native als Cross-Platform-Framework gewählt, um eine gemeinsame Codebasis
+für iOS und Android zu ermöglichen. (Technische Details folgen in Abschnitt 3.3.1.)
+
+% --------------------------------------------------
+\subsubsection{Trends \& Weiterentwicklungen im App-Design}
+
+In diesem Abschnitt werden zentrale Trends und Weiterentwicklungen im App-Design vorgestellt, die 2025 maßgeblich beeinflussen, wie Nutzer digitale Produkte wahrnehmen und verwenden.
+\vspace{0.5em}
+
+\textbf{Modernes App Design}\\
+Im Jahr 2025 hat sich Design im digitalen Kontext von einer rein visuellen Disziplin zu einem zentralen strategischen 
+Faktor entwickelt. In einem stark gesättigten Markt mit einer Vielzahl an Apps und digitalen Services entscheidet nicht 
+mehr allein die Funktionalität über den Erfolg eines Produkts, sondern vor allem die Qualität der User Experience. 
+Nutzer erwarten intuitive, schnelle und personalisierte Anwendungen, die sich nahtlos in ihren Alltag integrieren. 
+Design beeinflusst dabei direkt Nutzerbindung, Verweildauer und Akzeptanz digitaler Produkte.
+
+\vspace{0.5em}
+\textbf{Dark und Light Mode}\\
+Der Dark Mode hat sich in der modernen Web- und App-Entwicklung längst als Standard etabliert und ist nicht mehr nur eine 
+optionale Designentscheidung. Während früher der Light Mode als Marktstandard galt und der Dark Mode lediglich als Zusatzfunktion 
+angeboten wurde, hat sich dieses Verhältnis in den letzten Jahren komplett gewandelt. Heute setzen die meisten mobilen Anwendungen 
+standardmäßig auf den Dark Mode und bieten, wenn überhaupt, einen optionalen Light Mode an. Neben ästhetischen Aspekten überzeugt 
+der Dark Mode vor allem durch ergonomische Vorteile wie eine reduzierte Augenbelastung, insbesondere in dunklen Umgebungen, sowie 
+potenzielle Energieeinsparungen auf OLED- und AMOLED-Displays. Moderne Designs berücksichtigen daher unterschiedliche Lichtverhältnisse 
+und Nutzungskontexte und passen Kontraste sowie Farbschemata dynamisch an, um sowohl Nutzbarkeit als auch Zugänglichkeit zu optimieren. 
+Dennoch bleibt der Light Mode in hellen Umgebungen oder für bestimmte Nutzergruppen weiterhin relevant, weshalb eine flexible Umschaltmöglichkeit 
+zwischen beiden Modi als bewährte Praxis gilt.\cite{Publizer_dark_mode_light_mode} \cite{natively_mobile_app_design_trends_2025}
+
+
+\vspace{0.5em}
+\textbf{Responsive \& Adaptive Design}\\
+Responsive und Adaptive Design beschreibt zwei zentrale Ansätze moderner Web und App Gestaltung, die als Reaktion auf die starke Diversifizierung 
+internetfähiger Endgeräte entstanden sind. Während vor dem mobilen Web weitgehend homogene Bildschirmgrößen dominierten, müssen Anwendungen heute 
+auf Displaybreiten von etwa 320 Pixel bis über 4.000 Pixel sowie unterschiedliche Eingabemethoden und Auflösungen reagieren. Responsive Design 
+verfolgt dabei einen flexiblen, fließenden Ansatz, bei dem sich ein einziges Layout mithilfe relativer Einheiten dynamisch an den verfügbaren Bildschirmplatz anpasst, um eine konsistente 
+User Experience auf allen Geräten zu gewährleisten. Adaptive Design hingegen arbeitet mit mehreren vordefinierten, eher starren Layouts, die 
+abhängig von Geräteeigenschaften wie Bildschirmgröße oder Ausrichtung geladen werden und häufig feste Pixelwerte verwenden. Beide Ansätze zielen 
+darauf ab, Usability, Performance und Designqualität zu optimieren, unterscheiden sich jedoch in ihrer Philosophie. Während Responsive Design das 
+Verhalten der Inhalte definiert, legt Adaptive Design das konkrete Darstellungsergebnis für bestimmte Gerätekategorien fest. In der Praxis werden 
+die Vorteile beider Konzepte oft kombiniert, um sowohl Flexibilität als auch gezielte Optimierung für ausgewählte Endgeräte zu erreichen. \cite{Ionos_responsive_design} \cite{kinsta_responsive_vs_adaptive}
+
+\vspace{0.5em}
+\textbf{Accessibility \& Barrierefreiheit}\\
+Accessibility bzw. Barrierefreiheit beschreibt das Ziel, digitale Produkte so zu gestalten und umzusetzen, dass sie von möglichst allen Menschen 
+gleichwertig genutzt werden können. Das betrifft nicht nur Personen mit dauerhaften Einschränkungen wie Seh- oder Hörbehinderungen, motorischen oder 
+kognitiven Beeinträchtigungen, sondern auch situative Einschränkungen, etwa wenn jemand kurzfristig eine verletzte Hand hat oder bei starker Sonne kaum 
+etwas am Display erkennt. Barrierefreiheit ist damit kein „Extra-Feature“, sondern ein Qualitätsmerkmal guter User Interfaces. Wenn eine App klar strukturiert, gut 
+bedienbar und verständlich ist, profitieren am Ende alle Nutzer. \cite{uxmatters} \cite{materialdesign}
+
+\vspace{0.5em}
+\textbf{Warum Barrierefreiheit wichtig ist}\\
+Barrierefreiheit hat mehrere Ebenen an Relevanz. Aus ethischer Sicht geht es um digitale Teilhabe, Apps und Websites sind heute zentrale Zugänge zu Information, 
+Kommunikation und Services, weshalb Ausschlüsse durch schlechtes Design reale Konsequenzen haben. Zusätzlich spielt eine rechtliche Dimension hinein, 
+da Accessibility-Anforderungen in vielen Ländern und Branchen stärker reguliert werden. Und auch wirtschaftlich ist das Thema relevant. Barrierefreie 
+Produkte verbessern oft die Markenwahrnehmung, erhöhen die Nutzerbindung und erschließen zusätzliche Zielgruppen, statt potenzielle User einfach 
+auszulassen.\cite{uxmatters} \cite{materialdesign}
+
+\vspace{0.5em}
+\textbf{Struktur, Hierarchie und Fokusführung}\\
+Ein Kernpunkt barrierefreier Gestaltung ist eine klare Informationshierarchie. Nutzer müssen schnell erkennen können, wo sie sind und was die wichtigsten 
+Aktionen sind. Dabei ist nicht nur das visuelle Layout relevant, sondern auch die Reihenfolge, in der Inhalte technisch angeordnet sind. Screenreader lesen 
+Inhalte typischerweise in einer top-down Reihenfolge aus dem Markup. Deshalb ist die Zusammenarbeit zwischen Design und Development wichtig, damit visuelle 
+Hierarchie, DOM-Reihenfolge und Fokuslogik zusammenpassen. Elemente sollen
+in einer logischen Reihenfolge erreichbar sein und Gruppierungen sollen verständlich sein, damit Nutzer sich schnell orientieren können. \cite{uxmatters} \cite{materialdesign}
+
+\vspace{0.5em}
+
+\textbf{Kontrast, Farbe und Typografie}\\
+Damit Inhalte für möglichst viele Menschen wahrnehmbar sind, spielen Kontrast und Lesbarkeit eine zentrale Rolle. Ausreichende Kontraste zwischen Text 
+und Hintergrund helfen insbesondere bei Sehbehinderungen, aber auch in Alltagssituationen wie starkem Umgebungslicht. Wichtig ist außerdem, Informationen 
+nicht ausschließlich über Farbe zu kommunizieren, beispielsweise einen Fehler nur Rot zu markieren, sondern zusätzliche Hinweise wie Text, Icons oder Umrandungen zu 
+verwenden. Typografie und Layout sollten so angelegt sein, dass größere Schriftgrößen und Zoom nicht zu überlappenden oder abgeschnittenen Elementen führen. 
+Flexible Layouts, ausreichende Abstände und skalierbare Schriftgrößen sind hier zentrale Bausteine.\cite{uxmatters} \cite{materialdesign}
+
+\vspace{0.5em}
+\textbf{Touch Targets und Eingabemethoden}\\
+Gerade auf mobilen Geräten ist die Größe von Interaktionsflächen entscheidend. Kleine Icons ohne ausreichende Abstände führen schnell zu Fehlbedienungen, 
+besonders bei motorischen Einschränkungen. Deshalb sollten Buttons, Icons und interaktive Elemente genügend 
+große Touch- bzw. Pointer-Flächen haben und mit ausreichendem Abstand zueinander platziert werden.\cite{uxmatters} \cite{materialdesign}
+
+\vspace{0.5em}
+\textbf{Labels und Alt-Text}\\
+Ein weiterer zentraler Baustein ist eine klare und aussagekräftige Textgestaltung innerhalb der Anwendung. Dazu zählen sichtbare Beschriftungen wie Buttontexte sowie kurze beschreibende Texte für Symbole und grafische Elemente. Diese Inhalte sollten präzise, eindeutig und handlungsorientiert formuliert sein, um eine schnelle Orientierung und effiziente Nutzung zu ermöglichen.
+
+Auch bei Bildern ist eine bewusste Textzuordnung wichtig, sofern sie relevante Informationen vermitteln. Der Text sollte sich dabei auf das Wesentliche beschränken und den inhaltlichen Zweck des Bildes erklären.\cite{uxmatters} \cite{materialdesign}
+
+\vspace{0.5em}
+\textbf{Testing und Umsetzung}\\
+Ein qualitativ hochwertiges User Interface entsteht durch kontinuierliches Testen und anschließende Anpassung der Anwendung. Regelmäßige Usability-Tests sind notwendig, um zu überprüfen, ob Struktur, Navigation und Interaktionsabläufe den Erwartungen der Nutzer entsprechen. Dabei zeigen Tests häufig Schwachstellen oder Fehlannahmen auf, die im Entwicklungsprozess nicht offensichtlich sind.
+
+Auf Basis der Testergebnisse muss das Design iterativ angepasst und optimiert werden. Durch diesen wiederkehrenden Prozess aus Testen, Auswerten und Anpassen kann sichergestellt werden, dass die Anwendung langfristig benutzerfreundlich, verständlich und effektiv bleibt.
+
+% --------------------------------------------------
+\subsection{UI/UX-Design \& Nutzererlebnis}
+Im folgenden Abschnitt wird auf die Informationsarchitektur und Navigation eingegangen. Dabei wird erläutert, wie Inhalte sinnvoll strukturiert und geführt werden, um eine klare Orientierung und eine intuitive Nutzung digitaler Anwendungen zu ermöglichen.\\
+
+\textbf{Informationsarchitektur \& Navigation}\\
+Die besten Inhalte entfalten nur dann Wirkung, wenn Nutzer sie schnell finden
+und einordnen können. Genau hier setzt die Informationsarchitektur an. Sie beschreibt die Strukturierung, 
+Gliederung und Verknüpfung von Informationen in digitalen Anwendungen. Ziel ist es, eine 
+logische Hierarchie zu schaffen, die Inhalte verständlich organisiert und dadurch die 
+Auffindbarkeit sowie die Orientierung verbessert. Informationsarchitektur wirkt meist 
+„unsichtbar“, beeinflusst aber unmittelbar, ob eine Website oder eine App als klar und intuitiv 
+oder als unübersichtlich wahrgenommen wird. \cite{b13_informationsarchitektur} \cite{eresult_informationsarchitektur}\\
+
+Informationsarchitektur ist das konzeptionelle „Gerüst“ einer Website oder Anwendung. 
+Sie umfasst nicht nur die Anordnung von Inhalten innerhalb eines Hauptmenüs, sondern auch das 
+„Wie und Wo“. Welche Inhalte und Funktionen existieren, wie sind sie gebündelt, wie hängen 
+sie zusammen und an welchen Stellen werden sie angeboten. Damit betrifft Informationsarchitektur
+auch die Struktur einzelner Seiten, bezüglich der Platzierung von Modulen wie Menüs, Suchfunktionen,
+Newsfeeds oder Profilbereichen. \cite{b13_informationsarchitektur} \cite{eresult_informationsarchitektur}\\
+
+Auf Basis etablierter Informationsarchitektur-Modelle lässt sie sich in vier 
+zentrale Komponenten gliedern:\cite{b13_informationsarchitektur} \cite{eresult_informationsarchitektur}
+\begin{itemize}
+    \item Organisationssysteme: Definieren, wie Inhalte gruppiert und kategorisiert werden (z. B. thematisch, alphabetisch, nach Nutzerrollen).
+    \item Navigationssysteme: Bestimmen, wie Nutzer durch die Informationsstruktur geführt werden (z. B. Menüs, Suchfunktionen).
+    \item Suchsysteme: Ermöglichen das gezielte Auffinden von Inhalten über Suchfunktionen und Filter.
+    \item Kennzeichnungssysteme: Sorgen für klare Beschriftungen und Metadaten, die Inhalte verständlich machen.
+\end{itemize}
+\vspace{0.5em}
+Die Informationsarchitektur wird idealerweise bereits in frühen Projektphasen definiert, sie sorgt für eine
+bessere User Experience, indem sie Klarheit schafft und Suchzeiten minimiert. Sie sorgt außerdem für mehr energetische Effizienz,
+da der User weniger Klicks braucht um ans Ziel zu kommen.\cite{b13_informationsarchitektur} \cite{eresult_informationsarchitektur}\\
+
+Ein gutes Informationsarchitektur-Design achtet auf folgende Prinzipien:\cite{b13_informationsarchitektur}\cite{eresult_informationsarchitektur}
+\begin{itemize}
+    \item begrenzte Auswahl pro Ebenen
+    \item angemessene Offenlegung von Informationen
+    \item Mehrfachklassifikation, mehrere Wege führen zum Ziel
+    \item Skalierbarkeit, die Struktur sollte zukünftiges Wachstum und neue Inhalte berücksichtigen. 
+\end{itemize}
+
+\vspace{0.5em}
+
+\textbf{Wireframes \& Prototypen}\\
+Wireframes und Prototypen sind zentrale Bestandteile des modernen Designprozesses für digitale Produkte wie Websites, 
+Webanwendungen oder mobile Apps. Sie dienen dazu, Ideen frühzeitig zu strukturieren, zu visualisieren und zu überprüfen, 
+bevor zeit- und kostenintensive Entwicklungsarbeiten beginnen. Obwohl die Begriffe im Alltag häufig synonym verwendet werden, 
+erfüllen Wireframes und Prototypen unterschiedliche Aufgaben und besitzen jeweils eigene Eigenschaften und Zielsetzungen. \cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire}\\
+
+\textbf{Wireframes: Struktur und Funktion als Grundlage}
+
+Ein Wireframe ist eine vereinfachte, meist statische Darstellung eines digitalen Produkts. Er bildet das grundlegende 
+Gerüst einer Anwendung ab und konzentriert sich auf Struktur, Layout und Informationsarchitektur. Im Vordergrund steht 
+die Frage, welche Inhalte wo platziert werden und wie Nutzer durch das System geführt werden. Visuelle Details wie Farben, 
+Typografie oder Bilder spielen dabei eine untergeordnete Rolle oder fehlen vollständig. Häufig werden Wireframes in 
+Graustufen mit einfachen Boxen, Linien und Platzhaltern umgesetzt. \\
+
+Wireframes werden vor allem in frühen Phasen des Designprozesses eingesetzt. Sie ermöglichen es, Konzepte schnell zu 
+erstellen, zu diskutieren und zu verändern. Dadurch eignen sie sich besonders gut, um erste Ideen abzustimmen und grundlegende Designentscheidungen zu treffen. Ein weiterer Vorteil liegt in der Kosten- und Zeiteffizienz, 
+da Anpassungen ohne großen Aufwand vorgenommen werden können. Gleichzeitig liegt hier auch eine Einschränkung. Wireframes haben
+kaum Interaktivität und keine realistischen Inhalte, daher sind sie nur bedingt geeignet, um Benutzerfreundlichkeit oder 
+Nutzerinteraktionen zu testen.\cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire}
+\vspace{0.5em}
+
+\textbf{Prototypen: Interaktion und Realitätsnähe} \\
+Prototypen bauen auf Wireframes auf und stellen eine weiterentwickelte, interaktive Version des Produkts dar. 
+Sie reichen von einfachen Low-Fidelity-Prototypen bis hin zu High-Fidelity-Prototypen, die dem späteren Endprodukt 
+visuell und funktional sehr nahekommen. Prototypen enthalten reale Inhalte, UI-Elemente, Animationen und definierte 
+Interaktionen. Nutzer können klicken, navigieren und Abläufe realistisch nachvollziehen.\cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire} \\
+
+Der Hauptzweck von Prototypen liegt in der Validierung von Designentscheidungen. Durch Nutzertests 
+lassen sich Missverständnisse oder Schwächen im Benutzerfluss frühzeitig erkennen. Dadurch kann wertvolles Feedback 
+gesammelt werden, bevor mit der technischen Umsetzung begonnen wird. Zwar ist die Erstellung von Prototypen aufwendiger 
+als die von Wireframes, langfristig helfen sie jedoch, Fehlentwicklungen und teure Nachbesserungen zu vermeiden.\cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire} \\
+
+\textbf{Mockups: Visueller Designprozess} \\
+Neben Wireframes und Prototypen werden häufig auch Mockups verwendet. Mockups sind statische, visuell ausgearbeitete 
+Darstellungen eines Produkts. Sie zeigen Farben, Typografie und das visuelle Erscheinungsbild sehr genau, bieten 
+jedoch keine Interaktivität. Während Wireframes die Struktur festlegen und Prototypen die Nutzung simulieren, 
+dienen Mockups vor allem der Beurteilung des visuellen Designs.\cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire}\\
+
+\textbf{Zusammenspiel im Designprozess} \\
+Die verschiedenen Design-Artefakte sind keine konkurrierenden Phasen, sondern ergänzen sich. In der Regel beginnt der
+Designprozess mit Wireframes, die als Fundament dienen. Danach werden Mockups angefertigt um das visuelle Erscheinungsbild zu evaluieren. Sobald Struktur und Funktionalität festgelegt sind, 
+werden diese Entwürfe in Prototypen überführt, um das Nutzungserlebnis realistisch darzustellen und zu testen. 
+In manchen Fällen entstehen auch High-Fidelity-Wireframes, die bereits detaillierter sind, jedoch noch nicht den 
+vollen Funktionsumfang eines Prototyps besitzen. \cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire}
+\vspace{0.5em}
+
+\textbf{Visuelles Design}\\
+Visuelles Design bezeichnet die gezielte Gestaltung visueller Elemente mit dem Ziel, digitale Produkte 
+ästhetisch ansprechend und zugleich funktional zu gestalten. Es bildet eine zentrale Schnittstelle zwischen
+Gestaltung und Nutzererfahrung, da es nicht nur das äußere Erscheinungsbild eines Produkts prägt, sondern 
+auch maßgeblich beeinflusst, wie Inhalte wahrgenommen, verstanden und genutzt werden. In der digitalen Welt 
+ist visuelles Design daher ein wesentlicher Bestandteil von Webanwendungen, Software, Marketingplattformen 
+und interaktiven Medien.\cite{Toolmaster_Design}\cite{StudySmarter_Visual_Design}\\
+
+\textbf{Bestandteile des visuellen Designs}\\
+Im Kern umfasst visuelles Design alle sichtbaren Gestaltungskomponenten eines digitalen Produkts. Dazu 
+zählen Bilder, grafische Elemente, Farben, Typografie, Layoutstrukturen sowie der gezielte Einsatz von 
+Weißraum. Diese Elemente wirken nicht isoliert, sondern entfalten ihre Wirkung im Zusammenspiel. Ein
+konsistentes und durchdachtes visuelles Design trägt zur Stärkung der Markenidentität bei, erhöht die 
+Wiedererkennbarkeit und unterstützt eine klare Kommunikation von Inhalten.\cite{Toolmaster_Design}\cite{StudySmarter_Visual_Design}\\
+
+\textbf{Zentrale Gestaltungselemente}\\
+Besondere Bedeutung kommt den einzelnen Gestaltungselementen zu. Bilder und grafische Elemente dienen nicht 
+nur der Dekoration, sondern übernehmen eine informative und emotionale Funktion. Sie können komplexe Inhalte 
+vereinfachen, Aufmerksamkeit lenken und eine Verbindung zum Nutzer herstellen. Typografie beeinflusst maßgeblich 
+die Lesbarkeit und visuelle Hierarchie. Schriftart, -größe und -gewicht bestimmen, welche Inhalte priorisiert 
+wahrgenommen werden. Die Farbgestaltung wirkt stark auf die emotionale Ebene und kann Stimmungen erzeugen, 
+Kontraste verstärken sowie Orientierung bieten.\cite{Toolmaster_Design}\cite{StudySmarter_Visual_Design}\\
+
+% ==================================================
+\subsection{Monetarisierung von mobilen Apps}
+In diesem Kapitel wird der globale App-Markt und die verschiedenen Strategien zur Monetarisierung mobiler Apps vorgestellt.
+
+% --------------------------------------------------
+\subsubsection{Grundlagen \& Marktüberblick}
+Um die wirtschaftliche und technologische Bedeutung mobiler Anwendungen einordnen zu können, ist ein grundlegender Überblick über den App-Markt erforderlich. Der folgende Abschnitt beleuchtet die Entwicklung des mobilen App-Marktes, zentrale App-Ökosysteme sowie aktuelles Nutzerverhalten und relevante Marktstatistiken.
+
+\textbf{Entwicklung des mobilen App-Marktes}\\
+Der Markt für Apps ist in den letzten Jahren stark gewachsen und es wird prognostiziert, dass dieser Trend auch in Zukunft anhalten wird. Laut Market Research Future (MRFR) wurde das Marktvolumen im Jahr 2024 auf rund 94,4 Milliarden USD geschätzt und soll von 116,87 Milliarden USD im Jahr 2025 auf etwa 988,5 Milliarden USD bis 2035 anwachsen. Wesentlich dazu tragen bei, dass E-Commerce immer weiter ausgebaut wird und auch küstliche Intelligenzen immer mehr in Mobile Applikationen integriert werden.\cite{App_Markt_Entwicklung}\\
+\vspace{0.5em}
+
+\textbf{App-Ökosysteme}\\
+Mobile Anwendungen werden in der Regel über zentrale App-Stores vertrieben, die als geschlossene Ökosysteme fungieren und sowohl die Distribution als auch die Monetarisierung von Apps steuern. Die beiden dominierenden Distributionsplattformen im globalen Markt für mobile App-Entwicklung sind der Apple App Store und der Google Play Store.
+Laut der Marktanalyse von Market Research Future entfällt ein erheblicher Anteil des weltweiten Umsatzes auf das iOS-Ökosystem. Bereits im Jahr 2021 machte iOS mehr als 62,88 \% des globalen Umsatzes im Markt für mobile App-Entwicklung aus. Dies ist vor allem auf die höhere Zahlungsbereitschaft der Nutzer im Apple-Ökosystem sowie auf eine stärkere Verbreitung von Premium-Apps und In-App-Käufen zurückzuführen.
+Der Google Play Store hingegen verzeichnet zwar höhere Downloadzahlen, insbesondere durch die große Verbreitung von Android-Geräten, erzielt jedoch im Vergleich geringere Umsätze pro Nutzer. \cite{App_Markt_Entwicklung}
+
+\textbf{Nutzerverhalten \& Marktstatistiken}\\
+Marktanalysen zeigen, dass Nutzer zunehmend bereit sind, für digitale Inhalte und Zusatzfunktionen innerhalb mobiler Anwendungen zu bezahlen. Besonders deutlich wird dieses Verhalten im Bereich mobiler Spiele sowie bei abonnementbasierten Anwendungen. Der Bericht hebt hervor, dass ein wesentlicher Teil der Umsätze aus In-App-Käufen, Premium-Anwendungen und mobilen Games stammt.
+Darüber hinaus treibt die weltweit steigende Smartphone-Durchdringung das Nutzerwachstum kontinuierlich an. Bis 2025 wird erwartet, dass in entwickelten Regionen über 80 \% der Bevölkerung ein Smartphone besitzen, was die Nachfrage nach mobilen Anwendungen weiter erhöht.\cite{App_Markt_Entwicklung}
+
+
+% --------------------------------------------------
+\subsubsection{Werbung als Einnahmequelle}
+Im kommenden Abschnitt wird Werbung als zentrale Einnahmequelle mobiler Anwendungen betrachtet. Dabei werden gängige Werbeformate, deren Einfluss auf die Nutzererfahrung sowie die Rolle von Werbenetzwerken und Vergütungsmodellen im App-Markt erläutert.
+
+\textbf{Arten von Werbung in mobilen Apps}\\
+In-App-Werbung umfasst Werbeanzeigen, die direkt innerhalb einer mobilen Anwendung ausgespielt werden. Ziel ist es, Apps kostenlos oder günstiger anbieten zu können und gleichzeitig Einnahmen zu generieren. Dabei existieren verschiedene Werbeformate, die sich in Platzierung, Nutzerinteraktion und Einfluss auf die User Experience unterscheiden. Je nach App-Typ (z.B. Gaming, Lifestyle, News) und Zielgruppe werden unterschiedliche Formate bevorzugt eingesetzt.\cite{Werbung_HubSpot}\cite{Werbung_knuguru}
+
+\textbf{Banner-Werbung}\\
+Banner sind kleine, statische oder animierte Anzeigen, die meist am oberen oder unteren Bildschirmrand eingeblendet werden. Sie gelten als vergleichsweise unaufdringlich, bieten jedoch nur begrenzte Interaktionsmöglichkeiten. Wichtig ist eine Platzierung, die keine Inhalte verdeckt und keine unbeabsichtigten Klicks durch Scrollen oder Wischen provoziert, da dies den User negativ auffällt.\cite{Werbung_HubSpot}\cite{Werbung_knuguru}
+
+\textbf{Interstitial-Werbung}\\
+Interstitials sind Vollbildanzeigen, die zwischen App-Inhalten erscheinen, beispielsweise beim Wechsel zwischen Seiten oder nach dem Abschließen eines Levels in Spielen. Sie erzeugen hohe Aufmerksamkeit, können aber die Nutzung stark unterbrechen und werden deshalb schnell als störend wahrgenommen, wenn sie zu häufig oder zu ungünstigen Zeitpunkten eingeblendet werden.\cite{Werbung_HubSpot}\cite{Werbung_knuguru}
+
+\textbf{Videoanzeigen}\\
+Videoanzeigen eignen sich besonders gut zur emotionalen und narrativen Vermittlung von Inhalten, da sie Bewegtbild, Ton und zeitliche Dramaturgie kombinieren. Man unterscheidet dabei unter anderem zwischen In-Stream- und Outstream-Formaten. In-Stream-Videoanzeigen werden vor, während oder nach einem redaktionellen oder spielbezogenen Videoinhalt abgespielt, während Outstream-Formate unabhängig von einem klassischen Video-Kontext beispielsweise innerhalb von Feeds oder zwischen textbasierten Inhalten erscheinen.
+
+Insbesondere in Gaming-Apps haben sich Videoanzeigen als etabliertes Werbeformat durchgesetzt, vor allem in Form von sogenannten Rewarded Videos, bei denen Nutzer freiwillig eine Werbeanzeige ansehen und dafür eine spielinterne Belohnung erhalten. Videoanzeigen erzielen im Vergleich zu klassischen Banneranzeigen in der Regel höhere Einnahmen, da sie eine stärkere Aufmerksamkeit erzeugen, höhere Interaktionsraten aufweisen und von Werbetreibenden entsprechend höher vergütet werden. \cite{Werbung_HubSpot}\cite{Werbung_knuguru}
+
+\textbf{Native-Werbung}\\
+Native Ads sind Anzeigen, die optisch und inhaltlich möglichst nahtlos in das Design und den Kontext der App integriert werden (z.,B. im Feed von Social Media oder in News-Apps). Dadurch wirken sie weniger wie klassische Werbung und werden häufig besser akzeptiert. Der Vorteil liegt in der geringeren Störung des Nutzungserlebnisses bei gleichzeitig guter Sichtbarkeit.\cite{Werbung_HubSpot}\cite{Werbung_knuguru}
+
+\textbf{Playable-Werbung}\\
+Playable Ads sind interaktive Anzeigen, bei denen Nutzer ein Produkt kurz testen können, bevor sie es herunterladen. Diese Form ist besonders effektiv im Gaming-Bereich, da sie Interaktion statt passivem Konsum ermöglicht und oft eine hohe Conversion-Rate erzielt.\cite{Werbung_HubSpot}\cite{Werbung_knuguru}
+
+\textbf{Display-Anzeigen}\\
+Zusätzlich werden klassische Display-Anzeigen genutzt, die aus Text- oder Bildinhalten bestehen. Gestaltung, Form und Größe sind flexibel, wodurch sie in vielen App-Typen einsetzbar sind. Wie bei Bannern hängt die Effektivität stark von Platzierung und Kontext ab.\cite{Werbung_HubSpot}\cite{Werbung_knuguru}
+
+\vspace{0.5em}
+\textbf{Werbenetzwerke}\\
+Werbenetzwerke spielen eine zentrale Rolle bei der Monetarisierung mobiler Anwendungen, da sie App-Entwickler (Publisher) mit Werbetreibenden verbinden. Technisch erfolgt die Einbindung von Werbung in der Regel über sogenannte Software Development Kits (SDKs), die in die App integriert werden. Diese SDKs übernehmen wesentliche Funktionen wie das Ausspielen von Anzeigen, die Durchführung von Echtzeitauktionen, das Tracking von Impressionen und Klicks sowie die Abrechnung der erzielten Einnahmen. Moderne Werbenetzwerke arbeiten dabei häufig programmatisch und nutzen Real-Time-Bidding-Verfahren (RTB), um für jeden Anzeigenplatz automatisch das wirtschaftlich beste Werbemittel auszuwählen.\cite{Mobile_add_networks}
+
+Ein Werbenetzwerk agiert dabei als Vermittler zwischen Angebotsseite (App mit verfügbarem Anzeigeninventar) und Nachfrageseite (Werbetreibende). Je nach Netzwerk und technischer Architektur sind Werbenetzwerke entweder direkt mit Demand-Side-Plattformen (DSPs) verbunden oder in größere Ökosysteme aus Supply-Side-Plattformen (SSPs) und Ad Exchanges eingebettet. Ziel ist es, möglichst relevante Werbung auszuspielen und gleichzeitig die Einnahmen für die App-Betreiber zu maximieren.\cite{Mobile_add_networks}
+
+Zu den häufig genutzten Werbenetzwerken im Bereich der mobilen App-Entwicklung zählen:
+
+\begin{itemize}
+\item \textbf{Google AdMob}\\
+Google AdMob ist eines der weltweit am weitesten verbreiteten mobilen Werbenetzwerke und Teil des Google-Werbeökosystems. Es ermöglicht Entwicklern einen einfachen Einstieg in die App-Monetarisierung und unterstützt zahlreiche Anzeigenformate wie Banner, Interstitials, Native Ads und Videoanzeigen. AdMob profitiert von der großen Reichweite und der hohen Nachfrage seitens der Werbetreibenden, wodurch auch kleinere Apps relativ früh Einnahmen erzielen können.\cite{Mobile_add_networks}
+
+\item \textbf{Smaato}\\
+Smaato ist eine mobile Werbeplattform mit starkem Fokus auf programmatische Werbung. Das Netzwerk agiert primär als Supply-Side-Plattform und verbindet App-Anbieter mit einer Vielzahl von Demand-Quellen. Smaato wird häufig in Kombination mit Mediation-Plattformen eingesetzt, um die Auslastung des Anzeigeninventars (Fill Rate) zu erhöhen und Wettbewerb zwischen Werbetreibenden zu schaffen.\cite{Mobile_add_networks}
+
+\item \textbf{Meta Audience Network}\\
+Das Meta Audience Network (ehemals Facebook Audience Network) nutzt Daten aus dem Meta-Ökosystem, um zielgerichtete Werbung innerhalb mobiler Apps auszuspielen. Besonders im Bereich personalisierter Werbung bietet dieses Netzwerk Vorteile, da Anzeigen anhand von Interessen, Nutzungsverhalten und demografischen Merkmalen optimiert werden können. Es wird häufig in Social-, Gaming- und Lifestyle-Apps eingesetzt.\cite{Mobile_add_networks}
+
+\item \textbf{AppLovin}\\
+AppLovin ist ein stark auf App- und insbesondere Game-Monetarisierung spezialisiertes Werbenetzwerk. Es unterstützt Echtzeit-Bidding und wird oft über Mediation-Plattformen wie AppLovin MAX integriert. Durch Live-Auktionen konkurrieren Werbetreibende um Anzeigenplätze, was potenziell zu höheren Einnahmen pro Impression führen kann. AppLovin ist vor allem bei Apps mit hoher Nutzerinteraktion und größeren Nutzerzahlen verbreitet.\cite{Mobile_add_networks}
+\end{itemize}
+\medskip
+\textbf{CPI im Kontext von Werbenetzwerken}\\
+Neben klassischen Vergütungsmodellen wie CPM (Cost Per Mille) oder CPC (Cost Per Click) spielt bei vielen Werbenetzwerken auch das CPI-Modell (Cost Per Install) eine wichtige Rolle. Beim CPI erhält der App-Entwickler eine Vergütung, wenn ein Nutzer über eine Anzeige eine beworbene App installiert. Dieses Modell wird besonders häufig im Gaming-Bereich eingesetzt, da dort App-Installationen ein zentrales Kampagnenziel darstellen.
+CPI bietet zwar oft höhere Einzelvergütungen als impressionbasierte Modelle, ist jedoch stärker von der Conversion-Rate abhängig und daher weniger planbar. In der Praxis kombinieren viele Entwickler CPI mit anderen Modellen oder binden mehrere Werbenetzwerke über Mediation ein, um Ertrag und Stabilität der Einnahmen zu optimieren.\cite{Mobile_add_networks}
+
+
+% --------------------------------------------------
+\subsubsection{Sponsoring \& Partnerschaften}
+Dieser Abschnitt widmet sich Sponsoring und Partnerschaften als alternatives Monetarisierungsmodell für mobile Anwendungen. Dabei wird das Grundprinzip des App-Sponsorings sowie dessen Bedeutung als integriertes Kommunikationsinstrument im digitalen Umfeld erläutert.
+
+\textbf{Grundprinzip von App-Sponsoring}\\
+App-Sponsoring ist als spezieller Anwendungsfall des Sponsorings innerhalb der Marketing- und Unternehmenskommunikation zu verstehen. Im Gegensatz zu klassischen Werbeformen oder rein altruistischen Fördermaßnahmen basiert Sponsoring grundsätzlich auf einem wechselseitigen Leistungsaustausch zwischen Sponsor und Gesponsertem. Ziel ist es, durch die Unterstützung eines Mediums, einer Organisation oder eines digitalen Produkts kommunikative und strategische Vorteile zu erzielen.\cite{sponsoring}
+
+Beim App-Sponsoring stellt die mobile Applikation die Plattform dar, auf der Unternehmen ihre Kommunikationsziele umsetzen können. Der Sponsor unterstützt dabei die Entwicklung, den Betrieb oder die inhaltliche Ausgestaltung einer App und erhält im Gegenzug definierte Kommunikations- und Präsentationsmöglichkeiten. Diese können beispielsweise in Form von Markenintegration, exklusiven Inhalten, Co-Branding oder einer prominenten Platzierung innerhalb der App erfolgen. Der bloße Erwerb von Werbeflächen steht dabei nicht im Vordergrund, vielmehr handelt es sich um ein alternatives Kommunikationsinstrument mit hohem Integrationsgrad.\cite{sponsoring}
+
+In Zeiten zunehmender medialer Reizüberflutung gewinnen solche Formen der Markenkommunikation an Bedeutung, da klassische Werbebotschaften häufig nicht mehr ausreichen, um eine nachhaltige Differenzierung gegenüber Wettbewerbern zu erreichen. App-Sponsoring ermöglicht es Unternehmen, Zielgruppen in einem alltäglichen, interaktiven Nutzungskontext zu erreichen und emotionale sowie funktionale Mehrwerte zu schaffen. Dadurch kann eine stärkere Bindung zwischen Marke und Nutzern aufgebaut werden.\cite{sponsoring}
+
+Ein zentrales Grundprinzip des App-Sponsorings ist die inhaltliche Passung zwischen Sponsor und App. Damit ein positiver Image-Transfer stattfinden kann, muss sich der Sponsor mit den Zielen, Werten und Inhalten der App identifizieren. Wird das Engagement lediglich als finanzielle Unterstützung ohne erkennbaren Bezug wahrgenommen, besteht die Gefahr, dass der kommunikative Effekt ausbleibt oder sogar negativ ausfällt. Die Auswahl geeigneter Sponsoring-Partnerschaften erfordert daher einen systematischen Planungs- und Entscheidungsprozess.\cite{sponsoring}
+
+
+% --------------------------------------------------
+\subsubsection{Kostenpflichtige App-Modelle}
+Nun werden kostenpflichtige App-Modelle als Monetarisierungsstrategie betrachtet. Dabei werden sowohl der einmalige Kauf als auch Abonnement-Modelle und die damit verbundene Zahlungsbereitschaft der Nutzer erläutert.
+
+\textbf{Einmaliger Kauf}\\
+Beim Modell des einmaligen Kaufs bezahlen Nutzer vor dem Download der App einen fixen Betrag und erhalten anschließend uneingeschränkten Zugriff auf alle Funktionen. Dieses Monetarisierungsmodell zählt zu den ältesten Ansätzen im App-Markt und wird heute vor allem bei spezialisierten Anwendungen mit klarem Nutzen eingesetzt. Vorteile dieses Modells sind die transparente Preisstruktur sowie eine werbefreie Nutzung. Allerdings stellt der einmalige Kauf eine hohe Einstiegshürde dar, da viele Nutzer kostenlose Alternativen bevorzugen. Zudem ist das Umsatzpotenzial begrenzt, da pro Nutzer nur einmal Einnahmen generiert werden.\cite{Kostenpflichtige_Ideen}
+
+\textbf{Abonnement-Modelle}\\
+Abonnement-Modelle basieren auf wiederkehrenden Zahlungen, meist in monatlichen oder jährlichen Intervallen. Nutzer erhalten im Gegenzug fortlaufenden Zugriff auf Premium-Funktionen, exklusive Inhalte oder regelmäßig aktualisierte Services. Dieses Modell ermöglicht planbare und stabile Einnahmen für Entwickler und führt bei hoher Nutzerbindung zu einem hohen Customer Lifetime Value. Gleichzeitig erfordert es jedoch kontinuierliche Weiterentwicklung und regelmäßige Inhalte, da Nutzer ihr Abonnement jederzeit kündigen können, wenn der wahrgenommene Mehrwert sinkt.\cite{Kostenpflichtige_Ideen}
+
+\textbf{Zahlungsbereitschaft der Nutzer}\\
+Die Zahlungsbereitschaft der Nutzer hängt stark vom wahrgenommenen Nutzen und der Qualität der App ab. Faktoren wie Benutzerfreundlichkeit, Exklusivität der Funktionen, Aktualität der Inhalte sowie ein professioneller Gesamteindruck beeinflussen die Entscheidung, ob Nutzer bereit sind, für eine App zu bezahlen. Besonders erfolgreich sind kostenpflichtige Modelle, wenn Nutzer den Mehrwert bereits vor dem Kauf durch Testphasen oder eingeschränkte kostenlose Versionen kennenlernen können.\cite{Kostenpflichtige_Ideen}
+
+% --------------------------------------------------
+\subsubsection{In-App-Käufe}
+Als nächstes werden In-App-Käufen als flexibles Monetarisierungsmodell mobiler Anwendungen vorgestellt. Dabei werden die grundlegenden Konzepte von In-App-Purchases sowie deren Einsatzmöglichkeiten, insbesondere im Bereich der Personalisierung, erläutert.
+
+\textbf{Grundlagen von In-App-Purchases}\\
+In-App-Käufe ermöglichen es Nutzern, zusätzliche digitale Inhalte oder Funktionen direkt innerhalb der App zu erwerben. Dieses Modell wird häufig in Spielen, Produktivitäts-Apps und Content-Plattformen eingesetzt. Dabei unterscheidet man zwischen verbrauchbaren Käufen, wie virtueller Währung, und nicht-verbrauchbaren Käufen, wie dem dauerhaften Freischalten von Funktionen oder dem Entfernen von Werbung. Die Zahlungsabwicklung erfolgt über die integrierten Systeme der jeweiligen App-Stores, was Sicherheit und Standardisierung gewährleistet.\cite{Kostenpflichtige_Ideen}
+
+\textbf{Personalisierung}\\
+Ein häufiger Anwendungsbereich von In-App-Käufen ist die Personalisierung der App. Nutzer können gegen Bezahlung individuelle Anpassungen vornehmen, die keinen direkten funktionalen Vorteil bieten, jedoch das Nutzererlebnis verbessern. Beispiele für personalisierte Inhalte sind:
+\begin{itemize}
+    \item Profilbilder
+    \item Banner
+    \item Schriftfarben und Schriftarten
+\end{itemize}
+Solche personalisierten Inhalte fördern die emotionale Bindung an die App und stellen insbesondere bei engagierten Nutzern eine effektive Einnahmequelle dar.\cite{Kostenpflichtige_Ideen}
+
+
+% --------------------------------------------------
+\subsubsection{Spenden \& freiwillige Unterstützung}
+Der folgende Abschnitt behandelt Spenden und freiwillige Unterstützung als alternative Monetarisierungsform mobiler Anwendungen. Dabei wird aufgezeigt, wie Crowdfunding und In-App-Spenden zur Finanzierung, Ideenvalidierung und zum Aufbau einer engagierten Nutzerbasis beitragen können.
+
+\textbf{Spenden \& Crowdfunding}\\
+Ein weiteres Monetarisierungsmodell besteht darin, Nutzer freiwillig um finanzielle Unterstützung zu bitten, ohne ihnen Pflichten oder Käufe aufzuzwingen. Im Unterschied zu klassischen Einnahmemodellen (z. B. Werbung, In-App-Käufe oder Abonnements) basiert dieses Modell auf freiwilligen Beiträgen der Nutzer, die die App oder ihre Entwickler aus Überzeugung unterstützen möchten.
+
+Crowdfunding bietet Entwickler die Möglichkeit, finanzielle Mittel direkt von Nutzer oder Unterstützer zu erhalten, die an die Vision einer App glauben. Über Plattformen wie Kickstarter oder GoFundMe kann bereits vor oder während der Entwicklungsphase Kapital für die Umsetzung eines App-Projekts gesammelt werden. Ergänzend dazu ermöglichen In-App-Spendenfunktionen den Nutzer, die App freiwillig finanziell zu unterstützen. Dieses Finanzierungsmodell eignet sich besonders für Apps mit klar definierten Zielen, sozialen Anliegen oder kreativen Konzepten. Darüber hinaus trägt Crowdfunding nicht nur zur Finanzierung bei, sondern dient auch zur Validierung der App-Idee und zum Aufbau einer frühen, engagierten Nutzerbasis.\cite{Funding}
+
+
+% ==================================================
+\subsection{Technische Grundlagen der Anwendung}
+Dieser Abschnitt vermittelt die technischen Grundlagen der entwickelten Anwendung. Dabei werden sowohl zentrale Konzepte der mobilen App-Entwicklung als auch wesentliche Backend-, Infrastruktur- und Sicherheitsaspekte vorgestellt, die für den Aufbau moderner, skalierbarer und sicherer Anwendungen erforderlich sind.
+
+% --------------------------------------------------
+\subsubsection{Mobile App Entwicklung}
+Die Entwicklung mobiler Anwendungen spielt eine zentrale Rolle in der heutigen digitalen Welt. Unterschiedliche Plattformen wie iOS und Android stellen spezifische Anforderungen an Technologie, Performance und Benutzerfreundlichkeit. In diesem Abschnitt werden zentrale Frameworks, Konzepte und Techniken vorgestellt, die eine effiziente, plattformübergreifende Entwicklung ermöglichen.
+
+\paragraph{React Native Framework}
+
+React Native ist ein plattformübergreifendes Framework zur Entwicklung mobiler Anwendungen, das von Meta Platforms (ehemals Facebook) und der Open-Source-Community entwickelt wird. Es ermöglicht, Anwendungen für verschiedene mobile Betriebssysteme wie iOS und Android zu erstellen, indem es die Programmiersprache JavaScript in Kombination mit nativen UI-Elementen nutzt \cite{brainhub_react_native}.
+
+Im Gegensatz zu klassischen nativen Entwicklungsansätzen, bei denen separate Codebasen für unterschiedliche Betriebssysteme notwendig sind, verfolgt React Native den Ansatz einer gemeinsamen Codebasis. Dabei werden Benutzeroberflächen nicht als Webview-Elemente gerendert, sondern über native Komponenten dargestellt, sodass die resultierenden Anwendungen sich in Look and Feel deutlich näher an nativen Apps orientieren \cite{brainhub_react_native}.
+
+React Native basiert auf dem populären JavaScript-Framework React, das ursprünglich für die Entwicklung von Benutzeroberflächen im Web entwickelt wurde. Die Integration dieser Technologie ermöglicht es Entwicklern, UI-Komponenten modular zu strukturieren und wiederverwendbar zu machen, was die Wartung und Weiterentwicklung von Anwendungen erleichtert \cite{brainhub_react_native}.
+
+Ein technisches Charakteristikum von React Native ist der Einsatz der JavaScriptCore-Laufzeit sowie von Babel-Transpilern, die moderne JavaScript-Funktionen (z. B. ES6-Features wie Arrow-Funktionen oder async/await) unterstützen und zugleich die Kompatibilität mit unterschiedlichen Zielplattformen sicherstellen. Dadurch können Entwickler aktuelle Sprachstandards verwenden, ohne auf traditionelle plattformspezifische Sprachen wie Swift (für iOS) oder Kotlin/Java (für Android) angewiesen zu sein \cite{brainhub_react_native}.
+
+
+% --------------------------------------------------
+\subsubsection{Backend-Technologien}
+
+Das Backend bildet das Rückgrat moderner Anwendungen und ist für Datenverarbeitung, Geschäftslogik, Sicherheit und Kommunikation mit Datenbanken verantwortlich. Unterschiedliche Technologien, Architekturen und Dienste ermöglichen es, skalierbare, performante und wartbare Systeme aufzubauen. In diesem Abschnitt werden zentrale Konzepte, Infrastrukturmodelle und Cloud-Ansätze vorgestellt, die in modernen Backend-Umgebungen zum Einsatz kommen.
+
+\paragraph{APIs}
+
+APIs (Application Programming Interfaces) sind Programmierschnittstellen, die es unterschiedlichen Softwaresystemen ermöglichen, miteinander zu kommunizieren. Sie definieren, wie Anfragen gestellt und wie Daten oder Funktionen zwischen Anwendungen ausgetauscht werden können, ohne dass die internen Abläufe der beteiligten Systeme bekannt sein müssen \cite{talend_api_definition}.
+
+Eine API fungiert dabei als Vermittlungsschicht zwischen verschiedenen Softwarekomponenten. Sie legt fest, welche Funktionen oder Daten zur Verfügung stehen und in welcher Form diese genutzt werden dürfen. Durch diese klar definierten Schnittstellen wird eine strukturierte und kontrollierte Interaktion zwischen Frontend- und Backend-Systemen ermöglicht \cite{talend_api_definition}.
+
+In der Softwareentwicklung bilden APIs eine wesentliche Grundlage für den Aufbau modularer Systeme. Sie unterstützen die Trennung von Zuständigkeiten zwischen einzelnen Systemkomponenten und tragen zur Wartbarkeit sowie Erweiterbarkeit von Anwendungen bei \cite{talend_api_definition}.
+
+\paragraph{Datenbanken}
+
+Datenbanken sind digitale Speichersysteme zur organisierten Verwaltung von Informationen. Sie dienen dazu, große Mengen strukturierter und unstrukturierter Daten so zu speichern, dass Anwendungen, Benutzer und Automatisierungsprozesse effizient darauf zugreifen, diese verwalten und aktualisieren können. Eine Datenbank besteht dabei aus einem Repository zur Speicherung der Daten sowie aus Software-Komponenten, die den Zugriff, die Strukturierung und die Sicherheit dieser Daten steuern \cite{ibm_database}.
+
+Die grundlegende Funktion einer Datenbank besteht darin, Daten nicht nur passiv zu speichern, sondern sie in einer Form bereitzustellen, die schnelle Abfragen, konsistente Verwaltung und kontrollierten Zugriff ermöglicht. Datenbanken bilden damit eine essentielle Grundlage moderner Anwendungen, da sie die zentrale Grundlage für die Verwaltung und Bereitstellung von Daten in Informationssystemen darstellen \cite{ibm_database}.
+
+Dabei umfasst der Begriff „Datenbank“ nicht nur die gespeicherten Daten selbst, sondern auch die zugehörige Infrastruktur, die physische Speicherung und die Software-Komponenten einschließt, die Datenbankoperationen steuern und ausführen. Durch diese Struktur ermöglichen Datenbanken eine systematische Organisation großer Datenbestände, wodurch diese für Anwendungen adressierbar und nutzbar werden \cite{ibm_database}.
+
+Datenbanken werden in vielfältigen Kontexten verwendet und sind integraler Bestandteil zahlreicher Softwarelösungen, da sie die grundlegende Datenverwaltung für Anwendungen unterstützen. Ohne Datenbanken wäre die zentrale Verwaltung großer Informationsmengen sowie deren strukturierter Zugriff, wie er für Web-Anwendungen, mobile Anwendungen und Backend-Systeme heute notwendig ist, nicht realisierbar \cite{ibm_database}.
+
+\paragraph{Backend-as-a-Service (BaaS)}
+
+Backend-as-a-Service (BaaS) bezeichnet ein cloudbasiertes Backend-Plattformmodell, das Entwicklungswerkzeuge und Dienste bereitstellt, um Backend-Funktionalitäten für Anwendungen schnell und ohne eigenen Serveraufwand bereitzustellen. Im Mittelpunkt dieses Modells steht die Bereitstellung einer Infrastruktur, die typische Backend-Aufgaben übernimmt, wie etwa Datenverwaltung, Authentifizierung, API-Generierung und weitere Dienste, ohne dass Entwickler diese Komponenten selbst implementieren müssen \cite{supabase_overview_chauhan}.
+
+Ein Beispiel für eine solche Plattform ist Supabase, eine Open-Source-BaaS-Lösung, die auf einer PostgreSQL-Datenbank basiert und Werkzeuge zur Backend-Entwicklung zusammenführt. Supabase stellt Entwicklern eine Reihe von integrierten Tools zur Verfügung, darunter \cite{supabase_overview_chauhan}:
+
+\begin{itemize}
+\item \textbf{PostgreSQL-Datenbank:} Als zentrales Speichersystem bildet die relationale PostgreSQL-Datenbank den Kern von Supabase und dient zur strukturierten Verwaltung von Anwendungsdaten.
+\item \textbf{Studio (Dashboard):} Ein offenes Dashboard, das die Verwaltung der Datenbankservices und Projekte ermöglicht.
+\item \textbf{Authentifizierungsdienst (GoTrue):} Eine API-basierte Komponente zur Benutzerverwaltung und zur Ausstellung von Zugangstoken.
+\item \textbf{Automatisch generierte APIs (PostgREST):} Supabase erzeugt aus der Datenbank heraus RESTful-APIs, die die Interaktion mit Daten über standardisierte Schnittstellen erlauben.
+\item \textbf{Realtime-Funktionalität:} Diensten zur Verwaltung von Echtzeit-Datenübertragungen und -Präsenz mittels skalierbarer WebSocket-Technologien.
+\item \textbf{Speicher-API:} Ein Service zur Verwaltung großer Dateien und Objekte.
+\item \textbf{Edge Functions (Deno):} Eine moderne Laufzeitumgebung für serverlose Funktionen in JavaScript/TypeScript.
+\item \textbf{Datenbankmanagement-Tools:} RESTful-APIs zum Verwalten der Datenbankstruktur, Tabellen, Rollen und Abfragen.
+\item \textbf{Supavisor und API-Gateway-Komponenten:} Unterstützung für Pooling und API-Steuerung innerhalb der Cloud-Architektur.
+\end{itemize}
+
+Supabase ermöglicht es Entwicklern, Backend-Funktionalität „out of the box“ zu nutzen und so Anwendungen schnell zu entwickeln und bereitzustellen. Die Plattform unterstützt dabei verschiedene Frameworks für Web- und mobile Anwendungen, wodurch eine breite Integration mit Frontend-Technologien möglich ist \cite{supabase_overview_chauhan}.
+
+Insgesamt bietet BaaS-Plattformen wie Supabase eine abstrahierte Backend-Schicht, die vielen klassischen Backend-Aufgaben übernimmt und Entwickler von der Notwendigkeit befreit, eigene Backend-Infrastruktur manuell aufzusetzen oder zu warten \cite{supabase_overview_chauhan}.
+
+\paragraph{Auth-Systeme}
+
+Authentifizierungssysteme sind Verfahren zur Überprüfung der Identität von Benutzern oder Systemen, bevor diesen Zugriff auf geschützte Ressourcen gewährt wird. Moderne Authentifizierungsmechanismen gehen über die klassische Passwortabfrage hinaus und beinhalten unterschiedliche Ansätze, um Sicherheit und Benutzerfreundlichkeit gleichzeitig zu erhöhen. Dabei wird oftmals eine Kombination verschiedener Techniken eingesetzt, um das Risiko unbefugter Zugriffe zu minimieren.\cite{it_schulungen_modern_auth}
+
+\textbf{Multi-Faktor-Authentifizierung (MFA):}  
+Ein zentraler Ansatz moderner Authentifizierung ist die Multi-Faktor-Authentifizierung, bei der mindestens zwei unabhängige Faktoren zur Identitätsprüfung herangezogen werden. Diese Faktoren lassen sich üblicherweise in drei Kategorien einteilen:
+
+\begin{itemize}
+    \item Wissen (z.\,B. Passwort oder PIN)
+    \item Besitz (z.\,B. Smartphone oder Hardware-Token)
+    \item Sein (biometrische Merkmale wie Fingerabdruck oder Gesichtserkennung)
+\end{itemize}
+
+Durch die Kombination dieser Faktoren wird die Sicherheit gegenüber einem einzelnen Faktor wie einem Passwort deutlich erhöht, da ein Angreifer mehrere unabhängige Sicherheitsmerkmale überwinden müsste.\cite{it_schulungen_modern_auth}
+
+\paragraph{Verschlüsselung}
+
+Verschlüsselung bezeichnet den Vorgang, bei dem Daten mithilfe eines Algorithmus in eine codierte Form umgewandelt werden, sodass sie für Unbefugte nicht mehr lesbar sind. Dieser Prozess hat zum Ziel, die Vertraulichkeit und Integrität von Informationen zu gewährleisten, indem nur autorisierte Parteien mit dem passenden Schlüssel die verschlüsselten Daten wieder in ihre ursprüngliche Form zurückverwandeln können. Verschlüsselung ist ein grundlegender Bestandteil moderner Datensicherheit und wird sowohl beim Speichern als auch bei der Übertragung sensibler Informationen angewendet.\cite{kaspersky_encryption}
+
+Bei der Verschlüsselung werden lesbare Daten (Klartext) in einen unlesbaren Chiffretext überführt. Diese Umwandlung erfolgt mithilfe eines kryptografischen Schlüssels, der in Verbindung mit dem gewählten Algorithmus bestimmt, wie die Umwandlung stattfindet. Je komplexer der Schlüssel und der Algorithmus gestaltet sind, desto schwieriger ist es für unbefugte Dritte, den Chiffretext zu entschlüsseln.\cite{kaspersky_encryption}
+
+Es existieren unterschiedliche Verschlüsselungsverfahren, die je nach Anwendungsfall eingesetzt werden können. Zu den grundlegenden Unterscheidungen gehören symmetrische Verfahren, bei denen derselbe Schlüssel sowohl für die Verschlüsselung als auch für die Entschlüsselung verwendet wird, und asymmetrische Verfahren, bei denen ein Schlüssel zur Verschlüsselung und ein anderer Schlüssel zur Entschlüsselung zum Einsatz kommt. Beide Verfahren spielen eine zentrale Rolle bei der Absicherung digitaler Kommunikation.\cite{kaspersky_encryption}
+
+Verschlüsselung wird in vielen Bereichen eingesetzt, um Daten vor unbefugtem Zugriff zu schützen, etwa bei der Sicherung von Nachrichtenübertragungen, dem Schutz gespeicherter personenbezogener Daten oder der Absicherung von Online‑Transaktionen. Durch die Anwendung geeigneter Verschlüsselungstechniken wird sichergestellt, dass selbst bei einem Abfangen der Daten durch Dritte die Informationen nicht ohne Wissen über den Schlüssel verständlich sind.\cite{kaspersky_encryption}
+
+\paragraph{Datenschutz}
+
+Datenschutz bezeichnet den Schutz personenbezogener Daten vor unbefugtem Zugriff, Missbrauch oder Verlust. Ziel ist es, die Privatsphäre von Personen zu wahren und sicherzustellen, dass Informationen nur in zulässiger Weise verarbeitet werden. Im digitalen Kontext betrifft Datenschutz insbesondere die Erhebung, Speicherung, Verarbeitung und Übertragung von Daten durch Anwendungen, Dienste oder Organisationen.\cite{onlinesicherheit_mobile_apps_info}
+
+Für mobile Apps bedeutet Datenschutz, dass Nutzer über Art, Umfang und Zweck der Datenverarbeitung informiert werden müssen. Dazu gehören unter anderem Hinweise darauf, welche Daten gesammelt werden, wie lange sie gespeichert werden und wer Zugriff darauf hat. Transparenz und rechtliche Vorgaben, wie sie in der Datenschutz-Grundverordnung (DSGVO) festgelegt sind, bilden die Grundlage für vertrauenswürdige Anwendungen.\cite{onlinesicherheit_mobile_apps_info}
+
+Mobile Anwendungen müssen geeignete technische und organisatorische Maßnahmen implementieren, um die Sicherheit der Daten zu gewährleisten. Dazu zählen Verschlüsselung, Zugriffsbeschränkungen, Anonymisierung oder Pseudonymisierung, um sicherzustellen, dass personenbezogene Informationen vor Missbrauch geschützt sind. Datenschutz umfasst somit sowohl die rechtlichen Rahmenbedingungen als auch die praktischen Maßnahmen zur Sicherung sensibler Daten.\cite{onlinesicherheit_mobile_apps_info}
+
+
+% --------------------------------------------------
+\subsection{Hosting- und Infrastrukturmodelle}
+
+Hosting- und Infrastrukturmodelle im Kontext moderner IT-Systeme beschreiben, wo und wie Rechenressourcen, Speicher und Anwendungen betrieben werden. Sie bilden die Grundlage für Verfügbarkeit, Skalierbarkeit und Sicherheit moderner Anwendungen. Grundsätzlich lassen sich drei zentrale Architekturansätze unterscheiden: On-Premise-Infrastrukturen, Cloud-Architekturen und Hybrid-Architekturen \cite{hws_onprem_cloud_hybrid, ibm_hybrid_cloud_architecture}.
+
+\subsubsection{On-Premise, Cloud und Hybrid-Architekturen}
+
+Bei einer On-Premise-Architektur werden sämtliche IT-Ressourcen innerhalb eines Unternehmens betrieben. Die notwendige Hardware wie Server, Storage-Systeme und Netzwerkkomponenten befindet sich in eigenen Räumlichkeiten oder Rechenzentren und wird vollständig selbst verwaltet. Dieses Modell ermöglicht ein hohes Maß an Kontrolle über Daten, Systeme und Sicherheitsmechanismen, ist jedoch mit hohem Aufwand für Anschaffung, Wartung und Betrieb verbunden \cite{hws_onprem_cloud_hybrid}.
+
+Cloud-Architekturen basieren hingegen auf der Bereitstellung von IT-Ressourcen durch externe Anbieter über das Internet. Rechenleistung, Speicher und Dienste werden bedarfsgerecht zur Verfügung gestellt und zentral vom Provider verwaltet. Dadurch profitieren Organisationen von hoher Skalierbarkeit und Flexibilität, da Ressourcen dynamisch angepasst werden können und keine eigene Infrastruktur im selben Umfang betrieben werden muss \cite{hws_onprem_cloud_hybrid}.
+
+Hybrid-Architekturen kombinieren On-Premise- und Cloud-Ansätze. Bestimmte Systeme oder Daten verbleiben lokal, während andere Komponenten in einer Cloud-Umgebung betrieben werden. Dadurch können Unternehmen sowohl die Kontrolle und Compliance-Vorteile lokaler Infrastruktur als auch die Skalierbarkeit und Effizienz von Cloud-Diensten nutzen. Hybrid-Cloud-Architekturen gewinnen besonders im Rahmen der digitalen Transformation an Bedeutung, da sie bestehende Systeme mit modernen Cloud-Technologien verbinden und eine flexible Verteilung von Anwendungen und Daten ermöglichen \cite{ibm_hybrid_cloud_architecture}.
+
+\subsubsection{IaaS, PaaS, FaaS und Serverless}
+
+Cloud-Dienste lassen sich je nach Abstraktionsgrad in verschiedene Service-Modelle einteilen. Diese Modelle unterscheiden sich vor allem darin, wie viel Verantwortung der Cloud-Provider übernimmt und wie viel Verwaltung beim Betreiber verbleibt.
+
+Infrastructure as a Service (IaaS) stellt grundlegende Infrastrukturressourcen wie virtuelle Maschinen, Speicher und Netzwerke bereit. Nutzer können diese Ressourcen flexibel konfigurieren und skalieren, ohne physische Hardware zu betreiben. Der Provider verwaltet dabei die zugrundeliegende Infrastruktur, während Konfiguration, Betriebssystem und Anwendungen in der Verantwortung der Nutzer liegen \cite{azure_iaas}.
+
+Platform as a Service (PaaS) bietet zusätzlich eine vollständig verwaltete Plattform zur Entwicklung und Bereitstellung von Anwendungen. Neben Infrastruktur stellt der Provider Laufzeitumgebungen, Middleware und häufig auch Entwicklungs- und Deployment-Tools bereit. Dadurch reduziert sich der administrative Aufwand deutlich, da sich Entwickler stärker auf die Anwendung selbst konzentrieren können \cite{azure_paas}.
+
+Function as a Service (FaaS) ist ein ereignisgetriebenes Modell, bei dem einzelne Funktionen (Code-Snippets) automatisch ausgeführt werden, sobald ein bestimmtes Event eintritt (z.\,B. Request, Trigger, Message). Skalierung und Ressourcenmanagement erfolgen automatisch durch den Provider, wodurch sich FaaS besonders für klar abgegrenzte Logik und Microservice-Szenarien eignet \cite{ibm_faas}.
+
+Serverless Computing beschreibt ein umfassenderes Paradigma, bei dem Server weiterhin existieren, aber vollständig durch den Provider verwaltet werden. Entwickler betreiben keine Serverinstanzen aktiv, sondern nutzen verwaltete Services (z.\,B. Datenbanken, APIs, Event-Systeme) und stellen Funktionalität über FaaS oder ähnliche Mechanismen bereit. Ziel ist es, Betriebsaufwand zu minimieren und gleichzeitig automatisch skalierbare Architekturen zu ermöglichen \cite{redhat_serverless}.
+
+\subsubsection{Skalierung: vertikal und horizontal}
+
+Skalierung beschreibt die Fähigkeit eines Systems, steigende Last zu bewältigen. Dabei wird zwischen vertikaler und horizontaler Skalierung unterschieden. Bei der vertikalen Skalierung (Scaling Up) wird die Leistungsfähigkeit einer einzelnen Maschine erhöht, beispielsweise durch mehr CPU, Arbeitsspeicher oder schnelleren Speicher. Dieser Ansatz ist oft einfacher umzusetzen, stößt jedoch an technische und wirtschaftliche Grenzen, da einzelne Systeme nur begrenzt ausgebaut werden können \cite{akamai_scaling}.
+
+Horizontale Skalierung (Scaling Out) erweitert ein System durch zusätzliche Maschinen oder Knoten. Die Last wird dabei auf mehrere Instanzen verteilt, wodurch eine flexible Erweiterung möglich ist. Dieses Modell ist besonders für verteilte Systeme und Cloud-Umgebungen relevant, erfordert jedoch meist zusätzliche Mechanismen wie Load Balancer und geeignete Architekturprinzipien \cite{akamai_scaling}.
+
+\subsubsection{Autoscaling und Lastverteilung}
+
+Autoscaling bezeichnet die automatische Anpassung von Ressourcen an die aktuelle Systemlast. Bei hoher Auslastung werden zusätzliche Instanzen bereitgestellt, bei sinkender Last werden Ressourcen reduziert. Dadurch können Leistung und Kosten effizienter gesteuert werden, da Über- oder Unterprovisionierung vermieden wird \cite{teamtakt_devops_lastverteilung}.
+
+Lastverteilung (Load Balancing) beschreibt die Verteilung eingehender Anfragen auf mehrere Server oder Instanzen. Ein Load Balancer sorgt dafür, dass keine einzelne Ressource überlastet wird und dass Ausfälle einzelner Komponenten besser abgefangen werden können. In Kombination bilden Autoscaling und Load Balancing zentrale Bausteine moderner, hochverfügbarer und skalierbarer Systeme \cite{teamtakt_devops_lastverteilung}.
+
+\subsubsection{Latenzoptimierung und Durchsatzsteigerung}
+
+Für die Performance von Anwendungen sind insbesondere Latenz und Durchsatz entscheidend. Latenz beschreibt die Verzögerungszeit zwischen Anfrage und Antwort und ist vor allem bei interaktiven Anwendungen relevant. Durchsatz bezeichnet die Menge an Daten, die in einem bestimmten Zeitraum übertragen oder verarbeitet werden kann \cite{studysmarter_latenz_durchsatz}.
+
+Latenzoptimierung zielt darauf ab, Verzögerungen zu reduzieren, beispielsweise durch optimierte Netzwerkrouten, Caching, kürzere Verarbeitungswege oder geografisch näher platzierte Ressourcen. Durchsatzsteigerung wird erreicht, indem Bandbreite, Parallelisierung, effiziente Protokolle oder leistungsfähigere Komponenten eingesetzt werden. Beide Aspekte beeinflussen direkt, wie schnell und stabil Systeme unter Last reagieren \cite{studysmarter_latenz_durchsatz}.

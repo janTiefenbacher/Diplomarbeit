@@ -263,6 +263,30 @@
   \url{https://medium.com/@anshuldevx/overview-of-supabase-backend-as-a-service-platform-e192da9a369c}.
 
 \btxselectlanguage {ngerman}
+\bibitem {it_schulungen_modern_auth}
+\btxnamefont {\btxlastnamefont {Deinhard}, Florian}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Welche modernen
+  authentifizierungsm\"oglichkeiten gibt es?}{Welche modernen
+  Authentifizierungsm\"oglichkeiten gibt es?}},
+  \btxprintmonthyear{.}{6}{2025}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.it-schulungen.com/wir-ueber-uns/wissensblog/welche-modernen-authentifizierungsmoeglichkeiten-gibt-es.html}.
+
+\bibitem {kaspersky_encryption}
+\btxnamefont {\btxlastnamefont {Kaspersky}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Was ist datenverschl\"usselung?}{Was ist
+  Datenverschl\"usselung?}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://www.kaspersky.de/resource-center/definitions/encryption}.
+
+\bibitem {onlinesicherheit_mobile_apps_info}
+\btxnamefont {\btxlastnamefont {Pro{\ss}negg}, Sabine}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Mobile apps und
+  informationspflichten}{Mobile Apps und Informationspflichten}},
+  \btxprintmonthyear{.}{10}{2017}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.onlinesicherheit.gv.at/Services/Technologie-Schwerpunkte/Mobile-Apps/Mobile-Apps-und-Informationspflichten.html}.
+
 \bibitem {hws_onprem_cloud_hybrid}
 \btxnamefont {\btxlastnamefont {Gruppe}, HWS}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {On premise, in die cloud oder doch hybrid?}{On Premise, in
@@ -310,28 +334,6 @@
   \url{https://www.redhat.com/de/topics/cloud-native-apps/what-is-serverless}.
 
 \btxselectlanguage {ngerman}
-\bibitem {oracle_relational_database}
-\btxnamefont {\btxlastnamefont {Corporation}, Oracle}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {Was ist eine relationale datenbank?
-  (rdbms)?}{Was ist eine relationale Datenbank? (RDBMS)?}},
-  \btxprintmonthyear{.}{6}{2021}{long}.
-\newblock Online im Internet: URL:
-  \url{https://www.oracle.com/de/database/what-is-a-relational-database/}.
-
-\bibitem {dbengines_normalisierung}
-\btxnamefont {\btxlastnamefont {Software}, DB\btxfnamespacelong
-  Engines\btxfnamespacelong /\btxfnamespacelong Redgate}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {Normalisierung}{Normalisierung}}, 2025.
-\newblock Online im Internet: URL:
-  \url{https://db-engines.com/de/article/Normalisierung}.
-
-\bibitem {medienpalast_realtime_data}
-\btxnamefont {\btxlastnamefont {Medienpalast}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Real time data -- echtzeitdaten}{Real Time Data --
-  Echtzeitdaten}}, 2025.
-\newblock Online im Internet: URL:
-  \url{https://www.medienpalast.net/glossar/begriff/real-time-data/}.
-
 \bibitem {akamai_scaling}
 \btxnamefont {\btxlastnamefont {Technologies}, Akamai}\btxauthorcolon\
   \btxtitlefont {\btxifchangecase {Horizontale und vertikale skalierung im
@@ -356,29 +358,27 @@
 \newblock Online im Internet: URL:
   \url{https://www.studysmarter.de/schule/informatik/technische-informatik/latenz-und-durchsatz/}.
 
-\bibitem {it_schulungen_modern_auth}
-\btxnamefont {\btxlastnamefont {Deinhard}, Florian}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {Welche modernen
-  authentifizierungsm\"oglichkeiten gibt es?}{Welche modernen
-  Authentifizierungsm\"oglichkeiten gibt es?}},
-  \btxprintmonthyear{.}{6}{2025}{long}.
+\bibitem {oracle_relational_database}
+\btxnamefont {\btxlastnamefont {Corporation}, Oracle}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Was ist eine relationale datenbank?
+  (rdbms)?}{Was ist eine relationale Datenbank? (RDBMS)?}},
+  \btxprintmonthyear{.}{6}{2021}{long}.
 \newblock Online im Internet: URL:
-  \url{https://www.it-schulungen.com/wir-ueber-uns/wissensblog/welche-modernen-authentifizierungsmoeglichkeiten-gibt-es.html}.
+  \url{https://www.oracle.com/de/database/what-is-a-relational-database/}.
 
-\bibitem {kaspersky_encryption}
-\btxnamefont {\btxlastnamefont {Kaspersky}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Was ist datenverschl\"usselung?}{Was ist
-  Datenverschl\"usselung?}}, 2025.
+\bibitem {dbengines_normalisierung}
+\btxnamefont {\btxlastnamefont {Software}, DB\btxfnamespacelong
+  Engines\btxfnamespacelong /\btxfnamespacelong Redgate}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Normalisierung}{Normalisierung}}, 2025.
 \newblock Online im Internet: URL:
-  \url{https://www.kaspersky.de/resource-center/definitions/encryption}.
+  \url{https://db-engines.com/de/article/Normalisierung}.
 
-\bibitem {onlinesicherheit_mobile_apps_info}
-\btxnamefont {\btxlastnamefont {Pro{\ss}negg}, Sabine}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {Mobile apps und
-  informationspflichten}{Mobile Apps und Informationspflichten}},
-  \btxprintmonthyear{.}{10}{2017}{long}.
+\bibitem {medienpalast_realtime_data}
+\btxnamefont {\btxlastnamefont {Medienpalast}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Real time data -- echtzeitdaten}{Real Time Data --
+  Echtzeitdaten}}, 2025.
 \newblock Online im Internet: URL:
-  \url{https://www.onlinesicherheit.gv.at/Services/Technologie-Schwerpunkte/Mobile-Apps/Mobile-Apps-und-Informationspflichten.html}.
+  \url{https://www.medienpalast.net/glossar/begriff/real-time-data/}.
 
 \bibitem {appinio_zielgruppenanalyse}
 \btxnamefont {\btxlastnamefont {Research}, Appinio}\btxauthorcolon\
