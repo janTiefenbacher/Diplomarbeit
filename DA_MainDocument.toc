@@ -34,15 +34,15 @@
 \contentsline {subsection}{\numberline {3.3.3}Hosting- und Infrastrukturmodelle}{31}{subsection.33}%
 \contentsline {subsubsection}{\numberline {3.3.3.1}On-Premise, Cloud und Hybrid-Architekturen}{31}{subsubsection.34}%
 \contentsline {subsubsection}{\numberline {3.3.3.2}IaaS, PaaS, FaaS und Serverless}{32}{subsubsection.35}%
-\contentsline {subsubsection}{\numberline {3.3.3.3}Relationale Datenbanken}{33}{subsubsection.36}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}Relationale Datenbanken}{32}{subsubsection.36}%
 \contentsline {subsubsection}{\numberline {3.3.3.4}Datenmodellierung und Normalisierung}{33}{subsubsection.37}%
-\contentsline {subsubsection}{\numberline {3.3.3.5}Echtzeit-Daten}{34}{subsubsection.38}%
+\contentsline {subsubsection}{\numberline {3.3.3.5}Echtzeit-Daten}{33}{subsubsection.38}%
 \contentsline {subsubsection}{\numberline {3.3.3.6}Vertikale vs. horizontale Skalierung}{34}{subsubsection.39}%
 \contentsline {subsubsection}{\numberline {3.3.3.7}Autoscaling und Lastverteilung}{35}{subsubsection.40}%
 \contentsline {subsubsection}{\numberline {3.3.3.8}Latenzoptimierung und Durchsatzsteigerung}{35}{subsubsection.41}%
 \contentsline {subsubsection}{\numberline {3.3.3.9}Auth-Systeme}{36}{subsubsection.42}%
 \contentsline {subsubsection}{\numberline {3.3.3.10}Verschlüsselung}{37}{subsubsection.43}%
-\contentsline {subsubsection}{\numberline {3.3.3.11}Datenschutz}{38}{subsubsection.44}%
+\contentsline {subsubsection}{\numberline {3.3.3.11}Datenschutz}{37}{subsubsection.44}%
 \contentsline {chapter}{\numberline {4}Dokumentation der Implementierung}{39}{chapter.45}%
 \contentsline {section}{\numberline {4.1}Systemumgebung}{39}{section.46}%
 \contentsline {subsection}{\numberline {4.1.1}Verwendete Technologien}{39}{subsection.47}%
