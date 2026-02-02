@@ -1,7 +1,5 @@
 % ==================================================
-\section{Theoretische Grundlagen}
-In den Theoretischen Grundlagen werden die zentralen Grundlagen für die Entwicklung der App erläutert.
-
+In diesem Kapitel werden die theoretischen Grundlagen vorgestellt, die für das Verständnis der entwickelten Anwendung erforderlich sind. Dabei werden zentrale Begriffe, Konzepte und technische Zusammenhänge erläutert, die als Basis für die nachfolgenden Kapitel und die technische Umsetzung dienen.
 % ==================================================
 \subsection{App-Design \& Monetarisierungskonzepte}
 Im ersten Teil der Theoretischen Grundlagen werden das Design und die möglichen Monetarisierungskonzepte
@@ -452,6 +450,18 @@ Eine API fungiert dabei als Vermittlungsschicht zwischen verschiedenen Softwarek
 
 In der Softwareentwicklung bilden APIs eine wesentliche Grundlage für den Aufbau modularer Systeme. Sie unterstützen die Trennung von Zuständigkeiten zwischen einzelnen Systemkomponenten und tragen zur Wartbarkeit sowie Erweiterbarkeit von Anwendungen bei \cite{talend_api_definition}.
 
+\paragraph{Datenbanken}
+\mbox{}\\
+\mbox{}\\
+Datenbanken sind digitale Speichersysteme zur organisierten Verwaltung von Informationen. Sie dienen dazu, große Mengen strukturierter und unstrukturierter Daten so zu speichern, dass Anwendungen, Benutzer und Automatisierungsprozesse effizient darauf zugreifen, diese verwalten und aktualisieren können. Eine Datenbank besteht dabei aus einem Repository zur Speicherung der Daten sowie aus Software-Komponenten, die den Zugriff, die Strukturierung und die Sicherheit dieser Daten steuern \cite{ibm_database}.
+
+Die grundlegende Funktion einer Datenbank besteht darin, Daten nicht nur passiv zu speichern, sondern sie in einer Form bereitzustellen, die schnelle Abfragen, konsistente Verwaltung und kontrollierten Zugriff ermöglicht. Datenbanken bilden damit eine essentielle Grundlage moderner Anwendungen, da sie die zentrale Grundlage für die Verwaltung und Bereitstellung von Daten in Informationssystemen darstellen \cite{ibm_database}.
+
+Dabei umfasst der Begriff „Datenbank“ nicht nur die gespeicherten Daten selbst, sondern auch die zugehörige Infrastruktur, die physische Speicherung und die Software-Komponenten einschließt, die Datenbankoperationen steuern und ausführen. Durch diese Struktur ermöglichen Datenbanken eine systematische Organisation großer Datenbestände, wodurch diese für Anwendungen adressierbar und nutzbar werden \cite{ibm_database}.
+
+Datenbanken werden in vielfältigen Kontexten verwendet und sind integraler Bestandteil zahlreicher Softwarelösungen, da sie die grundlegende Datenverwaltung für Anwendungen unterstützen. Ohne Datenbanken wäre die zentrale Verwaltung großer Informationsmengen sowie deren strukturierter Zugriff, wie er für Web-Anwendungen, mobile Anwendungen und Backend-Systeme heute notwendig ist, nicht realisierbar \cite{ibm_database}.
+
+
 \paragraph{Relationale Datenbanken}
 \mbox{}\\
 \mbox{}\\
@@ -482,7 +492,7 @@ Technologien zur Unterstützung von Echtzeit‑Daten bestehen aus Systemen, die 
 \paragraph{Vertikale vs. horizontale Skalierung}
 \mbox{}\\
 \mbox{}\\
-Skalierung ist ein zentrales Konzept in IT-Architekturen und beschreibt, wie Systeme mit steigender Last umgehen können. Dabei wird unterschieden zwischen der **vertikalen Skalierung**, bei der die Leistungsfähigkeit einzelner Maschinen erhöht wird, und der **horizontalen Skalierung**, bei der zusätzliche Maschinen oder Knoten zum System hinzugefügt werden \cite{akamai_scaling}.
+Skalierung ist ein zentrales Konzept in IT-Architekturen und beschreibt, wie Systeme mit steigender Last umgehen können. Dabei wird unterschieden zwischen der \textbf{vertikalen Skalierung}, bei der die Leistungsfähigkeit einzelner Maschinen erhöht wird, und der \textbf{horizontalen Skalierung}, bei der zusätzliche Maschinen oder Knoten zum System hinzugefügt werden \cite{akamai_scaling}.
 
 \textbf{Vertikale Skalierung}
 
@@ -616,12 +626,6 @@ Platform as a Service (PaaS) bietet zusätzlich eine vollständig verwaltete Pla
 Function as a Service (FaaS) ist ein ereignisgetriebenes Modell, bei dem einzelne Funktionen (Code-Snippets) automatisch ausgeführt werden, sobald ein bestimmtes Event eintritt (z.\,B. Request, Trigger, Message). Skalierung und Ressourcenmanagement erfolgen automatisch durch den Provider, wodurch sich FaaS besonders für klar abgegrenzte Logik und Microservice-Szenarien eignet \cite{ibm_faas}.
 
 Serverless Computing beschreibt ein umfassenderes Paradigma, bei dem Server weiterhin existieren, aber vollständig durch den Provider verwaltet werden. Entwickler betreiben keine Serverinstanzen aktiv, sondern nutzen verwaltete Services (z.\,B. Datenbanken, APIs, Event-Systeme) und stellen Funktionalität über FaaS oder ähnliche Mechanismen bereit. Ziel ist es, Betriebsaufwand zu minimieren und gleichzeitig automatisch skalierbare Architekturen zu ermöglichen \cite{redhat_serverless}.
-
-\subsubsection{Skalierung: vertikal und horizontal}
-
-Skalierung beschreibt die Fähigkeit eines Systems, steigende Last zu bewältigen. Dabei wird zwischen vertikaler und horizontaler Skalierung unterschieden. Bei der vertikalen Skalierung (Scaling Up) wird die Leistungsfähigkeit einer einzelnen Maschine erhöht, beispielsweise durch mehr CPU, Arbeitsspeicher oder schnelleren Speicher. Dieser Ansatz ist oft einfacher umzusetzen, stößt jedoch an technische und wirtschaftliche Grenzen, da einzelne Systeme nur begrenzt ausgebaut werden können \cite{akamai_scaling}.
-
-Horizontale Skalierung (Scaling Out) erweitert ein System durch zusätzliche Maschinen oder Knoten. Die Last wird dabei auf mehrere Instanzen verteilt, wodurch eine flexible Erweiterung möglich ist. Dieses Modell ist besonders für verteilte Systeme und Cloud-Umgebungen relevant, erfordert jedoch meist zusätzliche Mechanismen wie Load Balancer und geeignete Architekturprinzipien \cite{akamai_scaling}.
 
 \subsubsection{Autoscaling und Lastverteilung}
 

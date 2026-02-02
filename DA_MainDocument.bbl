@@ -246,6 +246,15 @@
 \newblock Online im Internet: URL:
   \url{https://www.talend.com/de/resources/was-ist-eine-api/}.
 
+\btxselectlanguage {english}
+\bibitem {ibm_database}
+\btxnamefont {\btxlastnamefont {Kosinski}, Matthew} \btxandlong {}\
+  \btxnamefont {IBM \btxlastnamefont {Think}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {What is a database?}{What is a database?}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://www.ibm.com/think/topics/database}.
+
+\btxselectlanguage {ngerman}
 \bibitem {oracle_relational_database}
 \btxnamefont {\btxlastnamefont {Corporation}, Oracle}\btxauthorcolon\
   \btxtitlefont {\btxifchangecase {Was ist eine relationale datenbank?
@@ -371,13 +380,6 @@
   computing?}}, 2020.
 \newblock Online im Internet: URL:
   \url{https://www.redhat.com/de/topics/cloud-native-apps/what-is-serverless}.
-
-\bibitem {ibm_database}
-\btxnamefont {\btxlastnamefont {Kosinski}, Matthew} \btxandlong {}\
-  \btxnamefont {IBM \btxlastnamefont {Think}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {What is a database?}{What is a database?}}, 2025.
-\newblock Online im Internet: URL:
-  \url{https://www.ibm.com/think/topics/database}.
 
 \btxselectlanguage {ngerman}
 \bibitem {appinio_zielgruppenanalyse}
