@@ -1,18 +1,8 @@
 % ==================================================
 In diesem Kapitel werden die theoretischen Grundlagen vorgestellt, die für das Verständnis der entwickelten Anwendung erforderlich sind. Dabei werden zentrale Begriffe, Konzepte und technische Zusammenhänge erläutert, die als Basis für die nachfolgenden Kapitel und die technische Umsetzung dienen.
 % ==================================================
-\subsection{App-Design \& Monetarisierungskonzepte}
-Im ersten Teil der Theoretischen Grundlagen werden das Design und die möglichen Monetarisierungskonzepte
-mobiler Applikationen erläutert.
-
-% --------------------------------------------------
-\subsubsection{Plattformwahl \& technische Grundlagen}
-
-Wenn man sich dazu entscheidet eine mobile Applikation zu entwickeln, muss man sich zuerst die Frage stellen,
-auf welchen Plattformen die App verfügbar soll. Die beiden dominierenden Betriebssysteme im mobilen App Bereich sind 
-iOS von Apple und Android von Google. Diese Entscheidung hat nicht nur Auswirkungen auf die technische Umsetzung,
-sondern auch auf das Design, die Verfügbarkeit und die Monetarisierungsmöglichkeiten der App. 
-\vspace{0.5em}
+\section{Plattformwahl}
+Die Wahl der Zielplattform ist ein entscheidender Schritt bei der Entwicklung mobiler Anwendungen. Sie beeinflusst maßgeblich die technische Umsetzung, das Design, die Verfügbarkeit und die Monetarisierungsmöglichkeiten der App. Im folgenden Abschnitt werden die wichtigsten mobilen Betriebssysteme vorgestellt und die Unterschiede zwischen nativen und Cross-Platform-Apps erläutert. Abschließend wird die getroffene Entscheidung für die vorliegende Arbeit begründet.
 
 \textbf{iOS}\\
 iOS ist das mobile Betriebssystem von Apple, welches auf Geräten wie den Iphones oder Ipads verwendet wird. 
@@ -85,9 +75,13 @@ Für die Umsetzung der App wurde React Native als Cross-Platform-Framework gewä
 für iOS und Android zu ermöglichen. (Technische Details folgen in Abschnitt: 3.0.4.1.1. React Native Framework)
 
 % --------------------------------------------------
-\subsubsection{Trends \& Weiterentwicklungen im App-Design}
+\section{UI/UX-Design \& Nutzererlebnis}
+Im folgenden Abschnitt wird auf die Informationsarchitektur, Designkonzepte und Navigation eingegangen. Dabei wird erläutert, wie Inhalte sinnvoll strukturiert, gestaltet und geführt werden, um eine klare Orientierung und eine intuitive Nutzung digitaler Anwendungen zu ermöglichen.
+%________________________________
 
-In diesem Abschnitt werden zentrale Trends und Weiterentwicklungen im App-Design vorgestellt, die 2025 maßgeblich beeinflussen, wie Nutzer digitale Produkte wahrnehmen und verwenden.
+\subsection{Trends, Designkonzepte \& Weiterentwicklungen im App-Design}
+
+Nun werden zentrale Trends und Weiterentwicklungen im App-Design vorgestellt, die 2025 und die Jahre danach maßgeblich beeinflussen und wie Nutzer digitale Produkte wahrnehmen und verwenden.
 \vspace{0.5em}
 
 \textbf{Modernes App Design}\\
@@ -172,12 +166,11 @@ Auch bei Bildern ist eine bewusste Textzuordnung wichtig, sofern sie relevante I
 Ein qualitativ hochwertiges User Interface entsteht durch kontinuierliches Testen und anschließende Anpassung der Anwendung. Regelmäßige Usability-Tests sind notwendig, um zu überprüfen, ob Struktur, Navigation und Interaktionsabläufe den Erwartungen der Nutzer entsprechen. Dabei zeigen Tests häufig Schwachstellen oder Fehlannahmen auf, die im Entwicklungsprozess nicht offensichtlich sind.
 
 Auf Basis der Testergebnisse muss das Design iterativ angepasst und optimiert werden. Durch diesen wiederkehrenden Prozess aus Testen, Auswerten und Anpassen kann sichergestellt werden, dass die Anwendung langfristig benutzerfreundlich, verständlich und effektiv bleibt.
+\vspace{0.5em}
 
-% --------------------------------------------------
-\subsection{UI/UX-Design \& Nutzererlebnis}
-Im folgenden Abschnitt wird auf die Informationsarchitektur und Navigation eingegangen. Dabei wird erläutert, wie Inhalte sinnvoll strukturiert und geführt werden, um eine klare Orientierung und eine intuitive Nutzung digitaler Anwendungen zu ermöglichen.\\
 
-\textbf{Informationsarchitektur \& Navigation}\\
+\subsection{Informationsarchitektur \& Navigation}
+
 Die besten Inhalte entfalten nur dann Wirkung, wenn Nutzer sie schnell finden
 und einordnen können. Genau hier setzt die Informationsarchitektur an. Sie beschreibt die Strukturierung, 
 Gliederung und Verknüpfung von Informationen in digitalen Anwendungen. Ziel ist es, eine 
@@ -216,8 +209,9 @@ Ein gutes Informationsarchitektur-Design achtet auf folgende Prinzipien:\cite{b1
 
 \vspace{0.5em}
 
-\textbf{Wireframes \& Prototypen}\\
-Wireframes und Prototypen sind zentrale Bestandteile des modernen Designprozesses für digitale Produkte wie Websites, 
+\subsection{Wireframes, Mockups \& Prototypen}
+
+Diese Design-Artefakte sind zentrale Bestandteile des modernen Designprozesses für digitale Produkte wie Websites, 
 Webanwendungen oder mobile Apps. Sie dienen dazu, Ideen frühzeitig zu strukturieren, zu visualisieren und zu überprüfen, 
 bevor zeit- und kostenintensive Entwicklungsarbeiten beginnen. Obwohl die Begriffe im Alltag häufig synonym verwendet werden, 
 erfüllen Wireframes und Prototypen unterschiedliche Aufgaben und besitzen jeweils eigene Eigenschaften und Zielsetzungen. \cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire}\\
@@ -260,7 +254,8 @@ Designprozess mit Wireframes, die als Fundament des Designs dienen. Danach werde
 werden diese Entwürfe in Prototypen überführt, um das Nutzungserlebnis realistisch darzustellen und zu testen.\cite{popwebdesign_wire}\cite{justinmind_wireframe_prototyp_mockup}\cite{miro_wire}
 \vspace{0.5em}
 
-\textbf{Visuelles Design}\\
+\subsection{Visuelles Design}
+
 Das Visuelles Design bezeichnet die Gestaltung der Inhalte mit dem Ziel, Applikationen und digitae Inhalte
 visuell ansprechend und zugleich funktional zu gestalten. Es bildet eine zentrale Schnittstelle zwischen
 Gestaltung und Nutzererfahrung, da es nicht nur das äußere Erscheinungsbild eines Produkts prägt, sondern 
@@ -284,11 +279,11 @@ wahrgenommen werden. Die Farbgestaltung wirkt stark auf die emotionale Ebene und
 Kontraste verstärken sowie Orientierung bieten.\cite{Toolmaster_Design}\cite{StudySmarter_Visual_Design}\\
 
 % ==================================================
-\subsection{Monetarisierung von mobilen Apps}
+\section{Monetarisierung von mobilen Apps}
 In diesem Kapitel wird der globale App-Markt und die verschiedenen Strategien zur Monetarisierung mobiler Apps vorgestellt.
 
 % --------------------------------------------------
-\subsubsection{Grundlagen \& Marktüberblick}
+\subsection{Grundlagen \& Marktüberblick}
 Um die wirtschaftliche und technologische Bedeutung mobiler Anwendungen einordnen zu können, ist ein grundlegender Überblick über den App-Markt erforderlich. Der folgende Abschnitt beleuchtet die Entwicklung des mobilen App-Marktes, zentrale App-Ökosysteme sowie aktuelles Nutzerverhalten und relevante Marktstatistiken.
 
 \textbf{Entwicklung des mobilen App-Marktes}\\
@@ -306,7 +301,7 @@ Darüber hinaus treibt die weltweit steigende Smartphone-Durchdringung das Nutze
 
 
 % --------------------------------------------------
-\subsubsection{Werbung als Einnahmequelle}
+\subsection{Werbung als Einnahmequelle}
 Im kommenden Abschnitt wird Werbung als zentrale Einnahmequelle mobiler Anwendungen betrachtet. Dabei werden gängige Werbeformate, deren Einfluss auf die Nutzererfahrung sowie die Rolle von Werbenetzwerken und Vergütungsmodellen im App-Markt erläutert.
 
 \textbf{Arten von Werbung in mobilen Apps}\\
@@ -360,7 +355,7 @@ CPI bietet zwar oft höhere Einzelvergütungen als impressionbasierte Modelle, i
 
 
 % --------------------------------------------------
-\subsubsection{Sponsoring \& Partnerschaften}
+\subsection{Sponsoring \& Partnerschaften}
 Dieser Abschnitt widmet sich Sponsoring und Partnerschaften als alternatives Monetarisierungsmodell für mobile Anwendungen. Dabei wird das Grundprinzip des App-Sponsorings sowie dessen Bedeutung als integriertes Kommunikationsinstrument im digitalen Umfeld erläutert.
 
 \textbf{Grundprinzip von App-Sponsoring}\\
@@ -374,7 +369,7 @@ Ein zentrales Grundprinzip des App-Sponsorings ist die inhaltliche Passung zwisc
 
 
 % --------------------------------------------------
-\subsubsection{Kostenpflichtige App-Modelle}
+\subsection{Kostenpflichtige App-Modelle}
 Nun werden kostenpflichtige App-Modelle als Monetarisierungsstrategie betrachtet. Dabei werden sowohl der einmalige Kauf als auch Abonnement-Modelle und die damit verbundene Zahlungsbereitschaft der Nutzer erläutert.
 
 \textbf{Einmaliger Kauf}\\
@@ -387,7 +382,7 @@ Abonnement-Modelle basieren auf wiederkehrenden Zahlungen, meist in monatlichen 
 Die Zahlungsbereitschaft der Nutzer hängt stark vom wahrgenommenen Nutzen und der Qualität der App ab. Faktoren wie Benutzerfreundlichkeit, Exklusivität der Funktionen, Aktualität der Inhalte sowie ein professioneller Gesamteindruck beeinflussen die Entscheidung, ob Nutzer bereit sind, für eine App zu bezahlen. Besonders erfolgreich sind kostenpflichtige Modelle, wenn Nutzer den Mehrwert bereits vor dem Kauf durch Testphasen oder eingeschränkte kostenlose Versionen kennenlernen können.\cite{Kostenpflichtige_Ideen}
 
 % --------------------------------------------------
-\subsubsection{In-App-Käufe}
+\subsection{In-App-Käufe}
 Als nächstes werden In-App-Käufe als flexibles Monetarisierungsmodell mobiler Anwendungen vorgestellt. Dabei werden die grundlegenden Konzepte von In-App-Purchases sowie deren Einsatzmöglichkeiten, insbesondere im Bereich der Personalisierung, erläutert.
 
 \textbf{Grundlagen von In-App-Purchases}\\
@@ -404,7 +399,7 @@ Solche personalisierten Inhalte fördern die Bindung der Nutzer an die App und s
 
 
 % --------------------------------------------------
-\subsubsection{Spenden \& freiwillige Unterstützung}
+\subsection{Spenden \& freiwillige Unterstützung}
 Der folgende Abschnitt behandelt Spenden und freiwillige Unterstützung als alternative Monetarisierungsform mobiler Anwendungen. Dabei wird aufgezeigt, wie Crowdfunding und In-App-Spenden zur Finanzierung, Ideenvalidierung und zum Aufbau einer engagierten Nutzerbasis beitragen können.
 
 \textbf{Spenden \& Crowdfunding}\\
@@ -414,11 +409,11 @@ Crowdfunding bietet die Möglichkeit, finanzielle Mittel direkt von Menschen zu 
 
 
 % ==================================================
-\subsection{Technische Grundlagen der Anwendung}
+\section{Technische Grundlagen der Anwendung}
 Dieser Abschnitt vermittelt die technischen Grundlagen der entwickelten Anwendung. Dabei werden sowohl zentrale Konzepte der mobilen App-Entwicklung als auch wesentliche Backend-, Infrastruktur- und Sicherheitsaspekte vorgestellt, die für den Aufbau moderner, skalierbarer und sicherer Anwendungen erforderlich sind.
 
 % --------------------------------------------------
-\subsubsection{Mobile App Entwicklung}
+\subsection{Mobile App Entwicklung}
 Die Entwicklung mobiler Anwendungen spielt eine zentrale Rolle in der heutigen digitalen Welt. Unterschiedliche Plattformen wie iOS und Android stellen spezifische Anforderungen an Technologie, Performance und Benutzerfreundlichkeit. In diesem Abschnitt werden zentrale Frameworks, Konzepte und Techniken vorgestellt, die eine effiziente, plattformübergreifende Entwicklung ermöglichen.
 
 \paragraph{React Native Framework}
@@ -434,7 +429,7 @@ Ein technisches Charakteristikum von React Native ist der Einsatz der JavaScript
 
 
 % --------------------------------------------------
-\subsubsection{Backend-Technologien}
+\subsection{Backend-Technologien}
 
 Das Backend bildet das Rückgrat moderner Anwendungen und ist für Datenverarbeitung, Geschäftslogik, Sicherheit und Kommunikation mit Datenbanken verantwortlich. Unterschiedliche Technologien, Architekturen und Dienste ermöglichen es, skalierbare, performante und wartbare Systeme aufzubauen. In diesem Abschnitt werden zentrale Konzepte, Infrastrukturmodelle und Cloud-Ansätze vorgestellt, die in modernen Backend-Umgebungen zum Einsatz kommen.
 
@@ -599,11 +594,11 @@ Mobile Anwendungen müssen geeignete technische und organisatorische Maßnahmen 
 
 
 % --------------------------------------------------
-\subsection{Hosting- und Infrastrukturmodelle}
+\section{Hosting- und Infrastrukturmodelle}
 
 Hosting- und Infrastrukturmodelle im Kontext moderner IT-Systeme beschreiben, wo und wie Rechenressourcen, Speicher und Anwendungen betrieben werden. Sie bilden die Grundlage für Verfügbarkeit, Skalierbarkeit und Sicherheit moderner Anwendungen. Grundsätzlich lassen sich drei zentrale Architekturansätze unterscheiden: On-Premise-Infrastrukturen, Cloud-Architekturen und Hybrid-Architekturen \cite{hws_onprem_cloud_hybrid, ibm_hybrid_cloud_architecture}.
 
-\subsubsection{On-Premise, Cloud und Hybrid-Architekturen}
+\subsection{On-Premise, Cloud und Hybrid-Architekturen}
 
 Bei einer On-Premise-Architektur werden sämtliche IT-Ressourcen innerhalb eines Unternehmens betrieben. Die notwendige Hardware wie Server, Storage-Systeme und Netzwerkkomponenten befindet sich in eigenen Räumlichkeiten oder Rechenzentren und wird vollständig selbst verwaltet. Dieses Modell ermöglicht ein hohes Maß an Kontrolle über Daten, Systeme und Sicherheitsmechanismen, ist jedoch mit hohem Aufwand für Anschaffung, Wartung und Betrieb verbunden \cite{hws_onprem_cloud_hybrid}.
 
@@ -611,7 +606,7 @@ Cloud-Architekturen basieren hingegen auf der Bereitstellung von IT-Ressourcen d
 
 Hybrid-Architekturen kombinieren On-Premise- und Cloud-Ansätze. Bestimmte Systeme oder Daten verbleiben lokal, während andere Komponenten in einer Cloud-Umgebung betrieben werden. Dadurch können Unternehmen sowohl die Kontrolle und Compliance-Vorteile lokaler Infrastruktur als auch die Skalierbarkeit und Effizienz von Cloud-Diensten nutzen. Hybrid-Cloud-Architekturen gewinnen besonders im Rahmen der digitalen Transformation an Bedeutung, da sie bestehende Systeme mit modernen Cloud-Technologien verbinden und eine flexible Verteilung von Anwendungen und Daten ermöglichen \cite{ibm_hybrid_cloud_architecture}.
 
-\subsubsection{IaaS, PaaS, FaaS und Serverless}
+\subsection{IaaS, PaaS, FaaS und Serverless}
 
 Cloud-Dienste lassen sich je nach Abstraktionsgrad in verschiedene Service-Modelle einteilen. Diese Modelle unterscheiden sich vor allem darin, wie viel Verantwortung der Cloud-Provider übernimmt und wie viel Verwaltung beim Betreiber verbleibt.
 
@@ -623,13 +618,13 @@ Function as a Service (FaaS) ist ein ereignisgetriebenes Modell, bei dem einzeln
 
 Serverless Computing beschreibt ein umfassenderes Paradigma, bei dem Server weiterhin existieren, aber vollständig durch den Provider verwaltet werden. Entwickler betreiben keine Serverinstanzen aktiv, sondern nutzen verwaltete Services (z.\,B. Datenbanken, APIs, Event-Systeme) und stellen Funktionalität über FaaS oder ähnliche Mechanismen bereit. Ziel ist es, Betriebsaufwand zu minimieren und gleichzeitig automatisch skalierbare Architekturen zu ermöglichen \cite{redhat_serverless}.
 
-\subsubsection{Autoscaling und Lastverteilung}
+\subsection{Autoscaling und Lastverteilung}
 
 Autoscaling bezeichnet die automatische Anpassung von Ressourcen an die aktuelle Systemlast. Bei hoher Auslastung werden zusätzliche Instanzen bereitgestellt, bei sinkender Last werden Ressourcen reduziert. Dadurch können Leistung und Kosten effizienter gesteuert werden, da Über- oder Unterprovisionierung vermieden wird \cite{teamtakt_devops_lastverteilung}.
 
 Lastverteilung (Load Balancing) beschreibt die Verteilung eingehender Anfragen auf mehrere Server oder Instanzen. Ein Load Balancer sorgt dafür, dass keine einzelne Ressource überlastet wird und dass Ausfälle einzelner Komponenten besser abgefangen werden können. In Kombination bilden Autoscaling und Load Balancing zentrale Bausteine moderner, hochverfügbarer und skalierbarer Systeme \cite{teamtakt_devops_lastverteilung}.
 
-\subsubsection{Latenzoptimierung und Durchsatzsteigerung}
+\subsection{Latenzoptimierung und Durchsatzsteigerung}
 
 Für die Performance von Anwendungen sind insbesondere Latenz und Durchsatz entscheidend. Latenz beschreibt die Verzögerungszeit zwischen Anfrage und Antwort und ist vor allem bei interaktiven Anwendungen relevant. Durchsatz bezeichnet die Menge an Daten, die in einem bestimmten Zeitraum übertragen oder verarbeitet werden kann \cite{studysmarter_latenz_durchsatz}.
 
