@@ -47,42 +47,77 @@ von geografischen Daten und 360-Grad-Bildern verwendet.
     \label{fig:beispielabbildung}
 \end{figure}
 
-\subsection{Frontend-Implementierung - JAN NOCH UMSCHREIBEN}
-In diesem Abschnitt wird die Umsetzung der Benutzeroberfläche von \textit{WoSamma} beschrieben.
-Der Fokus liegt auf der Struktur der Anwendung, der Navigation zwischen verschiedenen Bildschirmen
-sowie der Interaktion des Benutzers mit der Spielansicht.
-Besonderes Augenmerk liegt dabei auf der Darstellung von Spielinformationen und
-der Visualisierung von Spielfortschritten sowohl im Einzelspieler- als auch im Mehrspielermodus.
+\subsection{Frontend-Implementierung \& Plannung}
+Die Planung und die dementsprechende Umsetzung des Frontends stellen einen wesentlichen Teil der Implementierung dar. Dieser Bereich ist sehr umfangreich und hatte eine hohe Priorität, da er die Kommunikation zwischen Benutzer und Applikation abbildet. Aufbauend auf den zuvor beschriebenen theoretischen Grundlagen zu User Experience, Informationsarchitektur und Interface-Design wurden zunächst die funktionalen Anforderungen an das Frontend definiert. Ziel war es, eine übersichtliche, intuitive und visuell konsistente Benutzeroberfläche zu schaffen, die sowohl im Einzel- als auch im Mehrspielerbetrieb eine einfache und verständliche Nutzung ermöglicht.
 
-\subsubsection{Projektstruktur und Navigation}
-Die Projektstruktur orientiert sich an bewährten Konzepten von React Native und
-TypeScript, um eine modulare, wiederverwendbare und wartbare Codebasis zu gewährleisten.
-Die Navigation zwischen den verschiedenen Bildschirmen, wie Startbildschirm, Spielansicht,
-Freundeslobby und Profilen, erfolgt über ein Stack- und Tab-basiertes Navigationssystem.
-Dieses erlaubt einen intuitiven Zugriff auf alle relevanten Funktionen und stellt sicher,
-dass der Benutzer jederzeit den Überblick über den Spielstatus behält.
+Als Grundlage der Planung dienten die Erstellung von Wireframes sowie die Ausarbeitung der Informationsarchitektur. Darauf aufbauend wurde ein Prototyp erstellt, der bereits Animationen und ein ausgearbeitetes UI-Design beinhaltete. Aus diesem Grund konnte auf die zusätzliche Erstellung eines separaten Mockups verzichtet werden. Die eigentliche Implementierung orientiert sich an vielen Stellen stark an dem zuvor erstellten Prototypen, da dieser bereits eine sehr genaue Vorstellung der finalen Benutzeroberfläche vermittelte.
+\subsubsection{Wireframes und Prototypen}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Wireframes.jpg}
+    \caption{Wireframes der Anwendung WoSamma}
+    \label{fig:beispielabbildung}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Mockups_2.jpg}
+    \caption{Mockup der Anwendung WoSamma(Überblick)}
+    \label{fig:beispielabbildung}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Mockups_1.jpg}
+    \caption{Mockups der Hauptansichten der Anwendung WoSamma}
+    \label{fig:beispielabbildung}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Mockups_3.jpg}
+    \caption{Mockups der Spielansichten der Anwendung WoSamma}
+    \label{fig:beispielabbildung}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Mockups_4.jpg}
+    \caption{Mockups der Registrierungsansichten der Anwendung WoSamma}
+    \label{fig:beispielabbildung}
+\end{figure}
+
+
+
+
+\subsubsection{Navigation und Informationsarchitektur}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{content/img/4_Technische_Umsetzung/IA.jpg}
+    \caption{Informationsarchitektur der Anwendung WoSamma}
+    \label{fig:beispielabbildung}
+\end{figure}
+
+
+\subsubsection{Komponentenstruktur und Wiederverwendbarkeit}
+% UI-Bausteine, Konsistenz, Skalierbarkeit
+
+\subsubsection{Datenhandling im Frontend}
+% State, Loading, Error-Handling, API-Konsum
+
+\subsubsection{Responsives Design und Barrierefreiheit}
+% Responsive Layouts, Touch Targets, Accessibility
 
 \subsubsection{Spielansicht und Benutzerinteraktion}
-Die Spielansicht bildet das zentrale Interface für den Spieler und ist in Einzelspieler-
-und Mehrspielermodus unterteilt.
+\paragraph{Pin-Platzierung im Einzelspieler-Modus}
+\paragraph{Pin-Platzierung im Mehrspieler-Modus}
+\paragraph{Visualisierung der geschätzten und realen Position}
+\paragraph{Integration der Google APIs im Frontend}
+\paragraph{Darstellung von Begrenzungslinien der Bundesländer}
+\paragraph{Live-Chat und Echtzeit-Updates}
 
-\paragraph{Einzelspieler-Modus:}
-Im Einzelspieler-Modus wird dem Benutzer die korrekte Location sowie die vom Spieler
-geratene Position angezeigt.
-Die Distanz zwischen der tatsächlichen Location und der gewählten Position wird berechnet
-und visualisiert, wodurch der Spieler unmittelbar Feedback zu seiner Genauigkeit erhält.
-Zusätzlich werden die Punkte basierend auf dieser Distanz angezeigt, um den Fortschritt
-und die Leistung nachvollziehbar zu machen.
-
-\paragraph{Mehrspieler-Modus:}
-Im Mehrspieler-Modus werden alle Spieler in einer Lobby zusammengeführt.
-Jeder Spieler setzt seine Pins auf der Karte, welche live an alle Teilnehmer übertragen werden.
-Zusätzlich wird der richtige Pin angezeigt, um die Vergleichbarkeit der Ergebnisse zu gewährleisten.
-Ein Vektor zwischen der geratenen Position jedes Spielers und dem tatsächlichen Standort
-wird dargestellt, und die Distanz sowie die erreichten Punkte werden für alle Spieler
-übersichtlich angezeigt.
-Dies ermöglicht ein direktes, kompetitives Spielerlebnis und fördert die Interaktion
-zwischen den Teilnehmern.
 
 
 \subsection{Backend-Anbindung mit Supabase}
