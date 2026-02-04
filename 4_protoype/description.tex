@@ -50,48 +50,10 @@ von geografischen Daten und 360-Grad-Bildern verwendet.
 \subsection{Frontend-Implementierung \& Plannung}
 Die Planung und die dementsprechende Umsetzung des Frontends stellen einen wesentlichen Teil der Implementierung dar. Dieser Bereich ist sehr umfangreich und hatte eine hohe Priorität, da er die Kommunikation zwischen Benutzer und Applikation abbildet. Aufbauend auf den zuvor beschriebenen theoretischen Grundlagen zu User Experience, Informationsarchitektur und Interface-Design wurden zunächst die funktionalen Anforderungen an das Frontend definiert. Ziel war es, eine übersichtliche, intuitive und visuell konsistente Benutzeroberfläche zu schaffen, die sowohl im Einzel- als auch im Mehrspielerbetrieb eine einfache und verständliche Nutzung ermöglicht.
 
-Als Grundlage der Planung dienten die Erstellung von Wireframes sowie die Ausarbeitung der Informationsarchitektur. Darauf aufbauend wurde ein Prototyp erstellt, der bereits Animationen und ein ausgearbeitetes UI-Design beinhaltete. Aus diesem Grund konnte auf die zusätzliche Erstellung eines separaten Mockups verzichtet werden. Die eigentliche Implementierung orientiert sich an vielen Stellen stark an dem zuvor erstellten Prototypen, da dieser bereits eine sehr genaue Vorstellung der finalen Benutzeroberfläche vermittelte.
-\subsubsection{Wireframes und Prototypen}
+Als Grundlage der Planung dienten die Erstellung von Wireframes und einem Prototypen sowie die Ausarbeitung der Informationsarchitektur. Die eigentliche Implementierung orientiert sich an den meisten Stellen stark an dem zuvor erstellten Prototyp, da dieser bereits eine sehr genaue Vorstellung der finalen Benutzeroberfläche vermittelte.
+\subsubsection{Informationsarchitektur, Wireframes \& Prototypen}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Wireframes.jpg}
-    \caption{Wireframes der Anwendung WoSamma}
-    \label{fig:beispielabbildung}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Mockups_2.jpg}
-    \caption{Mockup der Anwendung WoSamma(Überblick)}
-    \label{fig:beispielabbildung}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Mockups_1.jpg}
-    \caption{Mockups der Hauptansichten der Anwendung WoSamma}
-    \label{fig:beispielabbildung}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Mockups_3.jpg}
-    \caption{Mockups der Spielansichten der Anwendung WoSamma}
-    \label{fig:beispielabbildung}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Mockups_4.jpg}
-    \caption{Mockups der Registrierungsansichten der Anwendung WoSamma}
-    \label{fig:beispielabbildung}
-\end{figure}
-
-
-
-
-\subsubsection{Navigation und Informationsarchitektur}
+Die entwickelte Informationsarchitektur orientiert sich an den zuvor beschriebenen theoretischen Grundlagen der Informationsarchitektur und setzt diese konsequent in eine klar strukturierte Navigationshierarchie um. Ausgehend von einem zentralen Einstiegspunkt (Home), welcher nach Login erreicht wird, werden die Inhalte logisch in thematisch zusammengehörige Bereiche wie Einzelspieler, Mehrspieler und Bestenliste gegliedert. Dabei wurde auf eine begrenzte Auswahl pro Navigationsebene sowie auf eine eindeutige Benennung der Menüpunkte geachtet, um die kognitive Belastung der Nutzer gering zu halten. Durch die klare Trennung von Kernfunktionen (z. B. Spielmodi) und unterstützenden Funktionen (z. B. Profil, Shop, Neuigkeiten) wird eine gute Orientierung gewährleistet. 
 
 \begin{figure}[H]
     \centering
@@ -100,23 +62,506 @@ Als Grundlage der Planung dienten die Erstellung von Wireframes sowie die Ausarb
     \label{fig:beispielabbildung}
 \end{figure}
 
+Das erstellte Wireframe diente als strukturelle Grundlage der Anwendung. Der Fokus lag auf der Anordnung der Inhalte, der grundsätzlichen Struktur der einzelnen Bereiche und der Führung der Nutzer durch das System. Visuelle Gestaltungselemente wie Farbkonzepte, Typografie oder detaillierte UI-Komponenten sind bewusst offen gelassen worden, um den Schwerpunkt auf Struktur, Hierarchie und Nutzerführung zu legen.
 
-\subsubsection{Komponentenstruktur und Wiederverwendbarkeit}
-% UI-Bausteine, Konsistenz, Skalierbarkeit
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Wireframes.jpg}
+    \caption{Wireframes der Anwendung WoSamma}
+    \label{fig:beispielabbildung}
+\end{figure}
 
-\subsubsection{Datenhandling im Frontend}
-% State, Loading, Error-Handling, API-Konsum
+Die im vorherigen Kapitel beschriebenen Designkonzepte und Gestaltungsprinzipien wurden im Prototyp gezielt und konsequent umgesetzt. Aufbauend auf den theoretischen Grundlagen zu modernem App-Design, Dark-Mode-Konzepten, Barrierefreiheit und klarer Informationshierarchie wurde der Prototyp als High-Fidelity-Referenz entwickelt. Die visuelle Gestaltung orientiert sich an einem durchgängigen Dark-Mode-Design mit bewusst gewählten Kontrasten, um eine gute Lesbarkeit unter unterschiedlichen Lichtbedingungen sicherzustellen.
 
-\subsubsection{Responsives Design und Barrierefreiheit}
-% Responsive Layouts, Touch Targets, Accessibility
+Aspekte der Barrierefreiheit wurden im Prototyp unter anderem durch ausreichend große Touch-Ziele, klare Beschriftungen, eindeutige Icons sowie eine logisch aufgebaute Navigations- und Fokusstruktur berücksichtigt. Die hierarchische Anordnung von Inhalten, wie in den Abschnitten zu Informationsarchitektur und Struktur beschrieben, spiegelt sich direkt in der Seitenaufteilung und Navigation des Prototyps wider. Farben, Typografie und Abstände wurden so eingesetzt, dass visuelle Orientierung unterstützt und eine intuitive Nutzung ermöglicht wird.
+
+Der Prototyp dient damit nicht nur als visuelle Vorschau, sondern als konkrete Umsetzung der zuvor definierten UI/UX- und Designprinzipien und bildet die Grundlage für die technische Realisierung der Anwendung.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Prototyp_SH.jpg}
+    \caption{Prototyp der Anwendung WoSamma(Überblick)}
+    \label{fig:beispielabbildung}
+\end{figure}
+
+
+\subsubsection{Responsives Design }
+Das Responsive Design der Anwendung wurde durch den gezielten Einsatz flexibler Layout- und Größenkonzepte umgesetzt. Mithilfe von Flexbox (flex: 1) passen sich Container automatisch an den verfügbaren Bildschirmraum an, während prozentuale Breiten wie width: '95\%' oder dynamische Werte auf Basis der Bildschirmbreite (windowWidth * 0.95) eine adaptive Skalierung auf unterschiedlichen Geräten ermöglichen. Zusätzlich sorgen Einschränkungen wie maxWidth, minHeight und maxHeight dafür, dass UI-Elemente auf großen wie kleinen Displays gut nutzbar bleiben. Ergänzend wurden feste Seitenverhältnisse (aspectRatio) für visuelle Konsistenz sowie KeyboardAvoidingView für ein geräteabhängiges, nutzerfreundliches Verhalten bei Texteingaben eingesetzt. Dadurch bleibt die Benutzeroberfläche über verschiedene Bildschirmgrößen und Nutzungsszenarien hinweg stabil, übersichtlich und bedienbar.
+Hier ein paar konkrete Beispiele:
+\begin{lstlisting}
+container: {
+  flex: 1,
+  backgroundColor: '#181d23',
+  width: '100%',
+},
+webview: {
+  flex: 1,
+  width: '100%',
+}
+\end{lstlisting}
+\begin{lstlisting}
+const windowWidth = Dimensions.get('window').width;
+
+<TouchableOpacity
+  style={[styles.mainCard, { width: windowWidth * 0.95 }]}
+>
+  <Image source={...} resizeMode="contain" />
+</TouchableOpacity>
+\end{lstlisting}
+\begin{lstlisting}
+<LinearGradient
+  style={{
+    padding: 12,
+    borderRadius: 16,
+    maxWidth: '80%',
+  }}
+>
+  <Text>{item.content}</Text>
+</LinearGradient>
+\end{lstlisting}
+
 
 \subsubsection{Spielansicht und Benutzerinteraktion}
-\paragraph{Pin-Platzierung im Einzelspieler-Modus}
-\paragraph{Pin-Platzierung im Mehrspieler-Modus}
-\paragraph{Visualisierung der geschätzten und realen Position}
-\paragraph{Integration der Google APIs im Frontend}
-\paragraph{Darstellung von Begrenzungslinien der Bundesländer}
-\paragraph{Live-Chat und Echtzeit-Updates}
+In den folgenden Abschnitten werden die wichtigsten Aspekte des UI sowie der Benutzerinteraktion beschrieben. Hierbei
+wird aktiv auf Code eingegangen und erläutert, wie dieser Funktioniert und welchen Zweck er erfüllt.
+
+\paragraph{Pin-Platzierung}
+\mbox{}\\
+Die Platzierung des Pins auf der Karte ist die wohl zentralste Interaktionsmöglichkeit im Spiel. Ohne diese Funktion hätte das Spiel keinen
+Sinn, da der Spieler so seine Vermutung über den Standort abgibt. Diese Funktionalität wird hier rein anhand des Einzepspieler-Modus erklärt,
+da sich die reine Platzierungslogik im Mehrspieler-Modus bzw. in der täglichen Challenge nicht unterscheidet.
+Der folgende Codeausschnitt zeigt, wie die Pin-Platzierung technisch umgesetzt wurde:
+
+\begin{lstlisting}
+// Funktion, die ein komplettes HTML-Dokument als String zurückgibt
+// Dieses HTML wird später in der View geladen
+const getAustriaMapHTML = (apiKey: string) => `
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Sorgt dafür, dass die Karte auf Mobile richtig skaliert -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      /* Map soll den kompletten Bildschirm ausfüllen */
+      html, body, #map {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: #181d23;
+      }
+    </style>
+
+    <!-- Google Maps JavaScript API mit dynamisch übergebenem API-Key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=${apiKey}"></script>
+  </head>
+
+  <body>
+    <!-- Container für die Google Map -->
+    <div id="map"></div>
+
+    <script>
+      // Globale Variablen:
+      // map: Referenz auf die Google Map
+      // marker: Referenz auf den aktuell gesetzten Pin
+      var map, marker = null;
+
+      // Initialisiert die Google Map
+      function initMap() {
+
+        // Erstellen der Map mit Startposition Österreich
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: { lat: 47.5162, lng: 14.5501 }, // Mittelpunkt Österreich
+          zoom: 7,                              // Zoom-Level
+          streetViewControl: false,             // UI-Elemente deaktiviert
+          mapTypeControl: false,
+          fullscreenControl: false,
+          backgroundColor: '#181d23',
+        });
+
+        // Listener für Klicks auf die Karte
+        map.addListener('click', function(e) {
+
+          // Falls bereits ein Pin existiert, wird er entfernt
+          // -> es gibt IMMER nur einen aktiven Guess-Pin
+          if (marker) marker.setMap(null);
+
+          // Neuer Marker wird an der Klickposition gesetzt
+          marker = new google.maps.Marker({
+            position: e.latLng,
+            map: map
+          });
+
+          // Übergibt die Koordinaten an die React-Native-App
+          // Das ist die eigentliche "Spieler gibt seinen Guess ab"-Aktion
+          window.ReactNativeWebView.postMessage(
+            JSON.stringify({
+              type: 'pin',
+              lat: e.latLng.lat(),
+              lng: e.latLng.lng()
+            })
+          );
+        });
+      }
+
+      // Startet die Map nach dem Laden
+      initMap();
+    </script>
+  </body>
+</html>
+`;
+\end{lstlisting} 
+Dieser Code sorgt nun dafür, dass eine interaktive Google Map in der Spielansicht dargestellt wird und der Spieler seine Schätzung abgeben kann.
+Wichtig hierbei sind, dass der Spieler immer nur einen einzigen Pin setzen kann, also er nur eine Schätzung abgeben kann. Weiteres ist es wichtig,
+das hier gewisse UI-Elemente der Google Maps API deaktiviert werden, da diese für die Spiellogik nicht relevant sind und nur stören würden, hierzu zählen:
+\begin{itemize}
+    \item Street View Control/das gelbe Männchen
+    \item Umschaltfunktion zwischen Kartenansicht und Satellitenansicht
+    \item Vollbildmodus-Fuktion, dies ist besonders wichtig um UI-Chaos zu verhindern
+\end{itemize}
+
+\paragraph{Anzeige mehrerer Pins im Mehrspieler-Modus}
+\mbox{}\\
+Im gegensatz zum Einzelspieler-Modus, in dem der Spieler nur seinen eigenen Pin setzen und am Ende auch sehen kann, müssen beim Ergebnis des Mehrspieler-Modus mehrere
+Pins gleichzeitig dargestellt werden. Dies ist notwendig, damit der Spieler die Vermutungen seiner Gegner sehen und mit seiniger vergleichen kann. Wie die genaue
+Visualisierung der geschätzten und der korrekten Position aussieht, wird im nächsten Abschnitt beschrieben. Hier wird vorerst nur beschrieben, wie man es schafft mehrere Pins 
+von unterschiedlichen Spielern auf der Karte darzustellen. 
+Essenziell für die möglichkeit mehrere Pins anzuzeigen, ist folgender Ablauf:
+\begin{enumerate}
+    \item Spieler setzt Pin auf Karte
+    \item Pin-Koordinaten werden im State gespeichert (\texttt{setPin})
+    \item Bei {Tipp abgeben} $\rightarrow$ Speicherung in \texttt{user\_rounds} (Datenbank):
+    \begin{itemize}
+      \item \texttt{game\_id} (Lobby-ID)
+      \item \texttt{user\_id} (eigene ID)
+      \item \texttt{round\_number}
+      \item \texttt{guess\_lat}, \texttt{guess\_lng}
+      \item \texttt{finished: true}
+    \end{itemize}
+    \item Echtzeit-Tracking (alle 2 Sekunden):
+    \begin{itemize}
+      \item Prüft, wie viele Spieler bereits getippt haben
+      \item Zeigt Fortschritt: \texttt{\{guessedCount\}/\{totalPlayers\}}
+    \end{itemize}
+    \item Result-Map lädt alle Tipps:
+    \begin{itemize}
+      \item Polling alle 2 Sekunden aus \texttt{user\_rounds}
+      \item Lädt Usernames und Avatare
+      \item Zeigt alle Pins mit unterschiedlichen Farben und deren dazugehörigen Usernamen, der Eigene wird mit höherem zIndex angezeigt für bessere Sichtbarkeit
+      \item Zeigt Linien zur Lösung und Distanz-Labels (genauere Beschreibung im nächsten Abschnitt)
+    \end{itemize}
+\end{enumerate}
+Der folgende Codeausschnitt zeigt, wie man es nun schafft all die gespeicheerten Pins aus der Datenbank auf der Karte anzuzeigen:
+\begin{lstlisting}
+/**
+ * Erstellt den HTML-/JavaScript-Code für die Ergebnis-Karte im Mehrspieler-Modus.
+ * In diesem Abschnitt liegt der Fokus ausschließlich auf der Darstellung
+ * mehrerer Pins unterschiedlicher Spieler auf der Karte.
+ *
+ * Die ausgelesenen Tipps sind als Array namens "guesses" vorhanden, diese werden vorher aus der Datenbank gelesen und aufbereitet.
+ *
+ * Die Visualisierung der Verbindungslinien zwischen Tipp und korrekter Lösung
+ * sowie die Distanzberechnung werden bewusst ausgelassen und im nächsten
+ * Abschnitt separat erläutert.
+ */
+function getResultMapHTML({ solutionLat, solutionLng, guesses, apiKey, selfUserId }: any) {
+
+  // Vordefinierte Google-Maps-Standard-Icons in unterschiedlichen Farben.
+  // Die Farben rotieren, sodass mehrere Spieler gleichzeitig klar unterscheidbar sind.
+  const pinIcons = [
+    'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
+    'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+    'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+    'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
+    'http://maps.google.com/mapfiles/ms/icons/purple-dot.png',
+    'http://maps.google.com/mapfiles/ms/icons/orange-dot.png',
+    'http://maps.google.com/mapfiles/ms/icons/pink-dot.png',
+    'http://maps.google.com/mapfiles/ms/icons/cyan-dot.png',
+  ];
+
+  //@ts-ignore
+  // Für jeden gespeicherten Tipp wird JavaScript-Code erzeugt,
+  // der einen eigenen Marker inklusive Username-Overlay erstellt.
+  const markersJS = guesses.map((g, i) => `
+
+    // === Marker (Pin) für einen Spieler ===
+    // Jeder Marker repräsentiert einen gespeicherten Tipp aus der Datenbank
+    var marker = new google.maps.Marker({
+      position: { lat: ${g.lat}, lng: ${g.lng} }, // Pin-Koordinaten des Spielers
+      map: map,                                  // Anzeige auf der Ergebnis-Karte
+
+      // Farbiger Pin zur visuellen Unterscheidung der Spieler
+      icon: '${pinIcons[i % pinIcons.length]}',
+
+      // Username als Tooltip (z.B. sichtbar bei Hover am Desktop)
+      title: '${g.username}',
+
+      // Der eigene Pin wird priorisiert gerendert,
+      // damit er bei Überlagerungen stets sichtbar bleibt
+      zIndex: ${g.userId === selfUserId ? 10 : 1}
+    });
+
+    // === Username-Overlay über dem Pin ===
+    // Der Name des Spielers wird direkt über dem Marker angezeigt,
+    // um eine eindeutige Zuordnung der Tipps zu ermöglichen
+    (function() {
+      var nameDiv = document.createElement('div');
+
+      // UI-Styling für gute Lesbarkeit auf der dunklen Kartenansicht
+      nameDiv.style.fontSize = '13px';
+      nameDiv.style.fontWeight = 'bold';
+      nameDiv.style.color = '#fff';
+      nameDiv.style.background = 'rgba(67,160,71,0.85)';
+      nameDiv.style.padding = '2px 8px';
+      nameDiv.style.borderRadius = '8px';
+      nameDiv.style.textShadow = '0 0 2px #000, 0 0 1px #000';
+
+      nameDiv.innerText = '${g.username}';
+
+      // OverlayView ermöglicht das Platzieren von HTML-Elementen über der Map
+      var nameOverlay = new google.maps.OverlayView();
+
+      // Hinzufügen des Namens zur Overlay-Ebene der Karte
+      nameOverlay.onAdd = function() {
+        var panes = this.getPanes();
+        panes.overlayImage.appendChild(nameDiv);
+      };
+
+      // Positionierung des Overlays relativ zum Marker
+      nameOverlay.draw = function() {
+        var projection = this.getProjection();
+        var pos = projection.fromLatLngToDivPixel(
+          new google.maps.LatLng(${g.lat}, ${g.lng})
+        );
+        nameDiv.style.left = pos.x + 'px';
+        nameDiv.style.top = (pos.y - 28) + 'px'; // leicht oberhalb des Pins
+        nameDiv.style.position = 'absolute';
+        nameDiv.style.transform = 'translate(-50%, -100%)';
+      };
+
+      nameOverlay.setMap(map);
+    })();
+
+    /*
+     * Hinweis:
+     * Die Darstellung der Verbindungslinien zwischen den getippten Positionen
+     * und der korrekten Lösung sowie die zugehörige Distanzberechnung
+     * werden im nächsten Abschnitt detailliert beschrieben und sind
+     * hier bewusst nicht enthalten.
+     */
+
+  `).join('\n');
+}
+
+\end{lstlisting} 
+
+\paragraph{Visualisierung der geschätzten und korrekten Position}
+\mbox{}\\
+Ein weiterer essenzieller Bestandteil der Spielansicht ist die Visualisierung des Ergebnisses nach abgabe des Tipps.
+Hierbei muss sowohl die korrekte Position als auch die getippte Position des Spielers dargestellt werden und mit Hilfe einer Linie die Distanz erläutert wird.
+Egal welchen Modus der Spieler spielt, die Linien eigenschaften sind bis auf die Farbe immer gleich und werden in diesem Code-Block definiert:
+\begin{lstlisting}
+var line = new google.maps.Polyline({
+  path: [ { lat: ${solutionLat}, lng: ${solutionLng} }, { lat: ${guessLat}, lng: ${guessLng} } ], //Weg der gezeichnet werden soll zwischen Guess des Spielers und der Lösung
+  geodesic: true,        // Kurvenlinie entlang der Erdoberfläche
+  strokeColor: '#2563eb', // Blaue Linie in allen Einzelspieler-Modi, im Mehrspieler ist diese Linie Schwarz/Dunkelgrau
+  strokeOpacity: 1.0,   // Volle Deckkraft
+  strokeWeight: 3,       // Linienstärke 3px
+  map: map
+});
+\end{lstlisting}
+Ein weiterer wichtiger Aspekt ist die Anzeige der tatsächlichen Distanz in Kilometern zwischen dem gesetzten Pin und der korrekten Position. Im Einzelspieler-Modus bzw. in der Täglichen Challenge wird die Distanz 
+nicht direkt über der Verbindungsinie, sondern unten am Screen angezeigt:
+\begin{lstlisting}
+<View style={styles.resultBox}>
+  {/* Textuelles Feedback für den Spieler:
+      Zeigt direkt an, wie weit die Schätzung vom tatsächlichen Standort entfernt war */}
+  <Text style={styles.resultText}>
+    Deine Schätzung war {distance.toFixed(1)} km vom echten Standort entfernt
+  </Text>
+
+  {/* Fortschrittsbalken zur visuellen Darstellung der erreichten Punkte.
+      Der Balken skaliert relativ zur maximal erreichbaren Punktzahl (5000). */}
+  <View style={styles.progressBarBg}>
+    <View
+      style={[
+        styles.progressBar,
+        {
+          // Begrenzung der Breite auf 0–100 %, um Layout-Probleme zu vermeiden
+          width: `${Math.max(
+            0,
+            Math.min(100, (100 * points) / 5000)
+          )}%`,
+        },
+      ]}
+    />
+  </View>
+
+  {/* Anzeige der erreichten Punktzahl als numerischer Wert */}
+  <Text style={styles.points}>
+    {points} Punkte
+  </Text>
+
+  {/* Button-Leiste für weitere Aktionen nach Abschluss der Runde */}
+  <View style={styles.buttonRow}>
+
+    {/* Button zum Verlassen der aktuellen Lobby / Runde.
+        Öffnet ein Bestätigungs-Modal, um unbeabsichtigtes Verlassen zu verhindern */}
+    <TouchableOpacity
+      style={styles.leaveBtn}
+      onPress={() => setShowLeaveModal(true)}
+    >
+      <Text style={styles.leaveText}>Verlassen</Text>
+    </TouchableOpacity>
+
+    {/* Button zum Starten der nächsten Runde.
+        Je nach Spielmodus (z.B. Bundesländer-Modus oder Österreich gesamt)
+        wird der entsprechende Screen geladen */}
+    <TouchableOpacity
+      style={styles.nextBtn}
+      onPress={() => {
+        if (route.params && route.params.bundeslaender) {
+          navigation.replace('StreetViewBundesland', {
+            bundeslaender: route.params.bundeslaender,
+
+            // Zufälliger Parameter erzwingt ein Neuladen der View
+            // (verhindert Caching-Probleme bei erneutem Eintritt)
+            _rnd: Math.random().toString(36).slice(2),
+          });
+        } else {
+          navigation.replace('StreetViewAustria');
+        }
+      }}
+    >
+      <Text style={styles.nextText}>Nächste Runde</Text>
+    </TouchableOpacity>
+  </View>
+</View>
+\end{lstlisting}
+Im Gegensatz dazu, wird im Mehrspieler-Modus die Distanz zwischen der getippten Position und der korrekten Lösung direkt auf der Verbindungslinie angezeigt. Dadurch können alle Spieler nicht nur ihre eigene, sondern auch die Abweichungen der Mitspieler nachvollziehen und miteinander vergleichen. Die Umsetzung dieser Visualisierung erfolgt mithilfe des folgenden Codeausschnitts:
+\begin{lstlisting}
+// === Distanz-Berechnung + Anzeige als Label auf der Verbindungslinie ===
+// Dieser Block berechnet die Entfernung zwischen Tipp (g.lat/g.lng) und Lösung (solutionLat/solutionLng)
+// und blendet den Wert als Text ("xx.xx km") mittig auf der Linie ein.
+(function() {
+  // Erdradius in Kilometern (für die Haversine-Formel)
+  var R = 6371;
+
+  // Umrechnung der Breiten-/Längendifferenz in Bogenmaß (Radians)
+  var dLat = (${solutionLat} - ${g.lat}) * Math.PI / 180;
+  var dLng = (${solutionLng} - ${g.lng}) * Math.PI / 180;
+
+  // Haversine-Formel: Berechnung der Großkreisdistanz auf einer Kugel
+  var a =
+    Math.sin(dLat/2) * Math.sin(dLat/2) +
+    Math.cos(${g.lat} * Math.PI / 180) *
+    Math.cos(${solutionLat} * Math.PI / 180) *
+    Math.sin(dLng/2) * Math.sin(dLng/2);
+
+  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  var dist = R * c; // Distanz in km
+
+  // Mittelpunkt zwischen Tipp und Lösung:
+  // Dort wird das Distanzlabel platziert (damit es "auf der Linie" sitzt)
+  var midLat = (${g.lat} + ${solutionLat}) / 2;
+  var midLng = (${g.lng} + ${solutionLng}) / 2;
+
+  // HTML-Element für die Distanzanzeige erstellen
+  var labelDiv = document.createElement('div');
+
+  // UI-Styling: gut lesbar auf dunkler Karte / über der Linie
+  labelDiv.style.fontSize = '14px';
+  labelDiv.style.fontWeight = 'bold';
+  labelDiv.style.color = '#fff';
+  labelDiv.style.textShadow = '0 0 2px #000, 0 0 1px #000';
+  labelDiv.style.padding = '2px 4px';
+  labelDiv.style.borderRadius = '4px';
+  labelDiv.style.background = 'rgba(24,29,35,0.7)';
+
+  // Text setzen (auf 2 Nachkommastellen gerundet)
+  labelDiv.innerText = dist.toFixed(2) + ' km';
+
+  // OverlayView: erlaubt HTML-Elemente pixelgenau über der Google Map zu platzieren
+  var label = new google.maps.OverlayView();
+
+  // Overlay in die passende Map-Ebene einhängen
+  label.onAdd = function() {
+    var panes = this.getPanes();
+    panes.overlayImage.appendChild(labelDiv);
+  };
+
+  // draw(): wird von Google Maps aufgerufen, sobald Projektion/Zoom bekannt ist
+  // Hier wird Lat/Lng (Mittelpunkt) in Pixelposition umgerechnet
+  label.draw = function() {
+    var projection = this.getProjection();
+    var pos = projection.fromLatLngToDivPixel(new google.maps.LatLng(midLat, midLng));
+
+    // Label mittig auf die Linie setzen
+    labelDiv.style.left = pos.x + 'px';
+    labelDiv.style.top = pos.y + 'px';
+    labelDiv.style.position = 'absolute';
+    labelDiv.style.transform = 'translate(-50%, -50%)';
+  };
+
+  // Overlay aktivieren, Label wird angezeigt
+  label.setMap(map);
+})();
+\end{lstlisting}
+
+\paragraph{Zoom Animationen}
+\mbox{}\\
+Um dem Spieler nach Abschluss einer Runde ein besseres visuelles Feedback zu geben, wird in den Einzelspieler-Modi eine Zoom-Animation verwendet. Dabei startet die Ergebnis-Karte bewusst mit einem sehr weit herausgezoomten Kartenbild (Zoom-Level 3) und zoomt anschließend schrittweise auf ein zuvor berechnetes, optimales Zoom-Level "targetZoom" heran. Diese Animation sorgt dafür, dass die Ergebnisansicht dynamischer wirkt und die Aufmerksamkeit des Spielers auf die relevante Region gelenkt wird.
+
+Der folgende Codeausschnitt zeigt die technische Umsetzung dieser Zoom-Animation:
+
+\begin{lstlisting}
+// Zoom-Animation (Einzelspieler)
+// Startet weit herausgezoomt und zoomt schrittweise bis zum optimalen Zoom-Level (targetZoom)
+var currentZoom = 3;
+
+// Intervall steuert die Zoom-Schritte -> kleine Inkremente sorgen für eine flüssige Animation
+var zoomInterval = setInterval(function() {
+
+  // Solange der aktuelle Zoom kleiner als das Ziel ist, wird in kleinen Schritten gezoomt
+  if (currentZoom < ${targetZoom}) {
+    currentZoom += 0.2;      // kleiner Zoom-Schritt für "smooth" Effekt
+    map.setZoom(currentZoom);
+  } else {
+    // Endzustand: Zielzoom setzen und Intervall beenden
+    map.setZoom(${targetZoom});
+    clearInterval(zoomInterval);
+  }
+
+}, 40); // Aktualisierung alle 40ms -> ergibt eine sichtbare, aber nicht hektische Animation
+\end{lstlisting}
+
+Im Mehrspieler-Modus wird hingegen bewusst auf eine Zoom-Animation verzichtet. Stattdessen wird die Karte mit einem fixen Zoom-Level (Zoom 7) initialisiert und auf die korrekte Lösung zentriert. Der Grund dafür ist, dass im Mehrspieler-Modus mehrere Pins gleichzeitig sichtbar sein müssen. Ein fixer Zoom-Level bietet hier eine konsistente und faire Darstellung, da alle Spieler dieselbe Kartenansicht erhalten und nicht durch individuelle Zoom-Animationen oder unterschiedliche Bildausschnitte beeinflusst werden.
+
+Der folgende Codeausschnitt zeigt die Initialisierung der Ergebnis-Karte im Mehrspieler-Modus:
+
+\begin{lstlisting}
+function initMap() {
+  // Mehrspieler: fester Zoom und Zentrierung auf die korrekte Position,
+  // damit möglichst viele Spieler-Pins gleichzeitig sichtbar bleiben
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: { lat: ${solutionLat}, lng: ${solutionLng} }, // Fokus auf der Lösung
+    zoom: 7,                                              // fixer Zoom-Level ohne Animation
+
+    // Deaktivierte Controls, um UI-Überladung zu vermeiden (WebView-optimiert)
+    streetViewControl: false,
+    mapTypeControl: false,
+    fullscreenControl: false,
+    backgroundColor: '#181d23',
+  });
+}
+\end{lstlisting}
+
+
+
+\paragraph{Darstellung von roten Begrenzungslinien der Bundesländer}
+\paragraph{Kompass in der Spielansicht}
+\paragraph{Live-Chat}
+
 
 
 

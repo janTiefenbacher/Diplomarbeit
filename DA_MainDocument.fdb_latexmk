@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex DA_MainDocument"] 1770150613.09925 "DA_MainDocument.aux" "DA_MainDocument.bbl" "DA_MainDocument" 1770150618.32668 0
+["bibtex DA_MainDocument"] 1770240604.47339 "DA_MainDocument.aux" "DA_MainDocument.bbl" "DA_MainDocument" 1770240610.38777 0
   "./DA_Literatur.bib" 1770053292 16349 588aaa1c923fc0a930e28e4aefa9f4c6 ""
-  "6_appendix/listofeverything.aux" 1770150617 4504 f7f25492240db1c1c2263e744e037a7d "pdflatex"
+  "6_appendix/listofeverything.aux" 1770240609 4504 f4fbe07711d39f30b7b30ea133ecf90d "pdflatex"
   "C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/bibtex/bst/babelbib/babunsrt.bst" 1610365731 25258 5676363a009d917405b271fe05aa55ce ""
-  "DA_MainDocument.aux" 1770150617 44554 dab8d572dc30798a9c8d9628a03fcbb9 "pdflatex"
+  "DA_MainDocument.aux" 1770240609 43323 e08a6ea79cae07f6489b1f04f8aabe78 "pdflatex"
   (generated)
   "DA_MainDocument.bbl"
   "DA_MainDocument.blg"
   (rewritten before read)
-["makeindex DA_MainDocument.idx"] 1770150390.49986 "DA_MainDocument.idx" "DA_MainDocument.ind" "DA_MainDocument" 1770150618.32628 0
-  "DA_MainDocument.idx" 1770150615 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex DA_MainDocument.idx"] 1770240568.68428 "DA_MainDocument.idx" "DA_MainDocument.ind" "DA_MainDocument" 1770240610.38731 0
+  "DA_MainDocument.idx" 1770240606 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "DA_MainDocument.ilg"
   "DA_MainDocument.ind"
   (rewritten before read)
-["pdflatex"] 1770150613.37915 "c:/Users/Jan Tiefenbacher/Downloads/DA_Vorlage_main/DA_MainDocument.tex" "DA_MainDocument.pdf" "DA_MainDocument" 1770150618.32747 0
+["pdflatex"] 1770240604.77314 "c:/Users/Jan Tiefenbacher/Downloads/DA_Vorlage_main/DA_MainDocument.tex" "DA_MainDocument.pdf" "DA_MainDocument" 1770240610.38858 0
   "0_prelude/da_doku_de.tex" 1763487071 3263 9733f29a865709c0bfe7edea94dca953 ""
   "0_prelude/da_doku_en.tex" 1762434629 3181 7ab0f335219b1dbf7a45d1970b692061 ""
   "0_prelude/section.tex" 1762434629 158 20a5023facb41cf866eba377ef40fb43 ""
@@ -32,13 +32,13 @@
   "2_approach/stateoftheart.tex" 1762434629 95 7512d8deaa94ea4f8ed62eb060647a6a ""
   "3_Theorie/section.tex" 1770040106 66 05f0b7172192f841d86d911e5d4efe16 ""
   "3_Theorie/theorie.tex" 1770146352 80184 16f34bd8bdfc5db389bdc94572fcba62 ""
-  "4_protoype/description.tex" 1770150607 35266 37a2f1255a53452eb317e0020ed52850 ""
+  "4_protoype/description.tex" 1770240597 57479 3b252171dfc931ad0a36dcfb477228f9 ""
   "4_protoype/section.tex" 1769516814 74 ca09d6b41b5a0f20b13def9049bcefee ""
   "5_summary/prospect.tex" 1762434630 18 c5eca4f3d23d78d5709c903f07b3bc31 ""
   "5_summary/section.tex" 1762434630 91 d541bf74202d3ea6d1f777a36d942a96 ""
   "5_summary/summary.tex" 1762434630 148 16410a8bef949a2847cbef27fba7b0a2 ""
   "6_appendix/laborDivision.tex" 1769516834 835 37cd2a866b0a469decfda06401d83552 ""
-  "6_appendix/listofeverything.aux" 1770150617 4504 f7f25492240db1c1c2263e744e037a7d "pdflatex"
+  "6_appendix/listofeverything.aux" 1770240609 4504 f4fbe07711d39f30b7b30ea133ecf90d "pdflatex"
   "6_appendix/listofeverything.tex" 1762434630 803 d8103230342805eebee24d9602e321b1 ""
   "6_appendix/meetingMinutes.tex" 1762439956 334 63fb7885b6fcb1199af1abcd0dc9c5a3 ""
   "6_appendix/projectDiary.tex" 1762434630 813 af5f6d156f349047c2e0d7828dd356d0 ""
@@ -291,20 +291,17 @@
   "C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "DA_MainDocument.aux" 1770150617 44554 dab8d572dc30798a9c8d9628a03fcbb9 "pdflatex"
-  "DA_MainDocument.bbl" 1770150613 20737 43cb1db1253f5168fbeb6e189fc82220 "bibtex DA_MainDocument"
-  "DA_MainDocument.ind" 1770150390 0 d41d8cd98f00b204e9800998ecf8427e "makeindex DA_MainDocument.idx"
-  "DA_MainDocument.lof" 1770150617 2168 bdcfa055fe77b971db8ea94dcf0e0765 "pdflatex"
-  "DA_MainDocument.lol" 1770150617 1285 278ba124237f9b2d1f0f1e470af558ac "pdflatex"
-  "DA_MainDocument.lot" 1770150617 1574 ac531434d1d8c8236ab54bc746992393 "pdflatex"
+  "DA_MainDocument.aux" 1770240609 43323 e08a6ea79cae07f6489b1f04f8aabe78 "pdflatex"
+  "DA_MainDocument.bbl" 1770240604 20737 43cb1db1253f5168fbeb6e189fc82220 "bibtex DA_MainDocument"
+  "DA_MainDocument.ind" 1770240568 0 d41d8cd98f00b204e9800998ecf8427e "makeindex DA_MainDocument.idx"
+  "DA_MainDocument.lof" 1770240609 1771 4af5b17b930b3185497d3b6ca3accae2 "pdflatex"
+  "DA_MainDocument.lol" 1770240609 1285 278ba124237f9b2d1f0f1e470af558ac "pdflatex"
+  "DA_MainDocument.lot" 1770240609 1574 c9ee0ed4506c662da3fa5b0dda99b009 "pdflatex"
   "DA_MainDocument.tex" 1766758484 1142 c08598b5a0df19f09d107bcd880d47bd ""
-  "DA_MainDocument.toc" 1770150617 11238 18e6858cc16596ca629fdc90b1c19973 "pdflatex"
+  "DA_MainDocument.toc" 1770240609 10959 af4e7b1349dfdb784e4d981d7003fdff "pdflatex"
   "c:/Users/Jan Tiefenbacher/Downloads/DA_Vorlage_main/DA_MainDocument.tex" 1766758484 1142 c08598b5a0df19f09d107bcd880d47bd ""
   "content/img/4_Technische_Umsetzung/IA.jpg" 1770148137 75000 c81400e62d6ad664af68a3be3e8c7264 ""
-  "content/img/4_Technische_Umsetzung/Mockups_1.jpg" 1770148937 115192 117b1d68c76c3b153e459c3b5ba0821c ""
-  "content/img/4_Technische_Umsetzung/Mockups_2.jpg" 1770149072 93468 8d5e19ad91c9859e7fd3b0defdf64ec2 ""
-  "content/img/4_Technische_Umsetzung/Mockups_3.jpg" 1770149097 104166 7471676a9476579decc031cc1506f642 ""
-  "content/img/4_Technische_Umsetzung/Mockups_4.jpg" 1770149112 49858 a8f46317927cfba2d1c857680329e2e6 ""
+  "content/img/4_Technische_Umsetzung/Prototyp_SH.jpg" 1770149072 93468 8d5e19ad91c9859e7fd3b0defdf64ec2 ""
   "content/img/4_Technische_Umsetzung/System_Architektur.jpg" 1770063693 90474 5e74cea595e95d926cd8b9ec80a1df61 ""
   "content/img/4_Technische_Umsetzung/Wireframes.jpg" 1770148657 93087 4e38b9428c63815811da20f0b6d184fb ""
   "content/pdf/HTL_Diplomarbeit_Betreuungsprot_A4_2016.pdf" 1762434630 134964 98254720596769cbb0fec94b9b071921 ""
