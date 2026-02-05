@@ -559,11 +559,253 @@ function initMap() {
 
 
 \paragraph{Darstellung von roten Begrenzungslinien der Bundesländer}
+\mbox{}\\
+Um dem Spieler die Orientierung im Bundesländer-Modus zu erleichtern, wurde es als notwendig erachtet, die ausgewählten Regionen direkt auf der Karte hervorzuheben. In der fertigen Applikation geschieht dies durch rote Begrenzungslinien, welche die jeweiligen Bundesländer umrahmen. Diese Visualisierung ermöglicht es auch Spielern ohne detaillierte geografische Kenntnisse, ihre Schätzung deutlich zu verbessern. Aber auch für Spieler, die grundsätzlich wissen, wo sich die einzelnen Bundesländer befinden, erweist sich diese Funktion als hilfreich, da die exakten Grenzen eines Bundeslandes meist nicht positionsgenau bekannt sind. Im folgenden Codeabschnitt wird die technische Umsetzung dieser Begrenzungslinien erkärt:
+\begin{lstlisting}
+/**
+ * Zeichnet die Bundesland-Grenzen als rote Linien (Polyline) auf die Google Map.
+ * Wichtig: Es werden nur die zuvor ausgewählten Bundesländer visualisiert.
+ */
+function drawBundeslandBorders(map: google.maps.Map, polygons: number[][][]) {
+  // polygons = Array von Polygonen
+  // Jedes Polygon besteht aus Koordinatenpaaren: [ [lat, lng], [lat, lng], ... ]
+  polygons.forEach(function (poly) {
+    // Google Maps erwartet ein Array aus Objekten: { lat: ..., lng: ... }
+    var path = poly.map(function (coord) {
+      return { lat: coord[0], lng: coord[1] };
+    });
+
+    // Polyline = Linie entlang eines Pfades
+    // -> wird hier verwendet, um die Grenzen eines Bundeslandes als "Umrandung" darzustellen
+    new google.maps.Polyline({
+      path: path,           // Koordinaten der Grenze
+      geodesic: true,       // Linien folgen der Erdkrümmung (optisch besser)
+      strokeColor: '#e53935', // Rot = klare Hervorhebung der Region
+      strokeOpacity: 0.8,   // leicht transparent, damit Map darunter sichtbar bleibt
+      strokeWeight: 3,      // Linienstärke 
+      map: map              // Linie wird auf dieser Map gerendert
+    });
+  });
+}
+\end{lstlisting}
+Die Datenstruktur "bundeslandPolygone" enthält die geografischen Koordinaten, welche zur Darstellung der Umrandungen der einzelnen Bundesländer auf der Karte verwendet werden. Diese Koordinaten wurden zuvor definiert und werden, abhängig von der Auswahl des Nutzers, an den nächsten Screen übergeben und dort, wie im vorherigen Codeabschnitt zu sehen ist, in der Variable "polygons" gespeichert.
+Im folgenden Codeausschnitt ist beispielhaft die Koordinatenliste von Niederösterreich dargestellt:
+\begin{lstlisting}
+const bundeslandPolygone: Record<string, [number, number][]> = {
+  NO: [
+    [47.95043408875506, 14.698762389554815],
+    [48.04048385766521, 14.493588517608657],
+    [48.0878393614031, 14.497187229454624],
+    [48.12096875315342, 14.532637250068547],
+    [48.20605344194789, 14.529151825814978],
+    [48.13279233397873, 14.677843400566644],
+    [48.18005034986112, 14.886808802911872],
+    [48.18239101457331, 14.985913985326505],
+    [48.304748259294826, 15.03844688637082],
+    [48.415081911383, 14.981536059098602],
+    [48.50897072679291, 14.942687713157738],
+    [48.57682310564124, 14.804633727442479],
+    [48.57444569787205, 14.730313069995304],
+    [48.754971906629066, 14.847549984635009],
+    [48.74328857607554, 15.010377026109552],
+    [48.98316505291146, 15.035166732418219],
+    [48.915680232253266, 15.151922015755076],
+    [48.95528574295173, 15.353773338458296],
+    [48.827463063435516, 15.736416858341272],
+    [48.741442497430484, 16.041584112677526],
+    [48.70178743119368, 16.424311052787374],
+    [48.77654404657986, 16.484534280952232],
+    [48.72046721749055, 16.661585367331924],
+    [48.68080673636325, 16.87794422819138],
+    [48.54497898198545, 16.902811649140062],
+    [48.43930656285778, 16.807056674624505],
+    [48.31461656248416, 16.82489987776981],
+    [48.15415429562228, 16.941804329225448],
+    [48.130510388421044, 17.048035769294103],
+    [48.121053326034115, 16.952405246904448],
+    [48.07373261573372, 16.945315266729835],
+    [48.09265815965756, 16.874359813011807],
+    [48.026354014497485, 16.67581082085428],
+    [47.9599829134126, 16.62991311827875],
+    [47.9647208435928, 16.473859220437845],
+    [47.87688916624248, 16.335610387682408],
+    [47.817748893194164, 16.278465657273216],
+    [47.79007786893314, 16.253704101880118],
+    [47.763156131782125, 16.28094225992274],
+    [47.496294505025645, 16.29923886354169],
+    [47.44381143665282, 16.19010461336819],
+    [47.52386921515466, 16.13662614999234],
+    [47.54110508792468, 15.992231200396532],
+    [47.78375382430232, 15.638270666008367],
+    [47.854614627824304, 15.33725551545814],
+    [47.76287919408628, 15.020020526653667],
+    [47.76076010112098, 14.780838637342981],
+    [47.88793707248817, 14.805866778264516],
+    [47.927807506465285, 14.738062011740425],
+    [47.9422613813521, 14.732092715765788],
+    [47.94996567198578, 14.698262079732615],
+    [47.950482563098234, 14.69863839164995]
+  ],...} 
+\end{lstlisting}
+
 \paragraph{Kompass in der Spielansicht}
-\paragraph{Live-Chat}
+\mbox{}\\
+Der Kompass in der Spielansicht ist ein wichtiges UI-Feature, weil er dem Spieler jederzeit Orientierung gibt und die Street-View-Perspektive lesbarer macht. Da sich die Kamera in Google Street View frei drehen lässt, liefert der Kompass eine direkte Rückmeldung über die Blickrichtung (Heading) und verhindert, dass sich Nutzer beim Erkunden oder beim Platzieren eines Tipps verlaufen. Zusätzlich erhöht das Feature die Immersion, weil es die reale Blickrichtung aus Street View in ein klares, spieltypisches Overlay übersetzt, ein kleines Detail, das sich für den Nutzer aber als hilfreich darstellt und das Gameplay spürbar verbessert.
+\begin{lstlisting}
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import { View, StyleSheet, Animated } from "react-native";
+import Svg, { Circle, Line, Text as SvgText } from "react-native-svg";
 
+/**
+ * CompassOverlay
+ * - heading kommt aus StreetView (pov.heading)
+ * - der Kompass wird als Overlay gezeichnet (SVG)
+ * - die Nadel (bzw. das ganze Kompass-Element) wird via Animated Rotation gedreht
+ */
+export function CompassOverlay(props: { heading: number }) {
+  const { heading } = props;
 
+  // Animated Wert, der die aktuelle Rotation (in Grad) hält
+  const rotation = useRef(new Animated.Value(0)).current;
 
+  // Wir merken uns den zuletzt dargestellten Winkel, um den kürzesten Drehweg zu finden
+  const lastHeadingRef = useRef(0);
+
+  useEffect(() => {
+    // StreetView liefert heading als Zahl, wir normalisieren auf 0...360
+    const next = normalizeAngle(heading);
+    const prev = normalizeAngle(lastHeadingRef.current);
+
+    const shortestNext = shortestAngleTarget(prev, next);
+
+    // Animation zur neuen Rotation
+    Animated.timing(rotation, {
+      toValue: shortestNext,
+      duration: 120,          
+      useNativeDriver: true,  // Rotation kann nativ laufen, ergibt angenehme Animation
+    }).start();
+
+    // lastHeading updaten (wichtig fürs nächste Update)
+    lastHeadingRef.current = shortestNext;
+  }, [heading, rotation]);
+
+  /**
+   * Animated.Value -> String für transform rotate
+   * Wir geben "deg" aus, weil RN rotate einen String erwartet.
+   */
+  const rotate = rotation.interpolate({
+    inputRange: [-3600, 3600], // großzügig, weil shortestNext auch mal über 360 hinausgehen kann
+    outputRange: ["-3600deg", "3600deg"],
+  });
+
+  return (
+    <View style={styles.compassOverlay} pointerEvents="none">
+      <View style={styles.compassCircle}>
+        {/* Wir drehen das ganze SVG, damit die Nadel "mitgeht" */}
+        <Animated.View style={{ transform: [{ rotate }] }}>
+          <Svg width={56} height={56} viewBox="0 0 56 56">
+            {/* Außenring */}
+            <Circle
+              cx={28}
+              cy={28}
+              r={26}
+              stroke="#fff"
+              strokeWidth={2}
+              fill="rgba(30,40,80,0.7)"
+            />
+
+            {/* Rote Nadel: Norden (zeigt im SVG "nach oben") */}
+            <Line
+              x1={28}
+              y1={28}
+              x2={28}
+              y2={10}
+              stroke="red"
+              strokeWidth={4}
+              strokeLinecap="round"
+            />
+
+            {/* Weiße Nadel: Süden (zeigt im SVG "nach unten") */}
+            <Line
+              x1={28}
+              y1={28}
+              x2={28}
+              y2={46}
+              stroke="#fff"
+              strokeWidth={4}
+              strokeLinecap="round"
+            />
+
+            {/* Labels */}
+            <SvgText
+              x={28}
+              y={7}
+              fill="#fff"
+              fontSize={12}
+              fontWeight="bold"
+              textAnchor="middle"
+            >
+              N
+            </SvgText>
+
+            <SvgText
+              x={28}
+              y={54}
+              fill="#fff"
+              fontSize={12}
+              fontWeight="bold"
+              textAnchor="middle"
+            >
+              S
+            </SvgText>
+          </Svg>
+        </Animated.View>
+      </View>
+    </View>
+  );
+}
+
+/**
+ * Winkel in den Bereich 0..360 bringen
+ */
+function normalizeAngle(deg: number) {
+  const x = deg % 360;
+  return x < 0 ? x + 360 : x;
+}
+
+/**
+ * Gibt ein Ziel zurück, das vom aktuellen Winkel aus den kürzesten Drehweg nimmt.
+ * Dadurch läuft die Animation glatt und ohne Sprünge.
+ */
+function shortestAngleTarget(prev: number, next: number) {
+  let delta = next - prev;
+
+  if (delta > 180) delta -= 360;
+  if (delta < -180) delta += 360;
+
+  return prev + delta;
+}
+
+const styles = StyleSheet.create({
+  // Positionierung als Overlay (z.B. oben links)
+  compassOverlay: {
+    position: "absolute",
+    top: 64,
+    left: 16,
+    zIndex: 1000,
+  },
+  // Kreis-Container (Hintergrund + Rundung)
+  compassCircle: {
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    backgroundColor: "rgba(30,40,80,0.0)", // SVG hat schon fill, kann hier auch 0 sein
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
+
+\end{lstlisting}
 
 \subsection{Backend-Anbindung mit Supabase}
 Das Backend der Anwendung \textit{WoSamma} basiert auf Supabase und stellt zentrale Server-Funktionalitäten als \textit{Backend-as-a-Service} bereit. 
