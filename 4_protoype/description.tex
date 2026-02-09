@@ -222,12 +222,11 @@ das hier gewisse UI-Elemente der Google Maps API deaktiviert werden, da diese f�
 
 \paragraph{Anzeige mehrerer Pins im Mehrspieler-Modus}
 \mbox{}\\
-Im gegensatz zum Einzelspieler-Modus, in dem der Spieler nur seinen eigenen Pin setzen und am Ende auch sehen kann, müssen beim Ergebnis des Mehrspieler-Modus mehrere
-Pins gleichzeitig dargestellt werden. Dies ist notwendig, damit der Spieler die Vermutungen seiner Gegner sehen und mit seiniger vergleichen kann. Wie die genaue
-Visualisierung der geschätzten und der korrekten Position aussieht, wird im nächsten Abschnitt beschrieben. Hier wird vorerst nur beschrieben, wie man es schafft mehrere Pins 
-von unterschiedlichen Spielern auf der Karte darzustellen. 
-Essenziell für die möglichkeit mehrere Pins anzuzeigen, ist folgender Ablauf:
-\begin{enumerate}
+Im Gegensatz zum Einzelspieler-Modus, bei dem ein Spieler ausschließlich seinen eigenen Pin setzt und dessen Position am Ende einsehen kann, erfordert der Mehrspieler-Modus die gleichzeitige Darstellung mehrerer Pins. Diese Funktionalität ist notwendig, um den Spielern die Vermutungen ihrer Mitspieler sichtbar zu machen und einen direkten Vergleich mit der eigenen Schätzung zu ermöglichen.
+
+Die konkrete visuelle Umsetzung der geschätzten sowie der korrekten Positionen wird im folgenden Abschnitt erläutert. An dieser Stelle wird zunächst beschrieben, wie die gleichzeitige Darstellung mehrerer Pins unterschiedlicher Spieler auf der Karte technisch realisiert werden kann.
+
+Eine zentrale Voraussetzung für die Anzeige mehrerer Pins ist der nachfolgend dargestellte Ablauf:\begin{enumerate}
     \item Spieler setzt Pin auf Karte
     \item Pin-Koordinaten werden im State gespeichert (\texttt{setPin})
     \item Bei {Tipp abgeben} $\rightarrow$ Speicherung in \texttt{user\_rounds} (Datenbank):
