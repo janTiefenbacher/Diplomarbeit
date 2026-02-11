@@ -806,23 +806,65 @@ const styles = StyleSheet.create({
 
 \end{lstlisting}
 
+\subsection{Entity-Relationship-Diagramm}
+Das folgende \gls{erd} zeigt die wichtigsten Datenbanktabellen und deren Beziehungen für die Anwendung \textit{WoSamma}. Es umfasst die zentralen Entitäten wie \texttt{users}, \texttt{profiles}, \texttt{lobbies}, \texttt{rounds} und \texttt{user\_rounds}, sowie die Verknüpfungen zwischen diesen Tabellen, um die komplexen Interaktionen im Mehrspieler-Modus zu unterstützen. Das ERD dient als Grundlage für das Verständnis der Datenstruktur und der Geschäftslogik, die in der Backend-Implementierung mit Supabase realisiert wird.
+
+BILDDDDDD
+
+
 \subsection{Backend-Anbindung mit Supabase}
+
 Das Backend der Anwendung \textit{WoSamma} basiert auf Supabase und stellt zentrale Server-Funktionalitäten als \textit{Backend-as-a-Service} bereit. 
 Dadurch werden Kernaufgaben wie Authentifizierung, Datenpersistenz sowie Echtzeit-Kommunikation über eine konsistente API abstrahiert. 
 Die mobile Anwendung kommuniziert über das Supabase-SDK mit der PostgreSQL-Datenbank und nutzt dabei eine tokenbasierte Zugriffskontrolle. 
 Schreib- und Leseoperationen erfolgen ausschließlich innerhalb der durch Supabase bereitgestellten Sicherheitsmechanismen (z.\,B. JWT-basierte Sessions und Row Level Security), wodurch eine klare Trennung zwischen Client-Logik und serverseitiger Datenhaltung gewährleistet wird.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Supabase_Auth.png}
+    \caption{Benutzerverwaltung und Authentifizierungsübersicht in Supabase}
+    \label{fig:supabase-auth}
+\end{figure}
+
+Abbildung \ref{fig:supabase-auth} zeigt die Authentifizierungsoberfläche von Supabase für einen registrierten Benutzer. 
+Dargestellt sind zentrale Metadaten wie die eindeutige Benutzer-ID, Zeitstempel für Registrierung, Bestätigung und letzte Anmeldung sowie der verwendete Authentifizierungsprovider. 
+Zusätzlich bietet die Oberfläche administrative Funktionen wie Passwort-Zurücksetzung oder Magic-Link-Anmeldung.
+
+Diese Ansicht verdeutlicht, wie Supabase die Benutzerverwaltung zentral kapselt und sicherheitsrelevante Prozesse serverseitig organisiert. 
+Die Anwendung greift ausschließlich über autorisierte Sessions auf diese Daten zu, wodurch eine konsistente und sichere Authentifizierung gewährleistet wird.
+
 \subsubsection{Echtzeit-Kommunikation über Supabase Channels}
+
 Die Übertragung von Echtzeitdaten erfolgt über sogenannte \emph{Channels}, die als persistente Kommunikationskanäle zwischen Client und Backend fungieren. 
 Diese Kanäle können von der Anwendung abonniert (\textit{subscribed}) werden, um Datenbankereignisse oder benutzerdefinierte Nachrichten unmittelbar zu empfangen.
 
-Technisch basiert dieses Verfahren auf WebSocket-Verbindungen, über die Supabase Änderungen an ausgewählten Tabellen oder spezifische Ereignistypen in nahezu Echtzeit an alle verbundenen Clients verteilt. 
-Die Anwendung registriert sich dabei auf bestimmten Channels, die jeweils an einen fachlichen Kontext gebunden sind, beispielsweise an eine Lobby, eine Benutzer-ID oder eine Spielrunde.
-
-Durch dieses Publish-Subscribe-Modell wird eine latenzarme und skalierbare Synchronisation zwischen mehreren Benutzern ermöglicht. 
+Durch dieses \gls{publish-subscribe} wird eine latenzarme und skalierbare Synchronisation zwischen mehreren Benutzern ermöglicht. 
 Dies ist insbesondere für interaktive Funktionen wie Live-Einladungen, Mehrspieler-Lobbys und Chat-Kommunikation von zentraler Bedeutung, da Zustandsänderungen ohne explizite Polling-Mechanismen unmittelbar in der Benutzeroberfläche reflektiert werden.
 
-\begin{lstlisting}
+Ein typisches Beispiel für die Struktur einer über einen Channel übertragenen Nachricht ist in Listing~\ref{lst:realtime-json} dargestellt. 
+Dieses JSON zeigt vereinfacht, wie Benutzerdaten oder Statusänderungen zwischen Client und Backend ausgetauscht werden.
+
+\begin{lstlisting}[caption={Beispielhafte Echtzeit-Nachricht über einen Supabase Channel}, label={lst:realtime-json}]
+{
+  "eventType": "UPDATE",
+  "table": "users",
+  "new": {
+    "id": "dadeb4e7-8143-4103-a114-efc5b2f7baa9",
+    "username": "Kliv",
+    "email": "l.pichler@htlkrems.at",
+    "status": "online",
+    "updated_at": "2026-01-26T08:50:08Z"
+  }
+}
+\end{lstlisting}
+
+Das Listing verdeutlicht, dass neben dem Ereignistyp auch die betroffenen Datensätze übertragen werden. 
+Die Anwendung kann diese Informationen unmittelbar verarbeiten und die Benutzeroberfläche entsprechend aktualisieren.
+
+\begin{lstlisting}[
+caption={Realtime-Subscription zur Synchronisation von Freundschaftsanfragen},
+label={lst:friend-realtime}
+]
 // Initialisierung einer Realtime-Subscription für die Tabelle "friend_requests"
 // Zweck dieses Codes ist es, die Freundesliste und die Freundschaftsanfragen
 // in der Benutzeroberfläche in Echtzeit zu synchronisieren. Dadurch werden
@@ -867,14 +909,17 @@ Die Authentifizierung erfolgt über Supabase Auth als zentrales Identitäts- und
 Supabase übernimmt dabei insbesondere die Verwaltung von Benutzer-Sessions, die Erstellung und Validierung von JSON Web Tokens (JWT), das Handling von Refresh-Tokens sowie sicherheitsrelevante Funktionen wie Passwort-Hashing (bei E-Mail/Passwort-Login) und die Integration externer OAuth-Provider.
 
 \paragraph{Laden von Benutzer- und Profildaten: }
+\mbox{}\\
 Nach erfolgreicher Authentifizierung wird die eindeutige \texttt{user.id} aus der Supabase-Session extrahiert und als primärer Schlüssel für benutzerspezifische Abfragen verwendet. 
 Darauf basierend werden Profildaten (z.\,B. Benutzername, Avatar) aus einer \texttt{profiles}-Tabelle geladen und im lokalen Zustand der Anwendung gehalten, um personalisierte Inhalte und Spielzustände konsistent darstellen zu können.
 
 \paragraph{Logout: }
+\mbox{}\\
 Der Logout erfolgt über \texttt{supabase.auth.signOut()}, wodurch die Session invalidiert und gespeicherte Tokens entfernt werden. 
 Zusätzlich wird der lokale Session-Speicher geleert und der Benutzer in den Login-Bereich der Anwendung zurückgeführt, um einen konsistenten und sicheren Zustand sicherzustellen.
 
 \paragraph{Sicherheitsaspekte: }
+\mbox{}\\
 Die Übertragung der Tokens erfolgt verschlüsselt über TLS. 
 Google übernimmt im OAuth2-Flow die Identitätsprüfung des Benutzers; Supabase prüft anschließend die Gültigkeit und Signatur der Tokens bei jeder autorisierten Anfrage. 
 Darüber hinaus schützt Row Level Security (RLS) auf Datenbankebene benutzerspezifische Datensätze vor unautorisierten Zugriffen, indem Abfragen und Mutationen nur innerhalb der durch Policies definierten Rechte möglich sind. 
@@ -889,7 +934,10 @@ mit Freunden umgesetzt sind und nach welchen Kriterien die Punktevergabe erfolgt
 
 Die Generierung der Spielrunden im Einzelspieler-Modus \emph{„Ganz Österreich“} basiert auf der zufälligen Auswahl einer geografischen Position innerhalb der Landesgrenzen Österreichs. 
 Hierzu wird die Staatsgrenze als Polygon modelliert, das durch eine sequenzielle Liste von Breiten- und Längengraden beschrieben wird:
-\begin{lstlisting}
+\begin{lstlisting}[
+caption={Polygonmodell der österreichischen Staatsgrenze zur Positionsgenerierung},
+label={lst:austria-polygon}
+]
 const austriaPolygon = [
   [47.441885, 13.070504],
   [47.657838, 13.179834],
@@ -905,17 +953,20 @@ const austriaPolygon = [
 Dieses Polygon definiert den zulässigen Suchraum für die Erzeugung gültiger Zielkoordinaten.
 
 \paragraph{Punkt-in-Polygon-Prüfung: }
+\mbox{}\\
 Zur Überprüfung, ob eine zufällig generierte Koordinate innerhalb des definierten Polygons liegt, wird der Ray-Casting-Algorithmus eingesetzt. 
 Dabei wird von der zu prüfenden Position aus ein horizontaler Strahl konstruiert und die Anzahl der Schnittpunkte dieses Strahls mit den Polygonkanten bestimmt. 
 Ist die Anzahl der Schnittpunkte ungerade, befindet sich der Punkt innerhalb des Polygons; ist sie gerade, liegt der Punkt außerhalb. 
 Diese Methode gewährleistet eine effiziente und robuste Klassifikation der Koordinaten in Bezug auf die Landesgrenzen.
 
 \paragraph{Zufällige Koordinatenerzeugung: }
+\mbox{}\\
 Die Generierung einer Spielrunde erfolgt durch wiederholte Erzeugung zufälliger Koordinaten innerhalb eines umschließenden Rechtecks (Bounding Box), das die maximalen und minimalen Breiten- und Längengrade Österreichs abdeckt. 
 Für jede generierte Position wird anschließend mittels der Punkt-in-Polygon-Prüfung verifiziert, ob sich diese innerhalb der tatsächlichen Landesgrenze befindet. 
 Nur gültige Koordinaten werden als Zielposition für eine Spielrunde akzeptiert.
 
 \paragraph{Abbruchbedingung und Robustheit: }
+\mbox{}\\
 Um eine potenziell unendliche Schleife bei ungünstigen Zufallskonstellationen zu vermeiden, ist eine maximale Anzahl von Iterationen definiert. 
 Wird diese Grenze überschritten, wird die Generierung abgebrochen und der zuletzt berechnete Wert zurückgegeben. 
 Diese Maßnahme stellt die Stabilität der Anwendung sicher und verhindert eine Blockierung des Spielablaufs.
@@ -935,10 +986,24 @@ Durch dieses Vorgehen wird gewährleistet, dass alle Teilnehmer eines Tages unte
 
 \subsubsection{Live-Einladungen für Freundesrunden}
 
-Der folgende Code implementiert eine globale Echtzeit-Subscription für Lobby-Einladungen. 
-Sobald eine neue Einladung für den eingeloggten Benutzer in der Datenbank erstellt wird, 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{content/img/4_Technische_Umsetzung/Lobby_Einladung.jpeg}
+    \caption{Darstellung einer Live-Einladung in der Benutzeroberfläche}
+    \label{fig:live-einladung}
+\end{figure}
+
+Abbildung \ref{fig:live-einladung} zeigt die visuelle Darstellung einer eingehenden 
+Live-Einladung für den eingeloggten Benutzer. Sobald eine neue Einladung erstellt wird, 
 erscheint automatisch ein Popup mit den relevanten Lobby- und Einladungsinformationen.
-\begin{lstlisting}
+
+Im folgenden Abschnitt wird der zugehörige Code gezeigt, der diese Echtzeit-Funktionalität umsetzt.
+
+
+\begin{lstlisting}[
+caption={Realtime-Subscription zur Verarbeitung eingehender Lobby-Einladungen},
+label={lst:lobby-invite-subscription}
+]
 useEffect(() => {
   // Vorbedingung:
   // Abbruch der Ausführung, falls keine Benutzer-ID vorhanden ist,
@@ -1039,13 +1104,14 @@ In diesem Abschnitt wird die Berechnung der Punktzahl im Einzelspieler-Modus von
 Die Punktevergabe basiert auf der Entfernung in Kilometern zwischen der vom Spieler gewählten Position und dem tatsächlichen Standort.
 
 \paragraph{Grundprinzip: }
+\mbox{}\\
 Die erreichte Punktzahl ist eine monotone, stückweise linear fallende Funktion der Distanz $d$ (in Kilometern) zwischen der vom Spieler gewählten Position und dem tatsächlichen Zielort. 
 Mit abnehmender Distanz erhöht sich die Punktzahl entsprechend. 
 Negative Punktwerte sind grundsätzlich ausgeschlossen; im speziellen Einzelspieler-Modus \emph{„Ganz Österreich“} wird jedoch bei einer Distanz von mehr als $500\,\text{km}$ eine negative Punktzahl von bis zu $-5000$ Punkten vergeben. 
 Diese Maßnahme dient dazu, gezielte Fehlplatzierungen zu verhindern und eine künstliche Erhöhung der Platzierung in der Bestenliste durch zufällige oder absichtlich falsche Eingaben zu unterbinden.
 
 \paragraph{Punktebereiche und Berechnungsformeln: }
-
+\mbox{}\\
 \begin{itemize}
   \item \textbf{Perfekter Treffer ($d < 1\,\text{km}$)}\\
   Maximale Punktzahl von \textbf{5000 Punkten}.\\
@@ -1080,7 +1146,10 @@ Diese Maßnahme dient dazu, gezielte Fehlplatzierungen zu verhindern und eine k�
   \emph{Begründung:} Der Tipp liegt außerhalb des definierten Bewertungsbereichs.
 \end{itemize}
 
-\begin{lstlisting}
+\begin{lstlisting}[
+caption={Distanzberechnung mittels Haversine-Formel},
+label={lst:haversine}
+]
 // Distanzberechnung unter Berücksichtigung der Erdkrümmung
 // Implementierung der Haversine-Formel zur Bestimmung der Großkreisentfernung
 // zwischen zwei geografischen Koordinaten (Breiten- und Längengrad).
