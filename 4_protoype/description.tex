@@ -71,55 +71,22 @@ Das erstellte Wireframe diente als strukturelle Grundlage der Anwendung. Der Fok
     \label{fig:beispielabbildung}
 \end{figure}
 
-Die im vorherigen Kapitel beschriebenen Designkonzepte und Gestaltungsprinzipien wurden im Prototyp gezielt und konsequent umgesetzt. Aufbauend auf den theoretischen Grundlagen zu modernem App-Design, Dark-Mode-Konzepten, Barrierefreiheit und klarer Informationshierarchie wurde der Prototyp als High-Fidelity-Referenz entwickelt. Die visuelle Gestaltung orientiert sich an einem durchgängigen Dark-Mode-Design mit bewusst gewählten Kontrasten, um eine gute Lesbarkeit unter unterschiedlichen Lichtbedingungen sicherzustellen.
+Die im vorherigen Kapitel beschriebenen Designkonzepte und Gestaltungsprinzipien wurden im Mockup gezielt und konsequent umgesetzt. Aufbauend auf den theoretischen Grundlagen zu modernem App-Design, Dark-Mode-Konzepten, Barrierefreiheit und klarer Informationshierarchie wurde das Mockup nach modernen und aktuellen Maßstäben entworfen. Die visuelle Gestaltung orientiert sich an einem durchgängigen Dark-Mode-Design mit bewusst gewählten Kontrasten, um eine gute Lesbarkeit unter unterschiedlichen Lichtbedingungen sicherzustellen.
 
-Aspekte der Barrierefreiheit wurden im Prototyp unter anderem durch ausreichend große Touch-Ziele, klare Beschriftungen, eindeutige Icons sowie eine logisch aufgebaute Navigations- und Fokusstruktur berücksichtigt. Die hierarchische Anordnung von Inhalten, wie in den Abschnitten zu Informationsarchitektur und Struktur beschrieben, spiegelt sich direkt in der Seitenaufteilung und Navigation des Prototyps wider. Farben, Typografie und Abstände wurden so eingesetzt, dass visuelle Orientierung unterstützt und eine intuitive Nutzung ermöglicht wird.
+Aspekte der Barrierefreiheit wurden im Mockup unter anderem durch ausreichend große Touch-Ziele, klare Beschriftungen, eindeutige Icons sowie eine logisch aufgebaute Navigations- und Fokusstruktur berücksichtigt. Die hierarchische Anordnung von Inhalten, wie in den Abschnitten zu Informationsarchitektur und Struktur beschrieben, spiegelt sich direkt in der Seitenaufteilung und Navigation des Mockups wider. Farben, Typografie und Abstände wurden so eingesetzt, dass visuelle Orientierung unterstützt und eine intuitive Nutzung ermöglicht wird.
 
-Der Prototyp dient damit nicht nur als visuelle Vorschau, sondern als konkrete Umsetzung der zuvor definierten UI/UX- und Designprinzipien und bildet die Grundlage für die technische Realisierung der Anwendung.
+Das Mockup dient damit nicht nur als visuelle Vorschau, sondern als konkrete Umsetzung der zuvor definierten UI/UX- und Designprinzipien und bildet die Grundlage für die technische Realisierung der Anwendung.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Prototyp_SH.jpg}
-    \caption{Prototyp der Anwendung WoSamma(Überblick)}
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Mockup.jpg}
+    \caption{Mockup der Anwendung WoSamma(Überblick)}
     \label{fig:beispielabbildung}
 \end{figure}
 
 
 \subsubsection{Responsives Design }
 Das Responsive Design der Anwendung wurde durch den gezielten Einsatz flexibler Layout- und Größenkonzepte umgesetzt. Mithilfe von Flexbox (flex: 1) passen sich Container automatisch an den verfügbaren Bildschirmraum an, während prozentuale Breiten wie width: '95\%' oder dynamische Werte auf Basis der Bildschirmbreite (windowWidth * 0.95) eine adaptive Skalierung auf unterschiedlichen Geräten ermöglichen. Zusätzlich sorgen Einschränkungen wie maxWidth, minHeight und maxHeight dafür, dass UI-Elemente auf großen wie kleinen Displays gut nutzbar bleiben. Ergänzend wurden feste Seitenverhältnisse (aspectRatio) für visuelle Konsistenz sowie KeyboardAvoidingView für ein geräteabhängiges, nutzerfreundliches Verhalten bei Texteingaben eingesetzt. Dadurch bleibt die Benutzeroberfläche über verschiedene Bildschirmgrößen und Nutzungsszenarien hinweg stabil, übersichtlich und bedienbar.
-Hier ein paar konkrete Beispiele:
-\begin{lstlisting}
-container: {
-  flex: 1,
-  backgroundColor: '#181d23',
-  width: '100%',
-},
-webview: {
-  flex: 1,
-  width: '100%',
-}
-\end{lstlisting}
-\begin{lstlisting}
-const windowWidth = Dimensions.get('window').width;
-
-<TouchableOpacity
-  style={[styles.mainCard, { width: windowWidth * 0.95 }]}
->
-  <Image source={...} resizeMode="contain" />
-</TouchableOpacity>
-\end{lstlisting}
-\begin{lstlisting}
-<LinearGradient
-  style={{
-    padding: 12,
-    borderRadius: 16,
-    maxWidth: '80%',
-  }}
->
-  <Text>{item.content}</Text>
-</LinearGradient>
-\end{lstlisting}
-
 
 \subsubsection{Spielansicht und Benutzerinteraktion}
 In den folgenden Abschnitten werden die wichtigsten Aspekte des UI sowie der Benutzerinteraktion beschrieben. Hierbei
@@ -130,36 +97,18 @@ wird aktiv auf Code eingegangen und erläutert, wie dieser Funktioniert und welc
 Die Platzierung des Pins auf der Karte ist die wohl zentralste Interaktionsmöglichkeit im Spiel. Ohne diese Funktion hätte das Spiel keinen
 Sinn, da der Spieler so seine Vermutung über den Standort abgibt. Diese Funktionalität wird hier rein anhand des Einzepspieler-Modus erklärt,
 da sich die reine Platzierungslogik im Mehrspieler-Modus bzw. in der täglichen Challenge nicht unterscheidet.
+
+Zusätzlich zur reinen Platzierungslogik spielt die Benutzerinteraktion auf UI-Ebene eine zentrale Rolle. Die Karte registriert Klick- bzw. Touch-Ereignisse und setzt den Marker unmittelbar an der gewählten Position (e.latLng). Dadurch erhält der Spieler ein direktes visuelles Feedback ohne Verzögerung, was wesentlich für ein flüssiges und reaktionsschnelles Spielgefühl ist.
+
+Um die Bedienung übersichtlich zu halten, ist stets nur ein aktiver Pin sichtbar. Wird eine neue Position gewählt, wird der zuvor gesetzte Marker entfernt und durch einen neuen ersetzt. Dieses sogenannte Single-Pin-Prinzip verhindert Mehrdeutigkeiten und erlaubt es dem Spieler, seine Schätzung beliebig oft zu korrigieren, ohne dass mehrere Marker die Karte überlagern. Gerade auf mobilen Endgeräten stellt dies eine intuitive und fehlerverzeihende Interaktion sicher.
+
+Auch die initiale Kartenkonfiguration wurde bewusst auf die Spielmechanik abgestimmt. Die Startposition und der Zoom-Level sind so gewählt, dass Österreich vollständig sichtbar ist und der Spieler sich unmittelbar orientieren kann. Nicht benötigte UI-Elemente wie Street-View- oder Kartenmodus-Steuerungen wurden deaktiviert, um visuelle Ablenkungen zu reduzieren und den Fokus klar auf die Platzierung des Pins zu setzen.
+
+Darüber hinaus sorgt die vollständige Ausnutzung des verfügbaren Bildschirmbereichs (height: 100\%) dafür, dass die Karte sowohl auf mobilen Geräten als auch auf größeren Displays konsistent dargestellt wird. Insgesamt trägt diese reduzierte, klar strukturierte UI dazu bei, die zentrale Spielhandlung, also das Abgeben einer Standortvermutung, intuitiv und effizient umzusetzen.
+
 Der folgende Codeausschnitt zeigt, wie die Pin-Platzierung technisch umgesetzt wurde:
 
 \begin{lstlisting}
-// Funktion, die ein komplettes HTML-Dokument als String zurückgibt
-// Dieses HTML wird später in der View geladen
-const getAustriaMapHTML = (apiKey: string) => `
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Sorgt dafür, dass die Karte auf Mobile richtig skaliert -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-      /* Map soll den kompletten Bildschirm ausfüllen */
-      html, body, #map {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        background: #181d23;
-      }
-    </style>
-
-    <!-- Google Maps JavaScript API mit dynamisch übergebenem API-Key -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=${apiKey}"></script>
-  </head>
-
-  <body>
-    <!-- Container für die Google Map -->
-    <div id="map"></div>
-
     <script>
       // Globale Variablen:
       // map: Referenz auf die Google Map
@@ -192,36 +141,28 @@ const getAustriaMapHTML = (apiKey: string) => `
             map: map
           });
 
-          // Übergibt die Koordinaten an die React-Native-App
-          // Das ist die eigentliche "Spieler gibt seinen Guess ab"-Aktion
-          window.ReactNativeWebView.postMessage(
-            JSON.stringify({
-              type: 'pin',
-              lat: e.latLng.lat(),
-              lng: e.latLng.lng()
-            })
-          );
+          ...
         });
       }
-
       // Startet die Map nach dem Laden
       initMap();
     </script>
-  </body>
-</html>
 `;
+
 \end{lstlisting} 
-Dieser Code sorgt nun dafür, dass eine interaktive Google Map in der Spielansicht dargestellt wird und der Spieler seine Schätzung abgeben kann.
-Wichtig hierbei sind, dass der Spieler immer nur einen einzigen Pin setzen kann, also er nur eine Schätzung abgeben kann. Weiteres ist es wichtig,
-das hier gewisse UI-Elemente der Google Maps API deaktiviert werden, da diese für die Spiellogik nicht relevant sind und nur stören würden, hierzu zählen:
-\begin{itemize}
-    \item Street View Control/das gelbe Männchen
-    \item Umschaltfunktion zwischen Kartenansicht und Satellitenansicht
-    \item Vollbildmodus-Fuktion, dies ist besonders wichtig um UI-Chaos zu verhindern
-\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Pin_setzen.jpeg}
+    \caption{platzierter Pin im Einzelspieler}
+    \label{fig:beispielabbildung}
+\end{figure}
 
 \paragraph{Anzeige mehrerer Pins im Mehrspieler-Modus}
 \mbox{}\\
+Im Mehrspieler-Modus besteht die Herausforderung nicht nur in der Anzeige mehrerer Marker, sondern insbesondere in deren eindeutiger visueller Unterscheidbarkeit. Um eine klare Zuordnung zu ermöglichen, werden die Pins in unterschiedlichen Farben dargestellt und jeweils mit dem zugehörigen Benutzernamen versehen. Dadurch kann der Spieler auf einen Blick erkennen, welche Position welchem Mitspieler zugeordnet ist. Diese visuelle Differenzierung ist essenziell, um Verwechslungen zu vermeiden und die Vergleichbarkeit der Ergebnisse zu gewährleisten.
+
+Darüber hinaus müssen alle Marker gleichzeitig auf derselben Karteninstanz gerendert werden. Die Karte dient somit als gemeinsame visuelle Referenzfläche, auf der sämtliche Schätzungen parallel angezeigt werden. Dabei ist darauf zu achten, dass sich Marker bei nah beieinanderliegenden Positionen nicht vollständig überdecken. Durch eine gezielte Steuerung der Rendering-Reihenfolge (z. B. über zIndex) kann sichergestellt werden, dass relevante Marker, etwa der eigene Tipp, stets sichtbar bleiben.
+
 Im Gegensatz zum Einzelspieler-Modus, bei dem ein Spieler ausschließlich seinen eigenen Pin setzt und dessen Position am Ende einsehen kann, erfordert der Mehrspieler-Modus die gleichzeitige Darstellung mehrerer Pins. Diese Funktionalität ist notwendig, um den Spielern die Vermutungen ihrer Mitspieler sichtbar zu machen und einen direkten Vergleich mit der eigenen Schätzung zu ermöglichen.
 
 Die konkrete visuelle Umsetzung der geschätzten sowie der korrekten Positionen wird im folgenden Abschnitt erläutert. An dieser Stelle wird zunächst beschrieben, wie die gleichzeitige Darstellung mehrerer Pins unterschiedlicher Spieler auf der Karte technisch realisiert werden kann.
@@ -290,14 +231,14 @@ function getResultMapHTML({ solutionLat, solutionLng, guesses, apiKey, selfUserI
       map: map,                                  // Anzeige auf der Ergebnis-Karte
 
       // Farbiger Pin zur visuellen Unterscheidung der Spieler
-      icon: '${pinIcons[i % pinIcons.length]}',
+      icon: '${pinIcons[i]}',
 
       // Username als Tooltip (z.B. sichtbar bei Hover am Desktop)
       title: '${g.username}',
 
       // Der eigene Pin wird priorisiert gerendert,
       // damit er bei Überlagerungen stets sichtbar bleibt
-      zIndex: ${g.userId === selfUserId ? 10 : 1}
+      zIndex: ...
     });
 
     // === Username-Overlay über dem Pin ===
@@ -351,13 +292,22 @@ function getResultMapHTML({ solutionLat, solutionLng, guesses, apiKey, selfUserI
 
   `).join('\n');
 }
-
-\end{lstlisting} 
+\end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Mehrspieler_Pins.jpeg}
+    \caption{Anzeige mehrerer Pins im Mehrspieler}
+    \label{fig:beispielabbildung}
+\end{figure}
 
 \paragraph{Visualisierung der geschätzten und korrekten Position}
 \mbox{}\\
-Ein weiterer essenzieller Bestandteil der Spielansicht ist die Visualisierung des Ergebnisses nach abgabe des Tipps.
-Hierbei muss sowohl die korrekte Position als auch die getippte Position des Spielers dargestellt werden und mit Hilfe einer Linie die Distanz erläutert wird.
+Für die Ergebnisdarstellung ist nicht nur das Anzeigen beider Positionen, also der korrekten Position und die germutete des Spielers, entscheidend, sondern vor allem deren visuelle Verknüpfung. Die Linie zwischen getippter und tatsächlicher Position fungiert dabei als zentrales Orientierungselement. Sie macht die räumliche Abweichung unmittelbar sichtbar und ergänzt die numerische Distanzangabe um eine intuitive, grafische Komponente. Dadurch wird das Ergebnis nicht nur berechnet, sondern auch visuell erfahrbar gemacht.
+
+Die Linien werden als eigenständige Overlay-Elemente auf der bestehenden Karteninstanz gerendert. Dabei greifen sie auf dieselben geografischen Koordinaten zurück wie die Marker und passen sich automatisch an Zoomstufe und Kartenausschnitt an. Unabhängig vom gewählten Spielmodus bleiben grundlegende Eigenschaften wie Linienstärke, Transparenz und Verlauf konsistent, um eine einheitliche visuelle Struktur sicherzustellen. Lediglich die Farbgebung kann variieren, beispielsweise zur besseren Unterscheidung mehrerer Spieler im Mehrspieler-Modus.
+
+Zusätzlich wird die Linie so gestaltet, dass sie sich klar vom Kartenhintergrund abhebt, ohne andere UI-Elemente zu überdecken. Diese bewusste visuelle Gewichtung stellt sicher, dass das Ergebnis schnell erfasst werden kann, ohne die Übersichtlichkeit der gesamten Karte zu beeinträchtigen.
+
 Egal welchen Modus der Spieler spielt, die Linien eigenschaften sind bis auf die Farbe immer gleich und werden in diesem Code-Block definiert:
 \begin{lstlisting}
 var line = new google.maps.Polyline({
@@ -376,7 +326,7 @@ nicht direkt über der Verbindungsinie, sondern unten am Screen angezeigt:
   {/* Textuelles Feedback für den Spieler:
       Zeigt direkt an, wie weit die Schätzung vom tatsächlichen Standort entfernt war */}
   <Text style={styles.resultText}>
-    Deine Schätzung war {distance.toFixed(1)} km vom echten Standort entfernt
+    Deine Schätzung war ... km vom echten Standort entfernt
   </Text>
 
   {/* Fortschrittsbalken zur visuellen Darstellung der erreichten Punkte.
@@ -387,10 +337,7 @@ nicht direkt über der Verbindungsinie, sondern unten am Screen angezeigt:
         styles.progressBar,
         {
           // Begrenzung der Breite auf 0–100 %, um Layout-Probleme zu vermeiden
-          width: `${Math.max(
-            0,
-            Math.min(100, (100 * points) / 5000)
-          )}%`,
+          width: '...',
         },
       ]}
     />
@@ -398,7 +345,7 @@ nicht direkt über der Verbindungsinie, sondern unten am Screen angezeigt:
 
   {/* Anzeige der erreichten Punktzahl als numerischer Wert */}
   <Text style={styles.points}>
-    {points} Punkte
+    ... Punkte
   </Text>
 
   {/* Button-Leiste für weitere Aktionen nach Abschluss der Runde */}
@@ -408,7 +355,7 @@ nicht direkt über der Verbindungsinie, sondern unten am Screen angezeigt:
         Öffnet ein Bestätigungs-Modal, um unbeabsichtigtes Verlassen zu verhindern */}
     <TouchableOpacity
       style={styles.leaveBtn}
-      onPress={() => setShowLeaveModal(true)}
+      onPress={...}
     >
       <Text style={styles.leaveText}>Verlassen</Text>
     </TouchableOpacity>
@@ -418,55 +365,23 @@ nicht direkt über der Verbindungsinie, sondern unten am Screen angezeigt:
         wird der entsprechende Screen geladen */}
     <TouchableOpacity
       style={styles.nextBtn}
-      onPress={() => {
-        if (route.params && route.params.bundeslaender) {
-          navigation.replace('StreetViewBundesland', {
-            bundeslaender: route.params.bundeslaender,
-
-            // Zufälliger Parameter erzwingt ein Neuladen der View
-            // (verhindert Caching-Probleme bei erneutem Eintritt)
-            _rnd: Math.random().toString(36).slice(2),
-          });
-        } else {
-          navigation.replace('StreetViewAustria');
-        }
-      }}
+      onPress={...}
     >
       <Text style={styles.nextText}>Nächste Runde</Text>
     </TouchableOpacity>
   </View>
 </View>
 \end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Singleplayer_km.jpeg}
+    \caption{Entfernungsanzeige im Einzelspieler}
+    \label{fig:beispielabbildung}
+\end{figure}
+
 Im Gegensatz dazu, wird im Mehrspieler-Modus die Distanz zwischen der getippten Position und der korrekten Lösung direkt auf der Verbindungslinie angezeigt. Dadurch können alle Spieler nicht nur ihre eigene, sondern auch die Abweichungen der Mitspieler nachvollziehen und miteinander vergleichen. Die Umsetzung dieser Visualisierung erfolgt mithilfe des folgenden Codeausschnitts:
 \begin{lstlisting}
-// === Distanz-Berechnung + Anzeige als Label auf der Verbindungslinie ===
-// Dieser Block berechnet die Entfernung zwischen Tipp (g.lat/g.lng) und Lösung (solutionLat/solutionLng)
-// und blendet den Wert als Text ("xx.xx km") mittig auf der Linie ein.
-(function() {
-  // Erdradius in Kilometern (für die Haversine-Formel)
-  var R = 6371;
-
-  // Umrechnung der Breiten-/Längendifferenz in Bogenmaß (Radians)
-  var dLat = (${solutionLat} - ${g.lat}) * Math.PI / 180;
-  var dLng = (${solutionLng} - ${g.lng}) * Math.PI / 180;
-
-  // Haversine-Formel: Berechnung der Großkreisdistanz auf einer Kugel
-  var a =
-    Math.sin(dLat/2) * Math.sin(dLat/2) +
-    Math.cos(${g.lat} * Math.PI / 180) *
-    Math.cos(${solutionLat} * Math.PI / 180) *
-    Math.sin(dLng/2) * Math.sin(dLng/2);
-
-  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-  var dist = R * c; // Distanz in km
-
-  // Mittelpunkt zwischen Tipp und Lösung:
-  // Dort wird das Distanzlabel platziert (damit es "auf der Linie" sitzt)
-  var midLat = (${g.lat} + ${solutionLat}) / 2;
-  var midLng = (${g.lng} + ${solutionLng}) / 2;
-
-  // HTML-Element für die Distanzanzeige erstellen
-  var labelDiv = document.createElement('div');
+var labelDiv = document.createElement('div');
 
   // UI-Styling: gut lesbar auf dunkler Karte / über der Linie
   labelDiv.style.fontSize = '14px';
@@ -478,7 +393,7 @@ Im Gegensatz dazu, wird im Mehrspieler-Modus die Distanz zwischen der getippten 
   labelDiv.style.background = 'rgba(24,29,35,0.7)';
 
   // Text setzen (auf 2 Nachkommastellen gerundet)
-  labelDiv.innerText = dist.toFixed(2) + ' km';
+  labelDiv.innerText = '... km';
 
   // OverlayView: erlaubt HTML-Elemente pixelgenau über der Google Map zu platzieren
   var label = new google.maps.OverlayView();
@@ -504,13 +419,19 @@ Im Gegensatz dazu, wird im Mehrspieler-Modus die Distanz zwischen der getippten 
 
   // Overlay aktivieren, Label wird angezeigt
   label.setMap(map);
-})();
 \end{lstlisting}
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Mehrspieler_pins.jpeg}
+    \caption{Anzeige der Entfernung im Mehrspielermodus}
+    \label{fig:beispielabbildung}
+\end{figure}
 \paragraph{Zoom Animationen}
 \mbox{}\\
 Um dem Spieler nach Abschluss einer Runde ein besseres visuelles Feedback zu geben, wird in den Einzelspieler-Modi eine Zoom-Animation verwendet. Dabei startet die Ergebnis-Karte bewusst mit einem sehr weit herausgezoomten Kartenbild (Zoom-Level 3) und zoomt anschließend schrittweise auf ein zuvor berechnetes, optimales Zoom-Level "targetZoom" heran. Diese Animation sorgt dafür, dass die Ergebnisansicht dynamischer wirkt und die Aufmerksamkeit des Spielers auf die relevante Region gelenkt wird.
+Die Zoom-Animation erfüllt dabei nicht nur einen ästhetischen Zweck, sondern unterstützt gezielt die Benutzerführung. Durch das initiale Herauszoomen erhält der Spieler zunächst eine räumliche Gesamtübersicht, wodurch die relative Lage von getippter und tatsächlicher Position im größeren geografischen Kontext sichtbar wird. Das anschließende schrittweise Heranzoomen fokussiert die Aufmerksamkeit dann kontrolliert auf den relevanten Kartenausschnitt. Dieser Ablauf erzeugt eine klare visuelle Dramaturgie und verhindert, dass der Nutzer abrupt in eine stark vergrößerte Detailansicht versetzt wird.
 
+Technisch wird die Animation direkt auf der bestehenden Karteninstanz durchgeführt, indem das Zoom-Level in definierten Intervallen angepasst wird, bis das zuvor berechnete Zielniveau erreicht ist. Die Karte rendert jede Zwischenstufe automatisch neu, wodurch eine flüssige Übergangsbewegung entsteht. Dabei bleibt die Kartenmitte konstant auf die relevante Region ausgerichtet, sodass keine zusätzliche Verschiebung (Pan-Bewegung) erforderlich ist.
 Der folgende Codeausschnitt zeigt die technische Umsetzung dieser Zoom-Animation:
 
 \begin{lstlisting}
@@ -555,8 +476,6 @@ function initMap() {
 }
 \end{lstlisting}
 
-
-
 \paragraph{Darstellung von roten Begrenzungslinien der Bundesländer}
 \mbox{}\\
 Um dem Spieler die Orientierung im Bundesländer-Modus zu erleichtern, wurde es als notwendig erachtet, die ausgewählten Regionen direkt auf der Karte hervorzuheben. In der fertigen Applikation geschieht dies durch rote Begrenzungslinien, welche die jeweiligen Bundesländer umrahmen. Diese Visualisierung ermöglicht es auch Spielern ohne detaillierte geografische Kenntnisse, ihre Schätzung deutlich zu verbessern. Aber auch für Spieler, die grundsätzlich wissen, wo sich die einzelnen Bundesländer befinden, erweist sich diese Funktion als hilfreich, da die exakten Grenzen eines Bundeslandes meist nicht positionsgenau bekannt sind. Im folgenden Codeabschnitt wird die technische Umsetzung dieser Begrenzungslinien erkärt:
@@ -587,6 +506,14 @@ function drawBundeslandBorders(map: google.maps.Map, polygons: number[][][]) {
   });
 }
 \end{lstlisting}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Rote_Begreunzungslinie.jpeg}
+    \caption{Begrenzungslinien für Nieserösterreich und Wien}
+    \label{fig:beispielabbildung}
+\end{figure}
+
 Die Datenstruktur "bundeslandPolygone" enthält die geografischen Koordinaten, welche zur Darstellung der Umrandungen der einzelnen Bundesländer auf der Karte verwendet werden. Diese Koordinaten wurden zuvor definiert und werden, abhängig von der Auswahl des Nutzers, an den nächsten Screen übergeben und dort, wie im vorherigen Codeabschnitt zu sehen ist, in der Variable "polygons" gespeichert.
 Im folgenden Codeausschnitt ist beispielhaft die Koordinatenliste von Niederösterreich dargestellt:
 \begin{lstlisting}
@@ -596,65 +523,19 @@ const bundeslandPolygone: Record<string, [number, number][]> = {
     [48.04048385766521, 14.493588517608657],
     [48.0878393614031, 14.497187229454624],
     [48.12096875315342, 14.532637250068547],
-    [48.20605344194789, 14.529151825814978],
-    [48.13279233397873, 14.677843400566644],
-    [48.18005034986112, 14.886808802911872],
-    [48.18239101457331, 14.985913985326505],
-    [48.304748259294826, 15.03844688637082],
-    [48.415081911383, 14.981536059098602],
-    [48.50897072679291, 14.942687713157738],
-    [48.57682310564124, 14.804633727442479],
-    [48.57444569787205, 14.730313069995304],
-    [48.754971906629066, 14.847549984635009],
-    [48.74328857607554, 15.010377026109552],
-    [48.98316505291146, 15.035166732418219],
-    [48.915680232253266, 15.151922015755076],
-    [48.95528574295173, 15.353773338458296],
-    [48.827463063435516, 15.736416858341272],
-    [48.741442497430484, 16.041584112677526],
-    [48.70178743119368, 16.424311052787374],
-    [48.77654404657986, 16.484534280952232],
-    [48.72046721749055, 16.661585367331924],
-    [48.68080673636325, 16.87794422819138],
-    [48.54497898198545, 16.902811649140062],
-    [48.43930656285778, 16.807056674624505],
-    [48.31461656248416, 16.82489987776981],
-    [48.15415429562228, 16.941804329225448],
-    [48.130510388421044, 17.048035769294103],
-    [48.121053326034115, 16.952405246904448],
-    [48.07373261573372, 16.945315266729835],
-    [48.09265815965756, 16.874359813011807],
-    [48.026354014497485, 16.67581082085428],
-    [47.9599829134126, 16.62991311827875],
-    [47.9647208435928, 16.473859220437845],
-    [47.87688916624248, 16.335610387682408],
-    [47.817748893194164, 16.278465657273216],
-    [47.79007786893314, 16.253704101880118],
-    [47.763156131782125, 16.28094225992274],
-    [47.496294505025645, 16.29923886354169],
-    [47.44381143665282, 16.19010461336819],
-    [47.52386921515466, 16.13662614999234],
-    [47.54110508792468, 15.992231200396532],
-    [47.78375382430232, 15.638270666008367],
-    [47.854614627824304, 15.33725551545814],
-    [47.76287919408628, 15.020020526653667],
-    [47.76076010112098, 14.780838637342981],
-    [47.88793707248817, 14.805866778264516],
-    [47.927807506465285, 14.738062011740425],
-    [47.9422613813521, 14.732092715765788],
-    [47.94996567198578, 14.698262079732615],
-    [47.950482563098234, 14.69863839164995]
+    ...
   ],...} 
 \end{lstlisting}
 
 \paragraph{Kompass in der Spielansicht}
 \mbox{}\\
 Der Kompass in der Spielansicht ist ein wichtiges UI-Feature, weil er dem Spieler jederzeit Orientierung gibt und die Street-View-Perspektive lesbarer macht. Da sich die Kamera in Google Street View frei drehen lässt, liefert der Kompass eine direkte Rückmeldung über die Blickrichtung (Heading) und verhindert, dass sich Nutzer beim Erkunden oder beim Platzieren eines Tipps verlaufen. Zusätzlich erhöht das Feature die Immersion, weil es die reale Blickrichtung aus Street View in ein klares, spieltypisches Overlay übersetzt, ein kleines Detail, das sich für den Nutzer aber als hilfreich darstellt und das Gameplay spürbar verbessert.
-\begin{lstlisting}
-import React, { useEffect, useMemo, useRef, useState } from "react";
-import { View, StyleSheet, Animated } from "react-native";
-import Svg, { Circle, Line, Text as SvgText } from "react-native-svg";
+Hier kannst du ebenfalls noch einen technisch orientierten Zusatz ergänzen, der die UI-Implementierung etwas greifbarer macht:
 
+Technisch wird der Kompass als fest positioniertes Overlay über der Street-View-Ansicht dargestellt. Er ist unabhängig vom eigentlichen Karten- bzw. Street-View-Element im Layout verankert und bleibt somit stets sichtbar, auch wenn sich die Perspektive dynamisch ändert. Die Rotation des Kompasszeigers erfolgt synchron zur aktuellen Blickrichtung der Street-View-Kamera, indem der jeweilige Heading-Wert ausgelesen und in eine entsprechende CSS-Transformation übersetzt wird. Dadurch entsteht eine direkte visuelle Kopplung zwischen Kamerabewegung und UI-Element.
+
+Besonders wichtig ist dabei die kontinuierliche Aktualisierung bei jeder Richtungsänderung. Sobald der Spieler die Ansicht dreht, passt sich der Kompass in Echtzeit an. Diese unmittelbare Rückmeldung sorgt für Konsistenz zwischen Interaktion und Darstellung und stärkt die räumliche Orientierung. Gleichzeitig bleibt das Design bewusst reduziert, sodass der Kompass informativ wirkt, ohne die eigentliche Spielansicht zu überlagern oder visuell zu dominieren.
+\begin{lstlisting}
 /**
  * CompassOverlay
  * - heading kommt aus StreetView (pov.heading)
@@ -705,57 +586,30 @@ export function CompassOverlay(props: { heading: number }) {
           <Svg width={56} height={56} viewBox="0 0 56 56">
             {/* Außenring */}
             <Circle
-              cx={28}
-              cy={28}
-              r={26}
-              stroke="#fff"
-              strokeWidth={2}
-              fill="rgba(30,40,80,0.7)"
+             ...
             />
 
             {/* Rote Nadel: Norden (zeigt im SVG "nach oben") */}
             <Line
-              x1={28}
-              y1={28}
-              x2={28}
-              y2={10}
-              stroke="red"
-              strokeWidth={4}
-              strokeLinecap="round"
+              ...
             />
 
             {/* Weiße Nadel: Süden (zeigt im SVG "nach unten") */}
             <Line
-              x1={28}
-              y1={28}
-              x2={28}
-              y2={46}
-              stroke="#fff"
-              strokeWidth={4}
-              strokeLinecap="round"
+             ...
             />
 
             {/* Labels */}
             <SvgText
-              x={28}
-              y={7}
-              fill="#fff"
-              fontSize={12}
-              fontWeight="bold"
-              textAnchor="middle"
+              ...
             >
-              N
+              N /* N für Norden */
             </SvgText>
 
             <SvgText
-              x={28}
-              y={54}
-              fill="#fff"
-              fontSize={12}
-              fontWeight="bold"
-              textAnchor="middle"
+              ...
             >
-              S
+              S /* S für Süden */
             </SvgText>
           </Svg>
         </Animated.View>
@@ -786,25 +640,23 @@ function shortestAngleTarget(prev: number, next: number) {
 }
 
 const styles = StyleSheet.create({
-  // Positionierung als Overlay (z.B. oben links)
+  // Positionierung als Overlay ( oben links)
   compassOverlay: {
-    position: "absolute",
-    top: 64,
-    left: 16,
-    zIndex: 1000,
+   ...
   },
   // Kreis-Container (Hintergrund + Rundung)
   compassCircle: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
-    backgroundColor: "rgba(30,40,80,0.0)", // SVG hat schon fill, kann hier auch 0 sein
-    alignItems: "center",
-    justifyContent: "center",
+   ...
   },
 });
 
 \end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/img/4_Technische_Umsetzung/Kompass.jpeg}
+    \caption{Kompass in der Spieleansicht}
+    \label{fig:beispielabbildung}
+\end{figure}
 
 \subsection{Entity-Relationship-Diagramm}
 Das folgende \gls{erd} zeigt die wichtigsten Datenbanktabellen und deren Beziehungen für die Anwendung \textit{WoSamma}. Es umfasst die zentralen Entitäten wie \texttt{users}, \texttt{profiles}, \texttt{lobbies}, \texttt{rounds} und \texttt{user\_rounds}, sowie die Verknüpfungen zwischen diesen Tabellen, um die komplexen Interaktionen im Mehrspieler-Modus zu unterstützen. Das ERD dient als Grundlage für das Verständnis der Datenstruktur und der Geschäftslogik, die in der Backend-Implementierung mit Supabase realisiert wird.
