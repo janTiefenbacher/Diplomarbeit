@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex DA_MainDocument"] 1770921137.34612 "DA_MainDocument.aux" "DA_MainDocument.bbl" "DA_MainDocument" 1770921143.37534 0
+["bibtex DA_MainDocument"] 1770926347.18293 "DA_MainDocument.aux" "DA_MainDocument.bbl" "DA_MainDocument" 1770926387.532 0
   "./DA_Literatur.bib" 1770053292 16349 588aaa1c923fc0a930e28e4aefa9f4c6 ""
-  "6_appendix/listofeverything.aux" 1770921142 4948 a792cbd47c1fb2c895abdabd92e14afc "pdflatex"
+  "6_appendix/listofeverything.aux" 1770926386 4948 a792cbd47c1fb2c895abdabd92e14afc "pdflatex"
   "C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/bibtex/bst/babelbib/babunsrt.bst" 1610365731 25258 5676363a009d917405b271fe05aa55ce ""
-  "DA_MainDocument.aux" 1770921142 48273 c5ed9e58295cdd1aef5d5b7ffefd8511 "pdflatex"
+  "DA_MainDocument.aux" 1770926386 48273 b73cba417bdcfb8d2fd27d64669aa6db "pdflatex"
   (generated)
   "DA_MainDocument.bbl"
   "DA_MainDocument.blg"
   (rewritten before read)
-["makeindex DA_MainDocument.idx"] 1770918876.38817 "DA_MainDocument.idx" "DA_MainDocument.ind" "DA_MainDocument" 1770921143.37487 0
-  "DA_MainDocument.idx" 1770921139 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex DA_MainDocument.idx"] 1770918876.38817 "DA_MainDocument.idx" "DA_MainDocument.ind" "DA_MainDocument" 1770926387.53148 0
+  "DA_MainDocument.idx" 1770926383 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "DA_MainDocument.ilg"
   "DA_MainDocument.ind"
   (rewritten before read)
-["pdflatex"] 1770921137.61899 "c:/Users/Jan Tiefenbacher/Downloads/DA_Vorlage_main/DA_MainDocument.tex" "DA_MainDocument.pdf" "DA_MainDocument" 1770921143.37614 0
+["pdflatex"] 1770926381.12499 "c:/Users/Jan Tiefenbacher/Downloads/DA_Vorlage_main/DA_MainDocument.tex" "DA_MainDocument.pdf" "DA_MainDocument" 1770926387.53306 0
   "0_prelude/da_doku_de.tex" 1763487071 3263 9733f29a865709c0bfe7edea94dca953 ""
   "0_prelude/da_doku_en.tex" 1762434629 3181 7ab0f335219b1dbf7a45d1970b692061 ""
   "0_prelude/section.tex" 1762434629 158 20a5023facb41cf866eba377ef40fb43 ""
@@ -32,13 +32,13 @@
   "2_approach/stateoftheart.tex" 1762434629 95 7512d8deaa94ea4f8ed62eb060647a6a ""
   "3_Theorie/section.tex" 1770040106 66 05f0b7172192f841d86d911e5d4efe16 ""
   "3_Theorie/theorie.tex" 1770916057 80160 b075e6cc0a357cf549c5f047a3adf362 ""
-  "4_protoype/description.tex" 1770921130 70412 6968d2c4678331f9eb6d72cd2bd224f2 ""
+  "4_protoype/description.tex" 1770926380 70836 8d65f1bffd2955f3c3a1b693231aec06 ""
   "4_protoype/section.tex" 1769516814 74 ca09d6b41b5a0f20b13def9049bcefee ""
   "5_summary/prospect.tex" 1762434630 18 c5eca4f3d23d78d5709c903f07b3bc31 ""
   "5_summary/section.tex" 1762434630 91 d541bf74202d3ea6d1f777a36d942a96 ""
   "5_summary/summary.tex" 1762434630 148 16410a8bef949a2847cbef27fba7b0a2 ""
   "6_appendix/laborDivision.tex" 1769516834 835 37cd2a866b0a469decfda06401d83552 ""
-  "6_appendix/listofeverything.aux" 1770921142 4948 a792cbd47c1fb2c895abdabd92e14afc "pdflatex"
+  "6_appendix/listofeverything.aux" 1770926386 4948 a792cbd47c1fb2c895abdabd92e14afc "pdflatex"
   "6_appendix/listofeverything.tex" 1762434630 803 d8103230342805eebee24d9602e321b1 ""
   "6_appendix/meetingMinutes.tex" 1762439956 334 63fb7885b6fcb1199af1abcd0dc9c5a3 ""
   "6_appendix/projectDiary.tex" 1770916057 4902 2a358f3660cdccd6236f7962b5b5e54a ""
@@ -295,14 +295,14 @@
   "C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/Jan Tiefenbacher/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "DA_MainDocument.aux" 1770921142 48273 c5ed9e58295cdd1aef5d5b7ffefd8511 "pdflatex"
-  "DA_MainDocument.bbl" 1770921137 20737 43cb1db1253f5168fbeb6e189fc82220 "bibtex DA_MainDocument"
+  "DA_MainDocument.aux" 1770926386 48273 b73cba417bdcfb8d2fd27d64669aa6db "pdflatex"
+  "DA_MainDocument.bbl" 1770926347 20737 43cb1db1253f5168fbeb6e189fc82220 "bibtex DA_MainDocument"
   "DA_MainDocument.ind" 1770918876 0 d41d8cd98f00b204e9800998ecf8427e "makeindex DA_MainDocument.idx"
-  "DA_MainDocument.lof" 1770921142 2820 38d6deea984a65e077c9360f09415f6a "pdflatex"
-  "DA_MainDocument.lol" 1770921142 2051 fa56a8db3cef1912694675f89139109c "pdflatex"
-  "DA_MainDocument.lot" 1770921142 1619 47731c2c8a3dfb7162c28df3ef6c7134 "pdflatex"
+  "DA_MainDocument.lof" 1770926386 2820 38d6deea984a65e077c9360f09415f6a "pdflatex"
+  "DA_MainDocument.lol" 1770926386 2051 fa56a8db3cef1912694675f89139109c "pdflatex"
+  "DA_MainDocument.lot" 1770926386 1619 47731c2c8a3dfb7162c28df3ef6c7134 "pdflatex"
   "DA_MainDocument.tex" 1766758484 1142 c08598b5a0df19f09d107bcd880d47bd ""
-  "DA_MainDocument.toc" 1770921142 11111 9d29cbd4d13e19dafcef2c4cd21bc272 "pdflatex"
+  "DA_MainDocument.toc" 1770926386 11111 1001e0a7b6b729264bc34a3b5786a677 "pdflatex"
   "c:/Users/Jan Tiefenbacher/Downloads/DA_Vorlage_main/DA_MainDocument.tex" 1766758484 1142 c08598b5a0df19f09d107bcd880d47bd ""
   "content/img/4_Technische_Umsetzung/IA.jpg" 1770148137 75000 c81400e62d6ad664af68a3be3e8c7264 ""
   "content/img/4_Technische_Umsetzung/Kompass.jpeg" 1770917266 47894 e3b683e89cdd3d5e42c21492e23f5c22 ""

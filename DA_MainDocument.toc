@@ -63,12 +63,12 @@
 \contentsline {paragraph}{\numberline {4.2.2.3.5}Darstellung von roten Begrenzungslinien der Bundesländer}{57}{paragraph.348}%
 \contentsline {paragraph}{\numberline {4.2.2.3.6}Kompass in der Spielansicht}{58}{paragraph.385}%
 \contentsline {subsection}{\numberline {4.2.3}Entity-Relationship-Diagramm}{61}{subsection.502}%
-\contentsline {subsection}{\numberline {4.2.4}Backend-Anbindung mit Supabase}{61}{subsection.503}%
+\contentsline {subsection}{\numberline {4.2.4}Backend-Anbindung mit Supabase}{62}{subsection.503}%
 \contentsline {subsubsection}{\numberline {4.2.4.1}Echtzeit-Kommunikation über Supabase Channels}{62}{subsubsection.505}%
 \contentsline {subsubsection}{\numberline {4.2.4.2}Authentifizierung der Benutzer (Supabase Auth, OAuth2)}{64}{subsubsection.556}%
 \contentsline {paragraph}{\numberline {4.2.4.2.1}Laden von Benutzer- und Profildaten:}{64}{paragraph.557}%
 \contentsline {paragraph}{\numberline {4.2.4.2.2}Logout:}{64}{paragraph.558}%
-\contentsline {paragraph}{\numberline {4.2.4.2.3}Sicherheitsaspekte:}{64}{paragraph.559}%
+\contentsline {paragraph}{\numberline {4.2.4.2.3}Sicherheitsaspekte:}{65}{paragraph.559}%
 \contentsline {subsection}{\numberline {4.2.5}Spielmechanik und Logik}{65}{subsection.560}%
 \contentsline {subsubsection}{\numberline {4.2.5.1}Generierung der Spielrunden}{65}{subsubsection.561}%
 \contentsline {paragraph}{\numberline {4.2.5.1.1}Punkt-in-Polygon-Prüfung:}{65}{paragraph.574}%

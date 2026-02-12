@@ -104,7 +104,7 @@ Um die Bedienung übersichtlich zu halten, ist stets nur ein aktiver Pin sichtba
 
 Auch die initiale Kartenkonfiguration wurde bewusst auf die Spielmechanik abgestimmt. Die Startposition und der Zoom-Level sind so gewählt, dass Österreich vollständig sichtbar ist und der Spieler sich unmittelbar orientieren kann. Nicht benötigte UI-Elemente wie Street-View- oder Kartenmodus-Steuerungen wurden deaktiviert, um visuelle Ablenkungen zu reduzieren und den Fokus klar auf die Platzierung des Pins zu setzen.
 
-Darüber hinaus sorgt die vollständige Ausnutzung des verfügbaren Bildschirmbereichs (height: 100\%) dafür, dass die Karte sowohl auf mobilen Geräten als auch auf größeren Displays konsistent dargestellt wird. Insgesamt trägt diese reduzierte, klar strukturierte UI dazu bei, die zentrale Spielhandlung, also das Abgeben einer Standortvermutung, intuitiv und effizient umzusetzen.
+Darüber hinaus sorgt die vollständige Ausnutzung des verfügbaren Bildschirmbereichs (height: 100\%) dafür, dass die Karte sowohl auf mobilen Geräten als auch auf größeren Displays konsistent dargestellt wird. Insgesamt trägt diese reduzierte, klar strukturierte UI dazu bei, die zentrale Spielhandlung, also das Abgeben einer Standortvermutung, effizient umzusetzen.
 
 Der folgende Codeausschnitt zeigt, wie die Pin-Platzierung technisch umgesetzt wurde:
 
@@ -161,13 +161,10 @@ Der folgende Codeausschnitt zeigt, wie die Pin-Platzierung technisch umgesetzt w
 \mbox{}\\
 Im Mehrspieler-Modus besteht die Herausforderung nicht nur in der Anzeige mehrerer Marker, sondern insbesondere in deren eindeutiger visueller Unterscheidbarkeit. Um eine klare Zuordnung zu ermöglichen, werden die Pins in unterschiedlichen Farben dargestellt und jeweils mit dem zugehörigen Benutzernamen versehen. Dadurch kann der Spieler auf einen Blick erkennen, welche Position welchem Mitspieler zugeordnet ist. Diese visuelle Differenzierung ist essenziell, um Verwechslungen zu vermeiden und die Vergleichbarkeit der Ergebnisse zu gewährleisten.
 
-Darüber hinaus müssen alle Marker gleichzeitig auf derselben Karteninstanz gerendert werden. Die Karte dient somit als gemeinsame visuelle Referenzfläche, auf der sämtliche Schätzungen parallel angezeigt werden. Dabei ist darauf zu achten, dass sich Marker bei nah beieinanderliegenden Positionen nicht vollständig überdecken. Durch eine gezielte Steuerung der Rendering-Reihenfolge (z. B. über zIndex) kann sichergestellt werden, dass relevante Marker, etwa der eigene Tipp, stets sichtbar bleiben.
+Darüber hinaus müssen alle Marker gleichzeitig auf derselben Karteninstanz gerendert werden. Die Karte dient somit als gemeinsame visuelle Referenzfläche, auf der sämtliche Schätzungen parallel angezeigt werden. Dabei ist darauf zu achten, dass sich Marker bei nah beieinanderliegenden Positionen nicht vollständig überdecken. Durch eine gezielte Steuerung der Rendering-Reihenfolge kann sichergestellt werden, dass relevante Marker, etwa der eigene Tipp, stets sichtbar bleiben.
 
-Im Gegensatz zum Einzelspieler-Modus, bei dem ein Spieler ausschließlich seinen eigenen Pin setzt und dessen Position am Ende einsehen kann, erfordert der Mehrspieler-Modus die gleichzeitige Darstellung mehrerer Pins. Diese Funktionalität ist notwendig, um den Spielern die Vermutungen ihrer Mitspieler sichtbar zu machen und einen direkten Vergleich mit der eigenen Schätzung zu ermöglichen.
-
-Die konkrete visuelle Umsetzung der geschätzten sowie der korrekten Positionen wird im folgenden Abschnitt erläutert. An dieser Stelle wird zunächst beschrieben, wie die gleichzeitige Darstellung mehrerer Pins unterschiedlicher Spieler auf der Karte technisch realisiert werden kann.
-
-Eine zentrale Voraussetzung für die Anzeige mehrerer Pins ist der nachfolgend dargestellte Ablauf:\begin{enumerate}
+Die konkrete visuelle Umsetzung der geschätzten sowie der korrekten Positionen wird im folgenden Abschnitt erläutert. An dieser Stelle wird zunächst beschrieben, wie die gleichzeitige Darstellung mehrerer Pins unterschiedlicher Spieler auf der Karte technisch realisiert werden kann:
+\begin{enumerate}
     \item Spieler setzt Pin auf Karte
     \item Pin-Koordinaten werden im State gespeichert (\texttt{setPin})
     \item Bei {Tipp abgeben} $\rightarrow$ Speicherung in \texttt{user\_rounds} (Datenbank):
@@ -302,7 +299,7 @@ function getResultMapHTML({ solutionLat, solutionLng, guesses, apiKey, selfUserI
 
 \paragraph{Visualisierung der geschätzten und korrekten Position}
 \mbox{}\\
-Für die Ergebnisdarstellung ist nicht nur das Anzeigen beider Positionen, also der korrekten Position und die germutete des Spielers, entscheidend, sondern vor allem deren visuelle Verknüpfung. Die Linie zwischen getippter und tatsächlicher Position fungiert dabei als zentrales Orientierungselement. Sie macht die räumliche Abweichung unmittelbar sichtbar und ergänzt die numerische Distanzangabe um eine intuitive, grafische Komponente. Dadurch wird das Ergebnis nicht nur berechnet, sondern auch visuell erfahrbar gemacht.
+Für die Ergebnisdarstellung ist nicht nur das Anzeigen beider Positionen, also der korrekten Position und der geschätzen des Spielers entscheidend, sondern vor allem deren visuelle Verknüpfung. Die Linie zwischen getippter und tatsächlicher Position fungiert dabei als zentrales Orientierungselement. Sie macht die räumliche Abweichung unmittelbar sichtbar und ergänzt die numerische Distanzangabe um eine intuitive, grafische Komponente. Dadurch wird das Ergebnis nicht nur berechnet, sondern auch visuell erfahrbar gemacht.
 
 Die Linien werden als eigenständige Overlay-Elemente auf der bestehenden Karteninstanz gerendert. Dabei greifen sie auf dieselben geografischen Koordinaten zurück wie die Marker und passen sich automatisch an Zoomstufe und Kartenausschnitt an. Unabhängig vom gewählten Spielmodus bleiben grundlegende Eigenschaften wie Linienstärke, Transparenz und Verlauf konsistent, um eine einheitliche visuelle Struktur sicherzustellen. Lediglich die Farbgebung kann variieren, beispielsweise zur besseren Unterscheidung mehrerer Spieler im Mehrspieler-Modus.
 
@@ -478,7 +475,12 @@ function initMap() {
 
 \paragraph{Darstellung von roten Begrenzungslinien der Bundesländer}
 \mbox{}\\
-Um dem Spieler die Orientierung im Bundesländer-Modus zu erleichtern, wurde es als notwendig erachtet, die ausgewählten Regionen direkt auf der Karte hervorzuheben. In der fertigen Applikation geschieht dies durch rote Begrenzungslinien, welche die jeweiligen Bundesländer umrahmen. Diese Visualisierung ermöglicht es auch Spielern ohne detaillierte geografische Kenntnisse, ihre Schätzung deutlich zu verbessern. Aber auch für Spieler, die grundsätzlich wissen, wo sich die einzelnen Bundesländer befinden, erweist sich diese Funktion als hilfreich, da die exakten Grenzen eines Bundeslandes meist nicht positionsgenau bekannt sind. Im folgenden Codeabschnitt wird die technische Umsetzung dieser Begrenzungslinien erkärt:
+Um dem Spieler die Orientierung im Bundesländer-Modus zu erleichtern, wurde es als notwendig erachtet, die ausgewählten Regionen direkt auf der Karte hervorzuheben. In der fertigen Applikation geschieht dies durch rote Begrenzungslinien, welche die jeweiligen Bundesländer umrahmen. Diese Visualisierung ermöglicht es auch Spielern ohne detaillierte geografische Kenntnisse, ihre Schätzung deutlich zu verbessern. Aber auch für Spieler, die grundsätzlich wissen, wo sich die einzelnen Bundesländer befinden, erweist sich diese Funktion als hilfreich, da die exakten Grenzen eines Bundeslandes meist nicht positionsgenau bekannt sind. 
+
+Technisch werden die Begrenzungslinien als separate Polygon-Overlays auf der bestehenden Karteninstanz dargestellt. Die geografischen Koordinaten der jeweiligen Bundesländer werden dabei als Punktlisten definiert und an die Karten-API übergeben, sodass geschlossene Flächen entstehen, die exakt den Verwaltungsgrenzen entsprechen. Durch eine klar definierte Linienfarbe sowie eine erhöhte Strichstärke heben sich die Umrisse deutlich vom Kartenhintergrund ab, ohne jedoch andere Spielinformationen zu überdecken.
+
+Die Darstellung ist dabei rein visuell unterstützend und beeinflusst die eigentliche Spielmechanik nicht. Sie dient ausschließlich der Orientierung innerhalb des gewählten Modus. Da die Polygone direkt auf der Karte gerendert werden, passen sie sich automatisch an Zoomstufe und Kartenausschnitt an. Dadurch bleiben die Grenzen sowohl in der Gesamtansicht als auch in detaillierten Zoomstufen konsistent und klar erkennbar.
+Im folgenden Codeabschnitt wird die technische Umsetzung dieser Begrenzungslinien dargestellt:
 \begin{lstlisting}
 /**
  * Zeichnet die Bundesland-Grenzen als rote Linien (Polyline) auf die Google Map.
