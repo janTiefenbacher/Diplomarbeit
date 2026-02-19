@@ -15,8 +15,8 @@ Die Anwendung ist für eine zukünftige Veröffentlichung im Apple App Store sow
     \item \textbf{React Native} – Framework zur Entwicklung plattformübergreifender mobiler Anwendungen für iOS und Android.
     \item \textbf{TypeScript} – Typsichere Erweiterung von JavaScript, die bewusst anstelle von JavaScript gewählt wurde, um die Wartbarkeit, Lesbarkeit und Codequalität der Anwendung zu erhöhen.
     \item \textbf{Supabase (PostgreSQL)} – Backend-as-a-Service, das zentrale Funktionen wie Authentifizierung, Echtzeitdaten, Datenbankverwaltung sowie eine REST-API bereitstellt und damit den Entwicklungsaufwand deutlich reduziert.
-    \item \textbf{Google Maps API} – API zur Verarbeitung und Darstellung geografischer Daten sowie zur Positionsbestimmung innerhalb des Spiels.
-    \item \textbf{Google Street View API} – API zur Integration von 360-Grad-Street-View-Bildern aus ganz Österreich, welche die Grundlage für das GeoGuessr-ähnliche Spielkonzept bildet.
+    \item \textbf{Google Maps API} – \gls{api} zur Verarbeitung und Darstellung geografischer Daten sowie zur Positionsbestimmung innerhalb des Spiels.
+    \item \textbf{Google Street View API} – \gls{api} zur Integration von 360-Grad-Street-View-Bildern aus ganz Österreich, welche die Grundlage für das GeoGuessr-ähnliche Spielkonzept bildet.
     \item \textbf{GitHub} – Plattform zur Versionsverwaltung, die eine strukturierte Zusammenarbeit im Team sowie die kontinuierliche Aktualität des Quellcodes sicherstellt.
     \item \textbf{Jira} – Tool zur Projektplanung und Aufgabenverwaltung, das im Rahmen einer agilen Vorgehensweise für die Diplomarbeit eingesetzt wurde.
     \item \textbf{Figma} – Design- und Prototyping-Tool zur Erstellung von Mockups und interaktiven Prototypen, welche als visuelle Grundlage für die Benutzeroberfläche dienten.
@@ -36,7 +36,7 @@ Das Frontend wurde mit React Native umgesetzt und ist für die Benutzeroberfläc
 die Spiellogik sowie die Interaktion mit dem Benutzer verantwortlich.
 Das Backend basiert auf Supabase und übernimmt Aufgaben wie Authentifizierung, 
 Datenpersistenz und Echtzeitkommunikation.
-Externe APIs, wie die Google Maps und Google Street View API, werden zur Bereitstellung 
+Externe \gls{api}s, wie die Google Maps und Google Street View \gls{api}, werden zur Bereitstellung 
 von geografischen Daten und 360-Grad-Bildern verwendet.
 
 
@@ -75,7 +75,7 @@ Die im vorherigen Kapitel beschriebenen Designkonzepte und Gestaltungsprinzipien
 
 Aspekte der Barrierefreiheit wurden im Mockup unter anderem durch ausreichend große Touch-Ziele, klare Beschriftungen, eindeutige Icons sowie eine logisch aufgebaute Navigations- und Fokusstruktur berücksichtigt. Die hierarchische Anordnung von Inhalten, wie in den Abschnitten zu Informationsarchitektur und Struktur beschrieben, spiegelt sich direkt in der Seitenaufteilung und Navigation des Mockups wider. Farben, Typografie und Abstände wurden so eingesetzt, dass visuelle Orientierung unterstützt und eine intuitive Nutzung ermöglicht wird.
 
-Das Mockup dient damit nicht nur als visuelle Vorschau, sondern als konkrete Umsetzung der zuvor definierten UI/UX- und Designprinzipien und bildet die Grundlage für die technische Realisierung der Anwendung.
+Das Mockup dient damit nicht nur als visuelle Vorschau, sondern als konkrete Umsetzung der zuvor definierten UI und Designprinzipien und bildet die Grundlage für die technische Realisierung der Anwendung.
 
 \begin{figure}[H]
     \centering
@@ -89,7 +89,7 @@ Das Mockup dient damit nicht nur als visuelle Vorschau, sondern als konkrete Ums
 Das Responsive Design der Anwendung wurde durch den gezielten Einsatz flexibler Layout- und Größenkonzepte umgesetzt. Mithilfe von Flexbox (flex: 1) passen sich Container automatisch an den verfügbaren Bildschirmraum an, während prozentuale Breiten wie width: '95\%' oder dynamische Werte auf Basis der Bildschirmbreite (windowWidth * 0.95) eine adaptive Skalierung auf unterschiedlichen Geräten ermöglichen. Zusätzlich sorgen Einschränkungen wie maxWidth, minHeight und maxHeight dafür, dass UI-Elemente auf großen wie kleinen Displays gut nutzbar bleiben. Ergänzend wurden feste Seitenverhältnisse (aspectRatio) für visuelle Konsistenz sowie KeyboardAvoidingView für ein geräteabhängiges, nutzerfreundliches Verhalten bei Texteingaben eingesetzt. Dadurch bleibt die Benutzeroberfläche über verschiedene Bildschirmgrößen und Nutzungsszenarien hinweg stabil, übersichtlich und bedienbar.
 
 \subsubsection{Spielansicht und Benutzerinteraktion}
-In den folgenden Abschnitten werden die wichtigsten Aspekte des UI sowie der Benutzerinteraktion beschrieben. Hierbei
+In den folgenden Abschnitten werden die wichtigsten Aspekte des \gls{ui} sowie der Benutzerinteraktion beschrieben. Hierbei
 wird aktiv auf Code eingegangen und erläutert, wie dieser Funktioniert und welchen Zweck er erfüllt.
 
 \paragraph{Pin-Platzierung}
@@ -104,7 +104,7 @@ Um die Bedienung übersichtlich zu halten, ist stets nur ein aktiver Pin sichtba
 
 Auch die initiale Kartenkonfiguration wurde bewusst auf die Spielmechanik abgestimmt. Die Startposition und der Zoom-Level sind so gewählt, dass Österreich vollständig sichtbar ist und der Spieler sich unmittelbar orientieren kann. Nicht benötigte UI-Elemente wie Street-View- oder Kartenmodus-Steuerungen wurden deaktiviert, um visuelle Ablenkungen zu reduzieren und den Fokus klar auf die Platzierung des Pins zu setzen.
 
-Darüber hinaus sorgt die vollständige Ausnutzung des verfügbaren Bildschirmbereichs (height: 100\%) dafür, dass die Karte sowohl auf mobilen Geräten als auch auf größeren Displays konsistent dargestellt wird. Insgesamt trägt diese reduzierte, klar strukturierte UI dazu bei, die zentrale Spielhandlung, also das Abgeben einer Standortvermutung, effizient umzusetzen.
+Darüber hinaus sorgt die vollständige Ausnutzung des verfügbaren Bildschirmbereichs (height: 100\%) dafür, dass die Karte sowohl auf mobilen Geräten als auch auf größeren Displays konsistent dargestellt wird. Insgesamt trägt diese reduzierte, klar strukturierte \gls{ui} dazu bei, die zentrale Spielhandlung, also das Abgeben einer Standortvermutung, effizient umzusetzen.
 
 Der folgende Codeausschnitt zeigt, wie die Pin-Platzierung technisch umgesetzt wurde:
 
@@ -301,7 +301,7 @@ function getResultMapHTML({ solutionLat, solutionLng, guesses, apiKey, selfUserI
 \mbox{}\\
 Für die Ergebnisdarstellung ist nicht nur das Anzeigen beider Positionen, also der korrekten Position und der geschätzen des Spielers entscheidend, sondern vor allem deren visuelle Verknüpfung. Die Linie zwischen getippter und tatsächlicher Position fungiert dabei als zentrales Orientierungselement. Sie macht die räumliche Abweichung unmittelbar sichtbar und ergänzt die numerische Distanzangabe um eine intuitive, grafische Komponente. Dadurch wird das Ergebnis nicht nur berechnet, sondern auch visuell erfahrbar gemacht.
 
-Die Linien werden als eigenständige Overlay-Elemente auf der bestehenden Karteninstanz gerendert. Dabei greifen sie auf dieselben geografischen Koordinaten zurück wie die Marker und passen sich automatisch an Zoomstufe und Kartenausschnitt an. Unabhängig vom gewählten Spielmodus bleiben grundlegende Eigenschaften wie Linienstärke, Transparenz und Verlauf konsistent, um eine einheitliche visuelle Struktur sicherzustellen. Lediglich die Farbgebung kann variieren, beispielsweise zur besseren Unterscheidung mehrerer Spieler im Mehrspieler-Modus.
+Die Linien werden als eigenständige \gls{overlay}-Elemente auf der bestehenden Karteninstanz gerendert. Dabei greifen sie auf dieselben geografischen Koordinaten zurück wie die Marker und passen sich automatisch an Zoomstufe und Kartenausschnitt an. Unabhängig vom gewählten Spielmodus bleiben grundlegende Eigenschaften wie Linienstärke, Transparenz und Verlauf konsistent, um eine einheitliche visuelle Struktur sicherzustellen. Lediglich die Farbgebung kann variieren, beispielsweise zur besseren Unterscheidung mehrerer Spieler im Mehrspieler-Modus.
 
 Zusätzlich wird die Linie so gestaltet, dass sie sich klar vom Kartenhintergrund abhebt, ohne andere UI-Elemente zu überdecken. Diese bewusste visuelle Gewichtung stellt sicher, dass das Ergebnis schnell erfasst werden kann, ohne die Übersichtlichkeit der gesamten Karte zu beeinträchtigen.
 
@@ -531,10 +531,10 @@ const bundeslandPolygone: Record<string, [number, number][]> = {
 
 \paragraph{Kompass in der Spielansicht}
 \mbox{}\\
-Der Kompass in der Spielansicht ist ein wichtiges UI-Feature, weil er dem Spieler jederzeit Orientierung gibt und die Street-View-Perspektive lesbarer macht. Da sich die Kamera in Google Street View frei drehen lässt, liefert der Kompass eine direkte Rückmeldung über die Blickrichtung (Heading) und verhindert, dass sich Nutzer beim Erkunden oder beim Platzieren eines Tipps verlaufen. Zusätzlich erhöht das Feature die Immersion, weil es die reale Blickrichtung aus Street View in ein klares, spieltypisches Overlay übersetzt, ein kleines Detail, das sich für den Nutzer aber als hilfreich darstellt und das Gameplay spürbar verbessert.
+Der Kompass in der Spielansicht ist ein wichtiges UI-Feature, weil er dem Spieler jederzeit Orientierung gibt und die Street-View-Perspektive lesbarer macht. Da sich die Kamera in Google Street View frei drehen lässt, liefert der Kompass eine direkte Rückmeldung über die Blickrichtung (Heading) und verhindert, dass sich Nutzer beim Erkunden oder beim Platzieren eines Tipps verlaufen. Zusätzlich erhöht das Feature die Immersion, weil es die reale Blickrichtung aus Street View in ein klares, spieltypisches \gls{overlay} übersetzt, ein kleines Detail, das sich für den Nutzer aber als hilfreich darstellt und das Gameplay spürbar verbessert.
 Hier kannst du ebenfalls noch einen technisch orientierten Zusatz ergänzen, der die UI-Implementierung etwas greifbarer macht:
 
-Technisch wird der Kompass als fest positioniertes Overlay über der Street-View-Ansicht dargestellt. Er ist unabhängig vom eigentlichen Karten- bzw. Street-View-Element im Layout verankert und bleibt somit stets sichtbar, auch wenn sich die Perspektive dynamisch ändert. Die Rotation des Kompasszeigers erfolgt synchron zur aktuellen Blickrichtung der Street-View-Kamera, indem der jeweilige Heading-Wert ausgelesen und in eine entsprechende CSS-Transformation übersetzt wird. Dadurch entsteht eine direkte visuelle Kopplung zwischen Kamerabewegung und UI-Element.
+Technisch wird der Kompass als fest positioniertes \gls{overlay} über der Street-View-Ansicht dargestellt. Er ist unabhängig vom eigentlichen Karten- bzw. Street-View-Element im Layout verankert und bleibt somit stets sichtbar, auch wenn sich die Perspektive dynamisch ändert. Die Rotation des Kompasszeigers erfolgt synchron zur aktuellen Blickrichtung der Street-View-Kamera, indem der jeweilige Heading-Wert ausgelesen und in eine entsprechende \gls{css}-Transformation übersetzt wird. Dadurch entsteht eine direkte visuelle Kopplung zwischen Kamerabewegung und UI-Element.
 
 Besonders wichtig ist dabei die kontinuierliche Aktualisierung bei jeder Richtungsänderung. Sobald der Spieler die Ansicht dreht, passt sich der Kompass in Echtzeit an. Diese unmittelbare Rückmeldung sorgt für Konsistenz zwischen Interaktion und Darstellung und stärkt die räumliche Orientierung. Gleichzeitig bleibt das Design bewusst reduziert, sodass der Kompass informativ wirkt, ohne die eigentliche Spielansicht zu überlagern oder visuell zu dominieren.
 \begin{lstlisting}
