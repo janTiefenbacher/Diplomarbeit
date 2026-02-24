@@ -4,18 +4,19 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Systemarchitektur der Anwendung WoSamma}}{40}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Informationsarchitektur der Anwendung WoSamma}}{41}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Wireframes der Anwendung WoSamma}}{42}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Mockup der Anwendung WoSamma(Überblick)}}{43}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces platzierter Pin im Einzelspieler}}{46}{figure.caption.104}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Anzeige mehrerer Pins im Mehrspieler}}{50}{figure.caption.211}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Entfernungsanzeige im Einzelspieler}}{53}{figure.caption.272}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Anzeige der Entfernung im Mehrspielermodus}}{55}{figure.caption.312}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Begrenzungslinien für Nieserösterreich und Wien}}{58}{figure.caption.375}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Kompass in der Spieleansicht}}{61}{figure.caption.501}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Benutzerverwaltung und Authentifizierungsübersicht in Supabase}}{62}{figure.caption.504}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Darstellung einer Live-Einladung in der Benutzeroberfläche}}{67}{figure.caption.579}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Systemarchitektur der Anwendung WoSamma}}{42}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Datenbankarchitektur der Anwendung WoSamma}}{43}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Informationsarchitektur der Anwendung WoSamma}}{45}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Wireframes der Anwendung WoSamma}}{45}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Mockup der Anwendung WoSamma(Überblick)}}{46}{figure.caption.68}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces platzierter Pin im Einzelspieler}}{49}{figure.caption.113}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Anzeige mehrerer Pins im Mehrspieler}}{53}{figure.caption.220}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Entfernungsanzeige im Einzelspieler}}{56}{figure.caption.281}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Anzeige der Entfernung im Mehrspielermodus}}{58}{figure.caption.321}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Begrenzungslinien für Nieserösterreich und Wien}}{61}{figure.caption.384}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Kompass in der Spieleansicht}}{64}{figure.caption.510}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Benutzerverwaltung und Authentifizierungsübersicht in Supabase}}{65}{figure.caption.513}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Darstellung einer Live-Einladung in der Benutzeroberfläche}}{70}{figure.caption.588}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {ngerman}{}\relax 

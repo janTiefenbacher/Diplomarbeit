@@ -47,6 +47,41 @@ von geografischen Daten und 360-Grad-Bildern verwendet.
     \label{fig:beispielabbildung}
 \end{figure}
 
+\subsection{Architektur der Datenbank}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{content/img/4_Technische_Umsetzung/dbschema.png}
+    \caption{Datenbankarchitektur der Anwendung WoSamma}
+    \label{fig:beispielabbildung}
+\end{figure}
+
+Die Datenbankarchitektur der Anwendung \textit{WoSamma} basiert auf einem relationalen Schema unter Verwendung von PostgreSQL (über Supabase). 
+Im Zentrum des Modells steht die von Supabase bereitgestellte Tabelle \texttt{auth.users}, welche die Authentifizierungsdaten verwaltet. 
+Darauf aufbauend werden benutzerspezifische Informationen in der Tabelle \texttt{profiles} gespeichert. 
+Diese enthält unter anderem statistische Kennzahlen wie gespielte und gewonnene Spiele sowie Statusinformationen.
+
+Die Spiellogik wird über mehrere miteinander verknüpfte Tabellen abgebildet. 
+Die Tabelle \texttt{lobbies} verwaltet aktive Spielräume inklusive Host, Spielstatus und Rundeneinstellungen. 
+Über die Zwischentabelle \texttt{lobby\_players} wird die n:m-Beziehung zwischen Benutzern und Lobbys realisiert. 
+Einladungen zu Spielrunden werden in \texttt{lobby\_invites} gespeichert.
+
+Einzelne Spielrunden werden in der Tabelle \texttt{user\_rounds} dokumentiert. 
+Dort werden unter anderem die tatsächlichen Koordinaten, die vom Benutzer gewählten Koordinaten, die Distanz sowie die erreichten Punkte gespeichert. 
+Für den Einzelspielermodus existiert zusätzlich die Tabelle \texttt{user\_daily\_game}, während \texttt{daily\_location} die täglich rotierenden Zielkoordinaten enthält.
+
+Soziale Interaktionen werden durch eigene Tabellen strukturiert: 
+\texttt{friend\_requests} bildet Freundschaftsanfragen ab, \texttt{private\_messages} sowie \texttt{news\_messages} ermöglichen Kommunikationsfunktionen. 
+Profilbilder werden über \texttt{profile\_pictures} und \texttt{user\_profile\_pictures} verwaltet.
+
+Administrative Prozesse sind ebenfalls integriert. 
+Fehlermeldungen werden in \texttt{bug\_reports} gespeichert, während die Tabelle \texttt{reports} Benutzer-Meldungen abbildet. 
+Die Tabelle \texttt{config} dient der Speicherung globaler Konfigurationswerte.
+
+Die Datenbank folgt dem Prinzip der Normalisierung, wodurch Redundanzen minimiert und Datenkonsistenz gewährleistet werden. 
+Primär- und Fremdschlüssel stellen referenzielle Integrität sicher und ermöglichen eine klare Trennung zwischen Authentifizierungsdaten, Spiellogik, sozialen Funktionen und administrativen Prozessen. 
+Durch diese modulare Struktur ist die Datenbank sowohl wartbar als auch skalierbar und kann bei steigenden Nutzerzahlen effizient erweitert werden.
+
 \subsection{Frontend-Implementierung \& Plannung}
 Die Planung und die dementsprechende Umsetzung des Frontends stellen einen wesentlichen Teil der Implementierung dar. Dieser Bereich ist sehr umfangreich und hatte eine hohe Priorität, da er die Kommunikation zwischen Benutzer und Applikation abbildet. Aufbauend auf den zuvor beschriebenen theoretischen Grundlagen zu User Experience, Informationsarchitektur und Interface-Design wurden zunächst die funktionalen Anforderungen an das Frontend definiert. Ziel war es, eine übersichtliche, intuitive und visuell konsistente Benutzeroberfläche zu schaffen, die sowohl im Einzel- als auch im Mehrspielerbetrieb eine einfache und verständliche Nutzung ermöglicht.
 

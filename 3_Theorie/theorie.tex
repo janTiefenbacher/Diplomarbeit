@@ -629,3 +629,102 @@ Lastverteilung (Load Balancing) beschreibt die Verteilung eingehender Anfragen a
 Für die Performance von Anwendungen sind insbesondere Latenz und Durchsatz entscheidend. Latenz beschreibt die Verzögerungszeit zwischen Anfrage und Antwort und ist vor allem bei interaktiven Anwendungen relevant. Durchsatz bezeichnet die Menge an Daten, die in einem bestimmten Zeitraum übertragen oder verarbeitet werden kann \cite{studysmarter_latenz_durchsatz}.
 
 Latenzoptimierung zielt darauf ab, Verzögerungen zu reduzieren, beispielsweise durch optimierte Netzwerkrouten, Caching, kürzere Verarbeitungswege oder geografisch näher platzierte Ressourcen. Durchsatzsteigerung wird erreicht, indem Bandbreite, Parallelisierung, effiziente Protokolle oder leistungsfähigere Komponenten eingesetzt werden. Beide Aspekte beeinflussen direkt, wie schnell und stabil Systeme unter Last reagieren \cite{studysmarter_latenz_durchsatz}.
+
+
+\section{Skalierungsstrategie}
+
+Um eine bestehende App-Infrastruktur an stark wachsende Nutzerzahlen anzupassen, müssen konkrete technologische Entscheidungen getroffen werden. Dabei stellt sich nicht nur die Frage \emph{wie} skaliert wird (vertikal oder horizontal), sondern insbesondere \emph{mit welchen Diensten und Infrastrukturmodellen} die Skalierung technisch umgesetzt werden soll. Im Folgenden werden zentrale Cloud- und Backend-Ansätze gegenübergestellt und hinsichtlich ihrer Eignung für kurzfristiges sowie langfristiges Nutzerwachstum bewertet.
+
+\subsection*{1. On-Premise vs. Cloud-Infrastruktur}
+
+Eine klassische On-Premise-Architektur bietet volle Kontrolle über Hardware und Daten, ist jedoch bei starkem Wachstum unflexibel. Neue Server müssen physisch beschafft, installiert und konfiguriert werden. Dies verursacht hohe Vorlaufzeiten und Investitionskosten.
+
+Cloud-Infrastrukturen (z.\,B. AWS, Google Cloud, Microsoft Azure) ermöglichen dagegen die dynamische Bereitstellung von Ressourcen. Virtuelle Maschinen oder Container können innerhalb weniger Minuten gestartet werden. Für eine wachsende App ist die Cloud daher deutlich besser geeignet, da Skalierung nahezu in Echtzeit erfolgen kann.
+
+\textbf{Bewertung:}  
+Für eine App mit potenziell stark steigender Nutzerzahl ist eine Cloud-basierte Infrastruktur klar vorzuziehen, da sie flexible Skalierung ohne hohe Anfangsinvestitionen erlaubt.
+
+\subsection*{2. IaaS vs. PaaS vs. BaaS}
+
+Bei der Auswahl des Cloud-Ansatzes existieren unterschiedliche Abstraktionsebenen:
+
+\textbf{Infrastructure as a Service (IaaS):}  
+Hier werden virtuelle Server bereitgestellt. Entwickler verwalten Betriebssystem, Runtime und Deployment selbst. Vorteil ist maximale Kontrolle. Nachteil ist hoher administrativer Aufwand. Skalierung erfolgt über zusätzliche Instanzen und Load Balancer.
+
+\textbf{Platform as a Service (PaaS):}  
+Der Anbieter übernimmt Betriebssystem und Laufzeitumgebung. Deployment erfolgt automatisiert (z.\,B. per Git-Push). Skalierung kann oft per Klick oder automatisch konfiguriert werden. Der Verwaltungsaufwand ist geringer als bei IaaS.
+
+\textbf{Backend as a Service (BaaS):}  
+Plattformen wie Supabase oder Firebase stellen Datenbank, Authentifizierung, Realtime-Funktionen und APIs direkt bereit. Skalierung wird größtenteils vom Anbieter übernommen. Entwickler konzentrieren sich auf die App-Logik.
+
+\textbf{Vergleich:}
+
+\begin{itemize}
+\item IaaS: maximale Flexibilität, geeignet für komplexe Systeme mit hoher Individualisierung
+\item PaaS: gute Balance zwischen Kontrolle und Automatisierung
+\item BaaS: schnellste Skalierung mit minimalem Infrastrukturaufwand
+\end{itemize}
+
+\textbf{Empfehlung:}  
+Für eine wachsende App in frühen bis mittleren Phasen ist BaaS oder PaaS besonders geeignet, da Skalierungsmechanismen bereits integriert sind. Bei sehr großen Systemen mit speziellen Anforderungen kann langfristig ein Wechsel zu IaaS sinnvoll sein.
+
+\subsection*{3. Serverbasierte Architektur vs. Serverless}
+
+\textbf{Klassische serverbasierte Architektur:}  
+Backend läuft auf dauerhaft aktiven Serverinstanzen. Skalierung erfolgt durch Hinzufügen weiterer Instanzen (Autoscaling). Vorteil ist konstante Performance und volle Kontrolle. Nachteil sind laufende Kosten auch bei geringer Nutzung.
+
+\textbf{Serverless / Function-as-a-Service (FaaS):}  
+Code wird ereignisgesteuert ausgeführt. Ressourcen werden automatisch skaliert. Es fallen nur Kosten bei tatsächlicher Nutzung an. Ideal bei stark schwankender Last.
+
+\textbf{Vergleich:}
+
+\begin{itemize}
+\item Serverbasiert: stabil bei konstant hoher Last
+\item Serverless: flexibel bei stark variabler Last
+\end{itemize}
+
+\textbf{Empfehlung:}  
+Für Apps mit unvorhersehbarem Wachstum oder saisonalen Peaks ist Serverless besonders geeignet. Bei dauerhaft hoher Nutzerzahl kann eine hybride Lösung sinnvoll sein.
+
+\subsection*{4. Datenbankstrategien}
+
+\textbf{Single-Instance-Datenbank:}  
+Einfach, aber bei hoher Last schnell überfordert.
+
+\textbf{Read-Replicas:}  
+Leseanfragen werden auf mehrere Replikate verteilt. Geeignet bei hohem Leseaufkommen.
+
+\textbf{Sharding:}  
+Aufteilung großer Datenmengen auf mehrere Datenbankinstanzen. Geeignet bei extrem großen Nutzerzahlen.
+
+\textbf{Relationale vs. NoSQL-Datenbanken:}  
+Relationale Systeme bieten hohe Konsistenz. NoSQL-Systeme sind oft horizontal besser skalierbar.
+
+\textbf{Empfehlung:}  
+Bei moderatem Wachstum reichen Read-Replicas aus. Bei massivem Wachstum ist Sharding oder ein verteilter Datenbankansatz notwendig.
+
+\subsection*{5. Organisatorische Skalierungsstrategien}
+
+Technische Infrastruktur allein genügt nicht. Organisatorisch sind folgende Maßnahmen notwendig:
+
+\begin{itemize}
+\item Einführung von Monitoring-Systemen zur Lastüberwachung
+\item Regelmäßige Lasttests
+\item Automatisierte Deployments (CI/CD)
+\item Klare Trennung von Entwicklungs-, Test- und Produktionsumgebung
+\item Skalierbare Teamstrukturen (z.\,B. Aufteilung in Backend-, Infrastruktur- und Feature-Teams)
+\end{itemize}
+
+\subsection*{\textbf{Gesamtbewertung für eine wachsende App}}
+
+Für eine moderne mobile App mit potenziell stark steigender Nutzerzahl ist folgende Kombination besonders geeignet:
+
+\begin{itemize}
+\item Cloud-basierte Infrastruktur statt On-Premise
+\item PaaS oder BaaS in frühen Phasen
+\item Autoscaling + Load Balancing
+\item Caching und Datenbank-Replikation
+\item Kontinuierliches Monitoring und automatisierte Deployments
+\end{itemize}
+
+Zusammenfassend lässt sich feststellen, dass kurzfristige Skalierung vor allem durch Cloud-Ressourcen, Autoscaling und Replikation erreicht wird, während langfristige Stabilität durch architektonische Modularisierung, optimierte Datenbankstrategien und organisatorische Prozesse gewährleistet wird. Die optimale Lösung hängt dabei vom Entwicklungsstand, Budget und erwarteten Nutzerwachstum der jeweiligen App ab.
