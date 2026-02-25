@@ -95,3 +95,86 @@ Für eine moderne mobile App mit potenziell stark steigender Nutzerzahl ist folg
 \end{itemize}
 
 Zusammenfassend lässt sich feststellen, dass kurzfristige Skalierung vor allem durch Cloud-Ressourcen, Autoscaling und Replikation erreicht wird, während langfristige Stabilität durch architektonische Modularisierung, optimierte Datenbankstrategien und organisatorische Prozesse gewährleistet wird. Die optimale Lösung hängt dabei vom Entwicklungsstand, Budget und erwarteten Nutzerwachstum der jeweiligen App ab.
+
+\section{Evaluierung geeigneter Monetarisierungsstrategien}
+In diesem Kapitel werden die zuvor beschriebenen Monetarisierungsansätze hinsichtlich ihrer Eignung für die entwickelte App bewertet und daraus eine empfohlene Strategie abgeleitet. Die App verursacht laufende Betriebskosten (insbesondere durch die Nutzung der Google Street View API). Daraus ergibt sich als zentrale Anforderung, dass die Monetarisierung \textit{wiederkehrende} bzw. kontinuierlich skalierende Einnahmen ermöglichen muss, welche im Idealfall die Kosten decken.
+
+\subsection{Bewertungskriterien}
+Für die Evaluierung werden folgende Kriterien herangezogen:
+\begin{itemize}
+    \item \textbf{Planbarkeit der Einnahmen:} Eignung für laufende Kosten und langfristigen Betrieb.
+    \item \textbf{Skalierbarkeit:} Steigen die Einnahmen mit der Nutzerzahl ohne proportionale Mehrkosten?
+    \item \textbf{Nutzererlebnis (UX):} Einfluss auf Spielfluss, Interface und wahrgenommene Qualität.
+    \item \textbf{Umsetzbarkeit:} Technische Komplexität und Realisierbarkeit im Rahmen des Projekts.
+    \item \textbf{Akzeptanz:} Wahrscheinlichkeit, dass Nutzer das Modell annehmen (Werbung/Abos/IAP).
+\end{itemize}
+
+\subsection{Nicht priorisierte Modelle}
+\textbf{Spenden \& Crowdfunding} werden für diese App nicht als primäre Monetarisierung berücksichtigt. Der Hauptgrund ist die fehlende Einnahmensicherheit: freiwillige Beiträge sind schwer prognostizierbar und eignen sich daher nur eingeschränkt zur Deckung laufender API-Kosten. Als ergänzendes Modell (z.\,B. Community-Support) wäre es zwar denkbar, wird jedoch nicht als tragende Säule empfohlen.
+
+\textbf{Sponsoring \& Partnerschaften} (z.\,B. mit Hotelbetrieben oder Tourismus-Organisationen) könnten mittelfristig attraktiv sein, sind jedoch in der Startphase meist schwer umsetzbar. Ohne nachweisbare Reichweite (aktive Nutzer, Spielrunden, Retention) ist die Verhandlungsposition schwach und Sponsoren erwarten üblicherweise messbare \gls{KPIs}. Daher wird Sponsoring als \textit{spätere} Option eingeordnet, sobald eine ausreichende Nutzerbasis aufgebaut wurde.
+
+\textbf{Einmaliger Kauf} (Paid App) wird als ungeeignet bewertet. Ein Einmalkauf erzeugt zwar sofortige Einnahmen, passt jedoch schlecht zu laufenden Betriebskosten, da nach dem Kauf keine wiederkehrenden Erlöse entstehen. Zudem stellt der Kaufpreis eine Einstiegshürde dar, insbesondere im Spielebereich, in dem kostenlose Alternativen dominieren.
+
+\subsection{Empfohlene Strategie: Hybridmodell aus Werbung, Pro-Abo und In-App-Käufen}
+Als am besten geeignet wird ein \textbf{Hybridmodell} bewertet, das drei Elemente kombiniert:
+\begin{enumerate}
+    \item \textbf{Video-/Playable-Werbung als Basiserlös (Free-Nutzer)}
+    \item \textbf{Pro-Abonnement als wiederkehrende Einnahmequelle (No-Ads)}
+    \item \textbf{In-App-Käufe für kosmetische Inhalte (z.\,B. Profilbilder)}
+\end{enumerate}
+
+Dieses Modell ist in Mobile Games verbreitet, da es sowohl eine breite kostenlose Nutzung ermöglicht als auch zahlungsbereite Nutzer gezielt monetarisiert, ohne alle Nutzer zu einem Kauf zu zwingen.
+
+\subsubsection{Werbung (Fokus: Rewarded Video und Playable Ads)}
+Da die App ein Spiel ist, bieten sich insbesondere \textbf{vollflächige Formate} (Rewarded Video / Playables) an. Diese erzielen typischerweise höhere \gls{eCPM}-Werte als Banner, sind aber stärker in den Spielfluss integriert zu planen, um Frustration zu vermeiden. Rewarded Video \gls{eCPM} wird in Marktübersichten häufig im Bereich von etwa \textbf{10--50 USD pro 1.000 Impressionen} genannt (stark abhängig von Land, Zielgruppe und Nachfrage). \cite{BoA_RewardedVideo}
+
+\textbf{Werbenetzwerk:} Für die theoretische Umsetzung wird \textbf{Google AdMob} vorgesehen, da es als verbreitetes Werbenetzwerk einen standardisierten Einstieg ermöglicht und die genannten Formate unterstützt.
+
+\paragraph{Geplante Werbeplatzierungen (theoretisches Konzept)}
+\mbox{}\\
+Um eine Balance aus Einnahmen und UX zu erreichen, werden Werbeeinblendungen bevorzugt an \textbf{natürlichen Unterbrechungen} platziert:
+\begin{itemize}
+    \item \textbf{Mehrspieler:} nach jeder abgeschlossenen Runde ein Video/Playable (da klarer Abschlussmoment).
+    \item \textbf{Daily Challenge:} nach Abschluss der Challenge ein Video/Playable.
+    \item \textbf{Einzelspieler:} nach jeweils 5 Runden ein Video/Playable.
+    \item \textbf{Menü-Rückkehr:} optional beim freiwilligen Zurückgehen ins Hauptmenü (z.\,B. nach 3 Runden), da dies weniger störend wirkt als während aktiver Spielphasen.
+\end{itemize}
+
+Zusätzlich kann ein \textbf{Werbung-gegen-Spielzeit}-Mechanismus eingesetzt werden:
+\begin{itemize}
+    \item Free-Nutzer erhalten z.\,B. \textbf{5 Einzelspieler-Spiele pro Tag}.
+    \item Weitere Spiele können durch das Ansehen eines Rewarded Videos „freigeschaltet“ werden.
+\end{itemize}
+Dieser Ansatz ist aus UX-Sicht oft akzeptabler als erzwungene Unterbrechungen, da Nutzer die Werbung \textit{aktiv} zur Freischaltung wählen.
+
+\paragraph{Banner-Werbung (bewusst zurückhaltend)}
+Banner werden als kritisch bewertet, da sie UI-Flächen belegen, die wahrgenommene Qualität reduzieren können und bei falscher Platzierung als „nervig“ empfunden werden. Falls Banner eingesetzt werden, dann nur in Bereichen mit geringer Interaktionsdichte, z.\,B. im \textbf{Shop} oder auf \textbf{statischen Übersichtsseiten}. Primär wird jedoch auf Video/Playable Ads fokussiert.
+
+\subsubsection{Pro-Abonnement (No-Ads)}
+Ein Pro-Abo wird als besonders geeignet bewertet, weil es \textbf{wiederkehrende Einnahmen} ermöglicht und damit laufende Kosten (API) langfristig besser abdecken kann. Der Mehrwert ist für Nutzer klar kommunizierbar: \textbf{werbefreies Spielen} (und optional weitere Komfortfunktionen).
+
+Für die erwartete Abo-Quote kann man sich an typischen Conversion-Ranges orientieren. Branchenanalysen auf Basis großer App-Datensätze berichten je nach App-Typ und Preisgestaltung von Conversion-Raten im niedrigen einstelligen Prozentbereich; z.\,B. nennt RevenueCat für „Download-to-paid Conversion“ nach mehreren Tagen Nutzungszeit Medianwerte in einer Größenordnung von ca. \textbf{1{,}5\% bis 2{,}7\%} (unter anderem abhängig vom Preispunkt). \cite{RevenueCat_Subscriptions2025}
+Diese Werte dienen im Rahmen dieser Arbeit als grobe Orientierung und sind stark abhängig von Zielgruppe, Paywall-Design und tatsächlichem Mehrwert.
+
+\paragraph{Preisfestlegung}
+\mbox{}\\
+Der konkrete Preis des Pro-Abos wird in der nachfolgenden \textbf{Kosten-Nutzen-Analyse} festgelegt, da dort geprüft wird, ab welchem Preisniveau (und bei welcher Abo-Quote) die Monetarisierung die laufenden Kosten zuverlässig decken kann.
+
+\subsubsection{In-App-Käufe (Profilbilder / Kosmetik)}
+In-App-Käufe für kosmetische Inhalte (z.\,B. Profilbilder) eignen sich als ergänzendes Modell, weil sie:
+\begin{itemize}
+    \item keine Barriere für den Einstieg erzeugen,
+    \item die Personalisierung und Bindung fördern,
+    \item unabhängig vom Abo zusätzliche Einnahmen ermöglichen.
+\end{itemize}
+Da kosmetische Inhalte keinen spielerischen Vorteil bieten, bleibt zudem die Fairness im Spiel (insbesondere im Mehrspieler) gewahrt.
+
+\subsection{Fazit}
+Unter Berücksichtigung der Anforderungen (laufende API-Kosten, Spielecharakter, UX) wird ein \textbf{Hybridmodell} als am besten geeignet bewertet:
+\begin{itemize}
+    \item \textbf{Werbung (Rewarded/Playable)} als skalierbarer Basiserlös für Free-Nutzer,
+    \item \textbf{Pro-Abo (No-Ads)} als wiederkehrender, besser planbarer Erlös,
+    \item \textbf{Kosmetische In-App-Käufe} als zusätzliche, nicht invasive Einnahmequelle.
+\end{itemize}
+Spenden/Crowdfunding sowie Sponsoring werden nicht als primäre Säulen empfohlen (zu geringe Planbarkeit bzw. erst bei ausreichender Reichweite sinnvoll), und ein Einmalkauf wird aufgrund fehlender wiederkehrender Einnahmen als ungeeignet eingestuft.

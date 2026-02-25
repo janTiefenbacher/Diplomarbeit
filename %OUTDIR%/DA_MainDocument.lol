@@ -5,11 +5,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {lstlisting}{\numberline {5.1}{\ignorespaces Beispielhafte Echtzeit-Nachricht über einen Supabase Channel}}{67}{lstlisting.515}%
-\contentsline {lstlisting}{\numberline {5.2}{\ignorespaces Realtime-Subscription zur Synchronisation von Freundschaftsanfragen}}{67}{lstlisting.527}%
-\contentsline {lstlisting}{\numberline {5.3}{\ignorespaces Polygonmodell der österreichischen Staatsgrenze zur Positionsgenerierung}}{69}{lstlisting.571}%
-\contentsline {lstlisting}{\numberline {5.4}{\ignorespaces Realtime-Subscription zur Verarbeitung eingehender Lobby-Einladungen}}{71}{lstlisting.589}%
-\contentsline {lstlisting}{\numberline {5.5}{\ignorespaces Distanzberechnung mittels Haversine-Formel}}{74}{lstlisting.686}%
+\contentsline {lstlisting}{\numberline {5.1}{\ignorespaces Beispielhafte Echtzeit-Nachricht über einen Supabase Channel}}{70}{lstlisting.529}%
+\contentsline {lstlisting}{\numberline {5.2}{\ignorespaces Realtime-Subscription zur Synchronisation von Freundschaftsanfragen}}{70}{lstlisting.541}%
+\contentsline {lstlisting}{\numberline {5.3}{\ignorespaces Polygonmodell der österreichischen Staatsgrenze zur Positionsgenerierung}}{72}{lstlisting.585}%
+\contentsline {lstlisting}{\numberline {5.4}{\ignorespaces Realtime-Subscription zur Verarbeitung eingehender Lobby-Einladungen}}{74}{lstlisting.603}%
+\contentsline {lstlisting}{\numberline {5.5}{\ignorespaces Distanzberechnung mittels Haversine-Formel}}{77}{lstlisting.700}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {ngerman}{}\relax 

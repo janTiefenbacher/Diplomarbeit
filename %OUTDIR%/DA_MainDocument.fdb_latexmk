@@ -1,28 +1,28 @@
 # Fdb version 4
-["bibtex %OUTDIR%/DA_MainDocument"] 1771929201.16166 "%OUTDIR%/DA_MainDocument.aux" "%OUTDIR%/DA_MainDocument.bbl" "%OUTDIR%/DA_MainDocument" 1771929213.23504 0
-  "%OUTDIR%/6_appendix/listofeverything.aux" 1771929211 4948 1313431e6659ad236cb9c8d553610a61 "pdflatex"
-  "%OUTDIR%/DA_MainDocument.aux" 1771929212 53046 bebbb88297254c00c6ab774ed7474427 "pdflatex"
-  "./DA_Literatur.bib" 1770632372 16349 588aaa1c923fc0a930e28e4aefa9f4c6 ""
+["bibtex %OUTDIR%/DA_MainDocument"] 1772005739.31956 "%OUTDIR%/DA_MainDocument.aux" "%OUTDIR%/DA_MainDocument.bbl" "%OUTDIR%/DA_MainDocument" 1772005762.91624 0
+  "%OUTDIR%/6_appendix/listofeverything.aux" 1772005761 5023 3254345e1311df1659c8e9006a07d16e "pdflatex"
+  "%OUTDIR%/DA_MainDocument.aux" 1772005761 57163 c23290a20ceefa9594e211f978136bf5 "pdflatex"
+  "./DA_Literatur.bib" 1772005684 16878 25219cf9b19daec92d254f5e45b72d33 ""
   "C:/Users/janti/AppData/Roaming/MiKTeX/bibtex/bst/babelbib/babunsrt.bst" 1610365731 25258 5676363a009d917405b271fe05aa55ce ""
   (generated)
   "%OUTDIR%/DA_MainDocument.bbl"
   "%OUTDIR%/DA_MainDocument.blg"
   (rewritten before read)
-["makeindex %OUTDIR%/DA_MainDocument.idx"] 1771927554.83453 "%OUTDIR%/DA_MainDocument.idx" "%OUTDIR%/DA_MainDocument.ind" "%OUTDIR%/DA_MainDocument" 1771929213.23458 0
-  "%OUTDIR%/DA_MainDocument.idx" 1771929209 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex %OUTDIR%/DA_MainDocument.idx"] 1772005613.12048 "%OUTDIR%/DA_MainDocument.idx" "%OUTDIR%/DA_MainDocument.ind" "%OUTDIR%/DA_MainDocument" 1772005762.91566 0
+  "%OUTDIR%/DA_MainDocument.idx" 1772005758 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "%OUTDIR%/DA_MainDocument.ilg"
   "%OUTDIR%/DA_MainDocument.ind"
   (rewritten before read)
-["pdflatex"] 1771929207.46385 "c:/Users/janti/Desktop/DPLM/Diplomarbeit/DA_MainDocument.tex" "DA_MainDocument.pdf" "DA_MainDocument" 1771929213.23591 0
-  "%OUTDIR%/6_appendix/listofeverything.aux" 1771929211 4948 1313431e6659ad236cb9c8d553610a61 "pdflatex"
-  "%OUTDIR%/DA_MainDocument.aux" 1771929212 53046 bebbb88297254c00c6ab774ed7474427 "pdflatex"
-  "%OUTDIR%/DA_MainDocument.bbl" 1771929201 20737 43cb1db1253f5168fbeb6e189fc82220 "bibtex %OUTDIR%/DA_MainDocument"
-  "%OUTDIR%/DA_MainDocument.ind" 1771927555 0 d41d8cd98f00b204e9800998ecf8427e "makeindex %OUTDIR%/DA_MainDocument.idx"
-  "%OUTDIR%/DA_MainDocument.lof" 1771929212 3062 2585292dd7cb6cf776d53dd72ed309e3 "pdflatex"
-  "%OUTDIR%/DA_MainDocument.lol" 1771929212 2071 deeb7716c7740d1e8a858ae0023ca8fb "pdflatex"
-  "%OUTDIR%/DA_MainDocument.lot" 1771929212 1731 36dc8b446f76a0220ddd7585826de8d8 "pdflatex"
-  "%OUTDIR%/DA_MainDocument.toc" 1771929212 11777 fadee28f1b40ef2973d6bc452499451b "pdflatex"
+["pdflatex"] 1772005756.78601 "c:/Users/janti/Desktop/DPLM/Diplomarbeit/DA_MainDocument.tex" "DA_MainDocument.pdf" "DA_MainDocument" 1772005762.91708 0
+  "%OUTDIR%/6_appendix/listofeverything.aux" 1772005761 5023 3254345e1311df1659c8e9006a07d16e "pdflatex"
+  "%OUTDIR%/DA_MainDocument.aux" 1772005761 57163 c23290a20ceefa9594e211f978136bf5 "pdflatex"
+  "%OUTDIR%/DA_MainDocument.bbl" 1772005739 21324 21260aa59a77f4bd772a130e33dccc32 "bibtex %OUTDIR%/DA_MainDocument"
+  "%OUTDIR%/DA_MainDocument.ind" 1772005613 0 d41d8cd98f00b204e9800998ecf8427e "makeindex %OUTDIR%/DA_MainDocument.idx"
+  "%OUTDIR%/DA_MainDocument.lof" 1772005761 3062 2c49326899bf6264ef2bfeccf15e14d7 "pdflatex"
+  "%OUTDIR%/DA_MainDocument.lol" 1772005761 2071 049ae0613bfdffb5df7d98f4b5060f60 "pdflatex"
+  "%OUTDIR%/DA_MainDocument.lot" 1772005761 1731 eac119a63d83306f19f60d9d4449dc4a "pdflatex"
+  "%OUTDIR%/DA_MainDocument.toc" 1772005761 12935 6849a5aa28948e36b9253d13db8681a0 "pdflatex"
   "0_prelude/da_doku_de.tex" 1769582619 3346 9733f29a865709c0bfe7edea94dca953 ""
   "0_prelude/da_doku_en.tex" 1769582619 3266 7ab0f335219b1dbf7a45d1970b692061 ""
   "0_prelude/section.tex" 1769582619 163 20a5023facb41cf866eba377ef40fb43 ""
@@ -303,7 +303,7 @@
   "C:/Users/janti/AppData/Roaming/MiKTeX/tex/latex/translator/translator.sty" 1622471510 8765 56d370785f0143111ff9898b5adfe08e ""
   "C:/Users/janti/AppData/Roaming/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "DA_MainDocument.tex" 1771926748 1215 50a66f71d928e1382e962a53915ba708 ""
-  "KostenNutzen/kostennutzen.tex" 1771926748 5978 c1470c2020fb4db817821400809be060 ""
+  "KostenNutzen/kostennutzen.tex" 1772005756 13998 c7f6e50f9d3418f537dcab00f969e4ca ""
   "KostenNutzen/section.tex" 1771926748 74 9186b2a8c4263409ec32f0e2ce9487ad ""
   "c:/Users/janti/Desktop/DPLM/Diplomarbeit/DA_MainDocument.tex" 1771926748 1215 50a66f71d928e1382e962a53915ba708 ""
   "content/img/4_Technische_Umsetzung/IA.jpg" 1770632372 75000 c81400e62d6ad664af68a3be3e8c7264 ""
@@ -330,7 +330,7 @@
   "setup/abteilungsregeln.tex" 1769582619 196 17d229db5949f244a94bc87c9fd38670 ""
   "setup/appendixSetup.tex" 1769582619 325 f074db25431a44781629d2825a1d991b ""
   "setup/environments.tex" 1769582619 2518 c1befa6f3e3475059a0b5f2df8a9d5da ""
-  "setup/glossaracronyme.tex" 1771927244 2041 7345ebaa30c9b44689fda7cbf616ba25 ""
+  "setup/glossaracronyme.tex" 1772005274 2577 6997652015f5226081cf4dc61bbaa4aa ""
   "setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png" 1769582619 27539 83a806535b52073a1b34b6e9fcd42ddc ""
   "setup/media/htl.pdf" 1769582619 9239 238dd4632d1737f6aef4e988df3d6941 ""
   "setup/packages.tex" 1769968539 5082 16ab984caa4338f0f463a1191ff85f48 ""
