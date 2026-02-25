@@ -1,7 +1,7 @@
-PWD c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main
+PWD c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\DA_MainDocument.tex
-OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.log
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\DA_MainDocument.tex
+OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.log
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrreprt.cls
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrreprt.cls
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrkbase.sty
@@ -434,7 +434,7 @@ INPUT .\setup\environments.tex
 INPUT .\setup\environments.tex
 INPUT .\setup\environments.tex
 INPUT setup\environments.tex
-OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.idx
+OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.idx
 INPUT .\setup\abteilungsregeln.tex
 INPUT .\setup\abteilungsregeln.tex
 INPUT .\setup\abteilungsregeln.tex
@@ -457,17 +457,17 @@ INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.aux
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.aux
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.aux
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\6_appendix\listofeverything.aux
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\6_appendix\listofeverything.aux
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\6_appendix\listofeverything.aux
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.aux
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.aux
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.aux
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\6_appendix\listofeverything.aux
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\6_appendix\listofeverything.aux
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\6_appendix\listofeverything.aux
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\de\babel-german.tex
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\de\babel-german.tex
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\de\babel-german.tex
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\de\babel-de.ini
-OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.aux
+OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.aux
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
@@ -497,7 +497,22 @@ INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\pdflscap
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
-OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.pdf
+OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.pdf
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\libs\tikzlibrarypgfplots.fillbetween.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\libs\tikzlibrarypgfplots.fillbetween.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\pgfcontrib\tikzlibraryfillbetween.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\pgfcontrib\tikzlibraryfillbetween.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryintersections.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryintersections.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryintersections.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryintersections.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\pgfcontrib\tikzlibrarydecorations.softclip.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\pgfcontrib\tikzlibrarydecorations.softclip.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\pgfcontrib\pgflibraryfillbetween.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\pgfcontrib\pgflibraryfillbetween.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\pgfcontrib\pgflibraryfillbetween.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\libs\tikzlibrarypgfplots.decorations.softclip.code.tex
+INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\libs\tikzlibrarypgfplots.decorations.softclip.code.tex
 INPUT .\setup\pagestyle.tex
 INPUT .\setup\pagestyle.tex
 INPUT .\setup\pagestyle.tex
@@ -607,9 +622,9 @@ INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.toc
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.toc
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.toc
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.toc
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.toc
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.toc
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
@@ -618,7 +633,7 @@ INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.toc
+OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.toc
 INPUT .\1_preamble\section.tex
 INPUT .\1_preamble\section.tex
 INPUT .\1_preamble\section.tex
@@ -821,13 +836,13 @@ INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi10.tfm
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
@@ -850,6 +865,10 @@ INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
@@ -1156,32 +1175,32 @@ INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\6_appendix\listofeverything.aux
+OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\6_appendix\listofeverything.aux
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\6_appendix\listofeverything.tex
 INPUT .\6_appendix\listofeverything.tex
 INPUT 6_appendix\listofeverything.tex
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.bbl
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.bbl
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.bbl
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.bbl
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.bbl
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.bbl
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.lof
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.lof
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.lof
-OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.lof
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.lof
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.lof
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.lof
+OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.lof
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.lot
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.lot
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.lot
-OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.lot
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.lot
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.lot
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.lot
+OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.lot
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.lol
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.lol
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.lol
-OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.lol
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.lol
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.lol
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.lol
+OUTPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.lol
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmss.fd
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmss.fd
@@ -1206,6 +1225,7 @@ INPUT .\6_appendix\projectDiary.tex
 INPUT .\6_appendix\projectDiary.tex
 INPUT .\6_appendix\projectDiary.tex
 INPUT 6_appendix\projectDiary.tex
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
@@ -1359,10 +1379,10 @@ INPUT .\6_appendix\ressources.tex
 INPUT .\6_appendix\ressources.tex
 INPUT 6_appendix\ressources.tex
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\DA_MainDocument.aux
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\6_appendix\listofeverything.aux
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\6_appendix\listofeverything.aux
-INPUT c:\Users\Jan Tiefenbacher\Downloads\DA_Vorlage_main\%OUTDIR%\6_appendix\listofeverything.aux
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\DA_MainDocument.aux
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\6_appendix\listofeverything.aux
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\6_appendix\listofeverything.aux
+INPUT c:\Users\Jan Tiefenbacher\Downloads\DIPLOM_NEU\Diplomarbeit\%OUTDIR%\6_appendix\listofeverything.aux
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\Jan Tiefenbacher\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb

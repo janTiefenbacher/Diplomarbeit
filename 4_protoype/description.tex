@@ -143,7 +143,10 @@ Darüber hinaus sorgt die vollständige Ausnutzung des verfügbaren Bildschirmbe
 
 Der folgende Codeausschnitt zeigt, wie die Pin-Platzierung technisch umgesetzt wurde:
 
-\begin{lstlisting}
+\begin{lstlisting}[
+caption={Pin platzierung auf der Karte},
+label={lst:pinplacement}
+]
     <script>
       // Globale Variablen:
       // map: Referenz auf die Google Map
@@ -224,7 +227,10 @@ Die konkrete visuelle Umsetzung der geschätzten sowie der korrekten Positionen 
     \end{itemize}
 \end{enumerate}
 Der folgende Codeausschnitt zeigt, wie man es nun schafft all die gespeicheerten Pins aus der Datenbank auf der Karte anzuzeigen:
-\begin{lstlisting}
+\begin{lstlisting}[
+caption={Darstellung mehrerer Pins im Mehrspieler-Modus},
+label={lst:mehrerepins}
+] 
 /**
  * Erstellt den HTML-/JavaScript-Code für die Ergebnis-Karte im Mehrspieler-Modus.
  * In diesem Abschnitt liegt der Fokus ausschließlich auf der Darstellung
@@ -341,7 +347,10 @@ Die Linien werden als eigenständige \gls{overlay}-Elemente auf der bestehenden 
 Zusätzlich wird die Linie so gestaltet, dass sie sich klar vom Kartenhintergrund abhebt, ohne andere UI-Elemente zu überdecken. Diese bewusste visuelle Gewichtung stellt sicher, dass das Ergebnis schnell erfasst werden kann, ohne die Übersichtlichkeit der gesamten Karte zu beeinträchtigen.
 
 Egal welchen Modus der Spieler spielt, die Linien eigenschaften sind bis auf die Farbe immer gleich und werden in diesem Code-Block definiert:
-\begin{lstlisting}
+\begin{lstlisting}[
+caption={Linie zwischen getippter und tatsächlicher Position},
+label={lst:lines}
+] 
 var line = new google.maps.Polyline({
   path: [ { lat: ${solutionLat}, lng: ${solutionLng} }, { lat: ${guessLat}, lng: ${guessLng} } ], //Weg der gezeichnet werden soll zwischen Guess des Spielers und der Lösung
   geodesic: true,        // Kurvenlinie entlang der Erdoberfläche
@@ -353,7 +362,10 @@ var line = new google.maps.Polyline({
 \end{lstlisting}
 Ein weiterer wichtiger Aspekt ist die Anzeige der tatsächlichen Distanz in Kilometern zwischen dem gesetzten Pin und der korrekten Position. Im Einzelspieler-Modus bzw. in der Täglichen Challenge wird die Distanz 
 nicht direkt über der Verbindungsinie, sondern unten am Screen angezeigt:
-\begin{lstlisting}
+\begin{lstlisting}[
+caption={Anzeige der Distanz im Einzelspieler-Modus},
+label={lst:distanceDisplay}
+] 
 <View style={styles.resultBox}>
   {/* Textuelles Feedback für den Spieler:
       Zeigt direkt an, wie weit die Schätzung vom tatsächlichen Standort entfernt war */}
@@ -412,7 +424,10 @@ nicht direkt über der Verbindungsinie, sondern unten am Screen angezeigt:
 \end{figure}
 
 Im Gegensatz dazu, wird im Mehrspieler-Modus die Distanz zwischen der getippten Position und der korrekten Lösung direkt auf der Verbindungslinie angezeigt. Dadurch können alle Spieler nicht nur ihre eigene, sondern auch die Abweichungen der Mitspieler nachvollziehen und miteinander vergleichen. Die Umsetzung dieser Visualisierung erfolgt mithilfe des folgenden Codeausschnitts:
-\begin{lstlisting}
+\begin{lstlisting}[
+caption={Anzeige der Distanz im Mehrspieler-Modus direkt auf der Linie},
+label={lst:linesDistanceDisplay}
+] 
 var labelDiv = document.createElement('div');
 
   // UI-Styling: gut lesbar auf dunkler Karte / über der Linie
@@ -467,6 +482,10 @@ Technisch wird die Animation direkt auf der bestehenden Karteninstanz durchgefü
 Der folgende Codeausschnitt zeigt die technische Umsetzung dieser Zoom-Animation:
 
 \begin{lstlisting}
+  [
+caption={Zoom-Animation im Einzelspieler-Modus},
+label={lst:zoomAnimation}
+] 
 // Zoom-Animation (Einzelspieler)
 // Startet weit herausgezoomt und zoomt schrittweise bis zum optimalen Zoom-Level (targetZoom)
 var currentZoom = 3;
@@ -492,6 +511,10 @@ Im Mehrspieler-Modus wird hingegen bewusst auf eine Zoom-Animation verzichtet. S
 Der folgende Codeausschnitt zeigt die Initialisierung der Ergebnis-Karte im Mehrspieler-Modus:
 
 \begin{lstlisting}
+  [
+caption={Zoom- und Zentrierungslogik im Mehrspieler-Modus},
+label={lst:zoomMultiplayer}
+] 
 function initMap() {
   // Mehrspieler: fester Zoom und Zentrierung auf die korrekte Position,
   // damit möglichst viele Spieler-Pins gleichzeitig sichtbar bleiben
@@ -517,6 +540,10 @@ Technisch werden die Begrenzungslinien als separate Polygon-Overlays auf der bes
 Die Darstellung ist dabei rein visuell unterstützend und beeinflusst die eigentliche Spielmechanik nicht. Sie dient ausschließlich der Orientierung innerhalb des gewählten Modus. Da die Polygone direkt auf der Karte gerendert werden, passen sie sich automatisch an Zoomstufe und Kartenausschnitt an. Dadurch bleiben die Grenzen sowohl in der Gesamtansicht als auch in detaillierten Zoomstufen konsistent und klar erkennbar.
 Im folgenden Codeabschnitt wird die technische Umsetzung dieser Begrenzungslinien dargestellt:
 \begin{lstlisting}
+  [
+caption={Darstellung von roten Begrenzungslinien der Bundesländer},
+label={lst:bundeslandBorders}
+] 
 /**
  * Zeichnet die Bundesland-Grenzen als rote Linien (Polyline) auf die Google Map.
  * Wichtig: Es werden nur die zuvor ausgewählten Bundesländer visualisiert.
@@ -554,6 +581,10 @@ function drawBundeslandBorders(map: google.maps.Map, polygons: number[][][]) {
 Die Datenstruktur "bundeslandPolygone" enthält die geografischen Koordinaten, welche zur Darstellung der Umrandungen der einzelnen Bundesländer auf der Karte verwendet werden. Diese Koordinaten wurden zuvor definiert und werden, abhängig von der Auswahl des Nutzers, an den nächsten Screen übergeben und dort, wie im vorherigen Codeabschnitt zu sehen ist, in der Variable "polygons" gespeichert.
 Im folgenden Codeausschnitt ist beispielhaft die Koordinatenliste von Niederösterreich dargestellt:
 \begin{lstlisting}
+  [
+caption={Beispielhafte Koordinatenliste für die Umrandung von Niederösterreich},
+label={lst:niederoesterreich}
+] 
 const bundeslandPolygone: Record<string, [number, number][]> = {
   NO: [
     [47.95043408875506, 14.698762389554815],
@@ -573,6 +604,10 @@ Technisch wird der Kompass als fest positioniertes \gls{overlay} über der Stree
 
 Besonders wichtig ist dabei die kontinuierliche Aktualisierung bei jeder Richtungsänderung. Sobald der Spieler die Ansicht dreht, passt sich der Kompass in Echtzeit an. Diese unmittelbare Rückmeldung sorgt für Konsistenz zwischen Interaktion und Darstellung und stärkt die räumliche Orientierung. Gleichzeitig bleibt das Design bewusst reduziert, sodass der Kompass informativ wirkt, ohne die eigentliche Spielansicht zu überlagern oder visuell zu dominieren.
 \begin{lstlisting}
+  [
+caption={Kompass-Overlay in der Spielansicht},
+label={lst:compassOverlay}
+] 
 /**
  * CompassOverlay
  * - heading kommt aus StreetView (pov.heading)
@@ -695,10 +730,6 @@ const styles = StyleSheet.create({
     \label{fig:beispielabbildung}
 \end{figure}
 
-\subsection{Entity-Relationship-Diagramm}
-Das folgende \gls{erd} zeigt die wichtigsten Datenbanktabellen und deren Beziehungen für die Anwendung \textit{WoSamma}. Es umfasst die zentralen Entitäten wie \texttt{users}, \texttt{profiles}, \texttt{lobbies}, \texttt{rounds} und \texttt{user\_rounds}, sowie die Verknüpfungen zwischen diesen Tabellen, um die komplexen Interaktionen im Mehrspieler-Modus zu unterstützen. Das ERD dient als Grundlage für das Verständnis der Datenstruktur und der Geschäftslogik, die in der Backend-Implementierung mit Supabase realisiert wird.
-
-BILDDDDDD
 
 
 \subsection{Backend-Anbindung mit Supabase}

@@ -1,3 +1,10 @@
+\section{Kosten- und Nutzenanalyse}
+
+In diesem Kapitel wird eine theoretische Kosten- und Nutzenanalyse der entwickelten Anwendung durchgeführt. Da die App zum Zeitpunkt dieser Arbeit noch nicht veröffentlicht wurde, basiert die Betrachtung ausschließlich auf geschätzten, potenziellen Einnahmen und Ausgaben. Ziel ist es, aufzuzeigen, welche wirtschaftlichen Möglichkeiten sich bei einem späteren Launch ergeben könnten und welches Einnahmepotenzial grundsätzlich vorhanden ist.
+
+Die Analyse konzentriert sich daher auf mögliche Monetarisierungsmodelle, erwartbare Nutzerzahlen sowie daraus ableitbare Einnahmen, beispielsweise durch Werbung, In-App-Käufe oder andere Geschäftsmodelle. Den potenziellen Einnahmen werden geschätzte laufende Betriebskosten wie Serverkosten oder Infrastruktur gegenübergestellt.
+
+Die während der Entwicklung angefallenen beziehungsweise anfallenden Entwicklungskosten werden in dieser Analyse bewusst nicht berücksichtigt, da der Fokus ausschließlich auf der theoretischen Wirtschaftlichkeit im laufenden Betrieb der Anwendung liegt.
 \section{Skalierungsstrategie}
 
 Um eine bestehende App-Infrastruktur an stark wachsende Nutzerzahlen anzupassen, müssen konkrete technologische Entscheidungen getroffen werden. Dabei stellt sich nicht nur die Frage \emph{wie} skaliert wird (vertikal oder horizontal), sondern insbesondere \emph{mit welchen Diensten und Infrastrukturmodellen} die Skalierung technisch umgesetzt werden soll. Im Folgenden werden zentrale Cloud- und Backend-Ansätze gegenübergestellt und hinsichtlich ihrer Eignung für kurzfristiges sowie langfristiges Nutzerwachstum bewertet.
@@ -691,7 +698,7 @@ Liegt die Einnahmenkurve über der Kostenkurve, wird ein Gewinn erzielt; liegt s
     xlabel={Monat},
     ylabel={EUR / USD (kumuliert)},
     xmin=1, xmax=12,
-    ymin=0,
+    ymin=0, ymax=600000,
     grid=major,
     grid style={gray!30},
     tick label style={font=\small},
@@ -702,54 +709,72 @@ Liegt die Einnahmenkurve über der Kostenkurve, wird ein Gewinn erzielt; liegt s
         /pgf/number format/fixed,
         /pgf/number format/1000 sep={.}
     },
-    xtick={1,2,3,4,5,6,7,8,9,10,11,12},
-    xticklabel style={font=\small},
-    legend style={
-        at={(0.5,-0.2)},
-        anchor=north,
-        legend columns=2,
-        draw=none
-    }
+    xtick={1,...,12},
+    legend style={at={(0.5,-0.22)},anchor=north,legend columns=3,draw=none}
 ]
 
 % Einnahmen
-\addplot[smooth, thick, blue] coordinates {
-(1,277.55)
-(2,1665.30)
-(3,4440.80)
-(4,9991.80)
-(5,23869.30)
-(6,51624.30)
-(7,93256.80)
-(8,148766.80)
-(9,225108.73)
-(10,322281.23)
-(11,440284.98)
-(12,579059.98)
-};
+\addplot[name path=rev, smooth, thick, blue] coordinates {
+(1,277.55)(2,1665.30)(3,4440.80)(4,9991.80)
+(5,23869.30)(6,51624.30)(7,93256.80)(8,148766.80)
+(9,225108.73)(10,322281.23)(11,440284.98)(12,579059.98)
+};\addlegendentry{Kumulierte Einnahmen}
+
 
 % Kosten
-\addplot[smooth, thick, red] coordinates {
-(1,1000)
-(2,5370)
-(3,11420)
-(4,20890)
-(5,73090)
-(6,175560)
-(7,331560)
-(8,543560)
-(9,836560)
-(10,1226560)
-(11,1711560)
-(12,2291560)
-};
+\addplot[name path=cost, smooth, thick, red] coordinates {
+(1,915)(2,4860)(3,10930)(4,20200)(5,30945)(6,45915)
+(7,65110)(8,88530)(9,118287)(10,154382)(11,196814)(12,245584)
+};\addlegendentry{Kumulierte Kosten}
 
-\legend{Kumulierte Einnahmen, Kumulierte Kosten}
+
+% Verlustbereich (rot)
+\addplot[red!20,draw=none]
+fill between[of=rev and cost,soft clip={domain=1:5.55}];
+\addlegendentry{Verlust}
+
+% Gewinnbereich (grün)
+\addplot[green!25,draw=none]
+fill between[of=rev and cost,soft clip={domain=5.55:12}];
+\addlegendentry{Gewinn}
+% Break-even Punkt
+\addplot[only marks,mark=*,black] coordinates {(5.55,39220)};
+\node[anchor=south,font=\small,fill=white]
+at (axis cs:5.55,70000) {Break-even};
+
+% Gewinntext am Ende
+\node[anchor=north east,font=\small,fill=white]
+at (axis cs:12,579059.98)
+{Gesamtgewinn: 333.476};
+
 
 \end{axis}
 \end{tikzpicture}
-\caption{Vergleich kumulierter Einnahmen und Kosten über 12 Monate}
+\caption{Kumulierte Einnahmen und Kosten mit Gewinn- und Verlustbereich}
 \end{figure}
-Aus der Gegenüberstellung wird ersichtlich, dass im betrachteten Zeitraum die kumulierten Kosten über den Einnahmen liegen. Dies deutet darauf hin, dass im ersten Jahr noch kein Break-even erreicht wird und zusätzliche Nutzersteigerungen, höhere Conversion-Raten oder Optimierungen der Monetarisierung notwendig sind, um langfristig einen profitablen Betrieb zu gewährleisten.\\
-Auch eine Erhöhung des Preises des Pro-Abonnements würde die wirtschaftliche Situation nur geringfügig verbessern. Selbst bei einer Verdopplung des monatlichen Preises auf 10\,EUR — was für viele Nutzer bereits eine hohe Zahlungsbereitschaft voraussetzen würde — würde sich der Gesamtumsatz lediglich moderat erhöhen (im betrachteten Szenario um etwa 5.000\,EUR pro Monat bei maximaler Nutzerzahl). Eine solche Preiserhöhung erscheint daher weder wirtschaftlich entscheidend noch nutzerfreundlich sinnvoll, sodass der Fokus weiterhin auf Nutzerwachstum, Werbeoptimierung und einer ausgewogenen Monetarisierungsstrategie liegen sollte.
-% ==================================================
+Die Auswertung der kumulierten Einnahmen und Gesamtkosten über den betrachteten Zeitraum von zwölf Monaten zeigt deutlich, dass das Projekt wirtschaftlich tragfähig ist. Bereits nach wenigen Monaten wird der Break-even-Punkt erreicht, ab dem die Einnahmen die anfallenden Kosten übersteigen und ein kontinuierlicher Gewinn erzielt wird. Gegen Ende des ersten Jahres ergibt sich ein klar positiver Gesamtgewinn, wodurch die Rentabilität des Geschäftsmodells bestätigt wird.
+
+Bei den durchgeführten Berechnungen wurde zudem nicht berücksichtigt, dass für Einnahmen aus Abonnements und In-App-Käufen Provisionen an die jeweiligen App-Stores abgeführt werden müssen. Dieser Abzug würde die tatsächlichen Nettoerlöse zwar geringfügig reduzieren, hätte jedoch keinen wesentlichen Einfluss auf das Gesamtergebnis, da die Einnahmen aus Werbung im Vergleich zu Abonnements und In-App-Käufen den deutlich größten Anteil darstellen. Der verbleibende Abzug würde somit nur einen relativ kleinen Teil der Gesamteinnahmen betreffen:\\
+Für die wirtschaftliche Gesamtbetrachtung werden die Einnahmen aus Pro-Abonnement und In-App-Käufen über den gesamten Zeitraum von 12 Monaten kumuliert.
+
+Die aufsummierten Einnahmen betragen:
+\begin{itemize}
+    \item Pro-Abonnements gesamt: 20\,818{,}28\,EUR
+    \item In-App-Käufe gesamt: 6\,196{,}10\,EUR
+\end{itemize}
+
+Damit ergeben sich kombinierte Einnahmen von:
+\[
+20\,818{,}28 + 6\,196{,}10 = 27\,014{,}38\,\text{EUR}
+\]
+
+Auf diese Umsätze fällt eine Store-Provision von etwa 15\,\% an:
+\[
+27\,014{,}38 \times 0{,}15 \approx 4\,052{,}16\,\text{EUR}
+\]
+
+Nach Abzug der Store-Provision verbleiben somit:
+\[
+27\,014{,}38 - 4\,052{,}16 \approx 22\,962{,}22\,\text{EUR}
+\]
+Insgesamt zeigt die wirtschaftliche Betrachtung, dass das Projekt mit einem deutlichen Gesamtgewinn(333.476 USD, mit Abzug von App-Store-Gebühren: 329.423 USD) abschließt und somit als klarer Erfolg bewertet werden kann, da sämtliche Kosten gedeckt sind und darüber hinaus ein nachhaltiger finanzieller Überschuss erzielt wird.
