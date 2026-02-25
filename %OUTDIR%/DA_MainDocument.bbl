@@ -401,6 +401,24 @@
 \newblock Online im Internet: URL:
   \url{https://www.revenuecat.com/state-of-subscription-apps-2025/}.
 
+\btxselectlanguage {german}
+\bibitem {Google_Maps_Pricing2026}
+\btxnamefont {\btxlastnamefont {{Google LLC}}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Google maps platform – preise und abrechnung}{Google
+  Maps Platform – Preise und Abrechnung}}, 2026.
+\newblock Online im Internet: URL:
+  \url{https://developers.google.com/maps/billing-and-pricing/pricing?hl=de#map-loads-pricing},
+  abgerufen am 25.02.2026.
+
+\btxselectlanguage {english}
+\bibitem {ServerCostPerUser2026}
+\btxnamefont {\btxlastnamefont {Silas}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Calculating your server cost per user: A
+  walkthrough}{Calculating Your Server Cost Per User: A Walkthrough}}, 2026.
+\newblock Online im Internet:
+  \url{https://eathealthy365.com/calculating-your-server-cost-per-user-a-walkthrough/},
+  abgerufen am 25.02.2026.
+
 \btxselectlanguage {ngerman}
 \bibitem {appinio_zielgruppenanalyse}
 \btxnamefont {\btxlastnamefont {Research}, Appinio}\btxauthorcolon\

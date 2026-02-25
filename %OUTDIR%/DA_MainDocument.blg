@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99e
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: DA_MainDocument.aux
 Reallocating 'name_of_file' (item size: 1) to 32 items.
@@ -8,44 +8,44 @@ The style file: babunsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: DA_Literatur.bib
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 52 entries,
+You've used 54 entries,
             2465 wiz_defined-function locations,
-            807 strings with 15636 characters,
-and the built_in function-call counts, 9851 in all, are:
-= -- 695
-> -- 192
+            818 strings with 16116 characters,
+and the built_in function-call counts, 10237 in all, are:
+= -- 723
+> -- 200
 < -- 0
-+ -- 98
-- -- 46
-* -- 813
-:= -- 1192
-add.period$ -- 104
-call.type$ -- 52
-change.case$ -- 52
++ -- 102
+- -- 48
+* -- 843
+:= -- 1240
+add.period$ -- 108
+call.type$ -- 54
+change.case$ -- 54
 chr.to.int$ -- 0
-cite$ -- 52
-duplicate$ -- 560
-empty$ -- 1549
-format.name$ -- 96
-if$ -- 2398
+cite$ -- 54
+duplicate$ -- 582
+empty$ -- 1609
+format.name$ -- 100
+if$ -- 2492
 int.to.chr$ -- 0
-int.to.str$ -- 52
+int.to.str$ -- 54
 missing$ -- 0
-newline$ -- 238
-num.names$ -- 44
-pop$ -- 583
+newline$ -- 248
+num.names$ -- 46
+pop$ -- 605
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 254
+skip$ -- 262
 stack$ -- 0
 substring$ -- 0
-swap$ -- 196
+swap$ -- 204
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 44
-width$ -- 54
-write$ -- 486
+while$ -- 46
+width$ -- 56
+write$ -- 506

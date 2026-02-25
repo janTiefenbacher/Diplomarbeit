@@ -178,3 +178,197 @@ Unter Berücksichtigung der Anforderungen (laufende API-Kosten, Spielecharakter,
     \item \textbf{Kosmetische In-App-Käufe} als zusätzliche, nicht invasive Einnahmequelle.
 \end{itemize}
 Spenden/Crowdfunding sowie Sponsoring werden nicht als primäre Säulen empfohlen (zu geringe Planbarkeit bzw. erst bei ausreichender Reichweite sinnvoll), und ein Einmalkauf wird aufgrund fehlender wiederkehrender Einnahmen als ungeeignet eingestuft.
+
+\section{Analyse der Einnahmen- und Ausgabenstruktur der Anwendung}
+
+Im folgenden Abschnitt wird die Einnahmen- und Ausgabenstruktur der Anwendung WoSamma einer systematischen Analyse unterzogen. Ziel ist es, die wirtschaftliche Entwicklung der Anwendung über einen Zeitraum von zwölf Monaten zu untersuchen und die Zusammenhänge zwischen Nutzerwachstum, anfallenden API-Kosten sowie generierten Einnahmen zu analysieren. 
+
+\subsection{Analyse der API-Kosten in Abhängigkeit von den Nutzerzahlen}
+
+Zur ökonomischen Bewertung der Anwendung werden die monatlich aktiven Nutzer sowie die daraus resultierenden API-Kosten dargestellt. 
+Die folgende Abbildung zeigt die Entwicklung der Nutzerzahlen und die damit verbundenen monatlichen API-Kosten über 12 Monate.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=10pt,
+    width=15cm,
+    height=9cm,
+    enlarge x limits=0.08,
+    xlabel={Monat},
+    ylabel={Nutzerzahl / API-Kosten (USD)},
+    symbolic x coords={1,2,3,4,5,6,7,8,9,10,11,12},
+    xtick=data,
+    ymin=0,
+    ymax=55000,
+    % ---- WICHTIG: Kein 10^4 mehr ----
+    scaled y ticks=false,
+    yticklabel style={
+        /pgf/number format/fixed,
+        /pgf/number format/1000 sep={.}
+    },
+    % bessere Lesbarkeit
+    tick label style={font=\small},
+    label style={font=\large},
+    grid=major,
+    grid style={gray!30},
+    % ---- Legende weiter nach unten ----
+    legend style={
+        at={(0.5,-0.25)},
+        anchor=north,
+        legend columns=2,
+        draw=none
+    },
+]
+
+% Nutzerzahl (blau)
+\addplot[fill=blue!60, draw=none] coordinates {
+(1,100) (2,500) (3,1000) (4,2000)
+(5,5000) (6,10000) (7,15000) (8,20000)
+(9,27500) (10,35000) (11,42500) (12,50000)
+};
+
+% API Kosten (rot)
+\addplot[fill=red!70, draw=none] coordinates {
+(1,910) (2,3920) (3,6020) (4,9170)
+(5,10495) (6,14470) (7,18445) (8,22420)
+(9,28382) (10,34345) (11,40307) (12,46270)
+};
+
+\legend{Nutzerzahl, API-Kosten (USD)}
+
+\end{axis}
+\end{tikzpicture}
+\caption{Monatliche Nutzerzahlen und API-Kosten über 12 Monate}
+\end{figure}
+
+Wie aus der Abbildung ersichtlich ist, steigen sowohl die Nutzerzahl als auch die API-Kosten kontinuierlich an. Während die Nutzerzahl ein exponentielles Wachstum aufweist, wirken sich die gestaffelten Preisstrukturen der API zwar dämpfend auf die Kostensteigerung aus, dennoch ist eine frühzeitige Planung von Ressourcen und Budget unerlässlich. Die zugrunde liegende Preisstaffelung basiert auf dem nutzungsabhängigen Abrechnungsmodell der Google Maps Platform \cite{Google_Maps_Pricing2026}.
+
+\subsection{Analyse der Server- und Hostingkosten in Abhängigkeit von den Nutzerzahlen}
+
+Neben den variablen API-Kosten stellen auch Server- und Hostingkosten einen wesentlichen Bestandteil der operativen Ausgabenstruktur der Anwendung dar. Mit steigender Nutzerzahl erhöht sich die Systemauslastung hinsichtlich Rechenleistung, Speicherbedarf, Datenbankzugriffen sowie Netzwerktraffic. Insbesondere bei wachsender Anzahl gleichzeitiger Zugriffe (Concurrent Users) kann eine Skalierung der Serverinfrastruktur erforderlich werden, um Performance, Verfügbarkeit und Ausfallsicherheit sicherzustellen.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=10pt,
+    width=15cm,
+    height=9cm,
+    enlarge x limits=0.08,
+    xlabel={Monat},
+    ylabel={Nutzerzahl / Hosting- \& Serverkosten (USD)},
+    symbolic x coords={1,2,3,4,5,6,7,8,9,10,11,12},
+    xtick=data,
+    ymin=0,
+    ymax=55000,
+    scaled y ticks=false,
+    yticklabel style={
+        /pgf/number format/fixed,
+        /pgf/number format/1000 sep={.}
+    },
+    tick label style={font=\small},
+    label style={font=\large},
+    grid=major,
+    grid style={gray!30},
+    legend style={
+        at={(0.5,-0.25)},
+        anchor=north,
+        legend columns=2,
+        draw=none
+    },
+]
+
+% Nutzerzahl (blau)
+\addplot[fill=blue!60, draw=none] coordinates {
+(1,100) (2,500) (3,1000) (4,2000)
+(5,5000) (6,10000) (7,15000) (8,20000)
+(9,27500) (10,35000) (11,42500) (12,50000)
+};
+
+% Hosting- & Serverkosten (rot)
+\addplot[fill=red!70, draw=none] coordinates {
+(1,90) (2,450) (3,900) (4,1800)
+(5,4500) (6,9000) (7,13500) (8,18000)
+(9,24750) (10,31500) (11,38250) (12,45000)
+};
+
+\legend{Nutzerzahl, Hosting- \& Serverkosten}
+
+\end{axis}
+\end{tikzpicture}
+\caption{Monatliche Nutzerzahlen und Hosting- \& Serverkosten über 12 Monate}
+\end{figure}
+
+Die Abbildung zeigt die monatliche Entwicklung der Nutzerzahlen (blaue Balken) sowie der daraus resultierenden Hosting- und Serverkosten (rote Balken) über ein Jahr.  
+Die Kosten wurden auf Basis der angenommenen Infrastrukturpreise berechnet: Für jeden Nutzer fallen durchschnittlich etwa 0,9 \acrlong{usd} pro Monat an, um Serverkapazität, Speicher und Netzwerk bereitstellen zu können \cite{ServerCostPerUser2026}.  
+Mit zunehmender Nutzerzahl steigen die Gesamtkosten entsprechend, was die Skalierung der Infrastruktur verdeutlicht.
+
+\subsection{Kumulierte Kosten in Abhängigkeit der Nutzerzahlen}
+
+Die Abbildung zeigt die kumulierten Gesamtkosten (API + Hosting/Server) in Abhängigkeit der Nutzerzahlen über 12 Monate.  
+Die Kosten steigen mit zunehmender Nutzerzahl, da zusätzliche Infrastruktur und API-Nutzung erforderlich sind.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=15cm,
+    height=9cm,
+    xlabel={Monat},
+    ylabel={Kumulierte Kosten (USD)},
+    xmin=1, xmax=12,
+    ymin=0, ymax=2400000,
+    grid=major,
+    grid style={gray!30},
+    tick label style={font=\small},
+    label style={font=\large},
+    thick,
+    scaled ticks=false,
+    yticklabel style={
+        /pgf/number format/fixed,
+        /pgf/number format/1000 sep={.}
+    },
+    xtick={1,2,3,4,5,6,7,8,9,10,11,12},
+    xticklabel style={font=\small},
+]
+
+% Kumulierte Kostenlinie
+\addplot[smooth, thick, red] coordinates {
+(1,1000)
+(2,5370)
+(3,11420)
+(4,20890)
+(5,73090)
+(6,175560)
+(7,331560)
+(8,543560)
+(9,836560)
+(10,1226560)
+(11,1711560)
+(12,2291560)
+};
+\addlegendentry{Kumulierte Kosten}
+
+\end{axis}
+\end{tikzpicture}
+\caption{Kumulierte Gesamtkosten über 12 Monate.}
+\end{figure}
+
+Die dargestellte rote Kurve zeigt die kumulierten Gesamtkosten der Anwendung über 12 Monate in Abhängigkeit der Monate.  
+Dabei werden sowohl die API-Kosten als auch die Hosting- und Serverkosten berücksichtigt.  
+Die zugrunde liegenden Nutzerzahlen pro Monat wurden wie zuvor angenommen und steigen von 100 im ersten Monat bis auf 50.000 im zwölften Monat.  
+Die Kurve visualisiert damit die langfristige finanzielle Belastung der Anwendung bei steigendem Nutzerwachstum.  
+
+Die kumulierten Kosten werden für jeden Monat wie folgt berechnet:
+
+\[
+\text{Kumulierte Kosten im Monat } n = \sum_{i=1}^{n} (\text{API-Kosten}_i + \text{Hosting- und Serverkosten}_i)
+\]
+
+Das bedeutet, dass die Kosten jedes Monats zu den vorherigen addiert werden, um die Gesamtsumme bis zum jeweiligen Monat darzustellen.  
+Die X-Achse zeigt die Anzahl der Nutzer, die Y-Achse die daraus resultierenden kumulierten Kosten in \acrlong{usd}.  
+Die Kurve visualisiert damit die langfristige finanzielle Belastung der Anwendung bei steigendem Nutzerwachstum und verdeutlicht die Notwendigkeit einer frühzeitigen Budget- und Ressourcenplanung.
