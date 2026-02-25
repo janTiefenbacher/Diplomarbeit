@@ -149,8 +149,8 @@ Zusätzlich kann ein \textbf{Werbung-gegen-Spielzeit}-Mechanismus eingesetzt wer
 Dieser Ansatz ist aus UX-Sicht oft akzeptabler als erzwungene Unterbrechungen, da Nutzer die Werbung \textit{aktiv} zur Freischaltung wählen.
 
 \paragraph{Banner-Werbung (bewusst zurückhaltend)}
-Banner werden als kritisch bewertet, da sie UI-Flächen belegen, die wahrgenommene Qualität reduzieren können und bei falscher Platzierung als „nervig“ empfunden werden. Falls Banner eingesetzt werden, dann nur in Bereichen mit geringer Interaktionsdichte, z.\,B. im \textbf{Shop} oder auf \textbf{statischen Übersichtsseiten}. Primär wird jedoch auf Video/Playable Ads fokussiert.
-
+\mbox{}\\
+Banner werden weiterhin als kritisch bewertet, da sie UI-Flächen belegen und bei zu auffälliger Gestaltung die wahrgenommene Qualität der App reduzieren können. In diesem Konzept wird daher ein \textbf{kleiner, unaufdringlicher Banner am unteren Bildschirmrand} eingesetzt, der \textbf{auf allen Seiten außerhalb des aktiven Spiels} sichtbar ist (z.\,B. Menü, Lobby oder Profil). Während einer laufenden Spielrunde wird bewusst \textbf{kein Banner eingeblendet}, um den Spielfluss nicht zu stören. Durch diese Platzierung bleibt die Werbung dauerhaft sichtbar, ohne zentrale Interaktionsflächen zu überdecken. Primär wird dennoch auf \textbf{Video- bzw. Playable-Ads} fokussiert, da diese in der Regel höhere Einnahmen pro Impression erzielen und gezielt an natürlichen Unterbrechungspunkten im Spiel eingesetzt werden können.
 \subsubsection{Pro-Abonnement (No-Ads)}
 Ein Pro-Abo wird als besonders geeignet bewertet, weil es \textbf{wiederkehrende Einnahmen} ermöglicht und damit laufende Kosten (API) langfristig besser abdecken kann. Der Mehrwert ist für Nutzer klar kommunizierbar: \textbf{werbefreies Spielen} (und optional weitere Komfortfunktionen).
 
@@ -159,7 +159,7 @@ Diese Werte dienen im Rahmen dieser Arbeit als grobe Orientierung und sind stark
 
 \paragraph{Preisfestlegung}
 \mbox{}\\
-Der konkrete Preis des Pro-Abos wird in der nachfolgenden \textbf{Kosten-Nutzen-Analyse} festgelegt, da dort geprüft wird, ab welchem Preisniveau (und bei welcher Abo-Quote) die Monetarisierung die laufenden Kosten zuverlässig decken kann.
+Der konkrete Preis des Pro-Abos wird in der nachfolgenden \textbf{Kosten-Nutzen-Analyse} festgelegt, da dort geprüft wird, ab welchem Preisniveau die Monetarisierung die laufenden Kosten zuverlässig decken kann.
 
 \subsubsection{In-App-Käufe (Profilbilder / Kosmetik)}
 In-App-Käufe für kosmetische Inhalte (z.\,B. Profilbilder) eignen sich als ergänzendes Modell, weil sie:
@@ -372,3 +372,255 @@ Die kumulierten Kosten werden für jeden Monat wie folgt berechnet:
 Das bedeutet, dass die Kosten jedes Monats zu den vorherigen addiert werden, um die Gesamtsumme bis zum jeweiligen Monat darzustellen.  
 Die X-Achse zeigt die Anzahl der Nutzer, die Y-Achse die daraus resultierenden kumulierten Kosten in \acrlong{usd}.  
 Die Kurve visualisiert damit die langfristige finanzielle Belastung der Anwendung bei steigendem Nutzerwachstum und verdeutlicht die Notwendigkeit einer frühzeitigen Budget- und Ressourcenplanung.
+
+% ==================================================
+\subsection{Einnahmen durch Werbung (Banner sowie Video-/Playable-Ads)}
+Für die Werbeeinnahmen werden zwei Formate betrachtet: \textbf{Bannerwerbung} (als schmaler, dauerhaft eingeblendeter Balken in der App) sowie \textbf{Video-/Playable-Ads} als Hauptformat. Der Banner wird dabei \textbf{auf allen Seiten außerhalb des aktiven Spiels} angezeigt (z.\,B. Hauptmenü, Lobby, Profil, Einstellungen). \textbf{Im laufenden Spiel} wird kein Banner eingeblendet, um den Spielfluss nicht zu stören.
+Die Berechnung erfolgt monatlich auf Basis der prognostizierten Nutzerzahlen.
+
+\textbf{Basisannahmen:}
+\begin{itemize}
+    \item Monatliche aktive Nutzer entsprechen der Prognose.
+    \item Anteil der Pro-Version-Nutzer: 2\% (somit 98\% Free-Nutzer sehen Werbung).
+    \item 30 Tage pro Monat.
+    \item \textbf{Video-/Playable-Ads:} durchschnittlich 3 Impressionen pro Free-Nutzer und Tag
+    (abgeleitet aus Werbeplätzen nach Mehrspieler-Runden, Daily-Challenge und intervallbasiertem Einzelspieler).
+    \item \textbf{Banner:} dauerhaft sichtbar \textit{außerhalb} des Spiels; Annahme: ein Free-Nutzer befindet sich im Mittel ca. 10 Minuten/Tag in Menüs/Lobbys,
+    bei einem Refresh-Intervall von 60 Sekunden entspricht das \textbf{10 Banner-Impressionen pro Tag}.
+    \item eCPM (theoretischer Mittelwert): Video/Playable = 25\,€/1000 Impr., Banner = 1{,}5\,€/1000 Impr.
+\end{itemize}
+
+\textbf{Formeln (pro Monat):}
+\[
+\text{Impr}_{video} = \text{FreeUser}\cdot 3 \cdot 30,\quad
+\text{Umsatz}_{video} = \frac{\text{Impr}_{video}}{1000}\cdot 25
+\]
+\[
+\text{Impr}_{banner} = \text{FreeUser}\cdot 10 \cdot 30,\quad
+\text{Umsatz}_{banner} = \frac{\text{Impr}_{banner}}{1000}\cdot 1{,}5
+\]
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=7pt,
+    width=15cm,
+    height=9cm,
+    enlarge x limits=0.12,
+    xlabel={Monat},
+    ylabel={Einnahmen (EUR/Monat)},
+    symbolic x coords={1,2,3,4,5,6,7,8,9,10,11,12},
+    xtick=data,
+    ymin=0,
+    scaled y ticks=false,
+    yticklabel style={
+        /pgf/number format/fixed,
+        /pgf/number format/1000 sep={.}
+    },
+    tick label style={font=\small},
+    label style={font=\large},
+    grid=major,
+    grid style={gray!30},
+    legend style={
+        at={(0.5,-0.25)},
+        anchor=north,
+        legend columns=3,
+        draw=none
+    },
+]
+
+% Video Einnahmen
+\addplot[fill=blue!60, draw=none, bar shift=-8pt] coordinates {
+(1,220.50) (2,1102.50) (3,2205.00) (4,4410.00)
+(5,11025.00) (6,22050.00) (7,33075.00) (8,44100.00)
+(9,60652.50) (10,77205.00) (11,93757.50) (12,110250.00)
+};
+
+% Banner Einnahmen
+\addplot[fill=orange!80, draw=none, bar shift=0pt] coordinates {
+(1,44.10) (2,220.50) (3,441.00) (4,882.00)
+(5,2205.00) (6,4410.00) (7,6615.00) (8,8820.00)
+(9,12127.50) (10,15435.00) (11,18742.50) (12,22050.00)
+};
+
+% Gesamt Einnahmen
+\addplot[fill=green!60!black, draw=none, bar shift=8pt] coordinates {
+(1,264.60) (2,1323.00) (3,2646.00) (4,5292.00)
+(5,13230.00) (6,26460.00) (7,39690.00) (8,52920.00)
+(9,72780.00) (10,92640.00) (11,112500.00) (12,132300.00)
+};
+
+\legend{Video/Playable, Banner, Gesamt}
+
+\end{axis}
+\end{tikzpicture}
+\caption{Monatliche Werbeeinnahmen getrennt nach Video-/Playable-Ads, Banner sowie Gesamterlös}
+\end{figure}
+% ==================================================
+% ==================================================
+\subsection{Einnahmen durch Pro-Abonnement (No-Ads)}
+Das Pro-Abonnement wird als wiederkehrende Einnahmequelle bewertet, da laufende Betriebskosten (z.\,B. API-Nutzung) damit planbarer gedeckt werden können.
+Für die folgende Modellrechnung wird die typische Abo-Quote angenommen.\cite{RevenueCat_Subscriptions2025}
+
+\textbf{Basisannahmen:}
+\begin{itemize}
+    \item Anteil Pro-Nutzer: 2\% der monatlich aktiven Nutzer.
+    \item Beispielhafter Preis: 4{,}99\,EUR pro Monat (\textit{finale Festlegung in der Kosten-Nutzen-Analyse je nachdem ob man die Kosten decken kann oder nicht}).
+\end{itemize}
+
+\textbf{Formel (pro Monat):}
+\[
+\text{Umsatz}_{Abo} = \text{User} \cdot 0{,}02 \cdot 4{,}99
+\]
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+% --- Achse 1: Nutzer (Balken)
+\begin{axis}[
+    ybar,
+    bar width=10pt,
+    width=15cm,
+    height=9cm,
+    enlarge x limits=0.08,
+    xlabel={Monat},
+    ylabel={Nutzerzahl},
+    symbolic x coords={1,2,3,4,5,6,7,8,9,10,11,12},
+    xtick=data,
+    ymin=0,
+    ymax=55000,
+    scaled y ticks=false,
+    yticklabel style={
+        /pgf/number format/fixed,
+        /pgf/number format/1000 sep={.}
+    },
+    tick label style={font=\small},
+    label style={font=\large},
+    grid=major,
+    grid style={gray!30},
+]
+\addplot[fill=blue!60, draw=none] coordinates {
+(1,100) (2,500) (3,1000) (4,2000)
+(5,5000) (6,10000) (7,15000) (8,20000)
+(9,27500) (10,35000) (11,42500) (12,50000)
+};
+\end{axis}
+
+% --- Achse 2: Einnahmen (Linie)
+\begin{axis}[
+    width=15cm,
+    height=9cm,
+    enlarge x limits=0.08,
+    symbolic x coords={1,2,3,4,5,6,7,8,9,10,11,12},
+    xtick=data,
+    axis x line=none,
+    axis y line*=right,
+    ylabel={Einnahmen (EUR/Monat)},
+    ymin=0,
+    scaled y ticks=false,
+    yticklabel style={
+        /pgf/number format/fixed,
+        /pgf/number format/1000 sep={.}
+    },
+    legend style={
+        at={(0.5,-0.25)},
+        anchor=north,
+        legend columns=2,
+        draw=none
+    },
+]
+\addplot+[mark=*, thick] coordinates {
+(1,9.98) (2,49.90) (3,99.80) (4,199.60)
+(5,499.00) (6,998.00) (7,1497.00) (8,1996.00)
+(9,2744.50) (10,3493.00) (11,4241.50) (12,4990.00)
+};
+\legend{Abo-Umsatz}
+\end{axis}
+\end{tikzpicture}
+\caption{Monatliche Nutzerzahlen und theoretische Einnahmen durch das Pro-Abonnement (Preis vorläufig)}
+\end{figure}
+% ==================================================
+% ==================================================
+\subsection{Einnahmen durch In-App-Käufe (Profilbilder)}
+In-App-Käufe werden als ergänzende Einnahmequelle betrachtet. In der App werden kosmetische Inhalte (Profilbilder) angeboten, die keinen spielerischen Vorteil erzeugen und daher als fair und UX-schonend gelten.
+
+\textbf{Basisannahmen:}
+\begin{itemize}
+    \item Preis pro Profilbild: 0{,}99\,EUR.
+    \item Kaufquote: 3\% der monatlich aktiven Nutzer kaufen im Monat ein Profilbild.
+\end{itemize}
+
+\textbf{Formel (pro Monat):}
+\[
+\text{Umsatz}_{IAP} = \text{User} \cdot 0{,}03 \cdot 0{,}99
+\]
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+% --- Achse 1: Nutzer (Balken)
+\begin{axis}[
+    ybar,
+    bar width=10pt,
+    width=15cm,
+    height=9cm,
+    enlarge x limits=0.08,
+    xlabel={Monat},
+    ylabel={Nutzerzahl},
+    symbolic x coords={1,2,3,4,5,6,7,8,9,10,11,12},
+    xtick=data,
+    ymin=0,
+    ymax=55000,
+    scaled y ticks=false,
+    yticklabel style={
+        /pgf/number format/fixed,
+        /pgf/number format/1000 sep={.}
+    },
+    tick label style={font=\small},
+    label style={font=\large},
+    grid=major,
+    grid style={gray!30},
+]
+\addplot[fill=blue!60, draw=none] coordinates {
+(1,100) (2,500) (3,1000) (4,2000)
+(5,5000) (6,10000) (7,15000) (8,20000)
+(9,27500) (10,35000) (11,42500) (12,50000)
+};
+\end{axis}
+
+% --- Achse 2: Einnahmen (Linie)
+\begin{axis}[
+    width=15cm,
+    height=9cm,
+    enlarge x limits=0.08,
+    symbolic x coords={1,2,3,4,5,6,7,8,9,10,11,12},
+    xtick=data,
+    axis x line=none,
+    axis y line*=right,
+    ylabel={Einnahmen (EUR/Monat)},
+    ymin=0,
+    scaled y ticks=false,
+    yticklabel style={
+        /pgf/number format/fixed,
+        /pgf/number format/1000 sep={.}
+    },
+    legend style={
+        at={(0.5,-0.25)},
+        anchor=north,
+        legend columns=2,
+        draw=none
+    },
+]
+\addplot+[mark=*, thick] coordinates {
+(1,2.97) (2,14.85) (3,29.70) (4,59.40)
+(5,148.50) (6,297.00) (7,445.50) (8,594.00)
+(9,817.43) (10,1039.50) (11,1262.25) (12,1485.00)
+};
+\legend{IAP-Umsatz}
+\end{axis}
+\end{tikzpicture}
+\caption{Monatliche Nutzerzahlen und theoretische Einnahmen durch Profilbild-In-App-Käufe}
+\end{figure}
+% ==================================================
