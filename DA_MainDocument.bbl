@@ -388,6 +388,35 @@
 \newblock Online im Internet: URL:
   \url{https://www.redhat.com/de/topics/cloud-native-apps/what-is-serverless}.
 
+\bibitem {BoA_RewardedVideo}
+\btxnamefont {\btxlastnamefont {Cooper}, James}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Rewarded video ads (2026)}{Rewarded Video Ads (2026)}},
+  \btxprintmonthyear{.}{2}{2026}{long}.
+\newblock Online im Internet: URL:
+  \url{https://www.businessofapps.com/ads/rewarded-video/}.
+
+\bibitem {RevenueCat_Subscriptions2025}
+\btxtitlefont {\btxifchangecase {State of subscription apps 2025}{State of
+  Subscription Apps 2025}}, 2025.
+\newblock Online im Internet: URL:
+  \url{https://www.revenuecat.com/state-of-subscription-apps-2025/}.
+
+\btxselectlanguage {german}
+\bibitem {Google_Maps_Pricing2026}
+\btxnamefont {\btxlastnamefont {{Google LLC}}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Google maps platform – preise und abrechnung}{Google
+  Maps Platform – Preise und Abrechnung}}, 2026.
+\newblock Online im Internet: URL:
+  \url{https://developers.google.com/maps/billing-and-pricing/pricing?hl=de#map-loads-pricing},
+  abgerufen am 25.02.2026.
+
+\btxselectlanguage {english}
+\bibitem {SupabaseBilling2026}
+\btxnamefont {\btxlastnamefont {{Supabase Docs}}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {About billing on supabase}{About Billing on Supabase}}.
+\newblock \url{https://supabase.com/docs/guides/platform/billing-on-supabase},
+  2026.
+
 \btxselectlanguage {ngerman}
 \bibitem {appinio_zielgruppenanalyse}
 \btxnamefont {\btxlastnamefont {Research}, Appinio}\btxauthorcolon\

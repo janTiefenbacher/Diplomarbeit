@@ -264,7 +264,7 @@ Neben den variablen API-Kosten stellen auch Server- und Hostingkosten einen wese
     symbolic x coords={1,2,3,4,5,6,7,8,9,10,11,12},
     xtick=data,
     ymin=0,
-    ymax=55000,
+    ymax=52000,
     scaled y ticks=false,
     yticklabel style={
         /pgf/number format/fixed,
@@ -289,11 +289,11 @@ Neben den variablen API-Kosten stellen auch Server- und Hostingkosten einen wese
 (9,27500) (10,35000) (11,42500) (12,50000)
 };
 
-% Hosting- & Serverkosten (rot)
+% Hosting- & Serverkosten (rot) – 0,05 USD pro Nutzer
 \addplot[fill=red!70, draw=none] coordinates {
-(1,90) (2,450) (3,900) (4,1800)
-(5,4500) (6,9000) (7,13500) (8,18000)
-(9,24750) (10,31500) (11,38250) (12,45000)
+(1,5) (2,25) (3,50) (4,100)
+(5,250) (6,500) (7,750) (8,1000)
+(9,1375) (10,1750) (11,2125) (12,2500)
 };
 
 \legend{Nutzerzahl, Hosting- \& Serverkosten}
@@ -303,9 +303,11 @@ Neben den variablen API-Kosten stellen auch Server- und Hostingkosten einen wese
 \caption{Monatliche Nutzerzahlen und Hosting- \& Serverkosten über 12 Monate}
 \end{figure}
 
-Die Abbildung zeigt die monatliche Entwicklung der Nutzerzahlen (blaue Balken) sowie der daraus resultierenden Hosting- und Serverkosten (rote Balken) über ein Jahr.  
-Die Kosten wurden auf Basis der angenommenen Infrastrukturpreise berechnet: Für jeden Nutzer fallen durchschnittlich etwa 0,9 \acrlong{usd} pro Monat an, um Serverkapazität, Speicher und Netzwerk bereitstellen zu können \cite{ServerCostPerUser2026}.  
-Mit zunehmender Nutzerzahl steigen die Gesamtkosten entsprechend, was die Skalierung der Infrastruktur verdeutlicht.
+Die Abbildung zeigt die monatliche Entwicklung der Nutzerzahlen (blaue Balken) sowie der daraus resultierenden Hosting- und Serverkosten (rote Balken) über ein Jahr.
+
+Die Kosten wurden auf Basis realistischer Supabase-Infrastrukturpreise berechnet: Für jeden Nutzer fallen durchschnittlich etwa 0,05 USD pro Monat an, um Datenbank, Authentifizierung, Storage, API-Requests und Realtime-Funktionen bereitzustellen. Da die App WoSamma auf Supabase als BaaS setzt, übernimmt die Plattform sämtliche Backend-Dienste einschließlich Autoscaling, Load Balancing, Caching und Replikation. \cite{SupabaseBilling2026}
+
+Mit zunehmender Nutzerzahl steigen die Gesamtkosten entsprechend, wobei durch die effiziente Skalierung der Supabase-Cloud der Preis pro Nutzer langfristig stabil bleibt oder tendenziell leicht sinkt. Dies verdeutlicht die wirtschaftliche und technische Skalierbarkeit, die durch die Nutzung eines modernen BaaS wie Supabase erreicht wird.
 
 \subsection{Kumulierte Kosten in Abhängigkeit der Nutzerzahlen}
 
@@ -321,7 +323,7 @@ Die Kosten steigen mit zunehmender Nutzerzahl, da zusätzliche Infrastruktur und
     xlabel={Monat},
     ylabel={Kumulierte Kosten (USD)},
     xmin=1, xmax=12,
-    ymin=0, ymax=2400000,
+    ymin=0, ymax=260000,
     grid=major,
     grid style={gray!30},
     tick label style={font=\small},
@@ -336,42 +338,37 @@ Die Kosten steigen mit zunehmender Nutzerzahl, da zusätzliche Infrastruktur und
     xticklabel style={font=\small},
 ]
 
-% Kumulierte Kostenlinie
+% Neue kumulierte Kostenlinie
 \addplot[smooth, thick, red] coordinates {
-(1,1000)
-(2,5370)
-(3,11420)
-(4,20890)
-(5,73090)
-(6,175560)
-(7,331560)
-(8,543560)
-(9,836560)
-(10,1226560)
-(11,1711560)
-(12,2291560)
+(1,915)
+(2,4860)
+(3,10930)
+(4,20200)
+(5,30945)
+(6,45915)
+(7,65110)
+(8,88530)
+(9,118287)
+(10,154382)
+(11,196814)
+(12,245584)
 };
-\addlegendentry{Kumulierte Kosten}
+\addlegendentry{Kumulierte Gesamtkosten}
 
 \end{axis}
 \end{tikzpicture}
 \caption{Kumulierte Gesamtkosten über 12 Monate.}
 \end{figure}
 
-Die dargestellte rote Kurve zeigt die kumulierten Gesamtkosten der Anwendung über 12 Monate in Abhängigkeit der Monate.  
-Dabei werden sowohl die API-Kosten als auch die Hosting- und Serverkosten berücksichtigt.  
-Die zugrunde liegenden Nutzerzahlen pro Monat wurden wie zuvor angenommen und steigen von 100 im ersten Monat bis auf 50.000 im zwölften Monat.  
-Die Kurve visualisiert damit die langfristige finanzielle Belastung der Anwendung bei steigendem Nutzerwachstum.  
-
-Die kumulierten Kosten werden für jeden Monat wie folgt berechnet:
+Die rote Kurve zeigt die kumulierten Gesamtkosten der App \textit{WoSamma} über 12 Monate. 
+Dabei werden API-Kosten und Hosting über Supabase berücksichtigt. 
+Die Nutzerzahlen steigen von 100 auf 50.000, die kumulierten Kosten ergeben sich aus der Summe der monatlichen Aufwendungen:
 
 \[
-\text{Kumulierte Kosten im Monat } n = \sum_{i=1}^{n} (\text{API-Kosten}_i + \text{Hosting- und Serverkosten}_i)
+\text{Kumulierte Kosten im Monat } n = \sum_{i=1}^{n} (\text{API-Kosten}_i + \text{Supabase-Kosten}_i)
 \]
 
-Das bedeutet, dass die Kosten jedes Monats zu den vorherigen addiert werden, um die Gesamtsumme bis zum jeweiligen Monat darzustellen.  
-Die X-Achse zeigt die Anzahl der Nutzer, die Y-Achse die daraus resultierenden kumulierten Kosten in \acrlong{usd}.  
-Die Kurve visualisiert damit die langfristige finanzielle Belastung der Anwendung bei steigendem Nutzerwachstum und verdeutlicht die Notwendigkeit einer frühzeitigen Budget- und Ressourcenplanung.
+Die X-Achse zeigt die Monate, die Y-Achse die kumulierten Kosten in USD.
 
 % ==================================================
 \subsection{Einnahmen durch Werbung (Banner sowie Video-/Playable-Ads)}
