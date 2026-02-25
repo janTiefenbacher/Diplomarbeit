@@ -539,7 +539,7 @@ Für die folgende Modellrechnung wird die typische Abo-Quote angenommen.\cite{Re
 \legend{Abo-Umsatz}
 \end{axis}
 \end{tikzpicture}
-\caption{Monatliche Nutzerzahlen und theoretische Einnahmen durch das Pro-Abonnement (Preis vorläufig)}
+\caption{Monatliche Nutzerzahlen und theoretische Einnahmen durch das Pro-Abonnement}
 \end{figure}
 % ==================================================
 % ==================================================
@@ -554,7 +554,7 @@ In-App-Käufe werden als ergänzende Einnahmequelle betrachtet. In der App werde
 
 \textbf{Formel (pro Monat):}
 \[
-\text{Umsatz}_{IAP} = \text{User} \cdot 0{,}03 \cdot 0{,}99
+\text{Umsatz}_{IAK} = \text{User} \cdot 0{,}03 \cdot 0{,}99
 \]
 
 \begin{figure}[H]
@@ -618,9 +618,141 @@ In-App-Käufe werden als ergänzende Einnahmequelle betrachtet. In der App werde
 (5,148.50) (6,297.00) (7,445.50) (8,594.00)
 (9,817.43) (10,1039.50) (11,1262.25) (12,1485.00)
 };
-\legend{IAP-Umsatz}
+\legend{IAK-Umsatz}
 \end{axis}
 \end{tikzpicture}
 \caption{Monatliche Nutzerzahlen und theoretische Einnahmen durch Profilbild-In-App-Käufe}
 \end{figure}
+% ==================================================
+% ==================================================
+\subsection{Kumulierte Gesamteinnahmen über 12 Monate}
+
+Für die wirtschaftliche Gesamtbewertung der App ist neben den monatlichen Erlösen insbesondere die Entwicklung der \textbf{kumulierten Einnahmen} relevant. Dabei werden sämtliche Einnahmenquellen --- Werbung (Video-/Playable sowie Banner), Pro-Abonnement sowie In-App-Käufe --- fortlaufend aufsummiert. 
+
+Die kumulierte Darstellung zeigt, wie sich die Gesamterlöse über das erste Betriebsjahr entwickeln und ermöglicht eine spätere Gegenüberstellung mit den kumulierten Kosten (z.\,B. API-, Hosting- oder Betriebskosten).
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=15cm,
+    height=9cm,
+    xlabel={Monat},
+    ylabel={Kumulierte Einnahmen (EUR)},
+    xmin=1, xmax=12,
+    ymin=0,
+    grid=major,
+    grid style={gray!30},
+    tick label style={font=\small},
+    label style={font=\large},
+    thick,
+    scaled ticks=false,
+    yticklabel style={
+        /pgf/number format/fixed,
+        /pgf/number format/1000 sep={.}
+    },
+    xtick={1,2,3,4,5,6,7,8,9,10,11,12},
+    xticklabel style={font=\small},
+]
+
+\addplot[smooth, thick, blue] coordinates {
+(1,277.55)
+(2,1665.30)
+(3,4440.80)
+(4,9991.80)
+(5,23869.30)
+(6,51624.30)
+(7,93256.80)
+(8,148766.80)
+(9,225108.73)
+(10,322281.23)
+(11,440284.98)
+(12,579059.98)
+};
+\addlegendentry{Kumulierte Gesamteinnahmen}
+
+\end{axis}
+\end{tikzpicture}
+\caption{Kumulierte Gesamteinnahmen aus Werbung, Pro-Abonnement und In-App-Käufen über 12 Monate}
+\end{figure}
+% ==================================================
+% ==================================================
+\subsection{Gegenüberstellung kumulierter Einnahmen und Kosten}
+
+Zur abschließenden wirtschaftlichen Bewertung der App werden die kumulierten Gesamteinnahmen den kumulierten Gesamtkosten gegenübergestellt. 
+Durch die fortlaufende Aufsummierung beider Werte über einen Zeitraum von zwölf Monaten lässt sich erkennen, ob und ab welchem Zeitpunkt die Einnahmen die Kosten decken und somit ein wirtschaftlicher Betrieb möglich ist.
+
+Die folgende Grafik stellt die Entwicklung der kumulierten Einnahmen (aus Werbung, Pro-Abonnement und In-App-Käufen) sowie der kumulierten Kosten gemeinsam dar. 
+Liegt die Einnahmenkurve über der Kostenkurve, wird ein Gewinn erzielt; liegt sie darunter, entstehen Verluste.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=15cm,
+    height=9cm,
+    xlabel={Monat},
+    ylabel={EUR / USD (kumuliert)},
+    xmin=1, xmax=12,
+    ymin=0,
+    grid=major,
+    grid style={gray!30},
+    tick label style={font=\small},
+    label style={font=\large},
+    thick,
+    scaled ticks=false,
+    yticklabel style={
+        /pgf/number format/fixed,
+        /pgf/number format/1000 sep={.}
+    },
+    xtick={1,2,3,4,5,6,7,8,9,10,11,12},
+    xticklabel style={font=\small},
+    legend style={
+        at={(0.5,-0.2)},
+        anchor=north,
+        legend columns=2,
+        draw=none
+    }
+]
+
+% Einnahmen
+\addplot[smooth, thick, blue] coordinates {
+(1,277.55)
+(2,1665.30)
+(3,4440.80)
+(4,9991.80)
+(5,23869.30)
+(6,51624.30)
+(7,93256.80)
+(8,148766.80)
+(9,225108.73)
+(10,322281.23)
+(11,440284.98)
+(12,579059.98)
+};
+
+% Kosten
+\addplot[smooth, thick, red] coordinates {
+(1,1000)
+(2,5370)
+(3,11420)
+(4,20890)
+(5,73090)
+(6,175560)
+(7,331560)
+(8,543560)
+(9,836560)
+(10,1226560)
+(11,1711560)
+(12,2291560)
+};
+
+\legend{Kumulierte Einnahmen, Kumulierte Kosten}
+
+\end{axis}
+\end{tikzpicture}
+\caption{Vergleich kumulierter Einnahmen und Kosten über 12 Monate}
+\end{figure}
+Aus der Gegenüberstellung wird ersichtlich, dass im betrachteten Zeitraum die kumulierten Kosten über den Einnahmen liegen. Dies deutet darauf hin, dass im ersten Jahr noch kein Break-even erreicht wird und zusätzliche Nutzersteigerungen, höhere Conversion-Raten oder Optimierungen der Monetarisierung notwendig sind, um langfristig einen profitablen Betrieb zu gewährleisten.\\
+Auch eine Erhöhung des Preises des Pro-Abonnements würde die wirtschaftliche Situation nur geringfügig verbessern. Selbst bei einer Verdopplung des monatlichen Preises auf 10\,EUR — was für viele Nutzer bereits eine hohe Zahlungsbereitschaft voraussetzen würde — würde sich der Gesamtumsatz lediglich moderat erhöhen (im betrachteten Szenario um etwa 5.000\,EUR pro Monat bei maximaler Nutzerzahl). Eine solche Preiserhöhung erscheint daher weder wirtschaftlich entscheidend noch nutzerfreundlich sinnvoll, sodass der Fokus weiterhin auf Nutzerwachstum, Werbeoptimierung und einer ausgewogenen Monetarisierungsstrategie liegen sollte.
 % ==================================================
