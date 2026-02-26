@@ -4,28 +4,28 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Monatliche Nutzerzahlen und API-Kosten über 12 Monate}}{46}{figure.caption.73}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Monatliche Nutzerzahlen und Hosting- \& Serverkosten über 12 Monate}}{47}{figure.caption.75}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Kumulierte Gesamtkosten über 12 Monate.}}{48}{figure.caption.77}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Monatliche Werbeeinnahmen getrennt nach Video-/Playable-Ads, Banner sowie Gesamterlös}}{50}{figure.caption.79}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Monatliche Nutzerzahlen und theoretische Einnahmen durch das Pro-Abonnement}}{51}{figure.caption.81}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Monatliche Nutzerzahlen und theoretische Einnahmen durch Profilbild-In-App-Käufe}}{52}{figure.caption.83}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Kumulierte Gesamteinnahmen aus Werbung, Pro-Abonnement und In-App-Käufen über 12 Monate}}{53}{figure.caption.85}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Kumulierte Einnahmen und Kosten mit Gewinn- und Verlustbereich}}{54}{figure.caption.87}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Monatliche Nutzerzahlen und API-Kosten über 12 Monate}}{46}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Monatliche Nutzerzahlen und Hosting- \& Serverkosten über 12 Monate}}{47}{figure.caption.74}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Kumulierte Gesamtkosten über 12 Monate.}}{48}{figure.caption.76}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Monatliche Werbeeinnahmen getrennt nach Video-/Playable-Ads, Banner sowie Gesamterlös}}{50}{figure.caption.78}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Monatliche Nutzerzahlen und theoretische Einnahmen durch das Pro-Abonnement}}{51}{figure.caption.80}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Monatliche Nutzerzahlen und theoretische Einnahmen durch Profilbild-In-App-Käufe}}{52}{figure.caption.82}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Kumulierte Gesamteinnahmen aus Werbung, Pro-Abonnement und In-App-Käufen über 12 Monate}}{53}{figure.caption.84}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Kumulierte Einnahmen und Kosten mit Gewinn- und Verlustbereich}}{54}{figure.caption.86}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Systemarchitektur der Anwendung WoSamma}}{57}{figure.caption.93}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Datenbankarchitektur der Anwendung WoSamma (Die vollständige Abbildung der Datenbank führt zu einer eingeschränkten Übersichtlichkeit.)}}{58}{figure.caption.95}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Informationsarchitektur der Anwendung WoSamma}}{60}{figure.caption.98}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Wireframes der Anwendung WoSamma}}{60}{figure.caption.99}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Mockup der Anwendung WoSamma(Überblick)}}{61}{figure.caption.100}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces platzierter Pin im Einzelspieler}}{64}{figure.caption.145}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Anzeige mehrerer Pins im Mehrspieler}}{68}{figure.caption.252}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Entfernungsanzeige im Einzelspieler}}{71}{figure.caption.313}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Anzeige der Entfernung im Mehrspielermodus}}{73}{figure.caption.353}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Begrenzungslinien für Nieserösterreich und Wien}}{76}{figure.caption.428}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Kompass in der Spieleansicht}}{80}{figure.caption.562}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Benutzerverwaltung und Authentifizierungsübersicht in Supabase}}{80}{figure.caption.564}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Darstellung einer Live-Einladung in der Benutzeroberfläche}}{85}{figure.caption.639}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Systemarchitektur der Anwendung WoSamma}}{57}{figure.caption.92}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Datenbankarchitektur der Anwendung WoSamma (Die vollständige Abbildung der Datenbank führt zu einer eingeschränkten Übersichtlichkeit.)}}{58}{figure.caption.94}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Informationsarchitektur der Anwendung WoSamma}}{60}{figure.caption.97}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Wireframes der Anwendung WoSamma}}{60}{figure.caption.98}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Mockup der Anwendung WoSamma(Überblick)}}{61}{figure.caption.99}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces platzierter Pin im Einzelspieler}}{64}{figure.caption.144}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Anzeige mehrerer Pins im Mehrspieler}}{68}{figure.caption.251}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Entfernungsanzeige im Einzelspieler}}{71}{figure.caption.312}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Anzeige der Entfernung im Mehrspielermodus}}{73}{figure.caption.352}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Begrenzungslinien für Nieserösterreich und Wien}}{76}{figure.caption.427}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Kompass in der Spieleansicht}}{80}{figure.caption.561}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Benutzerverwaltung und Authentifizierungsübersicht in Supabase}}{80}{figure.caption.563}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Darstellung einer Live-Einladung in der Benutzeroberfläche}}{85}{figure.caption.638}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {ngerman}{}\relax 
