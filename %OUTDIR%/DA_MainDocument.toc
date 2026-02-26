@@ -9,7 +9,7 @@
 \contentsline {chapter}{\numberline {2}Einleitung}{13}{chapter.8}%
 \contentsline {section}{\numberline {2.1}Ausgangslage und Motivation der Arbeit}{13}{section.9}%
 \contentsline {section}{\numberline {2.2}Spezifische Ausgangslage}{13}{section.10}%
-\contentsline {section}{\numberline {2.3}Spezifische Forschungsfrage}{14}{section.11}%
+\contentsline {section}{\numberline {2.3}Spezifische Forschungsfragen}{14}{section.11}%
 \contentsline {subsection}{\numberline {2.3.1}Spezifische Forschungsfrage - Jan Tiefenbacher}{14}{subsection.12}%
 \contentsline {subsection}{\numberline {2.3.2}Spezifische Forschungsfrage - Laurenz Pichler}{14}{subsection.13}%
 \contentsline {chapter}{\numberline {3}Theoretische Grundlagen}{15}{chapter.14}%
