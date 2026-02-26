@@ -1354,6 +1354,7 @@ INPUT .\6_appendix\ressources.tex
 INPUT 6_appendix\ressources.tex
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
+INPUT .\setup\media\HTL_Krems_Logo_SchwarzGelb_Neu.png
 INPUT DA_MainDocument.aux
 INPUT .\6_appendix\listofeverything.aux
 INPUT .\6_appendix\listofeverything.aux
