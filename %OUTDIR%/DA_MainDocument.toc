@@ -4,13 +4,13 @@
 \contentsline {section}{\numberline {1.1}Zusammenfassung}{11}{section.3}%
 \contentsline {section}{\numberline {1.2}Abstract}{11}{section.4}%
 \contentsline {section}{\numberline {1.3}Team}{11}{section.5}%
-\contentsline {section}{\numberline {1.4}Danksagung}{11}{section.6}%
+\contentsline {section}{\numberline {1.4}Danksagung}{12}{section.6}%
 \contentsline {section}{\numberline {1.5}Gendererklärung}{12}{section.7}%
 \contentsline {chapter}{\numberline {2}Einleitung}{13}{chapter.8}%
 \contentsline {section}{\numberline {2.1}Ausgangslage und Motivation der Arbeit}{13}{section.9}%
 \contentsline {section}{\numberline {2.2}Spezifische Ausgangslage}{13}{section.10}%
-\contentsline {section}{\numberline {2.3}Spezifische Forschungsfrage}{13}{section.11}%
-\contentsline {subsection}{\numberline {2.3.1}Spezifische Forschungsfrage - Jan Tiefenbacher}{13}{subsection.12}%
+\contentsline {section}{\numberline {2.3}Spezifische Forschungsfrage}{14}{section.11}%
+\contentsline {subsection}{\numberline {2.3.1}Spezifische Forschungsfrage - Jan Tiefenbacher}{14}{subsection.12}%
 \contentsline {subsection}{\numberline {2.3.2}Spezifische Forschungsfrage - Laurenz Pichler}{14}{subsection.13}%
 \contentsline {chapter}{\numberline {3}Theoretische Grundlagen}{15}{chapter.14}%
 \contentsline {section}{\numberline {3.1}Plattformwahl}{15}{section.15}%
@@ -54,73 +54,73 @@
 \contentsline {subsection}{\numberline {4.1.3}Serverbasierte Architektur vs. Serverless}{41}{subsection.53}%
 \contentsline {subsection}{\numberline {4.1.4}Datenbankstrategien}{41}{subsection.54}%
 \contentsline {subsection}{\numberline {4.1.5}Organisatorische Skalierungsstrategien}{42}{subsection.55}%
-\contentsline {section}{\numberline {4.2}Evaluierung geeigneter Monetarisierungsstrategien}{42}{section.56}%
-\contentsline {subsection}{\numberline {4.2.1}Bewertungskriterien}{43}{subsection.57}%
-\contentsline {subsection}{\numberline {4.2.2}Nicht priorisierte Modelle}{43}{subsection.58}%
-\contentsline {subsection}{\numberline {4.2.3}Empfohlene Strategie: Hybridmodell aus Werbung, Pro-Abo und In-App-Käufen}{43}{subsection.59}%
-\contentsline {subsubsection}{\numberline {4.2.3.1}Werbung (Fokus: Rewarded Video und Playable Ads)}{44}{subsubsection.63}%
-\contentsline {paragraph}{\numberline {4.2.3.1.1}Geplante Werbeplatzierungen (theoretisches Konzept)}{44}{paragraph.64}%
-\contentsline {paragraph}{\numberline {4.2.3.1.2}Banner-Werbung (bewusst zurückhaltend)}{44}{paragraph.65}%
-\contentsline {subsubsection}{\numberline {4.2.3.2}Pro-Abonnement (No-Ads)}{45}{subsubsection.66}%
-\contentsline {paragraph}{\numberline {4.2.3.2.1}Preisfestlegung}{45}{paragraph.67}%
-\contentsline {subsubsection}{\numberline {4.2.3.3}In-App-Käufe (Profilbilder / Kosmetik)}{45}{subsubsection.68}%
-\contentsline {subsection}{\numberline {4.2.4}Fazit}{45}{subsection.69}%
-\contentsline {section}{\numberline {4.3}Analyse der Einnahmen- und Ausgabenstruktur der Anwendung}{46}{section.70}%
-\contentsline {subsection}{\numberline {4.3.1}Analyse der API-Kosten in Abhängigkeit von den Nutzerzahlen}{46}{subsection.71}%
-\contentsline {subsection}{\numberline {4.3.2}Analyse der Server- und Hostingkosten in Abhängigkeit von den Nutzerzahlen}{47}{subsection.73}%
-\contentsline {subsection}{\numberline {4.3.3}Kumulierte Kosten in Abhängigkeit der Nutzerzahlen}{48}{subsection.75}%
-\contentsline {subsection}{\numberline {4.3.4}Einnahmen durch Werbung (Banner sowie Video-/Playable-Ads)}{48}{subsection.77}%
-\contentsline {subsection}{\numberline {4.3.5}Einnahmen durch Pro-Abonnement (No-Ads)}{50}{subsection.79}%
-\contentsline {subsection}{\numberline {4.3.6}Einnahmen durch In-App-Käufe (Profilbilder)}{51}{subsection.81}%
-\contentsline {subsection}{\numberline {4.3.7}Kumulierte Gesamteinnahmen über 12 Monate}{52}{subsection.83}%
-\contentsline {subsection}{\numberline {4.3.8}Gegenüberstellung kumulierter Einnahmen und Kosten}{53}{subsection.85}%
-\contentsline {chapter}{\numberline {5}Dokumentation der Implementierung}{56}{chapter.87}%
-\contentsline {section}{\numberline {5.1}Systemumgebung}{56}{section.88}%
-\contentsline {subsection}{\numberline {5.1.1}Verwendete Technologien}{56}{subsection.89}%
-\contentsline {section}{\numberline {5.2}Implementierung}{57}{section.90}%
-\contentsline {subsection}{\numberline {5.2.1}Architektur der Anwendung}{57}{subsection.91}%
-\contentsline {subsection}{\numberline {5.2.2}Architektur der Datenbank}{58}{subsection.93}%
-\contentsline {subsection}{\numberline {5.2.3}Frontend-Implementierung \& Plannung}{59}{subsection.95}%
-\contentsline {subsubsection}{\numberline {5.2.3.1}Informationsarchitektur, Wireframes \& Prototypen}{59}{subsubsection.96}%
-\contentsline {subsubsection}{\numberline {5.2.3.2}Responsives Design}{62}{subsubsection.100}%
-\contentsline {subsubsection}{\numberline {5.2.3.3}Spielansicht und Benutzerinteraktion}{62}{subsubsection.101}%
-\contentsline {paragraph}{\numberline {5.2.3.3.1}Pin-Platzierung}{62}{paragraph.102}%
-\contentsline {paragraph}{\numberline {5.2.3.3.2}Anzeige mehrerer Pins im Mehrspieler-Modus}{64}{paragraph.145}%
-\contentsline {paragraph}{\numberline {5.2.3.3.3}Visualisierung der geschätzten und korrekten Position}{68}{paragraph.252}%
-\contentsline {paragraph}{\numberline {5.2.3.3.4}Zoom Animationen}{73}{paragraph.353}%
-\contentsline {paragraph}{\numberline {5.2.3.3.5}Darstellung von roten Begrenzungslinien der Bundesländer}{75}{paragraph.396}%
-\contentsline {paragraph}{\numberline {5.2.3.3.6}Kompass in der Spielansicht}{77}{paragraph.441}%
-\contentsline {subsection}{\numberline {5.2.4}Backend-Anbindung mit Supabase}{80}{subsection.562}%
-\contentsline {subsubsection}{\numberline {5.2.4.1}Echtzeit-Kommunikation über Supabase Channels}{81}{subsubsection.564}%
-\contentsline {subsubsection}{\numberline {5.2.4.2}Authentifizierung der Benutzer (Supabase Auth, OAuth2)}{82}{subsubsection.615}%
-\contentsline {paragraph}{\numberline {5.2.4.2.1}Laden von Benutzer- und Profildaten:}{82}{paragraph.616}%
-\contentsline {paragraph}{\numberline {5.2.4.2.2}Logout:}{83}{paragraph.617}%
-\contentsline {paragraph}{\numberline {5.2.4.2.3}Sicherheitsaspekte:}{83}{paragraph.618}%
-\contentsline {subsection}{\numberline {5.2.5}Spielmechanik und Logik}{83}{subsection.619}%
-\contentsline {subsubsection}{\numberline {5.2.5.1}Generierung der Spielrunden}{83}{subsubsection.620}%
-\contentsline {paragraph}{\numberline {5.2.5.1.1}Punkt-in-Polygon-Prüfung:}{84}{paragraph.633}%
-\contentsline {paragraph}{\numberline {5.2.5.1.2}Zufällige Koordinatenerzeugung:}{84}{paragraph.634}%
-\contentsline {paragraph}{\numberline {5.2.5.1.3}Abbruchbedingung und Robustheit:}{84}{paragraph.635}%
-\contentsline {subsubsection}{\numberline {5.2.5.2}Generierung des täglichen Spiels}{84}{subsubsection.636}%
-\contentsline {subsubsection}{\numberline {5.2.5.3}Live-Einladungen für Freundesrunden}{85}{subsubsection.637}%
-\contentsline {subsubsection}{\numberline {5.2.5.4}Punkteberechnung}{87}{subsubsection.733}%
-\contentsline {paragraph}{\numberline {5.2.5.4.1}Grundprinzip:}{87}{paragraph.734}%
-\contentsline {paragraph}{\numberline {5.2.5.4.2}Punktebereiche und Berechnungsformeln:}{87}{paragraph.735}%
-\contentsline {subsection}{\numberline {5.2.6}Benutzerprofil}{89}{subsection.773}%
-\contentsline {subsubsection}{\numberline {5.2.6.1}Profilanpassung}{89}{subsubsection.774}%
-\contentsline {subsubsection}{\numberline {5.2.6.2}Kaufen und Freischalten von Profilinhalten}{89}{subsubsection.775}%
-\contentsline {subsection}{\numberline {5.2.7}Freundesystem}{90}{subsection.776}%
-\contentsline {subsubsection}{\numberline {5.2.7.1}Freundschaftsanfragen}{90}{subsubsection.777}%
-\contentsline {subsubsection}{\numberline {5.2.7.2}Herausfordern von Freunden}{90}{subsubsection.778}%
-\contentsline {subsubsection}{\numberline {5.2.7.3}Chatfunktion}{91}{subsubsection.779}%
-\contentsline {subsubsection}{\numberline {5.2.7.4}Anzeigen von Benutzerprofilen}{91}{subsubsection.780}%
-\contentsline {subsection}{\numberline {5.2.8}Integration der Google APIs}{91}{subsection.781}%
-\contentsline {subsubsection}{\numberline {5.2.8.1}Verwendung der Google Maps API}{91}{subsubsection.782}%
-\contentsline {subsubsection}{\numberline {5.2.8.2}Einbindung der Street-View-Bilder}{92}{subsubsection.783}%
-\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{93}{chapter.784}%
-\contentsline {section}{\numberline {6.1}Zusammenfassung}{93}{section.785}%
-\contentsline {section}{\numberline {6.2}Ausblick}{93}{section.786}%
-\contentsline {chapter}{\numberline {I}Literaturverzeichnis}{94}{chapter.787}%
+\contentsline {section}{\numberline {4.2}Evaluierung geeigneter Monetarisierungsstrategien}{42}{section.57}%
+\contentsline {subsection}{\numberline {4.2.1}Bewertungskriterien}{43}{subsection.58}%
+\contentsline {subsection}{\numberline {4.2.2}Nicht priorisierte Modelle}{43}{subsection.59}%
+\contentsline {subsection}{\numberline {4.2.3}Empfohlene Strategie: Hybridmodell aus Werbung, Pro-Abo und In-App-Käufen}{43}{subsection.60}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}Werbung (Fokus: Rewarded Video und Playable Ads)}{44}{subsubsection.64}%
+\contentsline {paragraph}{\numberline {4.2.3.1.1}Geplante Werbeplatzierungen (theoretisches Konzept)}{44}{paragraph.65}%
+\contentsline {paragraph}{\numberline {4.2.3.1.2}Banner-Werbung (bewusst zurückhaltend)}{44}{paragraph.66}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}Pro-Abonnement (No-Ads)}{45}{subsubsection.67}%
+\contentsline {paragraph}{\numberline {4.2.3.2.1}Preisfestlegung}{45}{paragraph.68}%
+\contentsline {subsubsection}{\numberline {4.2.3.3}In-App-Käufe (Profilbilder / Kosmetik)}{45}{subsubsection.69}%
+\contentsline {subsection}{\numberline {4.2.4}Fazit}{45}{subsection.70}%
+\contentsline {section}{\numberline {4.3}Analyse der Einnahmen- und Ausgabenstruktur der Anwendung}{46}{section.71}%
+\contentsline {subsection}{\numberline {4.3.1}Analyse der API-Kosten in Abhängigkeit von den Nutzerzahlen}{46}{subsection.72}%
+\contentsline {subsection}{\numberline {4.3.2}Analyse der Server- und Hostingkosten in Abhängigkeit von den Nutzerzahlen}{47}{subsection.74}%
+\contentsline {subsection}{\numberline {4.3.3}Kumulierte Kosten in Abhängigkeit der Nutzerzahlen}{48}{subsection.76}%
+\contentsline {subsection}{\numberline {4.3.4}Einnahmen durch Werbung (Banner sowie Video-/Playable-Ads)}{48}{subsection.78}%
+\contentsline {subsection}{\numberline {4.3.5}Einnahmen durch Pro-Abonnement (No-Ads)}{50}{subsection.80}%
+\contentsline {subsection}{\numberline {4.3.6}Einnahmen durch In-App-Käufe (Profilbilder)}{51}{subsection.82}%
+\contentsline {subsection}{\numberline {4.3.7}Kumulierte Gesamteinnahmen über 12 Monate}{52}{subsection.84}%
+\contentsline {subsection}{\numberline {4.3.8}Gegenüberstellung kumulierter Einnahmen und Kosten}{53}{subsection.86}%
+\contentsline {chapter}{\numberline {5}Dokumentation der Implementierung}{56}{chapter.88}%
+\contentsline {section}{\numberline {5.1}Systemumgebung}{56}{section.89}%
+\contentsline {subsection}{\numberline {5.1.1}Verwendete Technologien}{56}{subsection.90}%
+\contentsline {section}{\numberline {5.2}Implementierung}{57}{section.91}%
+\contentsline {subsection}{\numberline {5.2.1}Architektur der Anwendung}{57}{subsection.92}%
+\contentsline {subsection}{\numberline {5.2.2}Architektur der Datenbank}{58}{subsection.94}%
+\contentsline {subsection}{\numberline {5.2.3}Frontend-Implementierung \& Plannung}{59}{subsection.96}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}Informationsarchitektur, Wireframes \& Prototypen}{59}{subsubsection.97}%
+\contentsline {subsubsection}{\numberline {5.2.3.2}Responsives Design}{62}{subsubsection.101}%
+\contentsline {subsubsection}{\numberline {5.2.3.3}Spielansicht und Benutzerinteraktion}{62}{subsubsection.102}%
+\contentsline {paragraph}{\numberline {5.2.3.3.1}Pin-Platzierung}{62}{paragraph.103}%
+\contentsline {paragraph}{\numberline {5.2.3.3.2}Anzeige mehrerer Pins im Mehrspieler-Modus}{64}{paragraph.146}%
+\contentsline {paragraph}{\numberline {5.2.3.3.3}Visualisierung der geschätzten und korrekten Position}{68}{paragraph.253}%
+\contentsline {paragraph}{\numberline {5.2.3.3.4}Zoom Animationen}{73}{paragraph.354}%
+\contentsline {paragraph}{\numberline {5.2.3.3.5}Darstellung von roten Begrenzungslinien der Bundesländer}{75}{paragraph.397}%
+\contentsline {paragraph}{\numberline {5.2.3.3.6}Kompass in der Spielansicht}{77}{paragraph.442}%
+\contentsline {subsection}{\numberline {5.2.4}Backend-Anbindung mit Supabase}{80}{subsection.563}%
+\contentsline {subsubsection}{\numberline {5.2.4.1}Echtzeit-Kommunikation über Supabase Channels}{81}{subsubsection.565}%
+\contentsline {subsubsection}{\numberline {5.2.4.2}Authentifizierung der Benutzer (Supabase Auth, OAuth2)}{82}{subsubsection.616}%
+\contentsline {paragraph}{\numberline {5.2.4.2.1}Laden von Benutzer- und Profildaten:}{82}{paragraph.617}%
+\contentsline {paragraph}{\numberline {5.2.4.2.2}Logout:}{83}{paragraph.618}%
+\contentsline {paragraph}{\numberline {5.2.4.2.3}Sicherheitsaspekte:}{83}{paragraph.619}%
+\contentsline {subsection}{\numberline {5.2.5}Spielmechanik und Logik}{83}{subsection.620}%
+\contentsline {subsubsection}{\numberline {5.2.5.1}Generierung der Spielrunden}{83}{subsubsection.621}%
+\contentsline {paragraph}{\numberline {5.2.5.1.1}Punkt-in-Polygon-Prüfung:}{84}{paragraph.634}%
+\contentsline {paragraph}{\numberline {5.2.5.1.2}Zufällige Koordinatenerzeugung:}{84}{paragraph.635}%
+\contentsline {paragraph}{\numberline {5.2.5.1.3}Abbruchbedingung und Robustheit:}{84}{paragraph.636}%
+\contentsline {subsubsection}{\numberline {5.2.5.2}Generierung des täglichen Spiels}{84}{subsubsection.637}%
+\contentsline {subsubsection}{\numberline {5.2.5.3}Live-Einladungen für Freundesrunden}{85}{subsubsection.638}%
+\contentsline {subsubsection}{\numberline {5.2.5.4}Punkteberechnung}{87}{subsubsection.734}%
+\contentsline {paragraph}{\numberline {5.2.5.4.1}Grundprinzip:}{87}{paragraph.735}%
+\contentsline {paragraph}{\numberline {5.2.5.4.2}Punktebereiche und Berechnungsformeln:}{87}{paragraph.736}%
+\contentsline {subsection}{\numberline {5.2.6}Benutzerprofil}{89}{subsection.774}%
+\contentsline {subsubsection}{\numberline {5.2.6.1}Profilanpassung}{89}{subsubsection.775}%
+\contentsline {subsubsection}{\numberline {5.2.6.2}Kaufen und Freischalten von Profilinhalten}{89}{subsubsection.776}%
+\contentsline {subsection}{\numberline {5.2.7}Freundesystem}{90}{subsection.777}%
+\contentsline {subsubsection}{\numberline {5.2.7.1}Freundschaftsanfragen}{90}{subsubsection.778}%
+\contentsline {subsubsection}{\numberline {5.2.7.2}Herausfordern von Freunden}{90}{subsubsection.779}%
+\contentsline {subsubsection}{\numberline {5.2.7.3}Chatfunktion}{91}{subsubsection.780}%
+\contentsline {subsubsection}{\numberline {5.2.7.4}Anzeigen von Benutzerprofilen}{91}{subsubsection.781}%
+\contentsline {subsection}{\numberline {5.2.8}Integration der Google APIs}{91}{subsection.782}%
+\contentsline {subsubsection}{\numberline {5.2.8.1}Verwendung der Google Maps API}{91}{subsubsection.783}%
+\contentsline {subsubsection}{\numberline {5.2.8.2}Einbindung der Street-View-Bilder}{92}{subsubsection.784}%
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{93}{chapter.785}%
+\contentsline {section}{\numberline {6.1}Zusammenfassung}{93}{section.786}%
+\contentsline {section}{\numberline {6.2}Ausblick}{93}{section.787}%
+\contentsline {chapter}{\numberline {I}Literaturverzeichnis}{94}{chapter.788}%
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
@@ -157,17 +157,18 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{98}{chapter.788}%
-\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{99}{chapter.789}%
-\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{100}{chapter.790}%
-\contentsline {chapter}{\numberline {V}Akronyme}{101}{chapter.792}%
-\contentsline {chapter}{\numberline {VI}Glossar}{102}{chapter.794}%
-\contentsline {chapter}{\numberline {A}Anhang}{103}{chapter.795}%
-\contentsline {section}{\numberline {A.1}Arbeitsteilung}{103}{section.796}%
-\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{103}{section.797}%
-\contentsline {section}{\numberline {A.3}Projekttagebücher}{105}{section.798}%
-\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Jan Tiefenbacher}{105}{subsection.799}%
-\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Laurenz Pichler}{106}{subsection.800}%
-\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{109}{section.801}%
-\contentsline {section}{\numberline {A.5}Datenträgerbeschreibung}{119}{section.802}%
+\contentsline {chapter}{\numberline {II}Abbildungsverzeichnis}{98}{chapter.789}%
+\contentsline {chapter}{\numberline {III}Tabellenverzeichnis}{99}{chapter.790}%
+\contentsline {chapter}{\numberline {IV}Quellcodeverzeichnis}{100}{chapter.791}%
+\contentsline {chapter}{\numberline {V}Akronyme}{101}{chapter.793}%
+\contentsline {chapter}{\numberline {VI}Glossar}{102}{chapter.795}%
+\contentsline {chapter}{\numberline {A}Anhang}{103}{chapter.796}%
+\contentsline {section}{\numberline {A.1}Arbeitsteilung}{103}{section.797}%
+\contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{103}{section.798}%
+\contentsline {section}{\numberline {A.3}Projekttagebücher}{105}{section.799}%
+\contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Jan Tiefenbacher}{105}{subsection.800}%
+\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Laurenz Pichler}{106}{subsection.801}%
+\contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{109}{section.802}%
+\contentsline {section}{\numberline {A.5}Datenträgerbeschreibung}{117}{section.803}%
+\contentsline {section}{\numberline {A.6}Installationsanleitung}{118}{section.809}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
