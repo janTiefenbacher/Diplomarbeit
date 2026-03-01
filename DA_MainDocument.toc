@@ -9,7 +9,7 @@
 \contentsline {chapter}{\numberline {2}Einleitung}{13}{chapter.8}%
 \contentsline {section}{\numberline {2.1}Ausgangslage und Motivation der Arbeit}{13}{section.9}%
 \contentsline {section}{\numberline {2.2}Spezifische Ausgangslage}{13}{section.10}%
-\contentsline {section}{\numberline {2.3}Spezifische Forschungsfrage}{14}{section.11}%
+\contentsline {section}{\numberline {2.3}Spezifische Forschungsfragen}{14}{section.11}%
 \contentsline {subsection}{\numberline {2.3.1}Spezifische Forschungsfrage - Jan Tiefenbacher}{14}{subsection.12}%
 \contentsline {subsection}{\numberline {2.3.2}Spezifische Forschungsfrage - Laurenz Pichler}{14}{subsection.13}%
 \contentsline {chapter}{\numberline {3}Theoretische Grundlagen}{15}{chapter.14}%
@@ -85,7 +85,7 @@
 \contentsline {subsubsection}{\numberline {5.2.3.2}Responsives Design}{62}{subsubsection.100}%
 \contentsline {subsubsection}{\numberline {5.2.3.3}Spielansicht und Benutzerinteraktion}{62}{subsubsection.101}%
 \contentsline {paragraph}{\numberline {5.2.3.3.1}Pin-Platzierung}{62}{paragraph.102}%
-\contentsline {paragraph}{\numberline {5.2.3.3.2}Anzeige mehrerer Pins im Mehrspieler-Modus}{64}{paragraph.145}%
+\contentsline {paragraph}{\numberline {5.2.3.3.2}Anzeige mehrerer Pins im Mehrspielermodus}{64}{paragraph.145}%
 \contentsline {paragraph}{\numberline {5.2.3.3.3}Visualisierung der geschätzten und korrekten Position}{68}{paragraph.252}%
 \contentsline {paragraph}{\numberline {5.2.3.3.4}Zoom Animationen}{73}{paragraph.353}%
 \contentsline {paragraph}{\numberline {5.2.3.3.5}Darstellung von roten Begrenzungslinien der Bundesländer}{75}{paragraph.396}%
@@ -167,7 +167,7 @@
 \contentsline {section}{\numberline {A.2}Kapitelverzeichnis}{103}{section.797}%
 \contentsline {section}{\numberline {A.3}Projekttagebücher}{105}{section.798}%
 \contentsline {subsection}{\numberline {A.3.1}Projekttagebuch Jan Tiefenbacher}{105}{subsection.799}%
-\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Laurenz Pichler}{106}{subsection.800}%
+\contentsline {subsection}{\numberline {A.3.2}Projekttagebuch Laurenz Pichler}{107}{subsection.800}%
 \contentsline {section}{\numberline {A.4}Besprechungsprotokolle}{109}{section.801}%
 \contentsline {section}{\numberline {A.5}Datenträgerbeschreibung}{117}{section.802}%
 \contentsline {section}{\numberline {A.6}Installationsanleitung}{118}{section.803}%

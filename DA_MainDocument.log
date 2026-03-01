@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  26 FEB 2026 09:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.28)  1 MAR 2026 14:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1937,97 +1937,97 @@ File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 674.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [78.78]
-<content/img/4_Technische_Umsetzung/Kompass.jpeg, id=1282, 155.3805pt x 29.6307pt>
+<content/img/4_Technische_Umsetzung/Kompass.jpeg, id=1283, 155.3805pt x 29.6307pt>
 File: content/img/4_Technische_Umsetzung/Kompass.jpeg Graphic file (type jpg)
 <use content/img/4_Technische_Umsetzung/Kompass.jpeg>
-Package pdftex.def Info: content/img/4_Technische_Umsetzung/Kompass.jpeg  used on input line 728.
+Package pdftex.def Info: content/img/4_Technische_Umsetzung/Kompass.jpeg  used on input line 727.
 (pdftex.def)             Requested size: 234.73524pt x 44.76466pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 732.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 731.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [79.79]
 <content/img/4_Technische_Umsetzung/Supabase_Auth.png, id=1340, 533.74406pt x 495.35063pt>
 File: content/img/4_Technische_Umsetzung/Supabase_Auth.png Graphic file (type png)
 <use content/img/4_Technische_Umsetzung/Supabase_Auth.png>
-Package pdftex.def Info: content/img/4_Technische_Umsetzung/Supabase_Auth.png  used on input line 744.
+Package pdftex.def Info: content/img/4_Technische_Umsetzung/Supabase_Auth.png  used on input line 743.
 (pdftex.def)             Requested size: 234.73524pt x 217.84914pt.
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 760.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 759.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [80.80 <./content/img/4_Technische_Umsetzung/Kompass.jpeg> <./content/img/4_Technische_Umsetzung/Supabase_Auth.png>]
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 801.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 800.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [81.81]
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 840.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 839.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [82.82]
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 881.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 880.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [83.83]
 <content/img/4_Technische_Umsetzung/Lobby_Einladung.jpeg, id=1434, 124.42485pt x 45.16875pt>
 File: content/img/4_Technische_Umsetzung/Lobby_Einladung.jpeg Graphic file (type jpg)
 <use content/img/4_Technische_Umsetzung/Lobby_Einladung.jpeg>
-Package pdftex.def Info: content/img/4_Technische_Umsetzung/Lobby_Einladung.jpeg  used on input line 911.
+Package pdftex.def Info: content/img/4_Technische_Umsetzung/Lobby_Einladung.jpeg  used on input line 910.
 (pdftex.def)             Requested size: 375.57782pt x 136.36188pt.
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 915.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 914.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [84.84]
-Underfull \hbox (badness 10000) in paragraph at lines 926--926
+Underfull \hbox (badness 10000) in paragraph at lines 925--925
 [][][]|\T1/lmr/m/n/12 (+20) Realtime-Subscription zur Ver-ar-bei-tung ein-ge-hen-der Lobby-
  []
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 953.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 952.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [85.85 <./content/img/4_Technische_Umsetzung/Lobby_Einladung.jpeg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1004.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1003.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [86.86]
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1036
+Underfull \hbox (badness 10000) in paragraph at lines 1033--1035
 
  []
 
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1048.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1047.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
 [87.87]
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1105.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1104.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [88.88]
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1140.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1139.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [89.89]
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1171.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1170.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [90.90]
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1196.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 1195.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [91.91])) (5_summary/section.tex
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
@@ -2450,18 +2450,18 @@ Overfull \hbox (60.6942pt too wide) in alignment at lines 6--10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
-[]|\T1/lmr/m/n/12 (+20) Wireframes-App-Konzept-
+Underfull \hbox (badness 7064) in paragraph at lines 17--18
+[]|\T1/lmr/m/n/12 (+20) Figma-Mockups und Logo-Designs
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 78--79
-[]|\T1/lmr/m/n/12 (+20) Theoretische Grund-la-gen wei-ter ge-
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+[]|\T1/lmr/m/n/12 (+20) Bundesländer-/Standard-/Daily-
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 79--80
-[]|\T1/lmr/m/n/12 (+20) Theoretische Grund-la-gen wei-ter ge-
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+[]|\T1/lmr/m/n/12 (+20) Protokoll zum Backend-
  []
 
 
@@ -2483,24 +2483,25 @@ File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 91.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [105.105]
-Overfull \hbox (0.83034pt too wide) in alignment at lines 95--173
+6_appendix/projectDiary.tex:91: ignored error: Infinite glue shrinkage found in box being split
+File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
+<use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 91.
+(pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
+ [106.106]
+Overfull \hbox (0.83034pt too wide) in alignment at lines 94--172
  [] [] [] [] 
  []
 
+6_appendix/projectDiary.tex:172: ignored error: Infinite glue shrinkage found in box being split
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 173.
-(pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
-[106.106]
-6_appendix/projectDiary.tex:173: ignored error: Infinite glue shrinkage found in box being split
-File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
-<use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 173.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 172.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [107.107]
 File: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png Graphic file (type png)
 <use setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png>
-Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 174.
+Package pdftex.def Info: setup/media/HTL_Krems_Logo_SchwarzGelb_Neu.png  used on input line 173.
 (pdftex.def)             Requested size: 81.65926pt x 22.30716pt.
  [108.108]) (6_appendix/meetingMinutes.tex
 
@@ -2610,7 +2611,7 @@ Package pdftex.def Info: ./content/pdf/Meeting_03_ui-Kontrolle.pdf , page1 used 
 [111.111 <./content/pdf/Meeting_03_ui-Kontrolle.pdf>]
 
 pdfTeX warning: pdflatex (file ./content/pdf/Meeting_04_Code-Kontrolle.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/Meeting_04_Code-Kontrolle.pdf, id=2000, 597.55246pt x 845.07718pt>
+<./content/pdf/Meeting_04_Code-Kontrolle.pdf, id=1993, 597.55246pt x 845.07718pt>
 File: ./content/pdf/Meeting_04_Code-Kontrolle.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_04_Code-Kontrolle.pdf>
 Package pdftex.def Info: ./content/pdf/Meeting_04_Code-Kontrolle.pdf  used on input line 14.
@@ -2621,7 +2622,7 @@ pdfTeX warning: pdflatex (file ./content/pdf/Meeting_04_Code-Kontrolle.pdf): PDF
 
 
 pdfTeX warning: pdflatex (file ./content/pdf/Meeting_04_Code-Kontrolle.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/Meeting_04_Code-Kontrolle.pdf, id=2002, page=1, 597.55246pt x 845.07718pt>
+<./content/pdf/Meeting_04_Code-Kontrolle.pdf, id=1995, page=1, 597.55246pt x 845.07718pt>
 File: ./content/pdf/Meeting_04_Code-Kontrolle.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_04_Code-Kontrolle.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/Meeting_04_Code-Kontrolle.pdf , page1 used on input line 14.
@@ -2645,42 +2646,42 @@ Package pdftex.def Info: ./content/pdf/Meeting_04_Code-Kontrolle.pdf , page1 use
 [112.112 <./content/pdf/Meeting_04_Code-Kontrolle.pdf>]
 
 pdfTeX warning: pdflatex (file ./content/pdf/Meeting_05_Forschungsfrage.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/Meeting_05_Forschungsfrage.pdf, id=2044, 597.55246pt x 845.07718pt>
+<./content/pdf/Meeting_05_Forschungsfrage.pdf, id=2037, 597.79335pt x 845.19763pt>
 File: ./content/pdf/Meeting_05_Forschungsfrage.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_05_Forschungsfrage.pdf>
 Package pdftex.def Info: ./content/pdf/Meeting_05_Forschungsfrage.pdf  used on input line 16.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+(pdftex.def)             Requested size: 597.79189pt x 845.19557pt.
 
 
 pdfTeX warning: pdflatex (file ./content/pdf/Meeting_05_Forschungsfrage.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
 
 pdfTeX warning: pdflatex (file ./content/pdf/Meeting_05_Forschungsfrage.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/Meeting_05_Forschungsfrage.pdf, id=2046, page=1, 597.55246pt x 845.07718pt>
+<./content/pdf/Meeting_05_Forschungsfrage.pdf, id=2039, page=1, 597.79335pt x 845.19763pt>
 File: ./content/pdf/Meeting_05_Forschungsfrage.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_05_Forschungsfrage.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/Meeting_05_Forschungsfrage.pdf , page1 used on input line 16.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+(pdftex.def)             Requested size: 597.79189pt x 845.19557pt.
 File: ./content/pdf/Meeting_05_Forschungsfrage.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_05_Forschungsfrage.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/Meeting_05_Forschungsfrage.pdf , page1 used on input line 16.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+(pdftex.def)             Requested size: 597.81924pt x 845.23425pt.
 File: ./content/pdf/Meeting_05_Forschungsfrage.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_05_Forschungsfrage.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/Meeting_05_Forschungsfrage.pdf , page1 used on input line 16.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+(pdftex.def)             Requested size: 597.81924pt x 845.23425pt.
 File: ./content/pdf/Meeting_05_Forschungsfrage.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_05_Forschungsfrage.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/Meeting_05_Forschungsfrage.pdf , page1 used on input line 16.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+(pdftex.def)             Requested size: 597.81924pt x 845.23425pt.
 File: ./content/pdf/Meeting_05_Forschungsfrage.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_05_Forschungsfrage.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/Meeting_05_Forschungsfrage.pdf , page1 used on input line 16.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+(pdftex.def)             Requested size: 597.81924pt x 845.23425pt.
 [113.113 <./content/pdf/Meeting_05_Forschungsfrage.pdf>]
 
 pdfTeX warning: pdflatex (file ./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf, id=2081, 597.55246pt x 845.07718pt>
+<./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf, id=2092, 597.55246pt x 845.07718pt>
 File: ./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf>
 Package pdftex.def Info: ./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf  used on input line 18.
@@ -2691,7 +2692,7 @@ pdfTeX warning: pdflatex (file ./content/pdf/Meeting_06_TheoretischeGrundlagen.p
 
 
 pdfTeX warning: pdflatex (file ./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf, id=2083, page=1, 597.55246pt x 845.07718pt>
+<./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf, id=2094, page=1, 597.55246pt x 845.07718pt>
 File: ./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf , page1 used on input line 18.
@@ -2715,7 +2716,7 @@ Package pdftex.def Info: ./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf , p
 [114.114 <./content/pdf/Meeting_06_TheoretischeGrundlagen.pdf>]
 
 pdfTeX warning: pdflatex (file ./content/pdf/Meeting_07_Implementierung.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/Meeting_07_Implementierung.pdf, id=2118, 597.55246pt x 845.07724pt>
+<./content/pdf/Meeting_07_Implementierung.pdf, id=2129, 597.55246pt x 845.07724pt>
 File: ./content/pdf/Meeting_07_Implementierung.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_07_Implementierung.pdf>
 Package pdftex.def Info: ./content/pdf/Meeting_07_Implementierung.pdf  used on input line 20.
@@ -2726,7 +2727,7 @@ pdfTeX warning: pdflatex (file ./content/pdf/Meeting_07_Implementierung.pdf): PD
 
 
 pdfTeX warning: pdflatex (file ./content/pdf/Meeting_07_Implementierung.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/Meeting_07_Implementierung.pdf, id=2120, page=1, 597.55246pt x 845.07724pt>
+<./content/pdf/Meeting_07_Implementierung.pdf, id=2131, page=1, 597.55246pt x 845.07724pt>
 File: ./content/pdf/Meeting_07_Implementierung.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_07_Implementierung.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/Meeting_07_Implementierung.pdf , page1 used on input line 20.
@@ -2750,7 +2751,7 @@ Package pdftex.def Info: ./content/pdf/Meeting_07_Implementierung.pdf , page1 us
 [115.115 <./content/pdf/Meeting_07_Implementierung.pdf>]
 
 pdfTeX warning: pdflatex (file ./content/pdf/Meeting_08_Fertgstellung_Technische_Umsetzung.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/Meeting_08_Fertgstellung_Technische_Umsetzung.pdf, id=2176, 597.55246pt x 845.07718pt>
+<./content/pdf/Meeting_08_Fertgstellung_Technische_Umsetzung.pdf, id=2139, 597.55246pt x 845.07718pt>
 File: ./content/pdf/Meeting_08_Fertgstellung_Technische_Umsetzung.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_08_Fertgstellung_Technische_Umsetzung.pdf>
 Package pdftex.def Info: ./content/pdf/Meeting_08_Fertgstellung_Technische_Umsetzung.pdf  used on input line 22.
@@ -2761,7 +2762,7 @@ pdfTeX warning: pdflatex (file ./content/pdf/Meeting_08_Fertgstellung_Technische
 
 
 pdfTeX warning: pdflatex (file ./content/pdf/Meeting_08_Fertgstellung_Technische_Umsetzung.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./content/pdf/Meeting_08_Fertgstellung_Technische_Umsetzung.pdf, id=2178, page=1, 597.55246pt x 845.07718pt>
+<./content/pdf/Meeting_08_Fertgstellung_Technische_Umsetzung.pdf, id=2141, page=1, 597.55246pt x 845.07718pt>
 File: ./content/pdf/Meeting_08_Fertgstellung_Technische_Umsetzung.pdf Graphic file (type pdf)
 <use ./content/pdf/Meeting_08_Fertgstellung_Technische_Umsetzung.pdf, page 1>
 Package pdftex.def Info: ./content/pdf/Meeting_08_Fertgstellung_Technische_Umsetzung.pdf , page1 used on input line 22.
@@ -2809,16 +2810,16 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  60757 strings out of 467871
- 1405667 string characters out of 5428443
+ 1405666 string characters out of 5428443
  2555890 words of memory out of 5000000
  87467 multiletter control sequences out of 15000+600000
  721226 words of font info for 208 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,36n,414p,11259b,3199s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
-Output written on DA_MainDocument.pdf (119 pages, 5023887 bytes).
+Output written on DA_MainDocument.pdf (119 pages, 4998674 bytes).
 PDF statistics:
- 2788 PDF objects out of 2984 (max. 8388607)
+ 2751 PDF objects out of 2984 (max. 8388607)
  983 named destinations out of 1000 (max. 500000)
  56696 words of extra memory for PDF output out of 61914 (max. 10000000)
 
