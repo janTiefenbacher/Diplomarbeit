@@ -125,7 +125,7 @@ Das Responsive Design der Anwendung wurde durch den gezielten Einsatz flexibler 
 
 \subsubsection{Spielansicht und Benutzerinteraktion}
 In den folgenden Abschnitten werden die wichtigsten Aspekte des \gls{ui} sowie der Benutzerinteraktion beschrieben. Hierbei
-wird aktiv auf Code eingegangen und erläutert, wie dieser Funktioniert und welchen Zweck er erfüllt.
+wird aktiv auf Code eingegangen und erläutert, wie dieser funktioniert und welchen Zweck er erfüllt.
 
 \paragraph{Pin-Platzierung}
 \mbox{}\\
@@ -346,7 +346,7 @@ Die Linien werden als eigenständige \gls{overlay}-Elemente auf der bestehenden 
 
 Zusätzlich wird die Linie so gestaltet, dass sie sich klar vom Kartenhintergrund abhebt, ohne andere UI-Elemente zu überdecken. Diese bewusste visuelle Gewichtung stellt sicher, dass das Ergebnis schnell erfasst werden kann, ohne die Übersichtlichkeit der gesamten Karte zu beeinträchtigen.
 
-Egal welchen Modus der Spieler spielt, die Linien eigenschaften sind bis auf die Farbe immer gleich und werden in diesem Code-Block definiert:
+Egal welchen Modus der Spieler spielt, die Linieneigenschaften sind bis auf die Farbe immer gleich und werden in diesem Code-Block definiert:
 \begin{lstlisting}[
 caption={Linie zwischen getippter und tatsächlicher Position},
 label={lst:lines}
@@ -598,7 +598,6 @@ const bundeslandPolygone: Record<string, [number, number][]> = {
 \paragraph{Kompass in der Spielansicht}
 \mbox{}\\
 Der Kompass in der Spielansicht ist ein wichtiges UI-Feature, weil er dem Spieler jederzeit Orientierung gibt und die Street-View-Perspektive lesbarer macht. Da sich die Kamera in Google Street View frei drehen lässt, liefert der Kompass eine direkte Rückmeldung über die Blickrichtung (Heading) und verhindert, dass sich Nutzer beim Erkunden oder beim Platzieren eines Tipps verlaufen. Zusätzlich erhöht das Feature die Immersion, weil es die reale Blickrichtung aus Street View in ein klares, spieltypisches \gls{overlay} übersetzt, ein kleines Detail, das sich für den Nutzer aber als hilfreich darstellt und das Gameplay spürbar verbessert.
-Hier kannst du ebenfalls noch einen technisch orientierten Zusatz ergänzen, der die UI-Implementierung etwas greifbarer macht:
 
 Technisch wird der Kompass als fest positioniertes \gls{overlay} über der Street-View-Ansicht dargestellt. Er ist unabhängig vom eigentlichen Karten- bzw. Street-View-Element im Layout verankert und bleibt somit stets sichtbar, auch wenn sich die Perspektive dynamisch ändert. Die Rotation des Kompasszeigers erfolgt synchron zur aktuellen Blickrichtung der Street-View-Kamera, indem der jeweilige Heading-Wert ausgelesen und in eine entsprechende \gls{css}-Transformation übersetzt wird. Dadurch entsteht eine direkte visuelle Kopplung zwischen Kamerabewegung und UI-Element.
 
