@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex DA_MainDocument"] 1772697240.09748 "DA_MainDocument.aux" "DA_MainDocument.bbl" "DA_MainDocument" 1772697247.99741 0
+["bibtex DA_MainDocument"] 1772697496.30494 "DA_MainDocument.aux" "DA_MainDocument.bbl" "DA_MainDocument" 1772697504.21306 0
   "./DA_Literatur.bib" 1772091353 17470 3e3704c84956bc5ab9f1d8b514c15ca3 ""
-  "6_appendix/listofeverything.aux" 1772697246 5185 2a7707657119afb8db27d8d71dce3ae3 "pdflatex"
+  "6_appendix/listofeverything.aux" 1772697502 5185 2a7707657119afb8db27d8d71dce3ae3 "pdflatex"
   "C:/Users/janti/AppData/Roaming/MiKTeX/bibtex/bst/babelbib/babunsrt.bst" 1610365731 25258 5676363a009d917405b271fe05aa55ce ""
-  "DA_MainDocument.aux" 1772697247 67397 03a8b41707747508f1b918eee3a501c7 "pdflatex"
+  "DA_MainDocument.aux" 1772697503 67722 3599ed5b7e09fa50289c89d033c4e3ae "pdflatex"
   (generated)
   "DA_MainDocument.bbl"
   "DA_MainDocument.blg"
   (rewritten before read)
-["makeindex DA_MainDocument.idx"] 1772093833.23071 "DA_MainDocument.idx" "DA_MainDocument.ind" "DA_MainDocument" 1772697247.99699 0
-  "DA_MainDocument.idx" 1772697242 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex DA_MainDocument.idx"] 1772093833.23071 "DA_MainDocument.idx" "DA_MainDocument.ind" "DA_MainDocument" 1772697504.21265 0
+  "DA_MainDocument.idx" 1772697498 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "DA_MainDocument.ilg"
   "DA_MainDocument.ind"
   (rewritten before read)
-["pdflatex"] 1772697240.36296 "c:/Users/janti/Desktop/DPLM/Diplomarbeit/DA_MainDocument.tex" "DA_MainDocument.pdf" "DA_MainDocument" 1772697247.99833 0
+["pdflatex"] 1772697496.56336 "c:/Users/janti/Desktop/DPLM/Diplomarbeit/DA_MainDocument.tex" "DA_MainDocument.pdf" "DA_MainDocument" 1772697504.21386 0
   "0_prelude/da_doku_de.tex" 1772693495 3345 cbdc6105f3ef3b03e010e1b890b9ee05 ""
   "0_prelude/da_doku_en.tex" 1769582619 3266 7ab0f335219b1dbf7a45d1970b692061 ""
   "0_prelude/section.tex" 1769582619 163 20a5023facb41cf866eba377ef40fb43 ""
@@ -38,11 +38,11 @@
   "5_summary/section.tex" 1769582619 93 d541bf74202d3ea6d1f777a36d942a96 ""
   "5_summary/summary.tex" 1772091353 1212 388eadddb69eccae67ed2c4034ee8b09 ""
   "6_appendix/laborDivision.tex" 1772091353 5045 f17078424e7b9c923f063b6a93cc7a7d ""
-  "6_appendix/listofeverything.aux" 1772697246 5185 2a7707657119afb8db27d8d71dce3ae3 "pdflatex"
+  "6_appendix/listofeverything.aux" 1772697502 5185 2a7707657119afb8db27d8d71dce3ae3 "pdflatex"
   "6_appendix/listofeverything.tex" 1769582619 830 d8103230342805eebee24d9602e321b1 ""
   "6_appendix/meetingMinutes.tex" 1772697047 757 b1d90bcd74b807c222b0cf0618bbd209 ""
   "6_appendix/projectDiary.tex" 1772371559 10106 c14e63202881b6a7cc52957373e205c0 ""
-  "6_appendix/ressources.tex" 1772371559 3742 f4e40f7fde6aa9e840a5ea884f7bd6a1 ""
+  "6_appendix/ressources.tex" 1772697488 3844 8fa01bfd12c7aa508564bfd3fd5af7f5 ""
   "6_appendix/section.tex" 1769582619 149 4dbddd92f340ec53988846805512a391 ""
   "C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
   "C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc" 1256929440 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -358,14 +358,14 @@
   "C:/Users/janti/AppData/Roaming/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/janti/AppData/Roaming/MiKTeX/tex/latex/translator/translator.sty" 1622471510 8765 56d370785f0143111ff9898b5adfe08e ""
   "C:/Users/janti/AppData/Roaming/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
-  "DA_MainDocument.aux" 1772697247 67397 03a8b41707747508f1b918eee3a501c7 "pdflatex"
-  "DA_MainDocument.bbl" 1772697240 22071 abc0edcdfedab02f122282b0fff1b854 "bibtex DA_MainDocument"
+  "DA_MainDocument.aux" 1772697503 67722 3599ed5b7e09fa50289c89d033c4e3ae "pdflatex"
+  "DA_MainDocument.bbl" 1772697496 22071 abc0edcdfedab02f122282b0fff1b854 "bibtex DA_MainDocument"
   "DA_MainDocument.ind" 1772093833 0 d41d8cd98f00b204e9800998ecf8427e "makeindex DA_MainDocument.idx"
-  "DA_MainDocument.lof" 1772697247 4406 7cf47eeadfb77ea737824508e14406b7 "pdflatex"
-  "DA_MainDocument.lol" 1772697247 2835 2ea6ae308d3d5ea444a414e6725bb637 "pdflatex"
-  "DA_MainDocument.lot" 1772697247 1853 14c776e6bafea578a23d91d2cd519b94 "pdflatex"
+  "DA_MainDocument.lof" 1772697503 4406 7cf47eeadfb77ea737824508e14406b7 "pdflatex"
+  "DA_MainDocument.lol" 1772697503 2835 2ea6ae308d3d5ea444a414e6725bb637 "pdflatex"
+  "DA_MainDocument.lot" 1772697503 1853 14c776e6bafea578a23d91d2cd519b94 "pdflatex"
   "DA_MainDocument.tex" 1772092022 1249 858ff59f39bd40abc2a27486bde297df ""
-  "DA_MainDocument.toc" 1772697247 14136 156d0ea7c725c5b86fb7a0c6e7f398b2 "pdflatex"
+  "DA_MainDocument.toc" 1772697503 14211 823385cb27b03518dfca3801e8b4e899 "pdflatex"
   "KostenNutzen/kostennutzen.tex" 1772697231 37518 b59ea2723cd6579b7b379e6999245f3b ""
   "KostenNutzen/section.tex" 1771926748 74 9186b2a8c4263409ec32f0e2ce9487ad ""
   "c:/Users/janti/Desktop/DPLM/Diplomarbeit/DA_MainDocument.tex" 1772092022 1249 858ff59f39bd40abc2a27486bde297df ""
@@ -382,6 +382,7 @@
   "content/img/4_Technische_Umsetzung/System_Architektur.jpg" 1770632372 90474 5e74cea595e95d926cd8b9ec80a1df61 ""
   "content/img/4_Technische_Umsetzung/Wireframes.jpg" 1770632372 93087 4e38b9428c63815811da20f0b6d184fb ""
   "content/img/4_Technische_Umsetzung/dbschema.png" 1771922845 217700 af7713b4599ed6f202607d2069a464ff ""
+  "content/pdf/G02_Pflichtenheft_DOC.pdf" 1772095636 492484 d7218f1a6f88f50bab89006c9d0ba2be ""
   "content/pdf/Meeting_01_Kick-Off.pdf" 1772693158 259640 b9c2b2bd7f188a9dc362b0c728eb01b4 ""
   "content/pdf/Meeting_02_Pflichtenheft.pdf" 1772693490 258771 9798ea5d95aeb04479d2143e01a0a47d ""
   "content/pdf/Meeting_03_ui-Kontrolle.pdf" 1772693457 262939 af30fd206ecbde75ff93301ee3a18352 ""
